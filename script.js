@@ -314,13 +314,16 @@ function updateInfoPanel(emotionId) {
         `;
     }
 
-    // Add action icons
+    // Add explore this feeling section with action icons
     html += `
-        <div class="action-icons">
-            <img src="action-message.png" class="action-icon" id="action-message" title="View guiding question" alt="Message">
-            <img src="action-opposite.png" class="action-icon" id="action-opposite" title="View opposite feeling" alt="Opposite">
-            <img src="action-overload.png" class="action-icon" id="action-overload" title="View overload risk" alt="Overload">
-            <img src="action-quotation.png" class="action-icon" id="action-quotation" title="View quotation" alt="Quotation">
+        <div class="explore-feeling">
+            <p class="explore-label">Explore this Feeling:</p>
+            <div class="action-icons">
+                <img src="action-message.png" class="action-icon" id="action-message" title="View guiding question" alt="Message">
+                <img src="action-opposite.png" class="action-icon" id="action-opposite" title="View opposite feeling" alt="Opposite">
+                <img src="action-overload.png" class="action-icon" id="action-overload" title="View overload risk" alt="Overload">
+                <img src="action-quotation.png" class="action-icon" id="action-quotation" title="View quotation" alt="Quotation">
+            </div>
         </div>
     `;
 
@@ -411,7 +414,7 @@ function showMessageAction() {
     if (!emotion || !emotion.question) return;
 
     const content = `
-        <p><strong>Guiding Question:</strong></p>
+        <p><strong>Emotional Wisdom Questions:</strong></p>
         <p>${emotion.question}</p>
     `;
 

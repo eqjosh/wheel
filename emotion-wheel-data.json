@@ -75,7 +75,7 @@
       "overloadRisk": "If you over-use this feeling, you may over-conform, hiding parts of yourself to keep belonging.",
       "overloadTip": "To balance, notice where you feel safe enough to be more authentic, and share one more honest piece of yourself.",
       "adaptivePurpose": "Signals that you feel seen, valued, and included in a group or relationship.",
-      "oppositeId": "disgust-3-awful"
+      "oppositeId": "disgust-3-aweful"
     },
     {
       "order": 8,
@@ -244,7 +244,7 @@
     },
     {
       "order": 23,
-      "id": "disgust-3-awful",
+      "id": "disgust-3-aweful",
       "name": "Awful",
       "category": "Disgust",
       "question": "What feels harmful or unacceptable? What standard or value is signaling a need for change?",

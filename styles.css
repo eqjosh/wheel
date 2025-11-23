@@ -157,7 +157,6 @@ body {
 .related-feelings {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 2px solid #f0f0f0;
 }
 
 .related-feelings p {
@@ -192,7 +191,10 @@ body {
 #svg-wrapper g[id*="-1-"]:hover,
 #svg-wrapper g[id*="-2-"]:hover,
 #svg-wrapper g[id*="-3-"]:hover,
-#svg-wrapper g[id*="-4-"]:hover {
+#svg-wrapper g[id*="-4-"]:hover,
+#svg-wrapper g[id="joy2-background"]:hover,
+#svg-wrapper g[id="joy3-background"]:hover,
+#svg-wrapper g[id="joy4-background"]:hover {
     filter: brightness(1.15) drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
 }
 
@@ -249,13 +251,23 @@ body {
     }
 }
 
+/* Explore This Feeling Section */
+.explore-feeling {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.explore-label {
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
 /* Action Icons */
 .action-icons {
     display: flex;
     gap: 12px;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 2px solid #f0f0f0;
 }
 
 .action-icon {
