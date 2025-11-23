@@ -6,9 +6,10 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: white;
     min-height: 100vh;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -19,38 +20,19 @@ body {
     flex-direction: column;
 }
 
-header {
-    text-align: center;
-    color: white;
-    margin-bottom: 10px;
-    padding: 5px 0;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.subtitle {
-    font-size: 1.1em;
-    opacity: 0.9;
-}
-
 .main-content {
     display: flex;
-    gap: 15px;
+    gap: 0;
     align-items: stretch;
     flex: 1;
     min-height: 0;
+    height: 100vh;
 }
 
 .wheel-container {
-    flex: 1;
+    flex: 0 0 65%;
     background: white;
-    border-radius: 20px;
-    padding: 5px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,16 +58,31 @@ header h1 {
 }
 
 .info-panel {
-    flex: 0 0 380px;
+    flex: 0 0 35%;
     background: white;
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    min-height: 500px;
-    position: sticky;
-    top: 20px;
-    max-height: calc(100vh - 40px);
+    padding: 30px;
+    border-left: 1px solid #e0e0e0;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.panel-header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.panel-header .version {
+    font-size: 0.85em;
+    color: #999;
+    font-weight: 500;
 }
 
 .info-content {
@@ -103,15 +100,9 @@ header h1 {
     }
 }
 
-.welcome-message h2 {
-    color: #667eea;
-    margin-bottom: 15px;
-    font-size: 1.8em;
-}
-
 .welcome-message p {
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 15px;
 }
 
@@ -193,19 +184,23 @@ header h1 {
 
     .main-content {
         flex-direction: column;
-        gap: 15px;
+        gap: 0;
+        height: auto;
     }
 
     .info-panel {
         flex: 0 0 auto;
         width: 100%;
-        position: static;
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
         min-height: 300px;
     }
 
     .wheel-container {
+        flex: 0 0 auto;
         width: 100%;
         min-height: 70vh;
+        padding: 20px;
     }
 
     #svg-wrapper svg {
@@ -215,33 +210,16 @@ header h1 {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 5px;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    .subtitle {
-        font-size: 0.95em;
-    }
-
-    header {
-        margin-bottom: 10px;
+    .panel-header h1 {
+        font-size: 1.6em;
     }
 
     .wheel-container,
     .info-panel {
         padding: 15px;
-        border-radius: 15px;
     }
 
     .emotion-title {
         font-size: 1.5em;
-    }
-
-    .info-panel {
-        flex: 0 0 350px;
     }
 }
