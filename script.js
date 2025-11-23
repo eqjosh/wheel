@@ -12,6 +12,20 @@ async function loadSVG() {
         const svgWrapper = document.getElementById('svg-wrapper');
         svgWrapper.innerHTML = svgText;
 
+        // Remove fixed width/height attributes from SVG to allow CSS sizing
+        const svg = svgWrapper.querySelector('svg');
+        if (svg) {
+            svg.removeAttribute('width');
+            svg.removeAttribute('height');
+            // Ensure viewBox is preserved for proper scaling
+            if (!svg.hasAttribute('viewBox')) {
+                // If no viewBox, try to create one from width/height before removal
+                const width = svg.getAttribute('width') || '100';
+                const height = svg.getAttribute('height') || '100';
+                svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+            }
+        }
+
         // Initialize interactivity after SVG is loaded
         initializeInteractivity();
     } catch (error) {
