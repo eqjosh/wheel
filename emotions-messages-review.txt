@@ -1,0 +1,217 @@
+EMOTION WHEEL - QUESTIONS, RISKS, AND BALANCING TIPS
+=====================================================
+
+JOY
+---
+[joy-1-optimistic] Optimistic
+Question: What possibilities do you see? What could go right in this situation?
+Risk: If you over-use this feeling, it could cause you to overlook real risks or appear naive.
+Tip: To balance, consider: What realistic challenges exist? How can you prepare for potential obstacles?
+Opposite: sad-2-depressed
+
+[joy-2-confident] Confident
+Question: What strengths can you bring to this situation? What are you capable of doing?
+Risk: If you over-use this feeling, it could cause you to appear arrogant or dismiss others' input.
+Tip: To balance, consider: What could you learn from others? Where might you benefit from support or advice?
+Opposite: fear-4-insecure
+
+[joy-3-joyful] Joyful
+Question: What brings you delight right now? What feels wonderful about this moment?
+Risk: If you over-use this feeling, it could cause you to ignore real problems or appear insensitive to others' struggles.
+Tip: To balance, consider: Are there concerns that need attention? How can you honor both joy and challenges?
+Opposite: sad-3-lonely
+
+[joy-4-loving] Loving
+Question: What do you appreciate about this person or situation? How can you show care and support?
+Risk: If you over-use this feeling, it could cause you to lose boundaries or neglect your own needs.
+Tip: To balance, consider: What are your own needs right now? How can you care for yourself while caring for others?
+Opposite: disgust-1-dislike
+
+
+TRUST
+-----
+[trust-1-grateful] Grateful
+Question: What are you thankful for? Who or what has contributed to your well-being?
+Risk: If you over-use this feeling, it could cause you to accept mistreatment or avoid expressing needs.
+Tip: To balance, consider: What needs addressing despite gratitude? How can you appreciate what you have while still seeking growth?
+Opposite: anger-2-mad
+
+[trust-2-peaceful] Peaceful
+Question: What brings you calm and tranquility? What helps you feel centered and at ease?
+Risk: If you over-use this feeling, it could cause you to avoid necessary conflicts or become complacent.
+Tip: To balance, consider: What issues need to be addressed? How can you maintain peace while taking action when needed?
+Opposite: anger-3-frustrated
+
+[trust-3-accepted] Accepted
+Question: Where do you feel you belong? Who accepts and values you as you are?
+Risk: If you over-use this feeling, it could cause you to conform too much or lose your authentic self.
+Tip: To balance, consider: Are you being true to yourself? What parts of you need expression even if they differ from others?
+Opposite: disgust-3-aweful
+
+[trust-4-hopeful] Hopeful
+Question: What are you hoping for? What positive outcome do you envision?
+Risk: If you over-use this feeling, it could cause you to wait passively instead of taking action.
+Tip: To balance, consider: What action can you take toward your hopes? How can you be both hopeful and proactive?
+Opposite: disgust-4-disapproval
+
+
+FEAR
+----
+[fear-1-nervous] Nervous
+Question: What uncertainty is creating unease? What feels unpredictable or risky right now?
+Risk: If you over-use this feeling, it could cause you to avoid opportunities or become paralyzed by worry.
+Tip: To balance, consider: What small step could you take despite the nerves? What support or preparation might help?
+Opposite: trust-2-peaceful
+
+[fear-2-scared] Scared
+Question: What feels threatening? What danger or harm are you sensing?
+Risk: If you over-use this feeling, it could cause you to see threats everywhere or withdraw from life.
+Tip: To balance, consider: What evidence exists for this fear? What safety or support is available to you?
+Opposite: anticipation-2-eager
+
+[fear-3-anxious] Anxious
+Question: What are you worried about? What uncertain outcome concerns you?
+Risk: If you over-use this feeling, it could cause you to ruminate excessively or create problems that don't exist.
+Tip: To balance, consider: What can you control? What action would help address this concern?
+Opposite: anticipation-3-interested
+
+[fear-4-insecure] Insecure
+Question: What makes you doubt yourself? What do you fear others might think or see?
+Risk: If you over-use this feeling, it could cause you to constantly seek validation or avoid putting yourself forward.
+Tip: To balance, consider: What evidence supports your worth? What strengths do you have regardless of others' opinions?
+Opposite: joy-2-confident
+
+
+SURPRISE
+--------
+[surprise-1-startled] Startled
+Question: What just happened that you didn't expect? What caught you off guard?
+Risk: If you over-use this feeling, it could cause you to become hypervigilant or jumpy.
+Tip: To balance, consider: What can help you feel more grounded? How can you assess the situation calmly?
+Opposite: anticipation-1-excited
+
+[surprise-2-confused] Confused
+Question: What doesn't make sense? What are you trying to understand?
+Risk: If you over-use this feeling, it could cause you to doubt everything or struggle to make decisions.
+Tip: To balance, consider: What do you know for certain? Who or what could help clarify this?
+Opposite: joy-1-optimistic
+
+[surprise-3-amazed] Amazed
+Question: What wonderful thing surprised you? What exceeds your expectations?
+Risk: If you over-use this feeling, it could cause you to overlook practical considerations or become easily impressed.
+Tip: To balance, consider: What practical steps follow this amazement? How can you build on this wonder?
+Opposite: sad-1-hurt
+
+[surprise-4-disappointed] Disappointed
+Question: What did you hope for that didn't happen? What expectation wasn't met?
+Risk: If you over-use this feeling, it could cause you to become cynical or stop hoping for positive outcomes.
+Tip: To balance, consider: What can you learn from this? What new possibilities might exist?
+Opposite: anticipation-4-stressed
+
+
+SADNESS
+-------
+[sad-1-hurt] Hurt
+Question: What caused this pain? What action or words wounded you?
+Risk: If you over-use this feeling, it could cause you to hold grudges or see harm in innocent actions.
+Tip: To balance, consider: What might have been the intention? How can you communicate your hurt or seek healing?
+Opposite: surprise-3-amazed
+
+[sad-2-depressed] Depressed
+Question: What feels heavy or hopeless? What has drained your energy or joy?
+Risk: If you over-use this feeling, it could cause you to withdraw completely or lose sight of any positive aspects.
+Tip: To balance, consider: What small action could you take? Who could you reach out to for support?
+Opposite: joy-1-optimistic
+
+[sad-3-lonely] Lonely
+Question: Who or what are you missing? What connection do you long for?
+Risk: If you over-use this feeling, it could cause you to push others away or believe no one cares.
+Tip: To balance, consider: Who is available to you? What small step could you take toward connection?
+Opposite: joy-3-joyful
+
+[sad-4-ashamed] Ashamed
+Question: What do you believe you did wrong? What part of yourself are you judging?
+Risk: If you over-use this feeling, it could cause you to hide your true self or believe you're fundamentally flawed.
+Tip: To balance, consider: What would you tell a friend in this situation? How can you learn and grow from this?
+Opposite: anger-1-aggressive
+
+
+DISGUST
+-------
+[disgust-1-dislike] Dislike
+Question: What doesn't align with your values? What feels wrong or distasteful?
+Risk: If you over-use this feeling, it could cause you to become judgmental or close-minded.
+Tip: To balance, consider: What might you not understand yet? Can you create distance while staying open?
+Opposite: joy-4-loving
+
+[disgust-2-avoidance] Avoidance
+Question: What are you trying to avoid? What feels too uncomfortable to face?
+Risk: If you over-use this feeling, it could cause you to miss opportunities or leave issues unresolved.
+Tip: To balance, consider: What small step could you take toward this? What support might help you face it?
+Opposite: fear-2-scared
+
+[disgust-3-aweful] Awful
+Question: What feels deeply wrong or distressing? What violates your sense of rightness?
+Risk: If you over-use this feeling, it could cause you to catastrophize or see negativity everywhere.
+Tip: To balance, consider: What aspects are truly concerning? What can you do about it?
+Opposite: trust-3-accepted
+
+[disgust-4-disapproval] Disapproval
+Question: What behavior or situation goes against your values? What do you judge as wrong?
+Risk: If you over-use this feeling, it could cause you to become rigid or alienate others.
+Tip: To balance, consider: What circumstances might explain this? How can you hold standards while showing compassion?
+Opposite: trust-4-hopeful
+
+
+ANGER
+-----
+[anger-1-aggressive] Aggressive
+Question: What feels threatening or intolerable? What are you ready to fight against?
+Risk: If you over-use this feeling, it could cause you to damage relationships or escalate conflicts.
+Tip: To balance, consider: What outcome do you want? How can you stand firm while staying constructive?
+Opposite: sad-4-ashamed
+
+[anger-2-mad] Mad
+Question: What boundary was crossed? What feels unjust or wrong?
+Risk: If you over-use this feeling, it could cause you to lash out or hold onto resentment.
+Tip: To balance, consider: What do you need to feel better? How can you express this anger constructively?
+Opposite: trust-1-grateful
+
+[anger-3-frustrated] Frustrated
+Question: What is blocking your progress? What obstacle keeps getting in your way?
+Risk: If you over-use this feeling, it could cause you to give up too quickly or become impatient with others.
+Tip: To balance, consider: What different approach could you try? What is within your control?
+Opposite: trust-2-peaceful
+
+[anger-4-critical] Critical
+Question: What could get in the way if this person does it wrong... or this situation is wrong?
+Risk: If you over-use this feeling, it could cause you to block innovation or shut people down.
+Tip: To balance, consider: How big is the risk or transgression? What is going well or what is the person doing right?
+Opposite: fear-4-insecure
+
+
+ANTICIPATION
+------------
+[anticipation-1-excited] Excited
+Question: What are you looking forward to? What positive event energizes you?
+Risk: If you over-use this feeling, it could cause you to rush ahead without planning or burn out quickly.
+Tip: To balance, consider: What preparation is needed? How can you sustain this energy wisely?
+Opposite: surprise-1-startled
+
+[anticipation-2-eager] Eager
+Question: What are you ready to pursue? What opportunity calls to you?
+Risk: If you over-use this feeling, it could cause you to jump into things without thinking or ignore warning signs.
+Tip: To balance, consider: What might you need to know first? How can you channel this eagerness effectively?
+Opposite: fear-2-scared
+
+[anticipation-3-interested] Interested
+Question: What catches your attention? What do you want to learn or explore?
+Risk: If you over-use this feeling, it could cause you to become distracted or spread yourself too thin.
+Tip: To balance, consider: What deserves your deepest focus? How can you explore while maintaining priorities?
+Opposite: fear-3-anxious
+
+[anticipation-4-stressed] Stressed
+Question: What demands are weighing on you? What feels like too much to handle?
+Risk: If you over-use this feeling, it could cause you to break down or make poor decisions under pressure.
+Tip: To balance, consider: What can you delegate or postpone? How can you care for yourself during this time?
+Opposite: surprise-4-disappointed

@@ -315,24 +315,25 @@ function showQuotationAction() {
     const quotes = quotationsData.filter(q => q.id === currentEmotionId);
 
     if (quotes.length === 0) {
-        showModal(emotion.name + ' - Quotation', '<p>No quotations available for this feeling.</p>');
+        showModal(emotion.name + ' - Quotations', '<p>No quotations available for this feeling.</p>');
         return;
     }
 
-    // Pick a random quote
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    // Display all quotes in compact format
+    let quotesHtml = '';
+    quotes.forEach(quote => {
+        const speaker = quote.speaker ? quote.speaker : '';
+        const work = quote.work ? quote.work : '';
+        const attribution = speaker && work ? `— ${speaker}, ${work}` :
+                          speaker ? `— ${speaker}` :
+                          work ? `— ${work}` : '';
 
-    const content = `
-        <div class="quote">
-            "${randomQuote.quote_text}"
-        </div>
-        <div class="quote-speaker">
-            ${randomQuote.speaker ? '— ' + randomQuote.speaker : ''}
-        </div>
-        <div class="quote-work">
-            ${randomQuote.work || ''}
-        </div>
-    `;
+        quotesHtml += `
+            <p class="quote-compact">
+                "${quote.quote_text}" ${attribution}
+            </p>
+        `;
+    });
 
-    showModal(emotion.name + ' - Quotation', content);
+    showModal(emotion.name + ' - Quotations', quotesHtml);
 }
