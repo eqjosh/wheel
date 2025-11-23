@@ -1,10 +1,12 @@
 // Global variables
 let quotationsData = [];
+let emotionsData = {};
 let currentEmotionId = null;
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     await loadSVG();
+    await loadEmotionsData();
     await loadQuotations();
     initializeInteractivity();
     initializeModal();
@@ -20,6 +22,64 @@ async function loadSVG() {
     } catch (error) {
         console.error('Error loading SVG:', error);
     }
+}
+
+// Load emotions data from JSON
+async function loadEmotionsData() {
+    try {
+        const response = await fetch('emotion-wheel-data.json');
+        const data = await response.json();
+
+        // Convert array to object keyed by emotion id
+        emotionsData = {};
+        data.emotions.forEach(emotion => {
+            emotionsData[emotion.id] = {
+                name: emotion.name,
+                category: emotion.category,
+                color: getCategoryColor(emotion.category),
+                description: emotion.adaptivePurpose, // Use adaptivePurpose as the main description
+                relatedFeelings: getRelatedFeelings(emotion.category),
+                question: emotion.question,
+                overloadRisk: emotion.overloadRisk,
+                overloadTip: emotion.overloadTip,
+                adaptivePurpose: emotion.adaptivePurpose,
+                oppositeId: emotion.oppositeId
+            };
+        });
+    } catch (error) {
+        console.error('Error loading emotions data:', error);
+        emotionsData = {};
+    }
+}
+
+// Get color for emotion category
+function getCategoryColor(category) {
+    const colorMap = {
+        'Joy': '#ffcb09',
+        'Trust': '#89c24f',
+        'Fear': '#03a54c',
+        'Surprise': '#039fb3',
+        'Sadness': '#00639a',
+        'Disgust': '#9d4f9e',
+        'Anger': '#da3f3f',
+        'Anticipation': '#f58220'
+    };
+    return colorMap[category] || '#808080';
+}
+
+// Get related feelings for category (placeholder - could be enhanced)
+function getRelatedFeelings(category) {
+    const feelingsMap = {
+        'Joy': ['Positive', 'Uplifted', 'Bright'],
+        'Trust': ['Secure', 'Safe', 'Confident'],
+        'Fear': ['Worried', 'Anxious', 'Uneasy'],
+        'Surprise': ['Shocked', 'Unexpected', 'Startled'],
+        'Sadness': ['Down', 'Low', 'Heavy'],
+        'Disgust': ['Repulsed', 'Averse', 'Uncomfortable'],
+        'Anger': ['Irritated', 'Upset', 'Heated'],
+        'Anticipation': ['Looking ahead', 'Preparing', 'Ready']
+    };
+    return feelingsMap[category] || [];
 }
 
 // Load quotations data
@@ -142,12 +202,16 @@ function updateInfoPanel(emotionId) {
 
     const infoContent = document.getElementById('info-content');
 
-    // Build the HTML with compact related feelings and optional border info
+    // Build the HTML with compact related feelings and purpose
     let html = `
         <div class="emotion-info">
             <div class="emotion-category">${emotion.category}</div>
             <h2 class="emotion-title" style="color: ${emotion.color}">${emotion.name}</h2>
             <p class="emotion-description">${emotion.description}</p>
+
+            <div class="purpose-info">
+                <p><span class="info-label">Purpose:</span> ${emotion.adaptivePurpose}</p>
+            </div>
 
             <div class="related-feelings">
                 <p><span class="info-label">Related Feelings:</span> ${emotion.relatedFeelings.join(', ')}</p>
