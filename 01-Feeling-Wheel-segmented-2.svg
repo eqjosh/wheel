@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 6856.1 6856.1">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <clipPath id="clippath">
+      <circle cx="3434.4" cy="3434.4" r="1380.4" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="joy-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M3428,30.6c941,0,1800.5,386.5,2417.2,1003.2l-2410.8,2417.5-6.4-3420.7Z" fill="#ffcb09"/>
+  </g>
+  <g id="trust-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M5827.6,1019.3c669.9,660.8,1010.4,1539.6,1016.3,2411.7l-3414,28L5827.6,1019.3Z" fill="#89c24f"/>
+  </g>
+  <g id="fear-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M6840.8,3447.1c0,941-389.1,1775-1005.7,2391.7l-2420.1-2390.4,3425.8-1.3Z" fill="#03a54c"/>
+  </g>
+  <g id="surprise-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M5836.6,5841.4c-663.7,667-1527.8,1004.9-2399.9,1007l-2.3-3397.1,2402.2,2390Z" fill="#2782c5"/>
+  </g>
+  <g id="sad-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M3435.5,6840.7c-941,0-1790-374.1-2406.6-990.8l2406.4-2397.8.3,3388.6Z" fill="#34689d"/>
+  </g>
+  <g id="disgust-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M1029.4,5845.1C366.4,5177.3,33.8,4311.2,36.9,3439.2l3397,18.3-2404.5,2387.7Z" fill="#8774b3"/>
+  </g>
+  <g id="anger-background">
+    <path d="M6835.6,3428" fill="#41af41"/>
+    <path d="M41.1,3443c0-941,374.1-1790,990.8-2406.6l2397.8,2406.4-3388.6.3Z" fill="#f05d5f"/>
+  </g>
+  <g id="anticipation-background">
+    <path d="M1025.7,1037.9C1689.3,370.8,2553.4,32.9,3425.5,30.6l2.6,3397.1L1025.7,1037.9Z" fill="#f2913b"/>
+  </g>
+  <g id="segment-labels">
+    <circle cx="3544.2" cy="3490.2" r="467.6" fill="#fff"/>
+    <path d="M3437.6,3443h3398.6" fill="none" stroke="#89c24f" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3443.3,3450.2l2392.7,2392.7" fill="none" stroke="#89c24f" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l3140.8,1300.6" fill="none" stroke="#89c24f" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l2818.6,1890.3" fill="none" stroke="#89c24f" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l3333.5,665" fill="none" stroke="#89c24f" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M3951.4,2102.4" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M1553,4500.8" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M3447.3,3433.3L4729.9,289.6" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l1898.3-2828.6" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L4098,98.5" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M1547.3,4481.2" fill="none" stroke="#4598d3" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M3437.6,3443l9.6,3392.6" fill="none" stroke="#4598d3" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l1305.5,3130.8" fill="none" stroke="#4598d3" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l651.8,3319.2" fill="none" stroke="#4598d3" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3443.3,3450.2l1868.7,2820.3" fill="none" stroke="#4598d3" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L606.4,1544.8" fill="none" stroke="#e5898d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L94.8,2789.7" fill="none" stroke="#e5898d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L289.8,2138.4" fill="none" stroke="#e5898d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l-1290.1,3139.8" fill="none" stroke="#4783c4" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l-1890.7,2820.8" fill="none" stroke="#4783c4" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l-668.7,3325.7" fill="none" stroke="#4783c4" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L2138.1,289.9" fill="none" stroke="#f0b783" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3443.3,3450.2L2762.7,100.2" fill="none" stroke="#f0b783" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L1550.3,602.7" fill="none" stroke="#f0b783" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M1573.5,4486.3" fill="none" stroke="#a891c4" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M1613.2,5126.9" fill="none" stroke="#a891c4" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M1573.5,4486.3" fill="none" stroke="#a891c4" stroke-miterlimit="4" stroke-width="34.1"/>
+    <path d="M3437.6,3443l3140.8-1300.6" fill="none" stroke="#a8d16d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l3334.6-662.3" fill="none" stroke="#a8d16d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l2820.6-1899.6" fill="none" stroke="#a8d16d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l2407.7-2407.7" fill="none" stroke="#f9d962" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l-2408,2398.3" fill="none" stroke="#4783c4" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l-3.6-3409.8" fill="none" stroke="#f0b783" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L1034.5,1024.2" fill="none" stroke="#e5898d" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443H33.2" fill="none" stroke="#a891c4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L100.3,4106.6" fill="none" stroke="#a891c4" stroke-width="17.9"/>
+    <path d="M3437.6,3443L298.6,4751.6" fill="none" stroke="#a891c4" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3437.6,3443l-2829.4,1883.8" fill="none" stroke="#a891c4" stroke-miterlimit="4" stroke-width="17.9"/>
+    <path d="M3479,3034c-12.9,0-25,.9-36.8,2.1-4.4.4-8.8,1.2-13.1,1.8-6.6,1-13.1,2.2-19.3,3.5-5.4,1.3-10.8,2.5-16.1,4-3.9,1.1-7.6,2.5-11.4,3.7-101.9,35.7-155.6,133.9-163.6,289.6v2.7c-.8,12.9-1.1,26.1-1.1,39.7,27.4-31.1,77.2-85.8,186.6-85.8s217.8,87.1,217.8,235.2-51.6,190.6-143.6,222h.4c227.8,0,261.4-144.8,261.4-371.3s-82-347.3-261.3-347.3ZM3377,3347.6c-90.4,0-137.5,70.5-158,98.9,1.7,43.3,5.5,83,12.9,118.2l1.3,5.7c1.1,4.8,2.4,9.5,3.6,14.1,18.2,67.1,55.6,132.6,135.3,132.6s139.3-88.4,139.3-181.7-43.6-187.9-134.4-187.9h0Z" fill="#fff"/>
+    <circle cx="3430.7" cy="3424.9" r="747.8" fill="#fff"/>
+    <circle cx="3466.6" cy="3486" r="527.2" fill="#fff"/>
+    <g>
+      <g clip-path="url(#clippath)">
+        <g>
+          <path d="M7851.1-965.3c144.6,144.7,281.9,296.1,411.6,454.2,129.8,158.1,251.5,322.2,365.2,492.3,113.7,170,218.7,345.3,315.1,525.7,96.5,180.4,183.8,365.2,262.1,554.2,78.2,188.9,147.1,381.3,206.5,577.1,59.4,195.8,109,394,148.9,594.6,39.9,200.7,69.9,402.7,90,606.3,20,203.6,30,407.6,30,612.2H3434.4L7851.1-965.3Z" fill="#89c24f"/>
+          <path d="M3434.4-2794.7c204.6,0,408.6,10,612.2,30,203.5,20.1,405.6,50,606.3,90,200.7,39.9,398.8,89.6,594.6,148.9,195.8,59.4,388.1,128.3,577.1,206.5,189,78.3,373.8,165.6,554.2,262.1,180.4,96.4,355.7,201.5,525.7,315.1,170.1,113.7,334.2,235.4,492.3,365.2,158.2,129.7,309.6,267,454.2,411.6L3434.4,3451.3V-2794.7Z" fill="#ffcb09"/>
+          <path d="M9680.5,3451.3c0,204.6-10,408.6-30,612.2-20.1,203.5-50,405.6-90,606.3-39.9,200.7-89.6,398.8-148.9,594.6-59.4,195.8-128.3,388.1-206.5,577.1-78.3,189-165.6,373.8-262.1,554.2-96.4,180.4-201.5,355.7-315.1,525.7-113.7,170.1-235.4,334.2-365.2,492.3-129.7,158.2-267,309.6-411.6,454.2L3434.4,3451.3h6246.1Z" fill="#03a54c"/>
+          <path d="M7851.1,7868c-144.7,144.6-296.1,281.9-454.2,411.6-158.1,129.8-322.2,251.5-492.3,365.2-170,113.7-345.3,218.7-525.7,315.1-180.4,96.5-365.2,183.8-554.2,262.1-188.9,78.2-381.3,147.1-577.1,206.5-195.8,59.4-394,109-594.6,148.9-200.7,39.9-402.7,69.9-606.3,90-203.6,20-407.6,30-612.2,30V3451.3l4416.7,4416.7Z" fill="#2782c5"/>
+          <path d="M3434.4,9697.4c-204.6,0-408.6-10-612.2-30-203.5-20.1-405.6-50-606.3-90-200.7-39.9-398.8-89.6-594.6-148.9-195.8-59.4-388.1-128.3-577.1-206.5-189-78.3-373.8-165.6-554.2-262.1-180.4-96.4-355.7-201.5-525.7-315.1-170.1-113.7-334.2-235.4-492.3-365.2-158.2-129.7-309.6-267-454.2-411.6L3434.4,3451.3v6246.1Z" fill="#34689d"/>
+          <path d="M-982.2,7868c-144.6-144.7-281.9-296.1-411.6-454.2-129.8-158.1-251.5-322.2-365.2-492.3-113.7-170-218.7-345.3-315.1-525.7-96.5-180.4-183.8-365.2-262.1-554.2-78.2-188.9-147.1-381.3-206.5-577.1-59.4-195.8-109-394-148.9-594.6-39.9-200.7-69.9-402.7-90-606.3-20-203.6-30-407.6-30-612.2H3434.4L-982.2,7868Z" fill="#8774b3"/>
+          <path d="M-2811.6,3451.3c0-204.6,10-408.6,30-612.2,20.1-203.5,50-405.6,90-606.3,39.9-200.7,89.6-398.8,148.9-594.6,59.4-195.8,128.3-388.1,206.5-577.1,78.3-189,165.6-373.8,262.1-554.2,96.4-180.4,201.5-355.7,315.1-525.7,113.7-170.1,235.4-334.2,365.2-492.3,129.7-158.2,267-309.6,411.6-454.2L3434.4,3451.3H-2811.6Z" fill="#f05d5f"/>
+          <path d="M-982.2-965.3c144.7-144.6,296-281.8,454.2-411.6,158.1-129.7,322.2-251.4,492.2-365.1,170-113.7,345.3-218.6,525.7-315.1,180.3-96.4,365-183.8,554-262,188.9-78.3,381.3-147.2,577.1-206.5,195.8-59.4,393.9-109.1,594.5-149,200.7-39.9,402.7-69.9,606.2-90,203.6-20.1,407.6-30.1,612.2-30.1l.6,6246.1L-982.2-965.3Z" fill="#f2913b"/>
+          <path d="M9832.8,6585.9" fill="none" stroke="#a891c4" stroke-miterlimit="4" stroke-width="34.1"/>
+        </g>
+      </g>
+      <path d="M3433.9,4814.3c-186.2,0-367-36.5-537.2-108.5-164.3-69.5-311.9-169-438.6-295.7-126.7-126.7-226.2-274.3-295.7-438.6-72-170.2-108.5-350.9-108.5-537.2s36.5-367,108.5-537.2c69.5-164.3,169-311.9,295.7-438.6,126.7-126.7,274.3-226.2,438.6-295.7,170.2-72,350.9-108.5,537.2-108.5s367,36.5,537.2,108.5c164.3,69.5,311.9,169,438.6,295.7,126.7,126.7,226.2,274.3,295.7,438.6,72,170.2,108.5,350.9,108.5,537.2s-36.5,367-108.5,537.2c-69.5,164.3-169,311.9-295.7,438.6-126.7,126.7-274.3,226.2-438.6,295.7-170.2,72-350.9,108.5-537.2,108.5ZM3433.9,2304.9c-622.8,0-1129.6,506.7-1129.6,1129.6s506.7,1129.6,1129.6,1129.6,1129.6-506.7,1129.6-1129.6-506.7-1129.6-1129.6-1129.6Z" fill="#fff" opacity=".2"/>
+    </g>
+    <text transform="translate(2254.5 3638.3) rotate(-99.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2247.8 3598) rotate(-97.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2242.5 3557.4) rotate(-95.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2238.5 3516.7) rotate(-93.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2236 3475.9) rotate(-91.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2234.8 3435) rotate(-89.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2235.1 3394.1) rotate(-87.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2236.7 3353.3) rotate(-85.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2237.9 3313.5) rotate(-81.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">A</tspan></text>
+    <text transform="translate(2257.2 3184.1) rotate(-75.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">n</tspan></text>
+    <text transform="translate(2286.9 3067.6) rotate(-69.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">g</tspan></text>
+    <text transform="translate(2330 2951.7) rotate(-64)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">e</tspan></text>
+    <text transform="translate(2379.8 2850.7) rotate(-59.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">r</tspan></text>
+    <text transform="translate(2416.5 2788.2) rotate(-57)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2438.7 2753.9) rotate(-55.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2468.1 2712.1) rotate(-52.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2492.8 2679.5) rotate(-50.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2516.5 2647.6) rotate(-46.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">A</tspan></text>
+    <text transform="translate(2606.4 2552.5) rotate(-40.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">n</tspan></text>
+    <text transform="translate(2698.8 2474.6) rotate(-36)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">t</tspan></text>
+    <text transform="translate(2755 2434) rotate(-33.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">i</tspan></text>
+    <text transform="translate(2794.2 2406.9) rotate(-29.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">c</tspan></text>
+    <text transform="translate(2890.4 2353.6) rotate(-25.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">i</tspan></text>
+    <text transform="translate(2932.5 2331.6) rotate(-21.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">p</tspan></text>
+    <text transform="translate(3047.3 2285.9) rotate(-15.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">a</tspan></text>
+    <text transform="translate(3167.1 2253.1) rotate(-11.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">t</tspan></text>
+    <text transform="translate(3235.2 2239.9) rotate(-8.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">i</tspan></text>
+    <text transform="translate(3282 2231.6) rotate(-4.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">o</tspan></text>
+    <text transform="translate(3397.6 2222.2) rotate(1.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">n</tspan></text>
+    <text transform="translate(3518.9 2226) rotate(5.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3559.6 2229.6) rotate(7.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3600.2 2234.5) rotate(9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3640.5 2240.9) rotate(11)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3680.7 2248.6) rotate(13)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3720 2256.5) rotate(16.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">J</tspan></text>
+    <text transform="translate(3819.1 2285.1) rotate(21.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">o</tspan></text>
+    <text transform="translate(3927 2327.9) rotate(27)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">y</tspan></text>
+    <text transform="translate(4025.2 2379) rotate(30.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4060.5 2399.7) rotate(32.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4095 2421.6) rotate(34.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4128.8 2444.6) rotate(36.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4161.8 2468.8) rotate(38.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4193.9 2494.2) rotate(40.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4225.1 2520.5) rotate(42.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4255.4 2548) rotate(44.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4284.8 2576.4) rotate(46.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4313.1 2605.9) rotate(48.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4340.4 2636.3) rotate(50.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4366.7 2667.7) rotate(52.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4391.9 2699.9) rotate(54.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4415.9 2732.9) rotate(56)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4438.8 2766.8) rotate(58)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4461 2800.2) rotate(61.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">T</tspan></text>
+    <text transform="translate(4510.8 2892.6) rotate(65.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">r</tspan></text>
+    <text transform="translate(4541.4 2957.2) rotate(70.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">u</tspan></text>
+    <text transform="translate(4582 3070.8) rotate(75.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+    <text transform="translate(4606.5 3166.6) rotate(79.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">t</tspan></text>
+    <text transform="translate(4494.5 2600.5) rotate(-126.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4467.5 2563.7) rotate(-128.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4439.2 2527.9) rotate(-130.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4409.8 2493) rotate(-132.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4379.1 2459.1) rotate(-134.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4347.4 2426.2) rotate(-136)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4314.5 2394.5) rotate(-138)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4280.6 2363.9) rotate(-139.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4245.6 2334.4) rotate(-141.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(4176.6 2282) rotate(-145.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(4101 2232.1) rotate(-149.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(4022.2 2187.5) rotate(-153.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3940.4 2148.4) rotate(-157.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3856.1 2115.1) rotate(-161.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3769.7 2087.7) rotate(-165.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3681.6 2066.4) rotate(-169.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3592.2 2051.3) rotate(-173.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3500.7 2042.1) rotate(-177.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3411.8 2039.5) rotate(178.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3321.2 2042.8) rotate(174.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3230.9 2052.5) rotate(170.8)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3141.4 2068.6) rotate(166.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(3053.2 2091.1) rotate(162.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2966.9 2120) rotate(158.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2882.9 2155.2) rotate(154.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2801.7 2196.4) rotate(149.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2723.7 2243.5) rotate(145.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2649.5 2296.1) rotate(141.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2579.3 2353.8) rotate(137.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2513.5 2416.4) rotate(133.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2452.3 2483.4) rotate(129.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2396 2554.4) rotate(125.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2344.8 2629.1) rotate(121.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2298.9 2706.9) rotate(117.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2258.3 2787.6) rotate(113.8)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2223.2 2870.6) rotate(110.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2193.5 2955.7) rotate(106.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2169.4 3042.4) rotate(102.8)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2150.8 3130.2) rotate(99.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2137.6 3218.9) rotate(95.8)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2129.8 3308.2) rotate(92.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2127.3 3397.7) rotate(89)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">	</tspan></text>
+    <text transform="translate(2130.2 3487.3) rotate(85.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2133.7 3532.5) rotate(83.8)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2138.5 3577.6) rotate(82)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2144 3626.5) rotate(78.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">D</tspan></text>
+    <text transform="translate(2174.3 3765) rotate(74.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">i</tspan></text>
+    <text transform="translate(2188.8 3819.1) rotate(71)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+    <text transform="translate(2224.5 3923.9) rotate(66)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">g</tspan></text>
+    <text transform="translate(2280.8 4049.5) rotate(60.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">u</tspan></text>
+    <text transform="translate(2347.5 4165) rotate(55.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+    <text transform="translate(2410.3 4253.9) rotate(51.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">t</tspan></text>
+    <text transform="translate(2458.4 4312.8) rotate(48.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2488.8 4347.1) rotate(46.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2520.5 4380.3) rotate(44.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2553.4 4412.3) rotate(42.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(2589.2 4446.3) rotate(38.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">S</tspan></text>
+    <text transform="translate(2687.2 4523.9) rotate(32.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">a</tspan></text>
+    <text transform="translate(2805 4597.9) rotate(25.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">d</tspan></text>
+    <text transform="translate(2930.4 4658) rotate(19.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">n</tspan></text>
+    <text transform="translate(3058 4702.4) rotate(13.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">e</tspan></text>
+    <text transform="translate(3180.1 4730.7) rotate(8)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+    <text transform="translate(3290.8 4746.5) rotate(2.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+    <text transform="translate(3397 4750.6) rotate(-.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3442.8 4750.3) rotate(-2.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3488.5 4748.5) rotate(-4.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3534.2 4745) rotate(-6.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(3583.1 4740.7) rotate(-10)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">S</tspan></text>
+    <text transform="translate(3705.5 4718.9) rotate(-15.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">u</tspan></text>
+    <text transform="translate(3835.3 4682) rotate(-21.7)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">p</tspan></text>
+    <text transform="translate(3961 4630.6) rotate(-26.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">r</tspan></text>
+    <text transform="translate(4032 4594.9) rotate(-29.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">i</tspan></text>
+    <text transform="translate(4081.5 4567.8) rotate(-32.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+    <text transform="translate(4174.5 4507.7) rotate(-37.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">e</tspan></text>
+    <text transform="translate(4269.9 4431.8) rotate(-41.6)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4304.1 4401.5) rotate(-43.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4337.2 4370) rotate(-45.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4369.3 4337.5) rotate(-47.4)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4400.2 4303.9) rotate(-49.3)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4430 4269.3) rotate(-51.2)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4458.6 4233.8) rotate(-53.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4486 4197.2) rotate(-55.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4512.1 4159.8) rotate(-57)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4537 4121.5) rotate(-58.9)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0"> </tspan></text>
+    <text transform="translate(4562.4 4080.7) rotate(-62.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">F</tspan></text>
+    <text transform="translate(4612.9 3985.7) rotate(-67)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">e</tspan></text>
+    <text transform="translate(4661.9 3870.1) rotate(-72.5)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">a</tspan></text>
+    <text transform="translate(4701.5 3740.6) rotate(-77.1)" fill="#333" font-family="Poppins-SemiBold, Poppins" font-size="192.7" font-weight="600"><tspan x="0" y="0">r</tspan></text>
+    <path d="M2378.5,3444" fill="#fff"/>
+    <path d="M3417.6,3149.1c-10.8,0-20.9.7-30.7,1.8-3.7.4-7.3,1-11,1.5-5.5.8-10.9,1.8-16.1,2.9-4.6,1-9,2.1-13.4,3.4-3.3.9-6.3,2-9.5,3.1-85.1,29.7-129.8,111.7-136.5,241.5v2.2c-.6,10.8-.9,21.7-.9,33.1,22.8-25.9,64.4-71.6,155.7-71.6s181.6,72.7,181.6,196.2-43,159-119.7,185.1h.4c190,0,218-120.8,218-309.7s-68.4-289.6-218-289.6M3332.5,3410.7c-75.4,0-114.6,58.8-131.8,82.6,1.4,36.1,4.6,69.2,10.7,98.5l1,4.8c.9,4,2,7.8,3,11.8,15.2,56,46.4,110.7,112.8,110.7s116.3-73.7,116.3-151.6-36.3-156.7-112.1-156.7" fill="#fff"/>
+    <g>
+      <path d="M3209.2,4100.5l-155.6,184.6-62.2-29.7,32.6-154.8-101.1,122.1-62.2-29.7,47.2-236.4,55,26.2-42.9,168,110.8-135.6,56.5,27-37.2,170.7,103.9-138.9,55.3,26.4Z" fill="#fff"/>
+      <path d="M3430.6,4141.3l-40.1,230.2-56.1-9.8,16.5-94.8-87.2-15.2-16.5,94.8-56.1-9.8,40.1-230.2,56.1,9.8-15.7,90.2,87.2,15.2,15.7-90.2,56.1,9.8Z" fill="#fff"/>
+      <path d="M3526.4,4169.3l9.9,46.2,74.5-16,9.2,43-74.5,16,10.8,50.1,84.3-18.1,9.6,44.6-139.9,30-49-228.5,139.9-30,9.6,44.6-84.3,18.1Z" fill="#fff"/>
+      <path d="M3694.8,4098.9l22.5,41.6,67.1-36.2,20.9,38.7-67.1,36.2,24.4,45.1,75.9-41,21.7,40.1-125.9,68-111-205.6,125.9-68,21.7,40.1-75.9,41Z" fill="#fff"/>
+      <path d="M3949.6,4101.6l53.8-51.6,30.4,31.7-94.9,91-161.7-168.6,41.1-39.4,131.3,136.9Z" fill="#fff"/>
+    </g>
+    <g>
+      <path d="M2867.2,2726.5l26.8,34.3-71.6,56,29,37,53.6-41.9,26.1,33.3-53.6,41.9,55.6,71.1-42.8,33.5-137.5-175.7,114.4-89.5Z" fill="#fff"/>
+      <path d="M2996,2705.3l19.8,40.6,65.4-31.9,18.4,37.7-65.4,31.9,21.4,44,74-36.1,19.1,39.1-122.9,59.9-97.7-200.6,122.9-59.9,19.1,39.1-74,36.1Z" fill="#fff"/>
+      <path d="M3184.3,2633.9l11.6,43.6,70.3-18.7,10.8,40.5-70.3,18.7,12.6,47.3,79.5-21.2,11.2,42.1-132,35.2-57.5-215.6,132-35.2,11.2,42.1-79.5,21.2Z" fill="#fff"/>
+      <path d="M3393.8,2739.2l71.1-3.6,2.1,41.9-125.4,6.4-11.4-222.8,54.3-2.8,9.2,180.9Z" fill="#fff"/>
+      <path d="M3567.8,2564.8l-22.4,222-54.1-5.5,22.4-222,54.1,5.5Z" fill="#fff"/>
+      <path d="M3771.8,2846.3l-51.9-16.2-45.6-158.5-41.1,131.3-51.9-16.2,66.6-212.9,51.9,16.2,45.4,159.1,41.3-131.9,51.9,16.2-66.6,212.9Z" fill="#fff"/>
+      <path d="M4008.3,2815.5c.8-8.4-.9-16.3-4.9-23.8-4.1-7.4-10.3-14-18.8-19.7-14.6-9.8-29.5-12.8-44.8-9.1-15.2,3.7-28.2,13.6-38.9,29.6-11.4,17.1-15.8,33.5-12.9,49.3,2.8,15.8,12.3,29.1,28.5,40,11.1,7.4,22.3,10.9,33.8,10.4,11.4-.5,22.4-4.9,33-13l-57.3-38.4,22.3-33.3,98.2,65.8-28.1,42c-10.9,9-23.6,15.7-38.1,20-14.5,4.3-29.9,5.3-46.2,3.1-16.3-2.3-32.2-8.6-47.7-19-18.3-12.3-31.9-27.2-40.9-44.8-9-17.6-12.7-36.2-11.1-55.9,1.5-19.6,8.5-38.6,20.7-56.9s27.2-31.9,44.8-40.9c17.6-9,36.2-12.7,55.9-11.1,19.6,1.6,38.6,8.5,56.9,20.7,22.2,14.9,37.3,32.8,45.3,53.7,8,20.9,8.1,42.6.3,64.9l-49.9-33.4Z" fill="#fff"/>
+    </g>
+    <text transform="translate(3217 3844)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="92.6" letter-spacing="0em" opacity=".6"><tspan x="0" y="0">6sec.org</tspan></text>
+  </g>
+  <g id="outer-ring">
+    <circle cx="3428" cy="3428" r="3407.6" fill="none" stroke="#a7aaa7" stroke-miterlimit="10" stroke-width="40.8"/>
+  </g>
+  <g id="joy-1-optimistic">
+    <text transform="translate(3628.3 624.7) rotate(-87)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Positive</tspan></text>
+    <text transform="translate(3895.5 685.1) rotate(-82)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Inspired</tspan></text>
+    <text transform="translate(3646.5 1981.2) rotate(-85)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="167.7"><tspan x="0" y="0">Optimistic</tspan></text>
+  </g>
+  <g id="joy-2-confident">
+    <text transform="translate(4202.1 600.5) rotate(-76)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Proud</tspan></text>
+    <text transform="translate(4327 1120.7) rotate(-70)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Self-assured</tspan></text>
+    <text transform="translate(3919.3 2050.8) rotate(-73)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="167.7"><tspan x="0" y="0">Confident</tspan></text>
+  </g>
+  <g id="joy-3-joyful">
+    <text transform="translate(4685.6 926.1) rotate(-65)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Ecstatic</tspan></text>
+    <text transform="translate(4867.3 1168.1) rotate(-59)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Delighted</tspan></text>
+    <text transform="translate(4194.2 2176.6) rotate(-62)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="167.7"><tspan x="0" y="0">Joyful</tspan></text>
+  </g>
+  <g id="joy-4-loving">
+    <text transform="translate(5028.8 1377.7) rotate(-54)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Embracing</tspan></text>
+    <text transform="translate(5252.8 1489.8) rotate(-48)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="135.1"><tspan x="0" y="0">Generous</tspan></text>
+    <text transform="translate(4433.6 2352.9) rotate(-51)" fill="#fff" font-family="Poppins-Regular, Poppins" font-size="167.7"><tspan x="0" y="0">Loving</tspan></text>
+  </g>
+  <g id="anticipation-1-excited">
+    <text transform="translate(1187.6 1024.9) rotate(48)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Passionate</tspan></text>
+    <text transform="translate(1434.4 823.1) rotate(53)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Energized</tspan></text>
+    <text transform="translate(2079 1895.2) rotate(50)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Excited</tspan></text>
+  </g>
+  <g id="anticipation-2-eager">
+    <text transform="translate(1706 643.8) rotate(59)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Enthusisiastic</tspan></text>
+    <text transform="translate(1995.8 483.9) rotate(65)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Motivated</tspan></text>
+    <text transform="translate(2464.7 1743.4) rotate(62)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Eager</tspan></text>
+  </g>
+  <g id="anticipation-3-interested">
+    <text transform="translate(2291.3 364) rotate(70)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Impatient</tspan></text>
+    <text transform="translate(2593.6 268.8) rotate(76)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Curious</tspan></text>
+    <text transform="translate(2704.8 1253.2) rotate(73)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Interested</tspan></text>
+  </g>
+  <g id="anticipation-4-stressed">
+    <text transform="translate(2913.8 202) rotate(82)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Overwhelmed</tspan></text>
+    <text transform="translate(3228.2 167.3) rotate(87)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Pressured</tspan></text>
+    <text transform="translate(3152.7 1276.6) rotate(84)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Stressed</tspan></text>
+  </g>
+  <g id="anger-1-aggressive">
+    <text transform="translate(112.4 3325.7) rotate(3)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Hostile</tspan></text>
+    <text transform="translate(139.5 3007.2) rotate(8)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Provoked</tspan></text>
+    <text transform="translate(1060.5 3282.3) rotate(5)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Aggressive</tspan></text>
+  </g>
+  <g id="anger-2-mad">
+    <text transform="translate(200.9 2681.8) rotate(14)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Enraged</tspan></text>
+    <text transform="translate(296.4 2357) rotate(20)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Furious</tspan></text>
+    <text transform="translate(1652.1 2967.8) rotate(17)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Mad</tspan></text>
+  </g>
+  <g id="anger-3-frustrated">
+    <text transform="translate(417.2 2067) rotate(25)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Annoyed</tspan></text>
+    <text transform="translate(571.6 1776.9) rotate(31)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Irritated</tspan></text>
+    <text transform="translate(1362.9 2395.2) rotate(29)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Frustrated</tspan></text>
+  </g>
+  <g id="anger-4-critical">
+    <text transform="translate(749.8 1504.5) rotate(37)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Sarcastic</tspan></text>
+    <text transform="translate(957.9 1258.7) rotate(42)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Skeptical</tspan></text>
+    <text transform="translate(1806.9 2192.9) rotate(39)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Critical</tspan></text>
+  </g>
+  <g id="disgust-1-dislike">
+    <text transform="translate(1012.9 5697.1) rotate(-42)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Revolted</tspan></text>
+    <text transform="translate(807.1 5459.1) rotate(-37)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Withdrawn</tspan></text>
+    <text transform="translate(1937.7 4743.6) rotate(-39)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Dislike</tspan></text>
+  </g>
+  <g id="disgust-2-avoidance">
+    <text transform="translate(618.1 5196.8) rotate(-31)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Hesitant</tspan></text>
+    <text transform="translate(453.8 4901.6) rotate(-25)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Averse</tspan></text>
+    <text transform="translate(1375.1 4610.8) rotate(-28)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Avoidance</tspan></text>
+  </g>
+  <g id="disgust-3-aweful">
+    <text transform="translate(326.7 4614.9) rotate(-20)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Repelled</tspan></text>
+    <text transform="translate(223.8 4295.8) rotate(-14)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Detested</tspan></text>
+    <text transform="translate(1601 4059.1) rotate(-17)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Awful</tspan></text>
+  </g>
+  <g id="disgust-4-disapproval">
+    <text transform="translate(148.9 3975.5) rotate(-8)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Loathing</tspan></text>
+    <text transform="translate(115.8 3656.8) rotate(-3)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Judgmental</tspan></text>
+    <text transform="translate(989.6 3759.5) rotate(-6)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Disapproval</tspan></text>
+  </g>
+  <g id="sad-1-hurt">
+    <text transform="translate(3338.6 6727.7) rotate(-87)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Dismayed</tspan></text>
+    <text transform="translate(3012.7 6702.9) rotate(-82)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Trheatened</tspan></text>
+    <text transform="translate(3318.3 5263.4) rotate(-85)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Hurt</tspan></text>
+  </g>
+  <g id="sad-2-depressed">
+    <text transform="translate(2682 6646.4) rotate(-75)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Bereft</tspan></text>
+    <text transform="translate(2393 6563.2) rotate(-71)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Numb</tspan></text>
+    <text transform="translate(2808.7 5727.8) rotate(-73)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Depressed</tspan></text>
+  </g>
+  <g id="sad-3-lonely">
+    <text transform="translate(2086.7 6445.9) rotate(-65)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Abandoned</tspan></text>
+    <text transform="translate(1798.1 6302.6) rotate(-60)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Isolated</tspan></text>
+    <text transform="translate(2549.8 5231.1) rotate(-62)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Lonely</tspan></text>
+  </g>
+  <g id="sad-4-ashamed">
+    <text transform="translate(1523 6128.3) rotate(-54)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Remoseful</tspan></text>
+    <text transform="translate(1257.9 5926.1) rotate(-48)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Guilty</tspan></text>
+    <text transform="translate(2039.2 5253.9) rotate(-51)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Ashamed</tspan></text>
+  </g>
+  <g id="surprise-1-startled">
+    <text transform="translate(5227.3 5472) rotate(47)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Appalled</tspan></text>
+    <text transform="translate(5032.3 5660.2) rotate(54)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Shocked</tspan></text>
+    <text transform="translate(4328.1 4626.8) rotate(50)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Startled</tspan></text>
+  </g>
+  <g id="surprise-2-confused">
+    <text transform="translate(4676.7 5584.9) rotate(59)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Disillusioned</tspan></text>
+    <text transform="translate(4532.4 5844.7) rotate(65)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Perplexed</tspan></text>
+    <text transform="translate(4084.7 4773.3) rotate(62)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Confused</tspan></text>
+  </g>
+  <g id="surprise-3-amazed">
+    <text transform="translate(4262.6 5857.6) rotate(71)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Astonished</tspan></text>
+    <text transform="translate(4122.1 6276.7) rotate(74)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Awed</tspan></text>
+    <text transform="translate(3808.2 4880.8) rotate(73)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Amazed</tspan></text>
+  </g>
+  <g id="surprise-4-disappointed">
+    <text transform="translate(3797.4 6102.2) rotate(82)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Betrayed</tspan></text>
+    <text transform="translate(3525.2 6054) rotate(87)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Dismayed</tspan></text>
+    <text transform="translate(3522.5 4926.2) rotate(84)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Disappointed</tspan></text>
+  </g>
+  <g id="trust-1-grateful">
+    <text transform="translate(5551.7 1583.2) rotate(-43)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Fulfilled</tspan></text>
+    <text transform="translate(5527.2 1957.9) rotate(-37)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Admiration</tspan></text>
+    <text transform="translate(4610.1 2545.3) rotate(-39)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Grateful</tspan></text>
+  </g>
+  <g id="trust-2-peaceful">
+    <text transform="translate(5989.5 1957) rotate(-31)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Calm</tspan></text>
+    <text transform="translate(5969.7 2292.6) rotate(-26)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Content</tspan></text>
+    <text transform="translate(4771.3 2802.9) rotate(-28)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Peaceful</tspan></text>
+  </g>
+  <g id="trust-3-accepted">
+    <text transform="translate(6128.7 2517.2) rotate(-20)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Valued</tspan></text>
+    <text transform="translate(5976.8 2854.3) rotate(-14)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Respected</tspan></text>
+    <text transform="translate(4872.9 3073.1) rotate(-17)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Accepted</tspan></text>
+  </g>
+  <g id="trust-4-hopeful">
+    <text transform="translate(6209 3071.1) rotate(-9)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Longing</tspan></text>
+    <text transform="translate(6103.9 3349.6) rotate(-3)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Expectant</tspan></text>
+    <text transform="translate(4917.7 3360.6) rotate(-6)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Hopeful</tspan></text>
+  </g>
+  <g id="fear-1-nervous">
+    <text transform="translate(5988.8 3601.9) rotate(2)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Threatened</tspan></text>
+    <text transform="translate(6230.4 3894.2) rotate(8)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Uneasy</tspan></text>
+    <text transform="translate(4904.9 3650.4) rotate(5)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Nervous</tspan></text>
+  </g>
+  <g id="fear-2-scared">
+    <text transform="translate(5960.7 4112.2) rotate(14)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Frightened</tspan></text>
+    <text transform="translate(6055.7 4418.6) rotate(20)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Terrified</tspan></text>
+    <text transform="translate(4835.9 3924.9) rotate(17)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Scared</tspan></text>
+  </g>
+  <g id="fear-3-anxious">
+    <text transform="translate(6055.6 4714.7) rotate(25)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Dread</tspan></text>
+    <text transform="translate(5931 4982.2) rotate(31)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Worry</tspan></text>
+    <text transform="translate(4716.4 4188.1) rotate(29)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Anxious</tspan></text>
+  </g>
+  <g id="fear-4-insecure">
+    <text transform="translate(5607 5095.5) rotate(36)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Rejected</tspan></text>
+    <text transform="translate(5289.3 5169.7) rotate(42)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="135.1" font-weight="300"><tspan x="0" y="0">Inadequate</tspan></text>
+    <text transform="translate(4541.6 4431.4) rotate(39)" fill="#fff" font-family="Poppins-Light, Poppins" font-size="167.7" font-weight="300"><tspan x="0" y="0">Insecure</tspan></text>
+  </g>
+</svg>
