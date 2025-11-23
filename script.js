@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load external SVG file and inject it into the DOM
 async function loadSVG() {
     try {
-        const response = await fetch('01-Feeling-Wheel-segmented-joy-3.svg');
+        const response = await fetch('01-Feeling-Wheel-segmented-3.svg');
         const svgText = await response.text();
         const wrapper = document.getElementById('svg-wrapper');
         wrapper.innerHTML = svgText;
@@ -126,21 +126,25 @@ function initializeInteractivity() {
 
 // Map segment IDs to their background layer IDs
 function getBackgroundId(segmentId) {
+    // Examples:
     // joy-1-optimistic -> joy-1-background
     // joy-2-confident -> joy2-background
-    // joy-3-joyful -> joy3-background
-    // joy-4-loving -> joy4-background
+    // trust-1-grateful -> trust-1-background
+    // fear-4-insecure -> fear-4-background
 
     const match = segmentId.match(/^(.*?)-(1|2|3|4)-/);
     if (match) {
         const emotion = match[1];
         const number = match[2];
 
-        // Special handling for joy segments (they have different naming)
+        // Special handling for joy segments (they have inconsistent naming)
         if (emotion === 'joy') {
             if (number === '1') return 'joy-1-background';
             return `joy${number}-background`;
         }
+
+        // All other emotions follow consistent pattern: emotion-number-background
+        return `${emotion}-${number}-background`;
     }
 
     return null;
