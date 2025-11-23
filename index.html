@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emotion Wheel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <div class="half left">
+      <div id="wheel-wrapper" class="wheel-wrapper" aria-hidden="false">
+        <div id="svgContainer" class="svg-container" aria-hidden="false" title="Emotion wheel"></div>
+      </div>
+    </div>
+
+    <div class="half right">
+      <div id="infoPanel" class="info-panel" role="region" aria-live="polite">
+        <div class="placeholder">
+          <h2>Click a segment</h2>
+          <p>Hover a segment to preview, click to select and see details here.</p>
+        </div>
+        <div id="infoContent" class="info-content" hidden>
+          <h2 id="emotionTitle"></h2>
+          <ul id="subFeelings"></ul>
+          <p id="segmentId" class="segment-id"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
