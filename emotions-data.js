@@ -5,21 +5,33 @@ const emotionsData = {
         color: '#ffcb09',
         description: 'A feeling of hopefulness and confidence about the future. When you\'re optimistic, you believe that good things will happen and maintain a positive outlook on life.',
         relatedFeelings: ['Positive', 'Inspired', 'Hopeful'],
-        border: 'Optimistic is near Anticipation because it has a component of looking ahead.'
+        border: 'Optimistic is near Anticipation because it has a component of looking ahead.',
+        question: 'What possibilities do you see? What could go right in this situation?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to overlook real risks or appear naive.',
+        overloadTip: 'To balance, consider: What realistic challenges exist? How can you prepare for potential obstacles?',
+        oppositeId: 'sad-2-depressed'
     },
     'joy-2-confident': {
         name: 'Confident',
         category: 'Joy',
         color: '#ffcb09',
         description: 'A sense of self-assurance arising from appreciation of your abilities or qualities. Confidence empowers you to take action and face challenges.',
-        relatedFeelings: ['Proud', 'Self-assured', 'Empowered']
+        relatedFeelings: ['Proud', 'Self-assured', 'Empowered'],
+        question: 'What strengths can you bring to this situation? What are you capable of doing?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to appear arrogant or dismiss others\' input.',
+        overloadTip: 'To balance, consider: What could you learn from others? Where might you benefit from support or advice?',
+        oppositeId: 'fear-4-insecure'
     },
     'joy-3-joyful': {
         name: 'Joyful',
         category: 'Joy',
         color: '#ffcb09',
         description: 'A feeling of great pleasure and happiness. Pure joy is an intense, positive emotion that fills you with delight and contentment.',
-        relatedFeelings: ['Ecstatic', 'Delighted', 'Blissful']
+        relatedFeelings: ['Ecstatic', 'Delighted', 'Blissful'],
+        question: 'What brings you delight right now? What feels wonderful about this moment?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to ignore real problems or appear insensitive to others\' struggles.',
+        overloadTip: 'To balance, consider: Are there concerns that need attention? How can you honor both joy and challenges?',
+        oppositeId: 'sad-3-lonely'
     },
     'joy-4-loving': {
         name: 'Loving',
@@ -27,7 +39,11 @@ const emotionsData = {
         color: '#ffcb09',
         description: 'A deep feeling of affection, care, and warmth toward someone or something. Love creates connection and a sense of belonging.',
         relatedFeelings: ['Embracing', 'Generous', 'Affectionate'],
-        border: 'Loving is near Trust because it involves a foundation of care and reliability.'
+        border: 'Loving is near Trust because it involves a foundation of care and reliability.',
+        question: 'What do you appreciate about this person or situation? How can you show care and support?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to lose boundaries or neglect your own needs.',
+        overloadTip: 'To balance, consider: What are your own needs right now? How can you care for yourself while caring for others?',
+        oppositeId: 'disgust-1-dislike'
     },
     'trust-1-grateful': {
         name: 'Grateful',
@@ -35,21 +51,33 @@ const emotionsData = {
         color: '#89c24f',
         description: 'A warm feeling of thankfulness and appreciation. Gratitude helps you recognize and value the good things in your life.',
         relatedFeelings: ['Fulfilled', 'Admiration', 'Thankful'],
-        border: 'Grateful is near Joy because it involves appreciation for positive experiences.'
+        border: 'Grateful is near Joy because it involves appreciation for positive experiences.',
+        question: 'What are you thankful for? Who or what has contributed to your well-being?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to accept mistreatment or avoid expressing needs.',
+        overloadTip: 'To balance, consider: What needs addressing despite gratitude? How can you appreciate what you have while still seeking growth?',
+        oppositeId: 'anger-2-mad'
     },
     'trust-2-peaceful': {
         name: 'Peaceful',
         category: 'Trust',
         color: '#89c24f',
         description: 'A state of tranquility and calm, free from worry or disturbance. Peace brings mental and emotional equilibrium.',
-        relatedFeelings: ['Calm', 'Content', 'Serene']
+        relatedFeelings: ['Calm', 'Content', 'Serene'],
+        question: 'What brings you calm and tranquility? What helps you feel centered and at ease?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to avoid necessary conflicts or become complacent.',
+        overloadTip: 'To balance, consider: What issues need to be addressed? How can you maintain peace while taking action when needed?',
+        oppositeId: 'anger-3-frustrated'
     },
     'trust-3-accepted': {
         name: 'Accepted',
         category: 'Trust',
         color: '#89c24f',
         description: 'A feeling of being welcomed and valued for who you are. Acceptance creates a sense of belonging and security.',
-        relatedFeelings: ['Valued', 'Respected', 'Welcomed']
+        relatedFeelings: ['Valued', 'Respected', 'Welcomed'],
+        question: 'Where do you feel you belong? Who accepts and values you as you are?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to conform too much or lose your authentic self.',
+        overloadTip: 'To balance, consider: Are you being true to yourself? What parts of you need expression even if they differ from others?',
+        oppositeId: 'disgust-3-aweful'
     },
     'trust-4-hopeful': {
         name: 'Hopeful',
@@ -57,7 +85,11 @@ const emotionsData = {
         color: '#89c24f',
         description: 'A feeling of expectation and desire for positive outcomes. Hope motivates you to keep moving forward even in difficult times.',
         relatedFeelings: ['Longing', 'Expectant', 'Optimistic'],
-        border: 'Hopeful is near Fear because it involves uncertainty about the future.'
+        border: 'Hopeful is near Fear because it involves uncertainty about the future.',
+        question: 'What are you hoping for? What positive outcome do you envision?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to wait passively instead of taking action.',
+        overloadTip: 'To balance, consider: What action can you take toward your hopes? How can you be both hopeful and proactive?',
+        oppositeId: 'disgust-4-disapproval'
     },
     'fear-1-nervous': {
         name: 'Nervous',
@@ -65,21 +97,33 @@ const emotionsData = {
         color: '#03a54c',
         description: 'A state of unease or apprehension about something uncertain. Nervousness is a natural response to situations that feel challenging or unfamiliar.',
         relatedFeelings: ['Threatened', 'Uneasy', 'Jittery'],
-        border: 'Nervous is near Trust because it involves vulnerability and the need for safety.'
+        border: 'Nervous is near Trust because it involves vulnerability and the need for safety.',
+        question: 'What uncertainty is creating unease? What feels unpredictable or risky right now?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to avoid opportunities or become paralyzed by worry.',
+        overloadTip: 'To balance, consider: What small step could you take despite the nerves? What support or preparation might help?',
+        oppositeId: 'trust-2-peaceful'
     },
     'fear-2-scared': {
         name: 'Scared',
         category: 'Fear',
         color: '#03a54c',
         description: 'An intense feeling of fear or alarm. Being scared is your body\'s way of alerting you to potential danger.',
-        relatedFeelings: ['Frightened', 'Terrified', 'Alarmed']
+        relatedFeelings: ['Frightened', 'Terrified', 'Alarmed'],
+        question: 'What feels threatening? What danger or harm are you sensing?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to see threats everywhere or withdraw from life.',
+        overloadTip: 'To balance, consider: What evidence exists for this fear? What safety or support is available to you?',
+        oppositeId: 'anticipation-2-eager'
     },
     'fear-3-anxious': {
         name: 'Anxious',
         category: 'Fear',
         color: '#03a54c',
         description: 'A feeling of worry, nervousness, or unease about something with an uncertain outcome. Anxiety can be a signal to prepare or take action.',
-        relatedFeelings: ['Dread', 'Worry', 'Tense']
+        relatedFeelings: ['Dread', 'Worry', 'Tense'],
+        question: 'What are you worried about? What uncertain outcome concerns you?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to ruminate excessively or create problems that don\'t exist.',
+        overloadTip: 'To balance, consider: What can you control? What action would help address this concern?',
+        oppositeId: 'anticipation-3-interested'
     },
     'fear-4-insecure': {
         name: 'Insecure',
@@ -87,7 +131,11 @@ const emotionsData = {
         color: '#03a54c',
         description: 'A lack of confidence or certainty about yourself or your place in a situation. Insecurity often stems from self-doubt or fear of rejection.',
         relatedFeelings: ['Rejected', 'Inadequate', 'Uncertain'],
-        border: 'Insecure is near Surprise because it involves unexpected threats to self-worth.'
+        border: 'Insecure is near Surprise because it involves unexpected threats to self-worth.',
+        question: 'What makes you doubt yourself? What do you fear others might think or see?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to constantly seek validation or avoid putting yourself forward.',
+        overloadTip: 'To balance, consider: What evidence supports your worth? What strengths do you have regardless of others\' opinions?',
+        oppositeId: 'joy-2-confident'
     },
     'surprise-1-startled': {
         name: 'Startled',
@@ -95,21 +143,33 @@ const emotionsData = {
         color: '#2782c5',
         description: 'A sudden feeling of shock or alarm caused by something unexpected. Being startled is an immediate, automatic response to surprise.',
         relatedFeelings: ['Appalled', 'Shocked', 'Stunned'],
-        border: 'Startled is near Fear because it involves a sudden sense of threat or danger.'
+        border: 'Startled is near Fear because it involves a sudden sense of threat or danger.',
+        question: 'What just happened that you didn\'t expect? What caught you off guard?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to become hypervigilant or jumpy.',
+        overloadTip: 'To balance, consider: What can help you feel more grounded? How can you assess the situation calmly?',
+        oppositeId: 'anticipation-1-excited'
     },
     'surprise-2-confused': {
         name: 'Confused',
         category: 'Surprise',
         color: '#2782c5',
         description: 'A state of being bewildered or unclear about something. Confusion occurs when information doesn\'t match your expectations or understanding.',
-        relatedFeelings: ['Disillusioned', 'Perplexed', 'Bewildered']
+        relatedFeelings: ['Disillusioned', 'Perplexed', 'Bewildered'],
+        question: 'What doesn\'t make sense? What are you trying to understand?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to doubt everything or struggle to make decisions.',
+        overloadTip: 'To balance, consider: What do you know for certain? Who or what could help clarify this?',
+        oppositeId: 'joy-1-optimistic'
     },
     'surprise-3-amazed': {
         name: 'Amazed',
         category: 'Surprise',
         color: '#2782c5',
         description: 'A feeling of great wonder and astonishment. Amazement is a positive form of surprise that fills you with awe.',
-        relatedFeelings: ['Astonished', 'Awed', 'Impressed']
+        relatedFeelings: ['Astonished', 'Awed', 'Impressed'],
+        question: 'What wonderful thing surprised you? What exceeds your expectations?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to overlook practical considerations or become easily impressed.',
+        overloadTip: 'To balance, consider: What practical steps follow this amazement? How can you build on this wonder?',
+        oppositeId: 'sad-1-hurt'
     },
     'surprise-4-disappointed': {
         name: 'Disappointed',
@@ -117,7 +177,11 @@ const emotionsData = {
         color: '#2782c5',
         description: 'A feeling of sadness or displeasure when expectations are not met. Disappointment signals a gap between what you hoped for and reality.',
         relatedFeelings: ['Betrayed', 'Dismayed', 'Let down'],
-        border: 'Disappointed is near Sadness because it involves loss of hope and unmet expectations.'
+        border: 'Disappointed is near Sadness because it involves loss of hope and unmet expectations.',
+        question: 'What did you hope for that didn\'t happen? What expectation wasn\'t met?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to become cynical or stop hoping for positive outcomes.',
+        overloadTip: 'To balance, consider: What can you learn from this? What new possibilities might exist?',
+        oppositeId: 'anticipation-4-stressed'
     },
     'sad-1-hurt': {
         name: 'Hurt',
@@ -125,21 +189,33 @@ const emotionsData = {
         color: '#34689d',
         description: 'Emotional pain caused by something or someone. Hurt feelings often arise from perceived rejection, criticism, or loss.',
         relatedFeelings: ['Dismayed', 'Threatened', 'Wounded'],
-        border: 'Hurt is near Surprise because it often comes from unexpected emotional wounds.'
+        border: 'Hurt is near Surprise because it often comes from unexpected emotional wounds.',
+        question: 'What caused this pain? What action or words wounded you?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to hold grudges or see harm in innocent actions.',
+        overloadTip: 'To balance, consider: What might have been the intention? How can you communicate your hurt or seek healing?',
+        oppositeId: 'surprise-3-amazed'
     },
     'sad-2-depressed': {
         name: 'Depressed',
         category: 'Sadness',
         color: '#34689d',
         description: 'A state of deep sadness and low energy. Depression can make everything feel heavy and difficult to manage.',
-        relatedFeelings: ['Bereft', 'Numb', 'Empty']
+        relatedFeelings: ['Bereft', 'Numb', 'Empty'],
+        question: 'What feels heavy or hopeless? What has drained your energy or joy?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to withdraw completely or lose sight of any positive aspects.',
+        overloadTip: 'To balance, consider: What small action could you take? Who could you reach out to for support?',
+        oppositeId: 'joy-1-optimistic'
     },
     'sad-3-lonely': {
         name: 'Lonely',
         category: 'Sadness',
         color: '#34689d',
         description: 'A painful feeling of isolation or disconnection from others. Loneliness highlights our need for meaningful connection.',
-        relatedFeelings: ['Abandoned', 'Isolated', 'Disconnected']
+        relatedFeelings: ['Abandoned', 'Isolated', 'Disconnected'],
+        question: 'Who or what are you missing? What connection do you long for?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to push others away or believe no one cares.',
+        overloadTip: 'To balance, consider: Who is available to you? What small step could you take toward connection?',
+        oppositeId: 'joy-3-joyful'
     },
     'sad-4-ashamed': {
         name: 'Ashamed',
@@ -147,7 +223,11 @@ const emotionsData = {
         color: '#34689d',
         description: 'A painful feeling of humiliation or distress caused by believing you\'ve done something wrong or embarrassing. Shame affects how you see yourself.',
         relatedFeelings: ['Remorseful', 'Guilty', 'Embarrassed'],
-        border: 'Ashamed is near Disgust because it involves negative judgment of oneself.'
+        border: 'Ashamed is near Disgust because it involves negative judgment of oneself.',
+        question: 'What do you believe you did wrong? What part of yourself are you judging?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to hide your true self or believe you\'re fundamentally flawed.',
+        overloadTip: 'To balance, consider: What would you tell a friend in this situation? How can you learn and grow from this?',
+        oppositeId: 'anger-1-aggressive'
     },
     'disgust-1-dislike': {
         name: 'Dislike',
@@ -155,21 +235,33 @@ const emotionsData = {
         color: '#8774b3',
         description: 'A feeling of aversion or disapproval toward something or someone. Dislike helps you identify what doesn\'t align with your values.',
         relatedFeelings: ['Revolted', 'Withdrawn', 'Repulsed'],
-        border: 'Dislike is near Sadness because it involves emotional withdrawal and rejection.'
+        border: 'Dislike is near Sadness because it involves emotional withdrawal and rejection.',
+        question: 'What doesn\'t align with your values? What feels wrong or distasteful?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to become judgmental or close-minded.',
+        overloadTip: 'To balance, consider: What might you not understand yet? Can you create distance while staying open?',
+        oppositeId: 'joy-4-loving'
     },
     'disgust-2-avoidance': {
         name: 'Avoidance',
         category: 'Disgust',
         color: '#8774b3',
         description: 'A tendency to stay away from something unpleasant or uncomfortable. Avoidance is a protective response to things that feel threatening.',
-        relatedFeelings: ['Hesitant', 'Averse', 'Reluctant']
+        relatedFeelings: ['Hesitant', 'Averse', 'Reluctant'],
+        question: 'What are you trying to avoid? What feels too uncomfortable to face?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to miss opportunities or leave issues unresolved.',
+        overloadTip: 'To balance, consider: What small step could you take toward this? What support might help you face it?',
+        oppositeId: 'fear-2-scared'
     },
     'disgust-3-aweful': {
         name: 'Awful',
         category: 'Disgust',
         color: '#8774b3',
         description: 'A strong negative feeling about something very unpleasant or disagreeable. Feeling awful signals that something is deeply wrong or distressing.',
-        relatedFeelings: ['Repelled', 'Detested', 'Horrible']
+        relatedFeelings: ['Repelled', 'Detested', 'Horrible'],
+        question: 'What feels deeply wrong or distressing? What violates your sense of rightness?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to catastrophize or see negativity everywhere.',
+        overloadTip: 'To balance, consider: What aspects are truly concerning? What can you do about it?',
+        oppositeId: 'trust-3-accepted'
     },
     'disgust-4-disapproval': {
         name: 'Disapproval',
@@ -177,7 +269,11 @@ const emotionsData = {
         color: '#8774b3',
         description: 'A negative judgment or opinion about someone or something. Disapproval reflects a conflict between your values and what you observe.',
         relatedFeelings: ['Loathing', 'Judgmental', 'Critical'],
-        border: 'Disapproval is near Anger because it involves critical evaluation and potential confrontation.'
+        border: 'Disapproval is near Anger because it involves critical evaluation and potential confrontation.',
+        question: 'What behavior or situation goes against your values? What do you judge as wrong?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to become rigid or alienate others.',
+        overloadTip: 'To balance, consider: What circumstances might explain this? How can you hold standards while showing compassion?',
+        oppositeId: 'trust-4-hopeful'
     },
     'anger-1-aggressive': {
         name: 'Aggressive',
@@ -185,21 +281,33 @@ const emotionsData = {
         color: '#f05d5f',
         description: 'A forceful and confrontational expression of anger. Aggression is often a response to feeling threatened or frustrated.',
         relatedFeelings: ['Hostile', 'Provoked', 'Combative'],
-        border: 'Aggressive is near Disgust because it involves rejecting or pushing away what\'s unacceptable.'
+        border: 'Aggressive is near Disgust because it involves rejecting or pushing away what\'s unacceptable.',
+        question: 'What feels threatening or intolerable? What are you ready to fight against?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to damage relationships or escalate conflicts.',
+        overloadTip: 'To balance, consider: What outcome do you want? How can you stand firm while staying constructive?',
+        oppositeId: 'sad-4-ashamed'
     },
     'anger-2-mad': {
         name: 'Mad',
         category: 'Anger',
         color: '#f05d5f',
         description: 'An intense feeling of displeasure or rage. Being mad signals that something has violated your boundaries or expectations.',
-        relatedFeelings: ['Enraged', 'Furious', 'Livid']
+        relatedFeelings: ['Enraged', 'Furious', 'Livid'],
+        question: 'What boundary was crossed? What feels unjust or wrong?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to lash out or hold onto resentment.',
+        overloadTip: 'To balance, consider: What do you need to feel better? How can you express this anger constructively?',
+        oppositeId: 'trust-1-grateful'
     },
     'anger-3-frustrated': {
         name: 'Frustrated',
         category: 'Anger',
         color: '#f05d5f',
         description: 'A feeling of upset or annoyance when unable to achieve something. Frustration arises from blocked goals or unmet needs.',
-        relatedFeelings: ['Annoyed', 'Irritated', 'Exasperated']
+        relatedFeelings: ['Annoyed', 'Irritated', 'Exasperated'],
+        question: 'What is blocking your progress? What obstacle keeps getting in your way?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to give up too quickly or become impatient with others.',
+        overloadTip: 'To balance, consider: What different approach could you try? What is within your control?',
+        oppositeId: 'trust-2-peaceful'
     },
     'anger-4-critical': {
         name: 'Critical',
@@ -207,7 +315,11 @@ const emotionsData = {
         color: '#f05d5f',
         description: 'A tendency to find fault or judge harshly. Being critical can be a form of anger directed at perceived flaws or failures.',
         relatedFeelings: ['Sarcastic', 'Skeptical', 'Judgmental'],
-        border: 'Critical is near Anticipation because it involves vigilance and preparation against potential problems.'
+        border: 'Critical is near Anticipation because it involves vigilance and preparation against potential problems.',
+        question: 'What could get in the way if this person does it wrong... or this situation is wrong?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to block innovation or shut people down.',
+        overloadTip: 'To balance, consider: How big is the risk or transgression? What is going well or what is the person doing right?',
+        oppositeId: 'fear-4-insecure'
     },
     'anticipation-1-excited': {
         name: 'Excited',
@@ -215,21 +327,33 @@ const emotionsData = {
         color: '#f2913b',
         description: 'A feeling of enthusiastic eagerness about something that\'s going to happen. Excitement energizes you and creates positive anticipation.',
         relatedFeelings: ['Passionate', 'Energized', 'Thrilled'],
-        border: 'Excited is near Anger because it involves intense energy and readiness for action.'
+        border: 'Excited is near Anger because it involves intense energy and readiness for action.',
+        question: 'What are you looking forward to? What positive event energizes you?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to rush ahead without planning or burn out quickly.',
+        overloadTip: 'To balance, consider: What preparation is needed? How can you sustain this energy wisely?',
+        oppositeId: 'surprise-1-startled'
     },
     'anticipation-2-eager': {
         name: 'Eager',
         category: 'Anticipation',
         color: '#f2913b',
         description: 'A keen desire or readiness to do or experience something. Eagerness drives you forward with enthusiasm and motivation.',
-        relatedFeelings: ['Enthusiastic', 'Motivated', 'Keen']
+        relatedFeelings: ['Enthusiastic', 'Motivated', 'Keen'],
+        question: 'What are you ready to pursue? What opportunity calls to you?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to jump into things without thinking or ignore warning signs.',
+        overloadTip: 'To balance, consider: What might you need to know first? How can you channel this eagerness effectively?',
+        oppositeId: 'fear-2-scared'
     },
     'anticipation-3-interested': {
         name: 'Interested',
         category: 'Anticipation',
         color: '#f2913b',
         description: 'A feeling of wanting to learn more or be involved in something. Interest draws your attention and curiosity toward new experiences.',
-        relatedFeelings: ['Impatient', 'Curious', 'Engaged']
+        relatedFeelings: ['Impatient', 'Curious', 'Engaged'],
+        question: 'What catches your attention? What do you want to learn or explore?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to become distracted or spread yourself too thin.',
+        overloadTip: 'To balance, consider: What deserves your deepest focus? How can you explore while maintaining priorities?',
+        oppositeId: 'fear-3-anxious'
     },
     'anticipation-4-stressed': {
         name: 'Stressed',
@@ -237,6 +361,10 @@ const emotionsData = {
         color: '#f2913b',
         description: 'A state of mental or emotional strain from demanding circumstances. Stress signals that you\'re facing challenges that require energy and resources.',
         relatedFeelings: ['Overwhelmed', 'Pressured', 'Tense'],
-        border: 'Stressed is near Joy because it involves high energy focused on achieving positive outcomes.'
+        border: 'Stressed is near Joy because it involves high energy focused on achieving positive outcomes.',
+        question: 'What demands are weighing on you? What feels like too much to handle?',
+        overloadRisk: 'If you over-use this feeling, it could cause you to break down or make poor decisions under pressure.',
+        overloadTip: 'To balance, consider: What can you delegate or postpone? How can you care for yourself during this time?',
+        oppositeId: 'surprise-4-disappointed'
     }
 };

@@ -57,13 +57,14 @@ body {
     transform: scale(1.02);
 }
 
-/* Allow clicks to pass through text and backgrounds to segments */
+/* Make text non-clickable but allow clicks on backgrounds */
 #svg-wrapper text {
     pointer-events: none;
 }
 
 #svg-wrapper g[id*="-background"] {
-    pointer-events: none;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 .info-panel {
@@ -246,4 +247,117 @@ body {
     .emotion-title {
         font-size: 1.5em;
     }
+}
+
+/* Action Icons */
+.action-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.action-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.8;
+}
+
+.action-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.action-icon:active {
+    transform: scale(0.95);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #333;
+}
+
+#modal-body {
+    margin-top: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+#modal-body h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#modal-body p {
+    margin-bottom: 15px;
+}
+
+#modal-body .quote {
+    font-style: italic;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid #667eea;
+    margin: 15px 0;
+}
+
+#modal-body .quote-speaker {
+    font-weight: 600;
+    color: #667eea;
+    margin-top: 10px;
+}
+
+#modal-body .quote-work {
+    font-size: 0.9em;
+    color: #888;
 }
