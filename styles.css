@@ -54,7 +54,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     display: block;
-    transform: scale(1.0);
+    transform: scale(1.2);
 }
 
 .info-panel {
@@ -150,23 +150,23 @@ body {
     border-top: 2px solid #f0f0f0;
 }
 
-.related-feelings h3 {
-    color: #667eea;
-    margin-bottom: 12px;
-    font-size: 1.2em;
-}
-
-.related-feelings ul {
-    list-style: none;
-}
-
-.related-feelings li {
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    background: #f8f9fa;
-    border-radius: 8px;
+.related-feelings p {
     color: #555;
-    font-weight: 500;
+    line-height: 1.7;
+}
+
+.border-info {
+    margin-top: 15px;
+}
+
+.border-info p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.info-label {
+    font-weight: 700;
+    color: #667eea;
 }
 
 /* SVG Interaction Styles */

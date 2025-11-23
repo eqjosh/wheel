@@ -34,23 +34,43 @@ function initializeInteractivity() {
         const backgroundId = getBackgroundId(segmentId);
         const background = svg.querySelector(`#${backgroundId}`);
 
-        // Initially hide the background
+        // Set initial background style - always visible
         if (background) {
-            background.style.opacity = '0';
-            background.style.transition = 'opacity 0.2s ease';
+            background.style.opacity = '0.3';
+            background.style.transition = 'all 0.2s ease';
+            background.style.cursor = 'pointer';
+
+            // Make background clickable
+            background.addEventListener('click', (e) => {
+                e.stopPropagation();
+                segment.click(); // Trigger the segment click
+            });
+
+            // Add hover effect to background
+            background.addEventListener('mouseenter', () => {
+                if (!segment.classList.contains('active')) {
+                    background.style.opacity = '0.5';
+                }
+            });
+
+            background.addEventListener('mouseleave', () => {
+                if (!segment.classList.contains('active')) {
+                    background.style.opacity = '0.3';
+                }
+            });
         }
 
-        // Add hover effect
+        // Add hover effect to segment
         segment.addEventListener('mouseenter', () => {
             segment.style.cursor = 'pointer';
-            if (background) {
-                background.style.opacity = '0.4';
+            if (background && !segment.classList.contains('active')) {
+                background.style.opacity = '0.5';
             }
         });
 
         segment.addEventListener('mouseleave', () => {
             if (background && !segment.classList.contains('active')) {
-                background.style.opacity = '0';
+                background.style.opacity = '0.3';
             }
         });
 
@@ -58,19 +78,30 @@ function initializeInteractivity() {
         segment.addEventListener('click', (e) => {
             e.stopPropagation();
 
-            // Remove active class from all segments and hide their backgrounds
+            // Remove active class and text effects from all segments
             emotionSegments.forEach(s => {
                 s.classList.remove('active');
+                // Remove text drop shadow
+                const texts = s.querySelectorAll('text');
+                texts.forEach(t => t.style.filter = '');
+
                 const bgId = getBackgroundId(s.id);
                 const bg = svg.querySelector(`#${bgId}`);
-                if (bg) bg.style.opacity = '0';
+                if (bg) bg.style.opacity = '0.3';
             });
 
             // Add active class to clicked segment
             segment.classList.add('active');
 
-            // Show background for active segment
-            if (background) background.style.opacity = '0.4';
+            // Add text drop shadow to active segment
+            const texts = segment.querySelectorAll('text');
+            texts.forEach(text => {
+                text.style.filter = 'drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4))';
+                text.style.transition = 'filter 0.2s ease';
+            });
+
+            // Darken background for active segment
+            if (background) background.style.opacity = '0.6';
 
             // Update info panel
             updateInfoPanel(segmentId);
@@ -81,9 +112,13 @@ function initializeInteractivity() {
     svg.addEventListener('click', () => {
         emotionSegments.forEach(s => {
             s.classList.remove('active');
+            // Remove text drop shadow
+            const texts = s.querySelectorAll('text');
+            texts.forEach(t => t.style.filter = '');
+
             const bgId = getBackgroundId(s.id);
             const bg = svg.querySelector(`#${bgId}`);
-            if (bg) bg.style.opacity = '0';
+            if (bg) bg.style.opacity = '0.3';
         });
         showWelcomeMessage();
     });
@@ -127,8 +162,7 @@ function updateInfoPanel(emotionId) {
             <p class="emotion-description">${emotion.description}</p>
 
             <div class="related-feelings">
-                <h3>Related Feelings</h3>
-                <p>${emotion.relatedFeelings.join(', ')}</p>
+                <p><span class="info-label">Related Feelings:</span> ${emotion.relatedFeelings.join(', ')}</p>
             </div>
     `;
 
@@ -136,8 +170,7 @@ function updateInfoPanel(emotionId) {
     if (emotion.border) {
         html += `
             <div class="border-info">
-                <h3>Border</h3>
-                <p>${emotion.border}</p>
+                <p><span class="info-label">Border:</span> ${emotion.border}</p>
             </div>
         `;
     }
