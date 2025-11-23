@@ -1,38 +1,7 @@
-// Load SVG and initialize
+// Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    loadSVG();
+    initializeInteractivity();
 });
-
-// Load the SVG file
-async function loadSVG() {
-    try {
-        const response = await fetch('01-Feeling-Wheel-segmented.svg');
-        const svgText = await response.text();
-
-        const svgWrapper = document.getElementById('svg-wrapper');
-        svgWrapper.innerHTML = svgText;
-
-        // Remove fixed width/height attributes from SVG to allow CSS sizing
-        const svg = svgWrapper.querySelector('svg');
-        if (svg) {
-            svg.removeAttribute('width');
-            svg.removeAttribute('height');
-            // Ensure viewBox is preserved for proper scaling
-            if (!svg.hasAttribute('viewBox')) {
-                // If no viewBox, try to create one from width/height before removal
-                const width = svg.getAttribute('width') || '100';
-                const height = svg.getAttribute('height') || '100';
-                svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
-            }
-        }
-
-        // Initialize interactivity after SVG is loaded
-        initializeInteractivity();
-    } catch (error) {
-        console.error('Error loading SVG:', error);
-        document.getElementById('svg-wrapper').innerHTML = '<p>Error loading emotion wheel. Please refresh the page.</p>';
-    }
-}
 
 // Initialize click and hover handlers
 function initializeInteractivity() {
