@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load external SVG file and inject it into the DOM
 async function loadSVG() {
     try {
-        const response = await fetch('01-Feeling-Wheel-segmented-2.svg');
+        const response = await fetch('01-Feeling-Wheel-segmented-joy-3.svg');
         const svgText = await response.text();
         const wrapper = document.getElementById('svg-wrapper');
         wrapper.innerHTML = svgText;
@@ -30,22 +30,27 @@ function initializeInteractivity() {
         // Skip if no data for this segment
         if (!emotionsData[segmentId]) return;
 
-        // Create background layer for hover effect
-        createBackgroundLayer(segment);
+        // Get the corresponding background layer
+        const backgroundId = getBackgroundId(segmentId);
+        const background = svg.querySelector(`#${backgroundId}`);
+
+        // Initially hide the background
+        if (background) {
+            background.style.opacity = '0';
+            background.style.transition = 'opacity 0.2s ease';
+        }
 
         // Add hover effect
         segment.addEventListener('mouseenter', () => {
             segment.style.cursor = 'pointer';
-            const bg = segment.querySelector('.segment-background');
-            if (bg) {
-                bg.style.opacity = '1';
+            if (background) {
+                background.style.opacity = '0.4';
             }
         });
 
         segment.addEventListener('mouseleave', () => {
-            const bg = segment.querySelector('.segment-background');
-            if (bg && !segment.classList.contains('active')) {
-                bg.style.opacity = '0';
+            if (background && !segment.classList.contains('active')) {
+                background.style.opacity = '0';
             }
         });
 
@@ -56,7 +61,8 @@ function initializeInteractivity() {
             // Remove active class from all segments and hide their backgrounds
             emotionSegments.forEach(s => {
                 s.classList.remove('active');
-                const bg = s.querySelector('.segment-background');
+                const bgId = getBackgroundId(s.id);
+                const bg = svg.querySelector(`#${bgId}`);
                 if (bg) bg.style.opacity = '0';
             });
 
@@ -64,8 +70,7 @@ function initializeInteractivity() {
             segment.classList.add('active');
 
             // Show background for active segment
-            const bg = segment.querySelector('.segment-background');
-            if (bg) bg.style.opacity = '1';
+            if (background) background.style.opacity = '0.4';
 
             // Update info panel
             updateInfoPanel(segmentId);
@@ -76,38 +81,36 @@ function initializeInteractivity() {
     svg.addEventListener('click', () => {
         emotionSegments.forEach(s => {
             s.classList.remove('active');
-            const bg = s.querySelector('.segment-background');
+            const bgId = getBackgroundId(s.id);
+            const bg = svg.querySelector(`#${bgId}`);
             if (bg) bg.style.opacity = '0';
         });
         showWelcomeMessage();
     });
 }
 
-// Create a background layer for hover effects
-function createBackgroundLayer(segment) {
-    // Find all path elements in this segment
-    const paths = segment.querySelectorAll('path');
-    if (paths.length === 0) return;
+// Map segment IDs to their background layer IDs
+function getBackgroundId(segmentId) {
+    // joy-1-optimistic -> joy-1-background
+    // joy-2-confident -> joy2-background
+    // joy-3-joyful -> joy3-background
+    // joy-4-loving -> joy4-background
 
-    // Create a group for the background
-    const bgGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-    bgGroup.classList.add('segment-background');
-    bgGroup.style.opacity = '0';
-    bgGroup.style.transition = 'opacity 0.2s ease';
-    bgGroup.style.pointerEvents = 'none';
+    const match = segmentId.match(/^(.*?)-(1|2|3|4)-/);
+    if (match) {
+        const emotion = match[1];
+        const number = match[2];
 
-    // Clone each path and add to background group
-    paths.forEach(path => {
-        const bgPath = path.cloneNode(true);
-        // Fill with semi-transparent white for highlight effect
-        bgPath.style.fill = 'rgba(255, 255, 255, 0.3)';
-        bgPath.style.stroke = 'none';
-        bgGroup.appendChild(bgPath);
-    });
+        // Special handling for joy segments (they have different naming)
+        if (emotion === 'joy') {
+            if (number === '1') return 'joy-1-background';
+            return `joy${number}-background`;
+        }
+    }
 
-    // Insert background as first child (behind everything else)
-    segment.insertBefore(bgGroup, segment.firstChild);
+    return null;
 }
+
 
 // Update the info panel with emotion data
 function updateInfoPanel(emotionId) {
@@ -116,7 +119,8 @@ function updateInfoPanel(emotionId) {
 
     const infoContent = document.getElementById('info-content');
 
-    infoContent.innerHTML = `
+    // Build the HTML with compact related feelings and optional border info
+    let html = `
         <div class="emotion-info">
             <div class="emotion-category">${emotion.category}</div>
             <h2 class="emotion-title" style="color: ${emotion.color}">${emotion.name}</h2>
@@ -124,12 +128,23 @@ function updateInfoPanel(emotionId) {
 
             <div class="related-feelings">
                 <h3>Related Feelings</h3>
-                <ul>
-                    ${emotion.relatedFeelings.map(feeling => `<li>${feeling}</li>`).join('')}
-                </ul>
+                <p>${emotion.relatedFeelings.join(', ')}</p>
             </div>
-        </div>
     `;
+
+    // Add border information if it exists
+    if (emotion.border) {
+        html += `
+            <div class="border-info">
+                <h3>Border</h3>
+                <p>${emotion.border}</p>
+            </div>
+        `;
+    }
+
+    html += `</div>`;
+
+    infoContent.innerHTML = html;
 }
 
 // Show welcome message

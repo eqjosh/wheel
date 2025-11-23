@@ -4,7 +4,8 @@ const emotionsData = {
         category: 'Joy',
         color: '#ffcb09',
         description: 'A feeling of hopefulness and confidence about the future. When you\'re optimistic, you believe that good things will happen and maintain a positive outlook on life.',
-        relatedFeelings: ['Positive', 'Inspired', 'Hopeful']
+        relatedFeelings: ['Positive', 'Inspired', 'Hopeful'],
+        border: 'Optimistic is near Anticipation because it has a component of looking ahead.'
     },
     'joy-2-confident': {
         name: 'Confident',
@@ -25,14 +26,16 @@ const emotionsData = {
         category: 'Joy',
         color: '#ffcb09',
         description: 'A deep feeling of affection, care, and warmth toward someone or something. Love creates connection and a sense of belonging.',
-        relatedFeelings: ['Embracing', 'Generous', 'Affectionate']
+        relatedFeelings: ['Embracing', 'Generous', 'Affectionate'],
+        border: 'Loving is near Trust because it involves a foundation of care and reliability.'
     },
     'trust-1-grateful': {
         name: 'Grateful',
         category: 'Trust',
         color: '#89c24f',
         description: 'A warm feeling of thankfulness and appreciation. Gratitude helps you recognize and value the good things in your life.',
-        relatedFeelings: ['Fulfilled', 'Admiration', 'Thankful']
+        relatedFeelings: ['Fulfilled', 'Admiration', 'Thankful'],
+        border: 'Grateful is near Joy because it involves appreciation for positive experiences.'
     },
     'trust-2-peaceful': {
         name: 'Peaceful',
@@ -53,14 +56,16 @@ const emotionsData = {
         category: 'Trust',
         color: '#89c24f',
         description: 'A feeling of expectation and desire for positive outcomes. Hope motivates you to keep moving forward even in difficult times.',
-        relatedFeelings: ['Longing', 'Expectant', 'Optimistic']
+        relatedFeelings: ['Longing', 'Expectant', 'Optimistic'],
+        border: 'Hopeful is near Fear because it involves uncertainty about the future.'
     },
     'fear-1-nervous': {
         name: 'Nervous',
         category: 'Fear',
         color: '#03a54c',
         description: 'A state of unease or apprehension about something uncertain. Nervousness is a natural response to situations that feel challenging or unfamiliar.',
-        relatedFeelings: ['Threatened', 'Uneasy', 'Jittery']
+        relatedFeelings: ['Threatened', 'Uneasy', 'Jittery'],
+        border: 'Nervous is near Trust because it involves vulnerability and the need for safety.'
     },
     'fear-2-scared': {
         name: 'Scared',
@@ -81,14 +86,16 @@ const emotionsData = {
         category: 'Fear',
         color: '#03a54c',
         description: 'A lack of confidence or certainty about yourself or your place in a situation. Insecurity often stems from self-doubt or fear of rejection.',
-        relatedFeelings: ['Rejected', 'Inadequate', 'Uncertain']
+        relatedFeelings: ['Rejected', 'Inadequate', 'Uncertain'],
+        border: 'Insecure is near Surprise because it involves unexpected threats to self-worth.'
     },
     'surprise-1-startled': {
         name: 'Startled',
         category: 'Surprise',
         color: '#2782c5',
         description: 'A sudden feeling of shock or alarm caused by something unexpected. Being startled is an immediate, automatic response to surprise.',
-        relatedFeelings: ['Appalled', 'Shocked', 'Stunned']
+        relatedFeelings: ['Appalled', 'Shocked', 'Stunned'],
+        border: 'Startled is near Fear because it involves a sudden sense of threat or danger.'
     },
     'surprise-2-confused': {
         name: 'Confused',
@@ -109,14 +116,16 @@ const emotionsData = {
         category: 'Surprise',
         color: '#2782c5',
         description: 'A feeling of sadness or displeasure when expectations are not met. Disappointment signals a gap between what you hoped for and reality.',
-        relatedFeelings: ['Betrayed', 'Dismayed', 'Let down']
+        relatedFeelings: ['Betrayed', 'Dismayed', 'Let down'],
+        border: 'Disappointed is near Sadness because it involves loss of hope and unmet expectations.'
     },
     'sad-1-hurt': {
         name: 'Hurt',
         category: 'Sadness',
         color: '#34689d',
         description: 'Emotional pain caused by something or someone. Hurt feelings often arise from perceived rejection, criticism, or loss.',
-        relatedFeelings: ['Dismayed', 'Threatened', 'Wounded']
+        relatedFeelings: ['Dismayed', 'Threatened', 'Wounded'],
+        border: 'Hurt is near Surprise because it often comes from unexpected emotional wounds.'
     },
     'sad-2-depressed': {
         name: 'Depressed',
@@ -137,14 +146,16 @@ const emotionsData = {
         category: 'Sadness',
         color: '#34689d',
         description: 'A painful feeling of humiliation or distress caused by believing you\'ve done something wrong or embarrassing. Shame affects how you see yourself.',
-        relatedFeelings: ['Remorseful', 'Guilty', 'Embarrassed']
+        relatedFeelings: ['Remorseful', 'Guilty', 'Embarrassed'],
+        border: 'Ashamed is near Disgust because it involves negative judgment of oneself.'
     },
     'disgust-1-dislike': {
         name: 'Dislike',
         category: 'Disgust',
         color: '#8774b3',
         description: 'A feeling of aversion or disapproval toward something or someone. Dislike helps you identify what doesn\'t align with your values.',
-        relatedFeelings: ['Revolted', 'Withdrawn', 'Repulsed']
+        relatedFeelings: ['Revolted', 'Withdrawn', 'Repulsed'],
+        border: 'Dislike is near Sadness because it involves emotional withdrawal and rejection.'
     },
     'disgust-2-avoidance': {
         name: 'Avoidance',
@@ -165,14 +176,16 @@ const emotionsData = {
         category: 'Disgust',
         color: '#8774b3',
         description: 'A negative judgment or opinion about someone or something. Disapproval reflects a conflict between your values and what you observe.',
-        relatedFeelings: ['Loathing', 'Judgmental', 'Critical']
+        relatedFeelings: ['Loathing', 'Judgmental', 'Critical'],
+        border: 'Disapproval is near Anger because it involves critical evaluation and potential confrontation.'
     },
     'anger-1-aggressive': {
         name: 'Aggressive',
         category: 'Anger',
         color: '#f05d5f',
         description: 'A forceful and confrontational expression of anger. Aggression is often a response to feeling threatened or frustrated.',
-        relatedFeelings: ['Hostile', 'Provoked', 'Combative']
+        relatedFeelings: ['Hostile', 'Provoked', 'Combative'],
+        border: 'Aggressive is near Disgust because it involves rejecting or pushing away what\'s unacceptable.'
     },
     'anger-2-mad': {
         name: 'Mad',
@@ -193,14 +206,16 @@ const emotionsData = {
         category: 'Anger',
         color: '#f05d5f',
         description: 'A tendency to find fault or judge harshly. Being critical can be a form of anger directed at perceived flaws or failures.',
-        relatedFeelings: ['Sarcastic', 'Skeptical', 'Judgmental']
+        relatedFeelings: ['Sarcastic', 'Skeptical', 'Judgmental'],
+        border: 'Critical is near Anticipation because it involves vigilance and preparation against potential problems.'
     },
     'anticipation-1-excited': {
         name: 'Excited',
         category: 'Anticipation',
         color: '#f2913b',
         description: 'A feeling of enthusiastic eagerness about something that\'s going to happen. Excitement energizes you and creates positive anticipation.',
-        relatedFeelings: ['Passionate', 'Energized', 'Thrilled']
+        relatedFeelings: ['Passionate', 'Energized', 'Thrilled'],
+        border: 'Excited is near Anger because it involves intense energy and readiness for action.'
     },
     'anticipation-2-eager': {
         name: 'Eager',
@@ -221,6 +236,7 @@ const emotionsData = {
         category: 'Anticipation',
         color: '#f2913b',
         description: 'A state of mental or emotional strain from demanding circumstances. Stress signals that you\'re facing challenges that require energy and resources.',
-        relatedFeelings: ['Overwhelmed', 'Pressured', 'Tense']
+        relatedFeelings: ['Overwhelmed', 'Pressured', 'Tense'],
+        border: 'Stressed is near Joy because it involves high energy focused on achieving positive outcomes.'
     }
 };
