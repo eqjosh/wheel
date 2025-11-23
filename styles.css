@@ -1,0 +1,112 @@
+:root{
+  --bg: #fafafa;
+  --panel-bg: #ffffff;
+  --accent: #0066cc;
+  --accent-2: #f39c12;
+  --muted: #666;
+  --selected-stroke: rgba(0,102,204,0.95);
+  --hover-stroke: rgba(0,0,0,0.6);
+}
+
+*{box-sizing:border-box}
+html,body,#app{height:100%;margin:0;background:var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+
+.app{
+  display:flex;
+  height:100vh;
+  width:100%;
+}
+
+/* halves: 50/50 */
+.half{
+  flex: 0 0 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+}
+
+/* left: wheel should fill as much as possible with small margins */
+.wheel-wrapper{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 2vmin;
+  /* ensure the wheel does not exceed the container */
+  max-width: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+}
+
+.svg-container{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* when we insert the SVG it will be responsive */
+.svg-container svg{
+  width: 96%;
+  height: auto;
+  max-height: 96%;
+  display:block;
+  pointer-events: all; /* allow interaction */
+}
+
+/* Hover effect and selected style (applied to the individual segment element) */
+.segment-hover{
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
+  cursor: pointer;
+  transition: transform 150ms ease, opacity 150ms ease, filter 150ms ease;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(1.03);
+  stroke: var(--hover-stroke);
+  stroke-width: 0.8;
+  /* make it a little brighter */
+  opacity: 0.95;
+}
+
+.segment-selected{
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(1.06);
+  stroke: var(--selected-stroke) !important;
+  stroke-width: 2 !important;
+  filter: drop-shadow(0 8px 18px rgba(0,102,204,0.18));
+  opacity: 1;
+}
+
+/* Info panel on right */
+.info-panel{
+  width:90%;
+  max-width:520px;
+  background:var(--panel-bg);
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height: 260px;
+}
+
+/* Center the content vertically relative to wheel-center by using same alignment */
+.info-content{ width:100%; }
+.info-content h2{ margin:0 0 12px 0; font-size:1.4rem; color:var(--accent); }
+.info-content ul{ margin:0 0 12px 0; padding-left: 1.2rem; color:var(--muted) }
+.info-content li{ margin:6px 0; font-size:0.98rem; color:#222 }
+
+.placeholder{ text-align:center; color:var(--muted) }
+.placeholder h2{ margin:0 0 6px 0; color:var(--accent) }
+
+/* smaller device tweaks */
+@media (max-width: 800px){
+  .half{ flex-basis:100%; width:100%; }
+  .app{ flex-direction: column; }
+  .info-panel{ width:94%; margin-top:14px; }
+  .svg-container svg{ width: 100%; height: auto; max-height: 50vh; }
+}
