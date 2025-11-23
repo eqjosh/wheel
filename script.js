@@ -1,7 +1,20 @@
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadSVG();
     initializeInteractivity();
 });
+
+// Load external SVG file and inject it into the DOM
+async function loadSVG() {
+    try {
+        const response = await fetch('01-Feeling-Wheel-segmented-2.svg');
+        const svgText = await response.text();
+        const wrapper = document.getElementById('svg-wrapper');
+        wrapper.innerHTML = svgText;
+    } catch (error) {
+        console.error('Error loading SVG:', error);
+    }
+}
 
 // Initialize click and hover handlers
 function initializeInteractivity() {
