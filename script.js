@@ -37,8 +37,9 @@ async function loadEmotionsData() {
                 name: emotion.name,
                 category: emotion.category,
                 color: getCategoryColor(emotion.category),
-                description: emotion.adaptivePurpose, // Use adaptivePurpose as the main description
-                relatedFeelings: getRelatedFeelings(emotion.category),
+                description: getOriginalDescription(emotion.id),
+                relatedFeelings: getRelatedFeelings(emotion.id),
+                border: getBorderInfo(emotion.id),
                 question: emotion.question,
                 overloadRisk: emotion.overloadRisk,
                 overloadTip: emotion.overloadTip,
@@ -58,28 +59,114 @@ function getCategoryColor(category) {
         'Joy': '#ffcb09',
         'Trust': '#89c24f',
         'Fear': '#03a54c',
-        'Surprise': '#039fb3',
-        'Sadness': '#00639a',
-        'Disgust': '#9d4f9e',
-        'Anger': '#da3f3f',
-        'Anticipation': '#f58220'
+        'Surprise': '#2782c5',
+        'Sadness': '#34689d',
+        'Disgust': '#8774b3',
+        'Anger': '#f05d5f',
+        'Anticipation': '#f2913b'
     };
     return colorMap[category] || '#808080';
 }
 
-// Get related feelings for category (placeholder - could be enhanced)
-function getRelatedFeelings(category) {
-    const feelingsMap = {
-        'Joy': ['Positive', 'Uplifted', 'Bright'],
-        'Trust': ['Secure', 'Safe', 'Confident'],
-        'Fear': ['Worried', 'Anxious', 'Uneasy'],
-        'Surprise': ['Shocked', 'Unexpected', 'Startled'],
-        'Sadness': ['Down', 'Low', 'Heavy'],
-        'Disgust': ['Repulsed', 'Averse', 'Uncomfortable'],
-        'Anger': ['Irritated', 'Upset', 'Heated'],
-        'Anticipation': ['Looking ahead', 'Preparing', 'Ready']
+// Get original description for each emotion (from v2.8)
+function getOriginalDescription(emotionId) {
+    const descriptions = {
+        'joy-1-optimistic': 'A feeling of hopefulness and confidence about the future. When you\'re optimistic, you believe that good things will happen and maintain a positive outlook on life.',
+        'joy-2-confident': 'A sense of self-assurance arising from appreciation of your abilities or qualities. Confidence empowers you to take action and face challenges.',
+        'joy-3-joyful': 'A feeling of great pleasure and happiness. Pure joy is an intense, positive emotion that fills you with delight and contentment.',
+        'joy-4-loving': 'A deep feeling of affection, care, and warmth toward someone or something. Love creates connection and a sense of belonging.',
+        'trust-1-grateful': 'A warm feeling of thankfulness and appreciation. Gratitude helps you recognize and value the good things in your life.',
+        'trust-2-peaceful': 'A state of tranquility and calm, free from worry or disturbance. Peace brings mental and emotional equilibrium.',
+        'trust-3-accepted': 'A feeling of being welcomed and valued for who you are. Acceptance creates a sense of belonging and security.',
+        'trust-4-hopeful': 'A feeling of expectation and desire for positive outcomes. Hope motivates you to keep moving forward even in difficult times.',
+        'fear-1-nervous': 'A state of unease or apprehension about something uncertain. Nervousness is a natural response to situations that feel challenging or unfamiliar.',
+        'fear-2-scared': 'An intense feeling of fear or alarm. Being scared is your body\'s way of alerting you to potential danger.',
+        'fear-3-anxious': 'A feeling of worry, nervousness, or unease about something with an uncertain outcome. Anxiety can be a signal to prepare or take action.',
+        'fear-4-insecure': 'A lack of confidence or certainty about yourself or your place in a situation. Insecurity often stems from self-doubt or fear of rejection.',
+        'surprise-1-startled': 'A sudden feeling of shock or alarm caused by something unexpected. Being startled is an immediate, automatic response to surprise.',
+        'surprise-2-confused': 'A state of being bewildered or unclear about something. Confusion occurs when information doesn\'t match your expectations or understanding.',
+        'surprise-3-amazed': 'A feeling of great wonder and astonishment. Amazement is a positive form of surprise that fills you with awe.',
+        'surprise-4-disappointed': 'A feeling of sadness or displeasure when expectations are not met. Disappointment signals a gap between what you hoped for and reality.',
+        'sad-1-hurt': 'Emotional pain caused by something or someone. Hurt feelings often arise from perceived rejection, criticism, or loss.',
+        'sad-2-depressed': 'A state of deep sadness and low energy. Depression can make everything feel heavy and difficult to manage.',
+        'sad-3-lonely': 'A painful feeling of isolation or disconnection from others. Loneliness highlights our need for meaningful connection.',
+        'sad-4-ashamed': 'A painful feeling of humiliation or distress caused by believing you\'ve done something wrong or embarrassing. Shame affects how you see yourself.',
+        'disgust-1-dislike': 'A feeling of aversion or disapproval toward something or someone. Dislike helps you identify what doesn\'t align with your values.',
+        'disgust-2-avoidance': 'A tendency to stay away from something unpleasant or uncomfortable. Avoidance is a protective response to things that feel threatening.',
+        'disgust-3-aweful': 'A strong negative feeling about something very unpleasant or disagreeable. Feeling awful signals that something is deeply wrong or distressing.',
+        'disgust-4-disapproval': 'A negative judgment or opinion about someone or something. Disapproval reflects a conflict between your values and what you observe.',
+        'anger-1-aggressive': 'A forceful and confrontational expression of anger. Aggression is often a response to feeling threatened or frustrated.',
+        'anger-2-mad': 'An intense feeling of displeasure or rage. Being mad signals that something has violated your boundaries or expectations.',
+        'anger-3-frustrated': 'A feeling of upset or annoyance when unable to achieve something. Frustration arises from blocked goals or unmet needs.',
+        'anger-4-critical': 'A tendency to find fault or judge harshly. Being critical can be a form of anger directed at perceived flaws or failures.',
+        'anticipation-1-excited': 'A feeling of enthusiastic eagerness about something that\'s going to happen. Excitement energizes you and creates positive anticipation.',
+        'anticipation-2-eager': 'A keen desire or readiness to do or experience something. Eagerness drives you forward with enthusiasm and motivation.',
+        'anticipation-3-interested': 'A feeling of wanting to learn more or be involved in something. Interest draws your attention and curiosity toward new experiences.',
+        'anticipation-4-stressed': 'A state of mental or emotional strain from demanding circumstances. Stress signals that you\'re facing challenges that require energy and resources.'
     };
-    return feelingsMap[category] || [];
+    return descriptions[emotionId] || '';
+}
+
+// Get related feelings for each emotion (from v2.8)
+function getRelatedFeelings(emotionId) {
+    const feelingsMap = {
+        'joy-1-optimistic': ['Positive', 'Inspired', 'Hopeful'],
+        'joy-2-confident': ['Proud', 'Self-assured', 'Empowered'],
+        'joy-3-joyful': ['Ecstatic', 'Delighted', 'Blissful'],
+        'joy-4-loving': ['Embracing', 'Generous', 'Affectionate'],
+        'trust-1-grateful': ['Fulfilled', 'Admiration', 'Thankful'],
+        'trust-2-peaceful': ['Calm', 'Content', 'Serene'],
+        'trust-3-accepted': ['Valued', 'Respected', 'Welcomed'],
+        'trust-4-hopeful': ['Longing', 'Expectant', 'Optimistic'],
+        'fear-1-nervous': ['Threatened', 'Uneasy', 'Jittery'],
+        'fear-2-scared': ['Frightened', 'Terrified', 'Alarmed'],
+        'fear-3-anxious': ['Dread', 'Worry', 'Tense'],
+        'fear-4-insecure': ['Rejected', 'Inadequate', 'Uncertain'],
+        'surprise-1-startled': ['Appalled', 'Shocked', 'Stunned'],
+        'surprise-2-confused': ['Disillusioned', 'Perplexed', 'Bewildered'],
+        'surprise-3-amazed': ['Astonished', 'Awed', 'Impressed'],
+        'surprise-4-disappointed': ['Betrayed', 'Dismayed', 'Let down'],
+        'sad-1-hurt': ['Dismayed', 'Threatened', 'Wounded'],
+        'sad-2-depressed': ['Bereft', 'Numb', 'Empty'],
+        'sad-3-lonely': ['Abandoned', 'Isolated', 'Disconnected'],
+        'sad-4-ashamed': ['Remorseful', 'Guilty', 'Embarrassed'],
+        'disgust-1-dislike': ['Revolted', 'Withdrawn', 'Repulsed'],
+        'disgust-2-avoidance': ['Hesitant', 'Averse', 'Reluctant'],
+        'disgust-3-aweful': ['Repelled', 'Detested', 'Horrible'],
+        'disgust-4-disapproval': ['Loathing', 'Judgmental', 'Critical'],
+        'anger-1-aggressive': ['Hostile', 'Provoked', 'Combative'],
+        'anger-2-mad': ['Enraged', 'Furious', 'Livid'],
+        'anger-3-frustrated': ['Annoyed', 'Irritated', 'Exasperated'],
+        'anger-4-critical': ['Sarcastic', 'Skeptical', 'Judgmental'],
+        'anticipation-1-excited': ['Passionate', 'Energized', 'Thrilled'],
+        'anticipation-2-eager': ['Enthusiastic', 'Motivated', 'Keen'],
+        'anticipation-3-interested': ['Impatient', 'Curious', 'Engaged'],
+        'anticipation-4-stressed': ['Overwhelmed', 'Pressured', 'Tense']
+    };
+    return feelingsMap[emotionId] || [];
+}
+
+// Get border information (only for emotions that have borders)
+function getBorderInfo(emotionId) {
+    const borders = {
+        'joy-1-optimistic': 'Optimistic is near Anticipation because it has a component of looking ahead.',
+        'joy-4-loving': 'Loving is near Trust because it involves a foundation of care and reliability.',
+        'trust-1-grateful': 'Grateful is near Joy because it involves appreciation for positive experiences.',
+        'trust-4-hopeful': 'Hopeful is near Fear because it involves uncertainty about the future.',
+        'fear-1-nervous': 'Nervous is near Trust because it involves vulnerability and the need for safety.',
+        'fear-4-insecure': 'Insecure is near Surprise because it involves unexpected threats to self-worth.',
+        'surprise-1-startled': 'Startled is near Fear because it involves a sudden sense of threat or danger.',
+        'surprise-4-disappointed': 'Disappointed is near Sadness because it involves loss of hope and unmet expectations.',
+        'sad-1-hurt': 'Hurt is near Surprise because it often comes from unexpected emotional wounds.',
+        'sad-4-ashamed': 'Ashamed is near Disgust because it involves negative judgment of oneself.',
+        'disgust-1-dislike': 'Dislike is near Sadness because it involves emotional withdrawal and rejection.',
+        'disgust-4-disapproval': 'Disapproval is near Anger because it involves critical evaluation and potential confrontation.',
+        'anger-1-aggressive': 'Aggressive is near Disgust because it involves rejecting or pushing away what\'s unacceptable.',
+        'anger-4-critical': 'Critical is near Anticipation because it involves vigilance and preparation against potential problems.',
+        'anticipation-1-excited': 'Excited is near Anger because it involves intense energy and readiness for action.',
+        'anticipation-4-stressed': 'Stressed is near Joy because it involves high energy focused on achieving positive outcomes.'
+    };
+    return borders[emotionId] || null;
 }
 
 // Load quotations data
