@@ -57,8 +57,12 @@ body {
     transform: scale(1.02);
 }
 
-/* Allow clicks to pass through text to background */
+/* Allow clicks to pass through text and backgrounds to segments */
 #svg-wrapper text {
+    pointer-events: none;
+}
+
+#svg-wrapper g[id*="-background"] {
     pointer-events: none;
 }
 

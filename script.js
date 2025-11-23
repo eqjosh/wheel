@@ -37,42 +37,7 @@ function initializeInteractivity() {
         // Set initial background style - always visible at full opacity
         if (background) {
             background.style.opacity = '1.0';
-            background.style.transition = 'all 0.2s ease';
-            background.style.cursor = 'pointer';
-
-            // Make background clickable
-            background.addEventListener('click', (e) => {
-                e.stopPropagation();
-                segment.click(); // Trigger the segment click
-            });
-
-            // Add hover effect to background
-            background.addEventListener('mouseenter', () => {
-                if (!segment.classList.contains('active')) {
-                    background.style.opacity = '0.75';
-                }
-            });
-
-            background.addEventListener('mouseleave', () => {
-                if (!segment.classList.contains('active')) {
-                    background.style.opacity = '1.0';
-                }
-            });
         }
-
-        // Add hover effect to segment
-        segment.addEventListener('mouseenter', () => {
-            segment.style.cursor = 'pointer';
-            if (background && !segment.classList.contains('active')) {
-                background.style.opacity = '0.75';
-            }
-        });
-
-        segment.addEventListener('mouseleave', () => {
-            if (background && !segment.classList.contains('active')) {
-                background.style.opacity = '1.0';
-            }
-        });
 
         // Add click handler
         segment.addEventListener('click', (e) => {
@@ -84,10 +49,6 @@ function initializeInteractivity() {
                 // Remove text drop shadow
                 const texts = s.querySelectorAll('text');
                 texts.forEach(t => t.style.filter = '');
-
-                const bgId = getBackgroundId(s.id);
-                const bg = svg.querySelector(`#${bgId}`);
-                if (bg) bg.style.opacity = '1.0';
             });
 
             // Add active class to clicked segment
@@ -99,9 +60,6 @@ function initializeInteractivity() {
                 text.style.filter = 'drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4))';
                 text.style.transition = 'filter 0.2s ease';
             });
-
-            // Keep background at full opacity for active segment
-            if (background) background.style.opacity = '1.0';
 
             // Update info panel
             updateInfoPanel(segmentId);
@@ -115,10 +73,6 @@ function initializeInteractivity() {
             // Remove text drop shadow
             const texts = s.querySelectorAll('text');
             texts.forEach(t => t.style.filter = '');
-
-            const bgId = getBackgroundId(s.id);
-            const bg = svg.querySelector(`#${bgId}`);
-            if (bg) bg.style.opacity = '1.0';
         });
         showWelcomeMessage();
     });
