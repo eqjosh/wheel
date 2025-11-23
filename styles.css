@@ -30,7 +30,7 @@ body {
 }
 
 .wheel-container {
-    flex: 0 0 65%;
+    flex: 0 0 60%;
     background: white;
     padding: 20px;
     display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .info-panel {
-    flex: 0 0 35%;
+    flex: 0 0 40%;
     background: white;
     padding: 30px;
     border-left: 1px solid #e0e0e0;
@@ -94,6 +94,21 @@ body {
     padding-top: 20px;
     border-top: 2px solid #f0f0f0;
     text-align: center;
+}
+
+.panel-footer .copyright {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.panel-footer .copyright a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.panel-footer .copyright a:hover {
+    text-decoration: underline;
 }
 
 .panel-footer .version {
@@ -155,8 +170,8 @@ body {
 }
 
 .related-feelings {
-    margin-top: 25px;
-    padding-top: 20px;
+    margin-top: 5px;
+    padding-top: 0px;
 }
 
 .related-feelings p {

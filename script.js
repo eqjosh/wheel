@@ -309,7 +309,7 @@ function updateInfoPanel(emotionId) {
     if (emotion.border) {
         html += `
             <div class="border-info">
-                <p><span class="info-label">Border:</span> ${emotion.border}</p>
+                <p><span class="info-label">Emotional Algebra:</span> ${emotion.border}</p>
             </div>
         `;
     }
@@ -320,9 +320,9 @@ function updateInfoPanel(emotionId) {
             <p class="explore-label">Explore this Feeling:</p>
             <div class="action-icons">
                 <img src="action-message.png" class="action-icon" id="action-message" title="View guiding question" alt="Message">
-                <img src="action-opposite.png" class="action-icon" id="action-opposite" title="View opposite feeling" alt="Opposite">
                 <img src="action-overload.png" class="action-icon" id="action-overload" title="View overload risk" alt="Overload">
                 <img src="action-quotation.png" class="action-icon" id="action-quotation" title="View quotation" alt="Quotation">
+                <img src="action-opposite.png" class="action-icon" id="action-opposite" title="View opposite feeling" alt="Opposite">
             </div>
         </div>
     `;
@@ -342,7 +342,7 @@ function showWelcomeMessage() {
 
     infoContent.innerHTML = `
         <div class="welcome-message">
-            <h2>Welcome to the Emotion Wheel</h2>
+            <h2>Welcome to the Emotional Wisdom Wheel</h2>
             <p>This interactive wheel helps you identify and understand different emotions.</p>
             <p><strong>How to use:</strong></p>
             <ul>
