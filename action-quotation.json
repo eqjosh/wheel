@@ -1,0 +1,706 @@
+[
+  {
+    "id": "joy-1-optimistic",
+    "family": "Joy",
+    "feeling": "Optimistic",
+    "quotes": [
+      {
+        "text": "The sun’ll come out tomorrow.",
+        "speaker": "Annie",
+        "work": "Annie"
+      },
+      {
+        "text": "There’s some good in this world, and it’s worth fighting for.",
+        "speaker": "Samwise Gamgee",
+        "work": "The Lord of the Rings: The Two Towers"
+      },
+      {
+        "text": "Even miracles take a little time.",
+        "speaker": "Fairy Godmother",
+        "work": "Cinderella"
+      }
+    ]
+  },
+  {
+    "id": "joy-2-confident",
+    "family": "Joy",
+    "feeling": "Confident",
+    "quotes": [
+      {
+        "text": "I am no bird; and no net ensnares me.",
+        "speaker": "Jane Eyre",
+        "work": "Jane Eyre"
+      },
+      {
+        "text": "I know my worth.",
+        "speaker": "Carol Danvers",
+        "work": "Captain Marvel"
+      },
+      {
+        "text": "She wasn’t fragile like a flower… she was fragile like a bomb.",
+        "speaker": "Taylor Swift",
+        "work": "Miss Americana"
+      }
+    ]
+  },
+  {
+    "id": "joy-3-joyful",
+    "family": "Joy",
+    "feeling": "Joyful",
+    "quotes": [
+      {
+        "text": "I’m walking on sunshine, and don’t it feel good!",
+        "speaker": "Katrina & The Waves",
+        "work": "Walking on Sunshine"
+      },
+      {
+        "text": "Here comes the sun, and I say, it’s all right.",
+        "speaker": "George Harrison",
+        "work": "The Beatles"
+      },
+      {
+        "text": "To infinity and beyond!",
+        "speaker": "Buzz Lightyear",
+        "work": "Toy Story"
+      }
+    ]
+  },
+  {
+    "id": "joy-4-loving",
+    "family": "Joy",
+    "feeling": "Loving",
+    "quotes": [
+      {
+        "text": "All you need is love.",
+        "speaker": "John Lennon",
+        "work": "The Beatles"
+      },
+      {
+        "text": "Whatever our souls are made of, his and mine are the same.",
+        "speaker": "Emily Brontë",
+        "work": "Wuthering Heights"
+      },
+      {
+        "text": "After all this time?",
+        "speaker": "Severus Snape",
+        "work": "Harry Potter and the Deathly Hallows"
+      }
+    ]
+  },
+  {
+    "id": "anticipation-1-excited",
+    "family": "Anticipation",
+    "feeling": "Excited",
+    "quotes": [
+      {
+        "text": "I’m so excited, and I just can’t hide it!",
+        "speaker": "The Pointer Sisters",
+        "work": "I’m So Excited"
+      },
+      {
+        "text": "Adventure is out there!",
+        "speaker": "Ellie",
+        "work": "Up"
+      },
+      {
+        "text": "This is gonna be good.",
+        "speaker": "",
+        "work": "The Hunger Games"
+      }
+    ]
+  },
+  {
+    "id": "anticipation-2-eager",
+    "family": "Anticipation",
+    "feeling": "Eager",
+    "quotes": [
+      {
+        "text": "I can’t wait!",
+        "speaker": "Hermione Granger",
+        "work": "Harry Potter"
+      },
+      {
+        "text": "I want to go to there.",
+        "speaker": "Liz Lemon",
+        "work": "30 Rock"
+      },
+      {
+        "text": "Show me what you got.",
+        "speaker": "",
+        "work": "Top Gun"
+      }
+    ]
+  },
+  {
+    "id": "anticipation-3-interested",
+    "family": "Anticipation",
+    "feeling": "Interested",
+    "quotes": [
+      {
+        "text": "Tell me more.",
+        "speaker": "",
+        "work": "Grease"
+      },
+      {
+        "text": "Curioser and curioser!",
+        "speaker": "Alice",
+        "work": "Alice’s Adventures in Wonderland"
+      },
+      {
+        "text": "So… what happens next?",
+        "speaker": "",
+        "work": "The Princess Bride"
+      }
+    ]
+  },
+  {
+    "id": "anticipation-4-stressed",
+    "family": "Anticipation",
+    "feeling": "Stressed",
+    "quotes": [
+      {
+        "text": "I’m under a lot of pressure.",
+        "speaker": "Peter Parker",
+        "work": "Spider-Man 2"
+      },
+      {
+        "text": "It’s too much.",
+        "speaker": "Frodo Baggins",
+        "work": "The Lord of the Rings"
+      },
+      {
+        "text": "I’m hanging by a thread.",
+        "speaker": "",
+        "work": "Inside Out 2"
+      }
+    ]
+  },
+  {
+    "id": "anger-1-aggressive",
+    "family": "Anger",
+    "feeling": "Aggressive",
+    "quotes": [
+      {
+        "text": "Don’t make me angry. You wouldn’t like me when I’m angry.",
+        "speaker": "Bruce Banner",
+        "work": "The Incredible Hulk"
+      },
+      {
+        "text": "You dare challenge me?",
+        "speaker": "Thor",
+        "work": "Thor"
+      },
+      {
+        "text": "Say hello to my little friend!",
+        "speaker": "Tony Montana",
+        "work": "Scarface"
+      }
+    ]
+  },
+  {
+    "id": "anger-2-mad",
+    "family": "Anger",
+    "feeling": "Mad",
+    "quotes": [
+      {
+        "text": "I am very angry with you!",
+        "speaker": "Professor McGonagall",
+        "work": "Harry Potter"
+      },
+      {
+        "text": "You can’t handle the truth!",
+        "speaker": "Colonel Jessup",
+        "work": "A Few Good Men"
+      },
+      {
+        "text": "This means war.",
+        "speaker": "Bugs Bunny",
+        "work": "Looney Tunes"
+      }
+    ]
+  },
+  {
+    "id": "anger-3-frustrated",
+    "family": "Anger",
+    "feeling": "Frustrated",
+    "quotes": [
+      {
+        "text": "Why is everything so complicated?",
+        "speaker": "Avril Lavigne",
+        "work": "Complicated"
+      },
+      {
+        "text": "I’m trying, okay?",
+        "speaker": "",
+        "work": "Spider-Man: Homecoming"
+      },
+      {
+        "text": "This is not going the way you think.",
+        "speaker": "Luke Skywalker",
+        "work": "Star Wars: The Last Jedi"
+      }
+    ]
+  },
+  {
+    "id": "anger-4-critical",
+    "family": "Anger",
+    "feeling": "Critical",
+    "quotes": [
+      {
+        "text": "I’m not impressed.",
+        "speaker": "",
+        "work": "Gladiator"
+      },
+      {
+        "text": "Frankly, my dear, I don’t give a damn.",
+        "speaker": "Rhett Butler",
+        "work": "Gone With the Wind"
+      },
+      {
+        "text": "That’s… not ideal.",
+        "speaker": "Sherlock Holmes",
+        "work": "Sherlock (BBC)"
+      }
+    ]
+  },
+  {
+    "id": "disgust-1-dislike",
+    "family": "Disgust",
+    "feeling": "Dislike",
+    "quotes": [
+      {
+        "text": "I don’t like this.",
+        "speaker": "Rey",
+        "work": "Star Wars: The Force Awakens"
+      },
+      {
+        "text": "Ew, David!",
+        "speaker": "Alexis Rose",
+        "work": "Schitt’s Creek"
+      },
+      {
+        "text": "That’s disgusting!",
+        "speaker": "Hermione Granger",
+        "work": "Harry Potter"
+      }
+    ]
+  },
+  {
+    "id": "disgust-2-avoidance",
+    "family": "Disgust",
+    "feeling": "Avoidance",
+    "quotes": [
+      {
+        "text": "Get it away from me!",
+        "speaker": "Indiana Jones",
+        "work": "Indiana Jones and the Temple of Doom"
+      },
+      {
+        "text": "Nope, not today.",
+        "speaker": "",
+        "work": "Brooklyn Nine-Nine"
+      },
+      {
+        "text": "I’m not touching that.",
+        "speaker": "",
+        "work": "Finding Nemo"
+      }
+    ]
+  },
+  {
+    "id": "disgust-3-awful",
+    "family": "Disgust",
+    "feeling": "Awful",
+    "quotes": [
+      {
+        "text": "This is awful.",
+        "speaker": "Bilbo Baggins",
+        "work": "The Hobbit"
+      },
+      {
+        "text": "That’s the worst thing I’ve ever tasted!",
+        "speaker": "Remy",
+        "work": "Ratatouille"
+      },
+      {
+        "text": "What fresh hell is this?",
+        "speaker": "Dorothy Parker",
+        "work": ""
+      }
+    ]
+  },
+  {
+    "id": "disgust-4-disapproval",
+    "family": "Disgust",
+    "feeling": "Disapproval",
+    "quotes": [
+      {
+        "text": "I’m disappointed in you.",
+        "speaker": "Mufasa",
+        "work": "The Lion King"
+      },
+      {
+        "text": "You should not have done that.",
+        "speaker": "Gandalf",
+        "work": "The Lord of the Rings: The Fellowship of the Ring"
+      },
+      {
+        "text": "I expected better.",
+        "speaker": "Steve Rogers",
+        "work": "Marvel Cinematic Universe"
+      }
+    ]
+  },
+  {
+    "id": "sad-1-hurt",
+    "family": "Sadness",
+    "feeling": "Hurt",
+    "quotes": [
+      {
+        "text": "You hurt me.",
+        "speaker": "Elizabeth Bennet",
+        "work": "Pride and Prejudice"
+      },
+      {
+        "text": "The wound is the place where the light enters you.",
+        "speaker": "Rumi",
+        "work": ""
+      },
+      {
+        "text": "The heart was made to be broken.",
+        "speaker": "Oscar Wilde",
+        "work": ""
+      }
+    ]
+  },
+  {
+    "id": "sad-2-depressed",
+    "family": "Sadness",
+    "feeling": "Depressed",
+    "quotes": [
+      {
+        "text": "I feel so blue.",
+        "speaker": "Billie Holiday",
+        "work": "Am I Blue?"
+      },
+      {
+        "text": "Every night I lie in bed, the brightest colors fill my head… but I can’t shake this feeling.",
+        "speaker": "",
+        "work": "The Greatest Showman"
+      },
+      {
+        "text": "Hello darkness, my old friend.",
+        "speaker": "Simon & Garfunkel",
+        "work": "The Sound of Silence"
+      }
+    ]
+  },
+  {
+    "id": "sad-3-lonely",
+    "family": "Sadness",
+    "feeling": "Lonely",
+    "quotes": [
+      {
+        "text": "All by myself… don’t want to be all by myself anymore.",
+        "speaker": "Celine Dion",
+        "work": "All By Myself"
+      },
+      {
+        "text": "Eleanor Rigby… lives in a dream.",
+        "speaker": "The Beatles",
+        "work": "Eleanor Rigby"
+      },
+      {
+        "text": "I’ve never felt so alone.",
+        "speaker": "Harry Potter",
+        "work": "Harry Potter and the Order of the Phoenix"
+      }
+    ]
+  },
+  {
+    "id": "sad-4-ashamed",
+    "family": "Sadness",
+    "feeling": "Ashamed",
+    "quotes": [
+      {
+        "text": "I’m ashamed of what I’ve done.",
+        "speaker": "Jean Valjean",
+        "work": "Les Misérables"
+      },
+      {
+        "text": "Shame is an unhappy emotion invented by pietists in order to exploit the human race.",
+        "speaker": "William Blake",
+        "work": "The Marriage of Heaven and Hell"
+      },
+      {
+        "text": "I’m not proud of myself.",
+        "speaker": "Bruce Wayne",
+        "work": "Batman Begins"
+      }
+    ]
+  },
+  {
+    "id": "surprise-1-startled",
+    "family": "Surprise",
+    "feeling": "Startled",
+    "quotes": [
+      {
+        "text": "You startled me!",
+        "speaker": "Elizabeth Bennet",
+        "work": "Pride and Prejudice"
+      },
+      {
+        "text": "Great Scott!",
+        "speaker": "Doc Brown",
+        "work": "Back to the Future"
+      },
+      {
+        "text": "What was that?",
+        "speaker": "Bilbo Baggins",
+        "work": "The Hobbit"
+      }
+    ]
+  },
+  {
+    "id": "surprise-2-confused",
+    "family": "Surprise",
+    "feeling": "Confused",
+    "quotes": [
+      {
+        "text": "I don’t understand.",
+        "speaker": "Alice",
+        "work": "Alice’s Adventures in Wonderland"
+      },
+      {
+        "text": "Toto, I’ve a feeling we’re not in Kansas anymore.",
+        "speaker": "Dorothy",
+        "work": "The Wizard of Oz"
+      },
+      {
+        "text": "It’s all a bit of a blur.",
+        "speaker": "Bridget Jones",
+        "work": "Bridget Jones’s Diary"
+      }
+    ]
+  },
+  {
+    "id": "surprise-3-amazed",
+    "family": "Surprise",
+    "feeling": "Amazed",
+    "quotes": [
+      {
+        "text": "This is incredible.",
+        "speaker": "",
+        "work": "Jurassic Park"
+      },
+      {
+        "text": "It’s full of stars.",
+        "speaker": "Dave Bowman",
+        "work": "2001: A Space Odyssey"
+      },
+      {
+        "text": "I can’t believe my eyes!",
+        "speaker": "",
+        "work": "The Lion King"
+      }
+    ]
+  },
+  {
+    "id": "surprise-4-disappointed",
+    "family": "Surprise",
+    "feeling": "Disappointed",
+    "quotes": [
+      {
+        "text": "I’m disappointed in you.",
+        "speaker": "Atticus Finch",
+        "work": "To Kill a Mockingbird"
+      },
+      {
+        "text": "You were supposed to be the chosen one!",
+        "speaker": "Obi-Wan Kenobi",
+        "work": "Star Wars: Episode III – Revenge of the Sith"
+      },
+      {
+        "text": "This is not what I hoped for.",
+        "speaker": "Frodo Baggins",
+        "work": "The Lord of the Rings"
+      }
+    ]
+  },
+  {
+    "id": "trust-1-grateful",
+    "family": "Trust",
+    "feeling": "Grateful",
+    "quotes": [
+      {
+        "text": "Thank you, thank you very much.",
+        "speaker": "Elvis Presley",
+        "work": ""
+      },
+      {
+        "text": "I’ve got sunshine on a cloudy day.",
+        "speaker": "The Temptations",
+        "work": "My Girl"
+      },
+      {
+        "text": "These are a few of my favorite things.",
+        "speaker": "",
+        "work": "The Sound of Music"
+      }
+    ]
+  },
+  {
+    "id": "trust-2-peaceful",
+    "family": "Trust",
+    "feeling": "Peaceful",
+    "quotes": [
+      {
+        "text": "I feel at peace.",
+        "speaker": "Samwise Gamgee",
+        "work": "The Lord of the Rings"
+      },
+      {
+        "text": "Let it be.",
+        "speaker": "The Beatles",
+        "work": "Let It Be"
+      },
+      {
+        "text": "Be still, and know…",
+        "speaker": "",
+        "work": "Psalm 46:10"
+      }
+    ]
+  },
+  {
+    "id": "trust-3-accepted",
+    "family": "Trust",
+    "feeling": "Accepted",
+    "quotes": [
+      {
+        "text": "You have been my friend. That in itself is a tremendous thing.",
+        "speaker": "Charlotte",
+        "work": "Charlotte’s Web"
+      },
+      {
+        "text": "You belong with me.",
+        "speaker": "Taylor Swift",
+        "work": "You Belong With Me"
+      },
+      {
+        "text": "Come as you are.",
+        "speaker": "Kurt Cobain",
+        "work": "Come As You Are"
+      }
+    ]
+  },
+  {
+    "id": "trust-4-hopeful",
+    "family": "Trust",
+    "feeling": "Hopeful",
+    "quotes": [
+      {
+        "text": "Hope is a good thing, maybe the best of things.",
+        "speaker": "Andy Dufresne",
+        "work": "The Shawshank Redemption"
+      },
+      {
+        "text": "There’s a sunrise every morning that you’re missing.",
+        "speaker": "",
+        "work": "Dear Evan Hansen"
+      },
+      {
+        "text": "Even the darkest night will end and the sun will rise.",
+        "speaker": "",
+        "work": "Les Misérables"
+      }
+    ]
+  },
+  {
+    "id": "fear-1-nervous",
+    "family": "Fear",
+    "feeling": "Nervous",
+    "quotes": [
+      {
+        "text": "I’ve got a bad feeling about this.",
+        "speaker": "Han Solo",
+        "work": "Star Wars"
+      },
+      {
+        "text": "My hands are shaking.",
+        "speaker": "",
+        "work": "The Hunger Games"
+      },
+      {
+        "text": "Courage is not the absence of fear.",
+        "speaker": "Nelson Mandela",
+        "work": ""
+      }
+    ]
+  },
+  {
+    "id": "fear-2-scared",
+    "family": "Fear",
+    "feeling": "Scared",
+    "quotes": [
+      {
+        "text": "I’m scared.",
+        "speaker": "Coraline",
+        "work": "Coraline"
+      },
+      {
+        "text": "They’re here…",
+        "speaker": "Carol Anne",
+        "work": "Poltergeist"
+      },
+      {
+        "text": "Please don’t let this be real.",
+        "speaker": "",
+        "work": "Stranger Things"
+      }
+    ]
+  },
+  {
+    "id": "fear-3-anxious",
+    "family": "Fear",
+    "feeling": "Anxious",
+    "quotes": [
+      {
+        "text": "I can’t calm down.",
+        "speaker": "",
+        "work": "Inside Out"
+      },
+      {
+        "text": "I’m worried about everything.",
+        "speaker": "",
+        "work": "Harry Potter and the Deathly Hallows"
+      },
+      {
+        "text": "Something is wrong… I can feel it.",
+        "speaker": "Frodo Baggins",
+        "work": "The Lord of the Rings"
+      }
+    ]
+  },
+  {
+    "id": "fear-4-insecure",
+    "family": "Fear",
+    "feeling": "Insecure",
+    "quotes": [
+      {
+        "text": "I don’t feel good enough.",
+        "speaker": "",
+        "work": "The Perks of Being a Wallflower"
+      },
+      {
+        "text": "You think I’m not good enough.",
+        "speaker": "",
+        "work": "Lady Bird"
+      },
+      {
+        "text": "Am I strong enough?",
+        "speaker": "",
+        "work": "Mulan"
+      }
+    ]
+  }
+]
