@@ -34,9 +34,9 @@ function initializeInteractivity() {
         const backgroundId = getBackgroundId(segmentId);
         const background = svg.querySelector(`#${backgroundId}`);
 
-        // Set initial background style - always visible
+        // Set initial background style - always visible at full opacity
         if (background) {
-            background.style.opacity = '0.3';
+            background.style.opacity = '1.0';
             background.style.transition = 'all 0.2s ease';
             background.style.cursor = 'pointer';
 
@@ -55,7 +55,7 @@ function initializeInteractivity() {
 
             background.addEventListener('mouseleave', () => {
                 if (!segment.classList.contains('active')) {
-                    background.style.opacity = '0.3';
+                    background.style.opacity = '1.0';
                 }
             });
         }
@@ -70,7 +70,7 @@ function initializeInteractivity() {
 
         segment.addEventListener('mouseleave', () => {
             if (background && !segment.classList.contains('active')) {
-                background.style.opacity = '0.3';
+                background.style.opacity = '1.0';
             }
         });
 
@@ -87,7 +87,7 @@ function initializeInteractivity() {
 
                 const bgId = getBackgroundId(s.id);
                 const bg = svg.querySelector(`#${bgId}`);
-                if (bg) bg.style.opacity = '0.3';
+                if (bg) bg.style.opacity = '1.0';
             });
 
             // Add active class to clicked segment
@@ -100,8 +100,8 @@ function initializeInteractivity() {
                 text.style.transition = 'filter 0.2s ease';
             });
 
-            // Darken background for active segment
-            if (background) background.style.opacity = '0.6';
+            // Keep background at full opacity for active segment
+            if (background) background.style.opacity = '1.0';
 
             // Update info panel
             updateInfoPanel(segmentId);
@@ -118,7 +118,7 @@ function initializeInteractivity() {
 
             const bgId = getBackgroundId(s.id);
             const bg = svg.querySelector(`#${bgId}`);
-            if (bg) bg.style.opacity = '0.3';
+            if (bg) bg.style.opacity = '1.0';
         });
         showWelcomeMessage();
     });
