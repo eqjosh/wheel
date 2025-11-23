@@ -54,7 +54,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     display: block;
-    transform: scale(1.15);
+    transform: scale(1.0);
 }
 
 .info-panel {
@@ -75,11 +75,18 @@ body {
 
 .panel-header h1 {
     font-size: 2em;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     color: #333;
 }
 
-.panel-header .version {
+.panel-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+    text-align: center;
+}
+
+.panel-footer .version {
     font-size: 0.85em;
     color: #999;
     font-weight: 500;
@@ -168,7 +175,15 @@ body {
 #svg-wrapper g[id*="-3-"],
 #svg-wrapper g[id*="-4-"] {
     cursor: pointer;
-    transition: filter 0.2s ease;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect */
+#svg-wrapper g[id*="-1-"]:hover,
+#svg-wrapper g[id*="-2-"]:hover,
+#svg-wrapper g[id*="-3-"]:hover,
+#svg-wrapper g[id*="-4-"]:hover {
+    filter: brightness(1.15) drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
 }
 
 /* Active/Click effect */
