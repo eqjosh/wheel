@@ -49,7 +49,7 @@ function initializeInteractivity() {
             // Add hover effect to background
             background.addEventListener('mouseenter', () => {
                 if (!segment.classList.contains('active')) {
-                    background.style.opacity = '0.5';
+                    background.style.opacity = '0.75';
                 }
             });
 
@@ -64,7 +64,7 @@ function initializeInteractivity() {
         segment.addEventListener('mouseenter', () => {
             segment.style.cursor = 'pointer';
             if (background && !segment.classList.contains('active')) {
-                background.style.opacity = '0.5';
+                background.style.opacity = '0.75';
             }
         });
 
