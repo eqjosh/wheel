@@ -2,14 +2,16 @@
 let quotationsData = [];
 let emotionsData = {};
 let currentEmotionId = null;
+let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+let localeData = null;
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     await loadSVG();
-    await loadEmotionsData();
-    await loadQuotations();
+    await loadLocale(currentLanguage);
     initializeInteractivity();
     initializeModal();
+    initializeLanguageSelector();
 });
 
 // Load external SVG file and inject it into the DOM
@@ -24,22 +26,22 @@ async function loadSVG() {
     }
 }
 
-// Load emotions data from JSON
-async function loadEmotionsData() {
+// Load locale data (replaces loadEmotionsData and loadQuotations)
+async function loadLocale(lang) {
     try {
-        const response = await fetch('emotion-wheel-data.json');
-        const data = await response.json();
+        const response = await fetch(`locales/${lang}.json`);
+        localeData = await response.json();
 
-        // Convert array to object keyed by emotion id
+        // Convert emotions array to object keyed by emotion id
         emotionsData = {};
-        data.emotions.forEach(emotion => {
+        localeData.emotions.forEach(emotion => {
             emotionsData[emotion.id] = {
                 name: emotion.name,
                 category: emotion.category,
                 color: getCategoryColor(emotion.category),
-                description: getOriginalDescription(emotion.id),
-                relatedFeelings: getRelatedFeelings(emotion.id),
-                border: getBorderInfo(emotion.id),
+                description: emotion.description,
+                relatedFeelings: emotion.relatedFeelings,
+                border: emotion.borderInfo || null,
                 question: emotion.question,
                 overloadRisk: emotion.overloadRisk,
                 overloadTip: emotion.overloadTip,
@@ -47,10 +49,47 @@ async function loadEmotionsData() {
                 oppositeId: emotion.oppositeId
             };
         });
+
+        // Store quotes
+        quotationsData = localeData.quotes;
+
+        // Update UI text
+        updateUIText();
+
+        // Refresh the info panel if an emotion is selected
+        if (currentEmotionId) {
+            updateInfoPanel(currentEmotionId);
+        } else {
+            showWelcomeMessage();
+        }
+
     } catch (error) {
-        console.error('Error loading emotions data:', error);
+        console.error('Error loading locale:', error);
         emotionsData = {};
+        quotationsData = {};
     }
+}
+
+// Update UI text based on current locale
+function updateUIText() {
+    if (!localeData) return;
+
+    const ui = localeData.ui;
+    document.getElementById('page-title').textContent = ui.title;
+    document.querySelector('.copyright').innerHTML = `${ui.copyright} <a href="https://emotionrules.com" target="_blank">${ui.copyrightLink}</a>`;
+    document.querySelector('.version').textContent = ui.version;
+}
+
+// Initialize language selector
+function initializeLanguageSelector() {
+    const selector = document.getElementById('language-selector');
+    selector.value = currentLanguage;
+
+    selector.addEventListener('change', async (e) => {
+        currentLanguage = e.target.value;
+        localStorage.setItem('preferredLanguage', currentLanguage);
+        await loadLocale(currentLanguage);
+    });
 }
 
 // Get color for emotion category

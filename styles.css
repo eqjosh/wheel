@@ -81,12 +81,39 @@ body {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .panel-header h1 {
     font-size: 2em;
     margin-bottom: 0;
     color: #333;
+    flex: 1;
+}
+
+.language-selector {
+    padding: 8px 12px;
+    font-size: 0.95em;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 120px;
+}
+
+.language-selector:hover {
+    border-color: #999;
+}
+
+.language-selector:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .panel-footer {
