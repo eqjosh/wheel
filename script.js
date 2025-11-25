@@ -379,15 +379,31 @@ function showWelcomeMessage() {
     const infoContent = document.getElementById('info-content');
     currentEmotionId = null;
 
+    if (!localeData) {
+        infoContent.innerHTML = `
+            <div class="welcome-message">
+                <h2>Welcome to the Emotional Wisdom Wheel</h2>
+                <p>This interactive wheel helps you identify and understand different emotions.</p>
+                <p><strong>How to use:</strong></p>
+                <ul>
+                    <li>Hover over any segment to highlight it</li>
+                    <li>Click on a segment to learn more about that emotion</li>
+                    <li>Explore the 8 core emotions and 32 related feelings</li>
+                </ul>
+            </div>
+        `;
+        return;
+    }
+
+    const ui = localeData.ui;
+    const stepsHtml = ui.howToUseSteps.map(step => `<li>${step}</li>`).join('');
+
     infoContent.innerHTML = `
         <div class="welcome-message">
-            <h2>Welcome to the Emotional Wisdom Wheel</h2>
-            <p>This interactive wheel helps you identify and understand different emotions.</p>
-            <p><strong>How to use:</strong></p>
+            <p>${ui.welcomeMessage}</p>
+            <p><strong>${ui.howToUseTitle}</strong></p>
             <ul>
-                <li>Hover over any segment to highlight it</li>
-                <li>Click on a segment to learn more about that emotion</li>
-                <li>Explore the 8 core emotions and 32 related feelings</li>
+                ${stepsHtml}
             </ul>
         </div>
     `;
@@ -505,9 +521,9 @@ function showQuotationAction() {
     if (!emotion) return;
 
     // Get quotations for this emotion
-    const quotes = quotationsData.filter(q => q.id === currentEmotionId);
+    const quotes = quotationsData[currentEmotionId];
 
-    if (quotes.length === 0) {
+    if (!quotes || quotes.length === 0) {
         showModal(emotion.name + ' - Quotations', '<p>No quotations available for this feeling.</p>');
         return;
     }
@@ -523,7 +539,7 @@ function showQuotationAction() {
 
         quotesHtml += `
             <p class="quote-compact">
-                "${quote.quote_text}" ${attribution}
+                "${quote.text}" ${attribution}
             </p>
         `;
     });
