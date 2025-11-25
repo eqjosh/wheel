@@ -56,6 +56,9 @@ async function loadLocale(lang) {
         // Update UI text
         updateUIText();
 
+        // Update SVG text elements
+        updateSVGText();
+
         // Refresh the info panel if an emotion is selected
         if (currentEmotionId) {
             updateInfoPanel(currentEmotionId);
@@ -78,6 +81,44 @@ function updateUIText() {
     document.getElementById('page-title').textContent = ui.title;
     document.querySelector('.copyright').innerHTML = `${ui.copyright} <a href="https://emotionrules.com" target="_blank">${ui.copyrightLink}</a>`;
     document.querySelector('.version').textContent = ui.version;
+}
+
+// Update SVG text elements with translated content
+function updateSVGText() {
+    if (!localeData || !emotionsData) return;
+
+    const svg = document.querySelector('#svg-wrapper svg');
+    if (!svg) return;
+
+    // Iterate through each emotion and update its SVG text elements
+    Object.keys(emotionsData).forEach(emotionId => {
+        const emotion = emotionsData[emotionId];
+        const emotionGroup = svg.querySelector(`#${emotionId}`);
+
+        if (!emotionGroup) return;
+
+        // Get all text elements in this group
+        const textElements = emotionGroup.querySelectorAll('text tspan');
+
+        if (textElements.length === 0) return;
+
+        // Update related feelings and emotion name
+        // The pattern is: related feeling(s), then the main emotion name (usually last and largest)
+        const relatedFeelings = emotion.relatedFeelings || [];
+
+        // Update the related feelings (first N-1 text elements)
+        relatedFeelings.forEach((feeling, index) => {
+            if (textElements[index]) {
+                textElements[index].textContent = feeling;
+            }
+        });
+
+        // Update the main emotion name (last text element)
+        const mainNameIndex = textElements.length - 1;
+        if (textElements[mainNameIndex]) {
+            textElements[mainNameIndex].textContent = emotion.name;
+        }
+    });
 }
 
 // Initialize language selector
