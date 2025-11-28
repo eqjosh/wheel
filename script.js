@@ -377,11 +377,11 @@ function updateInfoPanel(emotionId) {
             <p class="emotion-description">${emotion.description}</p>
 
             <div class="purpose-info">
-                <p><span class="info-label">Purpose:</span> ${emotion.adaptivePurpose}</p>
+                <p><span class="info-label">${localeData.ui.adaptivePurposeLabel}:</span> ${emotion.adaptivePurpose}</p>
             </div>
 
             <div class="related-feelings">
-                <p><span class="info-label">Related Feelings:</span> ${emotion.relatedFeelings.join(', ')}</p>
+                <p><span class="info-label">${localeData.ui.relatedFeelingsLabel}:</span> ${emotion.relatedFeelings.join(', ')}</p>
             </div>
     `;
 
@@ -389,7 +389,7 @@ function updateInfoPanel(emotionId) {
     if (emotion.border) {
         html += `
             <div class="border-info">
-                <p><span class="info-label">Emotional Algebra:</span> ${emotion.border}</p>
+                <p><span class="info-label">${localeData.ui.borderInfoLabel}:</span> ${emotion.border}</p>
             </div>
         `;
     }
@@ -397,7 +397,7 @@ function updateInfoPanel(emotionId) {
     // Add explore this feeling section with action icons
     html += `
         <div class="explore-feeling">
-            <p class="explore-label">Explore this Feeling:</p>
+            <p class="explore-label">${localeData.ui.exploreThisFeelingLabel}:</p>
             <div class="action-icons">
                 <img src="action-message.png" class="action-icon" id="action-message" title="View guiding question" alt="Message">
                 <img src="action-overload.png" class="action-icon" id="action-overload" title="View overload risk" alt="Overload">

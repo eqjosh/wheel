@@ -19,7 +19,10 @@
     "quotesLabel": "心に響く引用",
     "adaptivePurposeLabel": "適応目的",
     "overloadRiskLabel": "過負荷リスク",
-    "overloadTipLabel": "バランス調整のヒント"
+    "overloadTipLabel": "バランス調整のヒント",
+    "exploreThisFeelingLabel": "この感情を探求する",
+    "purposeLabel": "目的",
+    "emotionalAlgebraLabel": "感情の代数"
   },
   "emotions": [
     {
@@ -156,34 +159,34 @@
     },
     {
       "id": "fear-1-nervous",
-      "name": "Nervous",
+      "name": "緊張",
       "category": "恐怖",
-      "description": "A state of unease or apprehension about something uncertain. Nervousness is a natural response to situations that feel challenging or unfamiliar.",
+      "description": "不確実なものに対する不安や懸念の状態。緊張は、困難に感じられる状況や不慣れな状況に対する自然な反応である。",
       "question": "何がリスクを生み出しているのか？何が予測不可能、あるいは制御不能に感じられるのか？",
       "overloadRisk": "この感情を使いすぎると、あらゆる場所に危険を見出したり、考えすぎたり、仮定のシナリオに麻痺したりする可能性があります。",
       "overloadTip": "バランスを取るには、懸念している具体的なリスクを一つ挙げ、準備や仮定の検証のために取れる小さな行動を一つ考えましょう。",
       "adaptivePurpose": "何かが不確実または危険に感じられ、注意や準備が必要かもしれないという合図です。",
       "relatedFeelings": [
-        "Threatened",
-        "Uneasy",
-        "Jittery"
+        "脅威を感じる",
+        "不安",
+        "そわそわする"
       ],
       "oppositeId": null,
-      "borderInfo": "Nervous is near Trust because it involves vulnerability and the need for safety."
+      "borderInfo": "緊張は信頼に近い感情です。脆弱性と安全への欲求が関わるためです。"
     },
     {
       "id": "fear-2-scared",
-      "name": "Scared",
+      "name": "怖がる",
       "category": "恐怖",
-      "description": "An intense feeling of fear or alarm. Being scared is your body's way of alerting you to potential danger.",
-      "question": "What or who do you care about that's at risk? What danger or harm are you sensing?",
-      "overloadRisk": "If you over-use this feeling, you may withdraw from what matters most or avoid important steps because they feel too scary.",
-      "overloadTip": "To balance, clarify what you most want to protect and choose one action that increases safety while still honoring what you care about.",
-      "adaptivePurpose": "Signals that something you care about feels threatened and needs protection or attention.",
+      "description": "強い恐怖や警戒感。怖がることは、潜在的な危険を身体が警告する方法です。",
+      "question": "危険にさらされている大切な人や物は何ですか？ どんな危険や危害を感じていますか？",
+      "overloadRisk": "この感情を使いすぎると、最も大切なものから距離を置いたり、重要な行動を「怖すぎる」と感じて避けたりする可能性があります。",
+      "overloadTip": "バランスを取るには、最も守りたいものを明確にし、大切にしているものを尊重しつつ安全を高める行動を一つ選びましょう。",
+      "adaptivePurpose": "あなたが大切にしている何かが脅威にさらされ、保護や注意を必要としていることを示す。",
       "relatedFeelings": [
-        "Frightened",
-        "Terrified",
-        "Alarmed"
+        "怯える",
+        "恐怖に震える",
+        "警戒する"
       ],
       "oppositeId": null
     },
@@ -197,9 +200,9 @@
       "overloadTip": "To balance, sort your worries into 'things I can influence' and 'things I cannot,' then choose one small step on something you can influence.",
       "adaptivePurpose": "Signals that you are scanning for long-term threats or uncertainties that may need planning or protection.",
       "relatedFeelings": [
-        "Dread",
-        "Worry",
-        "Tense"
+        "恐怖",
+        "心配",
+        "緊張"
       ],
       "oppositeId": null
     },
@@ -208,17 +211,17 @@
       "name": "不安",
       "category": "恐怖",
       "description": "自分自身や状況における自分の立場に対する自信や確信の欠如。不安はしばしば自己不信や拒絶への恐れに起因する。",
-      "question": "What makes you doubt yourself? What do you fear others might think or see?",
-      "overloadRisk": "If you over-use this feeling, you may constantly seek validation, people-please, or hold back your contributions.",
+      "question": "何が自分を疑わせるのか？ 他人がどう思うか、どう見られるかを恐れているのか？",
+      "overloadRisk": "この感情を使いすぎると、常に承認を求めたり、人に迎合したり、自分の貢献を控えたりしてしまう可能性がある。",
       "overloadTip": "バランスを取るには、自分の強みの具体的な証拠を思い出し、想像上の批判ではなく信頼できる相手から現実的なフィードバックを求めること。",
       "adaptivePurpose": "自分の価値感、能力、受け入れられ感が不安定に感じられ、安心感、学び、境界線が必要かもしれないというサイン。",
       "relatedFeelings": [
-        "Rejected",
-        "Inadequate",
-        "Uncertain"
+        "拒絶された",
+        "不十分",
+        "不確実"
       ],
       "oppositeId": null,
-      "borderInfo": "Insecure is near Surprise because it involves unexpected threats to self-worth."
+      "borderInfo": "不安定は驚きに近い。自己価値への予期せぬ脅威を伴うため。"
     },
     {
       "id": "surprise-1-startled",
@@ -288,69 +291,69 @@
     },
     {
       "id": "sad-1-hurt",
-      "name": "Hurt",
+      "name": "傷つく",
       "category": "悲しみ",
-      "description": "Emotional pain caused by something or someone. Hurt feelings often arise from perceived rejection, criticism, or loss.",
-      "question": "What value or relationship was impacted? What healing or repair would help?",
-      "overloadRisk": "If you over-use this feeling, you may hold onto grudges, assume bad intentions, or close yourself off from repair.",
-      "overloadTip": "To balance, acknowledge the pain and why it matters, then consider whether and how you want to communicate it or seek healing support.",
-      "adaptivePurpose": "Signals that something or someone important has wounded your sense of safety, worth, or connection.",
+      "description": "何らかの出来事や人物によって引き起こされる感情的な痛み。拒絶や批判、喪失感から生じることが多い。",
+      "question": "どのような価値や関係性が影響を受けましたか？どのような癒やしや修復が助けになりますか？",
+      "overloadRisk": "この感情を使いすぎると、恨みを抱え続けたり、悪意を想定したり、修復から自らを閉ざしたりする可能性があります。",
+      "overloadTip": "バランスを取るには、その痛みとそれが重要な理由を認め、それを伝えるか癒しのサポートを求めるか、その必要性と方法を考えてみてください。",
+      "adaptivePurpose": "重要な何か、あるいは誰かが、あなたの安全感、価値感、つながりの感覚を傷つけたことを知らせます。",
       "relatedFeelings": [
-        "Dismayed",
-        "Threatened",
-        "Wounded"
+        "落胆",
+        "脅威を感じる",
+        "傷ついた"
       ],
       "oppositeId": null,
-      "borderInfo": "Hurt is near Surprise because it often comes from unexpected emotional wounds."
+      "borderInfo": "傷つきは驚きに近い感情です。予期せぬ感情的な傷から生じることが多いためです。"
     },
     {
       "id": "sad-2-depressed",
-      "name": "Depressed",
+      "name": "抑うつ",
       "category": "悲しみ",
-      "description": "A state of deep sadness and low energy. Depression can make everything feel heavy and difficult to manage.",
+      "description": "深い悲しみと活力の低下状態。抑うつは全てを重く感じさせ、対処困難にします。",
       "question": "What feels depleted or hopeless? What small source of care, support, or meaning can you reconnect with?",
       "overloadRisk": "If you over-use this feeling, you may stop seeing any possibility, withdraw completely, or neglect basic self-care.",
       "overloadTip": "To balance, choose one tiny, compassionate action—such as reaching out, moving your body, or doing one simple task—that adds a bit of structure or support.",
       "adaptivePurpose": "Signals that your energy, motivation, or sense of meaning has dropped and you may need rest, support, or reorientation.",
       "relatedFeelings": [
-        "Bereft",
-        "Numb",
-        "Empty"
+        "喪失感",
+        "感覚の麻痺",
+        "虚無感"
       ],
       "oppositeId": null
     },
     {
       "id": "sad-3-lonely",
-      "name": "Lonely",
+      "name": "孤独",
       "category": "悲しみ",
-      "description": "A painful feeling of isolation or disconnection from others. Loneliness highlights our need for meaningful connection.",
-      "question": "What connection do you need right now? Who could help you feel more seen or supported?",
-      "overloadRisk": "If you over-use this feeling, you may believe you are fundamentally alone or unlovable and pull back even more.",
+      "description": "他者からの孤立や断絶という痛ましい感覚。孤独は、意味ある繋がりの必要性を浮き彫りにします。",
+      "question": "今、どんな繋がりが必要ですか？誰があなたをもっと理解したり支えたりしてくれるでしょうか？",
+      "overloadRisk": "この感情を使いすぎると、自分は根本的に孤独で愛されない存在だと信じ込み、さらに引きこもってしまう可能性があります。",
       "overloadTip": "To balance, identify one small, safe way to reach toward connection—a message, a call, a shared space, or naming your need to someone you trust.",
       "adaptivePurpose": "Signals that your need for connection, belonging, or being seen is not being met.",
       "relatedFeelings": [
-        "Abandoned",
-        "Isolated",
-        "Disconnected"
+        "見捨てられた",
+        "孤立した",
+        "繋がりを失った"
       ],
       "oppositeId": null
     },
     {
       "id": "sad-4-ashamed",
-      "name": "Ashamed",
+      "name": "恥",
       "category": "悲しみ",
-      "description": "A painful feeling of humiliation or distress caused by believing you've done something wrong or embarrassing. Shame affects how you see yourself.",
-      "question": "What standard are you holding yourself to? What self-compassion or repair would support growth?",
-      "overloadRisk": "If you over-use this feeling, you may turn a specific mistake into a belief that you are bad or unworthy and hide your true self.",
-      "overloadTip": "To balance, separate 'I did something' from 'I am something,' and choose one step of learning, repair, or apology that aligns with your values.",
-      "adaptivePurpose": "Signals that your behavior or choices may not match your values and invites reflection, repair, and growth.",
+      "description": "自分が何か間違ったことや恥ずかしいことをしたと信じることで生じる、屈辱や苦痛を伴う感情。恥は自己認識に影響を与えます。",
+      "question": "あなたは自分自身にどんな基準を課していますか？成長を支える自己慈愛や修復とは何でしょうか？",
+      "overloadRisk": "この感情を使いすぎると、特定の過ちを「自分は悪い人間だ」「価値がない」という信念に変え、本当の自分を隠してしまう可能性があります。",
+      "overloadTip": "バランスを取るには、「私は何かをした」と「私は何かである」を分離し、自分の価値観に沿った学び、修復、謝罪のいずれか一歩を選びましょう。",
+      "adaptivePurpose": "自分の行動や選択が価値観と一致していない可能性を示し、内省、修復、成長を促します。",
       "relatedFeelings": [
-        "Remorseful",
-        "Guilty",
-        "Embarrassed"
+        "後悔",
+        "罪悪感",
+        "恥ずかしさ"
       ],
       "oppositeId": null,
-      "borderInfo": "Ashamed is near Disgust because it involves negative judgment of oneself."
+      "borderInfo": "恥は嫌悪に近い感情です。自己に対する否定的な判断を伴うためです。"
     },
     {
       "id": "disgust-1-dislike",
@@ -425,8 +428,8 @@
       "description": "力強く対立的な怒りの表現。攻撃性は脅威や挫折感への反応として現れることが多い。",
       "question": "守るべき境界線は何か？行動せざるを得ないほど重要なことは何か？",
       "overloadRisk": "この感情を過剰に使うと、他人を傷つけたり、対立を激化させたり、自身の目標を損なうような方法で暴走する恐れがある。",
-      "overloadTip": "To balance, pause before acting, use the energy to choose clear and firm words or actions, and focus on the outcome you truly want.",
-      "adaptivePurpose": "Signals that you perceive a serious threat, injustice, or violation and feel a strong drive to defend or protect.",
+      "overloadTip": "行動前に一呼吸置き、そのエネルギーを明確で断固たる言葉や行動の選択に活用し、真に望む結果に集中することでバランスを取ろう。",
+      "adaptivePurpose": "深刻な脅威・不正・侵害を感知し、防衛・保護への強い衝動を感じていることを示す。",
       "relatedFeelings": [
         "敵意",
         "挑発された",
@@ -437,17 +440,17 @@
     },
     {
       "id": "anger-2-mad",
-      "name": "Mad",
+      "name": "激怒",
       "category": "怒り",
-      "description": "An intense feeling of displeasure or rage. Being mad signals that something has violated your boundaries or expectations.",
-      "question": "What value or expectation was violated? What do you need to express or repair?",
-      "overloadRisk": "If you over-use this feeling, you may hold grudges, replay the story, or attack rather than seek resolution.",
-      "overloadTip": "To balance, name specifically what was not okay and decide whether you want to set a boundary, ask for change, or consciously let it go.",
-      "adaptivePurpose": "Signals that something feels unfair or not okay and that you want change or acknowledgment.",
+      "description": "強い不快感や激怒の感情。激怒は、何かがあなたの境界線や期待を侵害したことを示している。",
+      "question": "どの価値観や期待が侵害されたのか？何を表現し、修復する必要があるのか？",
+      "overloadRisk": "この感情を使いすぎると、恨みを抱いたり、出来事を繰り返し思い返したり、解決を求める代わりに攻撃的になる可能性があります。",
+      "overloadTip": "バランスを取るには、具体的に何が問題だったかを明確にし、境界線を設定するか、変化を求めるか、意識的に手放すかを決めてください。",
+      "adaptivePurpose": "不公平さや問題点を示し、変化や承認を求める信号です。",
       "relatedFeelings": [
-        "Enraged",
-        "Furious",
-        "Livid"
+        "激怒",
+        "猛烈な怒り",
+        "激怒"
       ],
       "oppositeId": null
     },
@@ -457,8 +460,8 @@
       "category": "怒り",
       "description": "何かを達成できない時の動揺や苛立ち。目標が阻まれたり、満たされない欲求から生じる。",
       "question": "目標達成の妨げになっているものは何か？前進するために必要な変化（内的・外的）は何か？",
-      "overloadRisk": "If you over-use this feeling, you may give up, blame others, or push people too hard.",
-      "overloadTip": "To balance, step back to clarify your goal, then choose one different approach, request, or boundary that could unlock movement.",
+      "overloadRisk": "この感情を使いすぎると、諦めたり、他人を責めたり、人に無理を強いたりする恐れがあります。",
+      "overloadTip": "バランスを取るには、一歩引いて目標を明確にし、動きを解き放つ可能性のある別のアプローチ、要求、境界線を一つの選択してください。",
       "adaptivePurpose": "努力が阻まれ、進展・効率・異なる結果を求めていることを示す。",
       "relatedFeelings": [
         "いらだち",
@@ -472,8 +475,8 @@
       "name": "批判的",
       "category": "怒り",
       "description": "欠点を見つけたり厳しく判断する傾向。批判的であることは、認識された欠陥や失敗に向けられた怒りの一形態となり得る。",
-      "question": "What improvement do you see is needed? What outcome are you trying to protect or enhance?",
-      "overloadRisk": "If you over-use this feeling, you may default to fault-finding, discourage others, or block creativity and experimentation.",
+      "question": "どのような改善が必要だとお考えですか？ どのような結果を守り、高めようとしていますか？",
+      "overloadRisk": "この感情を過剰に使用すると、欠点探しに陥り、他者を落胆させ、創造性や実験を阻害する可能性があります。",
       "overloadTip": "バランスを取るには、懸念を指摘する前に少なくとも1つの良い点を認め、批判を「共同の改善への貢献」として位置付けましょう。",
       "adaptivePurpose": "リスクや誤り、改善の可能性に気づき、品質や完全性を重視していることを示すサインです。",
       "relatedFeelings": [
@@ -543,12 +546,12 @@
       "overloadTip": "バランスを取るには、減らせる・委任できる・延期できる要求を一つ特定し、エネルギーや明晰さを回復する短い実践を一つ見つけましょう。",
       "adaptivePurpose": "要求が現在のリソースを上回っていると感じられ、何かを変える必要があることを示します。",
       "relatedFeelings": [
-        "Overwhelmed",
-        "Pressured",
-        "Tense"
+        "圧倒される",
+        "圧迫される",
+        "緊張する"
       ],
       "oppositeId": null,
-      "borderInfo": "Stressed is near Joy because it involves high energy focused on achieving positive outcomes."
+      "borderInfo": "ストレスは喜びに近い。なぜなら、ポジティブな結果を達成するために高いエネルギーが集中する状態だからだ。"
     }
   ],
   "quotes": {
