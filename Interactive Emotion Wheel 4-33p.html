@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Emotion Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emotion Wheel</h1>
+            <p class="subtitle">Click on any segment to explore emotions</p>
+        </header>
+
+        <div class="main-content">
+            <div class="wheel-container">
+                <div id="svg-wrapper"></div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-content" id="info-content">
+                    <div class="welcome-message">
+                        <h2>Welcome to the Emotion Wheel</h2>
+                        <p>This interactive wheel helps you identify and understand different emotions.</p>
+                        <p><strong>How to use:</strong></p>
+                        <ul>
+                            <li>Hover over any segment to highlight it</li>
+                            <li>Click on a segment to learn more about that emotion</li>
+                            <li>Explore the 8 core emotions and 32 related feelings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="emotions-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

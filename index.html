@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Emotion Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="wheel-container">
+                <div id="svg-wrapper">
+                    <!-- SVG loaded dynamically via JavaScript -->
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="panel-header">
+                    <h1 id="page-title">Emotional Wisdom Wheel</h1>
+                    <select id="language-selector" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+
+                <div class="info-content" id="info-content">
+                    <div class="welcome-message">
+                        <p>This interactive wheel helps you identify and understand different emotions.</p>
+                        <p><strong>How to use:</strong></p>
+                        <ul>
+                            <li>Hover over any segment to highlight it</li>
+                            <li>Click on a segment to learn more about that emotion</li>
+                            <li>Explore the 8 core emotions and 32 related feelings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                    <p class="copyright">©Joshua Freedman from the new book: <a href="https://emotionrules.com" target="_blank">Emotion Rules</a></p>
+                    <p class="version">v2.9</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
