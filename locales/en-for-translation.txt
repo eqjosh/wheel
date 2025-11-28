@@ -1,0 +1,375 @@
+# EMOTION WHEEL - ENGLISH TEXT FOR TRANSLATION
+# Format: KEY: Text to translate
+# Please translate only the text after the colon (:)
+
+# ===== UI STRINGS =====
+UI_LANGUAGE: English
+UI_TITLE: Emotional Wisdom Wheel
+UI_WELCOME_MESSAGE: This interactive wheel helps you identify and understand different emotions.
+UI_HOW_TO_USE_TITLE: How to use:
+UI_HOW_TO_USE_STEP_1: Hover over any segment to highlight it
+UI_HOW_TO_USE_STEP_2: Click on a segment to learn more about that emotion
+UI_HOW_TO_USE_STEP_3: Explore the 8 core emotions and 32 related feelings
+UI_COPYRIGHT: ©Joshua Freedman from the new book:
+UI_COPYRIGHT_LINK: Emotion Rules
+UI_VERSION: v2.9
+UI_RELATED_FEELINGS_LABEL: Related Feelings
+UI_BORDER_INFO_LABEL: Border Insight
+UI_QUOTES_LABEL: Inspirational Quotes
+UI_ADAPTIVE_PURPOSE_LABEL: Adaptive Purpose
+UI_OVERLOAD_RISK_LABEL: Overload Risk
+UI_OVERLOAD_TIP_LABEL: Balance Tip
+
+# ===== EMOTION CATEGORIES =====
+CATEGORY_JOY: Joy
+CATEGORY_TRUST: Trust
+CATEGORY_FEAR: Fear
+CATEGORY_SURPRISE: Surprise
+CATEGORY_SADNESS: Sadness
+CATEGORY_DISGUST: Disgust
+CATEGORY_ANGER: Anger
+CATEGORY_ANTICIPATION: Anticipation
+
+# ===== JOY EMOTIONS =====
+EMOTION_JOY_1_NAME: Optimistic
+EMOTION_JOY_1_DESC: A feeling of hopefulness and confidence about the future. When you're optimistic, you believe that good things will happen and maintain a positive outlook on life.
+EMOTION_JOY_1_QUESTION: What possibilities do you see? What could go right in this situation?
+EMOTION_JOY_1_OVERLOAD_RISK: If you over-use this feeling, you may overlook real risks or pressure others to 'stay positive' when they need something different.
+EMOTION_JOY_1_OVERLOAD_TIP: To balance, name one real challenge and one concrete step to prepare for it while still honoring your sense of possibility.
+EMOTION_JOY_1_ADAPTIVE_PURPOSE: Signals that you see positive possibilities and potential good outcomes.
+EMOTION_JOY_1_FEELING_1: Positive
+EMOTION_JOY_1_FEELING_2: Inspired
+EMOTION_JOY_1_FEELING_3: Hopeful
+EMOTION_JOY_1_BORDER_INFO: Optimistic is near Anticipation because it has a component of looking ahead.
+
+EMOTION_JOY_2_NAME: Confident
+EMOTION_JOY_2_DESC: A sense of self-assurance arising from appreciation of your abilities or qualities. Confidence empowers you to take action and face challenges.
+EMOTION_JOY_2_QUESTION: What strengths can you bring to this situation? What are you capable of doing?
+EMOTION_JOY_2_OVERLOAD_RISK: If you over-use this feeling, you may overestimate your capacity or dismiss others' perspectives and needs.
+EMOTION_JOY_2_OVERLOAD_TIP: To balance, ask yourself where you still need input or support, and invite at least one other voice into the conversation.
+EMOTION_JOY_2_ADAPTIVE_PURPOSE: Signals that you have resources, abilities, or experience you can draw on.
+EMOTION_JOY_2_FEELING_1: Proud
+EMOTION_JOY_2_FEELING_2: Self-assured
+EMOTION_JOY_2_FEELING_3: Empowered
+
+EMOTION_JOY_3_NAME: Joyful
+EMOTION_JOY_3_DESC: A feeling of great pleasure and happiness. Pure joy is an intense, positive emotion that fills you with delight and contentment.
+EMOTION_JOY_3_QUESTION: What is going well that you want to continue? What is nourishing or supportive?
+EMOTION_JOY_3_OVERLOAD_RISK: If you over-use this feeling, you may skip over problems or appear insensitive to others' pain.
+EMOTION_JOY_3_OVERLOAD_TIP: To balance, enjoy what is good and gently scan for anything that also needs care or repair.
+EMOTION_JOY_3_ADAPTIVE_PURPOSE: Signals that something important is working and worth savoring and continuing.
+EMOTION_JOY_3_FEELING_1: Ecstatic
+EMOTION_JOY_3_FEELING_2: Delighted
+EMOTION_JOY_3_FEELING_3: Blissful
+
+EMOTION_JOY_4_NAME: Loving
+EMOTION_JOY_4_DESC: A deep feeling of affection, care, and warmth toward someone or something. Love creates connection and a sense of belonging.
+EMOTION_JOY_4_QUESTION: What do you appreciate about this person or situation? How can you show care and support?
+EMOTION_JOY_4_OVERLOAD_RISK: If you over-use this feeling, you may lose healthy boundaries or neglect your own needs while caring for others.
+EMOTION_JOY_4_OVERLOAD_TIP: To balance, name one thing you appreciate and one need of your own, and choose a step that honors both.
+EMOTION_JOY_4_ADAPTIVE_PURPOSE: Signals a desire to connect, nurture, and invest in people or causes that matter to you.
+EMOTION_JOY_4_FEELING_1: Embracing
+EMOTION_JOY_4_FEELING_2: Generous
+EMOTION_JOY_4_FEELING_3: Affectionate
+EMOTION_JOY_4_BORDER_INFO: Loving is near Trust because it involves a foundation of care and reliability.
+
+# ===== TRUST EMOTIONS =====
+EMOTION_TRUST_1_NAME: Grateful
+EMOTION_TRUST_1_DESC: A warm feeling of thankfulness and appreciation. Gratitude helps you recognize and value the good things in your life.
+EMOTION_TRUST_1_QUESTION: What is supporting or nourishing you? Who or what is contributing to what you care about?
+EMOTION_TRUST_1_OVERLOAD_RISK: If you over-use this feeling, you may tolerate unhealthy situations or avoid expressing real needs because 'you should be grateful.'
+EMOTION_TRUST_1_OVERLOAD_TIP: To balance, let gratitude stand beside honesty: appreciate what is working and identify one need or boundary you still want to express.
+EMOTION_TRUST_1_ADAPTIVE_PURPOSE: Signals that you are receiving support, resources, or gifts that matter to you.
+EMOTION_TRUST_1_FEELING_1: Fulfilled
+EMOTION_TRUST_1_FEELING_2: Admiration
+EMOTION_TRUST_1_FEELING_3: Thankful
+EMOTION_TRUST_1_BORDER_INFO: Grateful is near Joy because it involves appreciation for positive experiences.
+
+EMOTION_TRUST_2_NAME: Peaceful
+EMOTION_TRUST_2_DESC: A state of tranquility and calm, free from worry or disturbance. Peace brings mental and emotional equilibrium.
+EMOTION_TRUST_2_QUESTION: What is recharging or supporting you? What's going right?
+EMOTION_TRUST_2_OVERLOAD_RISK: If you over-use this feeling, you may avoid necessary conflict or disengage from important challenges.
+EMOTION_TRUST_2_OVERLOAD_TIP: To balance, enjoy the calm and ask if there is any issue that still needs a courageous conversation or small action.
+EMOTION_TRUST_2_ADAPTIVE_PURPOSE: Signals that your system is re-centering and you feel safe enough to rest and restore.
+EMOTION_TRUST_2_FEELING_1: Calm
+EMOTION_TRUST_2_FEELING_2: Content
+EMOTION_TRUST_2_FEELING_3: Serene
+
+EMOTION_TRUST_3_NAME: Accepted
+EMOTION_TRUST_3_DESC: A feeling of being welcomed and valued for who you are. Acceptance creates a sense of belonging and security.
+EMOTION_TRUST_3_QUESTION: Where do you feel you belong? Who accepts and values you as you are?
+EMOTION_TRUST_3_OVERLOAD_RISK: If you over-use this feeling, you may over-conform, hiding parts of yourself to keep belonging.
+EMOTION_TRUST_3_OVERLOAD_TIP: To balance, notice where you feel safe enough to be more authentic, and share one more honest piece of yourself.
+EMOTION_TRUST_3_ADAPTIVE_PURPOSE: Signals that you feel seen, valued, and included in a group or relationship.
+EMOTION_TRUST_3_FEELING_1: Valued
+EMOTION_TRUST_3_FEELING_2: Respected
+EMOTION_TRUST_3_FEELING_3: Welcomed
+
+EMOTION_TRUST_4_NAME: Hopeful
+EMOTION_TRUST_4_DESC: A feeling of expectation and desire for positive outcomes. Hope motivates you to keep moving forward even in difficult times.
+EMOTION_TRUST_4_QUESTION: What are you hoping for? What positive outcome do you envision?
+EMOTION_TRUST_4_OVERLOAD_RISK: If you over-use this feeling, you may wait passively for change or cling to unrealistic expectations.
+EMOTION_TRUST_4_OVERLOAD_TIP: To balance, translate one part of your hope into a specific, doable step you can take now.
+EMOTION_TRUST_4_ADAPTIVE_PURPOSE: Signals that you can imagine a better future and feel drawn toward it.
+EMOTION_TRUST_4_FEELING_1: Longing
+EMOTION_TRUST_4_FEELING_2: Expectant
+EMOTION_TRUST_4_FEELING_3: Optimistic
+EMOTION_TRUST_4_BORDER_INFO: Hopeful is near Fear because it involves uncertainty about the future.
+
+# ===== FEAR EMOTIONS =====
+EMOTION_FEAR_1_NAME: Nervous
+EMOTION_FEAR_1_DESC: A state of unease or apprehension about something uncertain. Nervousness is a natural response to situations that feel challenging or unfamiliar.
+EMOTION_FEAR_1_QUESTION: What is creating risk? What feels unpredictable or out of control?
+EMOTION_FEAR_1_OVERLOAD_RISK: If you over-use this feeling, you may see danger everywhere, overthink, or become paralyzed by what-if scenarios.
+EMOTION_FEAR_1_OVERLOAD_TIP: To balance, name one specific risk you are concerned about and one small action you can take to prepare or test your assumptions.
+EMOTION_FEAR_1_ADAPTIVE_PURPOSE: Signals that something feels uncertain or risky and may need caution or preparation.
+EMOTION_FEAR_1_FEELING_1: Threatened
+EMOTION_FEAR_1_FEELING_2: Uneasy
+EMOTION_FEAR_1_FEELING_3: Jittery
+EMOTION_FEAR_1_BORDER_INFO: Nervous is near Trust because it involves vulnerability and the need for safety.
+
+EMOTION_FEAR_2_NAME: Scared
+EMOTION_FEAR_2_DESC: An intense feeling of fear or alarm. Being scared is your body's way of alerting you to potential danger.
+EMOTION_FEAR_2_QUESTION: What or who do you care about that's at risk? What danger or harm are you sensing?
+EMOTION_FEAR_2_OVERLOAD_RISK: If you over-use this feeling, you may withdraw from what matters most or avoid important steps because they feel too scary.
+EMOTION_FEAR_2_OVERLOAD_TIP: To balance, clarify what you most want to protect and choose one action that increases safety while still honoring what you care about.
+EMOTION_FEAR_2_ADAPTIVE_PURPOSE: Signals that something you care about feels threatened and needs protection or attention.
+EMOTION_FEAR_2_FEELING_1: Frightened
+EMOTION_FEAR_2_FEELING_2: Terrified
+EMOTION_FEAR_2_FEELING_3: Alarmed
+
+EMOTION_FEAR_3_NAME: Anxious
+EMOTION_FEAR_3_DESC: A feeling of worry, nervousness, or unease about something with an uncertain outcome. Anxiety can be a signal to prepare or take action.
+EMOTION_FEAR_3_QUESTION: What general threats or big uncertainties are present? What do you need to prepare for or protect against?
+EMOTION_FEAR_3_OVERLOAD_RISK: If you over-use this feeling, you may ruminate, catastrophize, or create imagined problems that drain your energy.
+EMOTION_FEAR_3_OVERLOAD_TIP: To balance, sort your worries into 'things I can influence' and 'things I cannot,' then choose one small step on something you can influence.
+EMOTION_FEAR_3_ADAPTIVE_PURPOSE: Signals that you are scanning for long-term threats or uncertainties that may need planning or protection.
+EMOTION_FEAR_3_FEELING_1: Dread
+EMOTION_FEAR_3_FEELING_2: Worry
+EMOTION_FEAR_3_FEELING_3: Tense
+
+EMOTION_FEAR_4_NAME: Insecure
+EMOTION_FEAR_4_DESC: A lack of confidence or certainty about yourself or your place in a situation. Insecurity often stems from self-doubt or fear of rejection.
+EMOTION_FEAR_4_QUESTION: What makes you doubt yourself? What do you fear others might think or see?
+EMOTION_FEAR_4_OVERLOAD_RISK: If you over-use this feeling, you may constantly seek validation, people-please, or hold back your contributions.
+EMOTION_FEAR_4_OVERLOAD_TIP: To balance, remember concrete evidence of your strengths and seek grounded feedback from someone you trust, not just imagined criticism.
+EMOTION_FEAR_4_ADAPTIVE_PURPOSE: Signals that your sense of worth, competence, or acceptance feels shaky and you may need reassurance, learning, or boundaries.
+EMOTION_FEAR_4_FEELING_1: Rejected
+EMOTION_FEAR_4_FEELING_2: Inadequate
+EMOTION_FEAR_4_FEELING_3: Uncertain
+EMOTION_FEAR_4_BORDER_INFO: Insecure is near Surprise because it involves unexpected threats to self-worth.
+
+# ===== SURPRISE EMOTIONS =====
+EMOTION_SURPRISE_1_NAME: Startled
+EMOTION_SURPRISE_1_DESC: A sudden feeling of shock or alarm caused by something unexpected. Being startled is an immediate, automatic response to surprise.
+EMOTION_SURPRISE_1_QUESTION: What sudden change or signal needs your attention right now?
+EMOTION_SURPRISE_1_OVERLOAD_RISK: If you over-use this feeling, you may remain jumpy or hyper-alert, treating everything as an emergency.
+EMOTION_SURPRISE_1_OVERLOAD_TIP: To balance, pause to look, breathe, and check what is actually happening now versus what you feared might be happening.
+EMOTION_SURPRISE_1_ADAPTIVE_PURPOSE: Signals that something unexpected just happened and your attention needs to orient quickly.
+EMOTION_SURPRISE_1_FEELING_1: Appalled
+EMOTION_SURPRISE_1_FEELING_2: Shocked
+EMOTION_SURPRISE_1_FEELING_3: Stunned
+EMOTION_SURPRISE_1_BORDER_INFO: Startled is near Fear because it involves a sudden sense of threat or danger.
+
+EMOTION_SURPRISE_2_NAME: Confused
+EMOTION_SURPRISE_2_DESC: A state of being bewildered or unclear about something. Confusion occurs when information doesn't match your expectations or understanding.
+EMOTION_SURPRISE_2_QUESTION: What information is missing or unclear? What would help you make sense of this?
+EMOTION_SURPRISE_2_OVERLOAD_RISK: If you over-use this feeling, you may get stuck in doubt, delay decisions, or question everything about yourself and others.
+EMOTION_SURPRISE_2_OVERLOAD_TIP: To balance, turn confusion into a question: define one thing you want to understand and seek an answer, experiment, or conversation.
+EMOTION_SURPRISE_2_ADAPTIVE_PURPOSE: Signals that your current understanding does not fit the facts and you may need new information or perspective.
+EMOTION_SURPRISE_2_FEELING_1: Disillusioned
+EMOTION_SURPRISE_2_FEELING_2: Perplexed
+EMOTION_SURPRISE_2_FEELING_3: Bewildered
+
+EMOTION_SURPRISE_3_NAME: Amazed
+EMOTION_SURPRISE_3_DESC: A feeling of great wonder and astonishment. Amazement is a positive form of surprise that fills you with awe.
+EMOTION_SURPRISE_3_QUESTION: What exceeded your expectations? What possibility does this open?
+EMOTION_SURPRISE_3_OVERLOAD_RISK: If you over-use this feeling, you may idealize people or situations and miss real limits or risks.
+EMOTION_SURPRISE_3_OVERLOAD_TIP: To balance, name what delights you and also one practical step or boundary that keeps you grounded while you explore this new possibility.
+EMOTION_SURPRISE_3_ADAPTIVE_PURPOSE: Signals that something is far better, bigger, or more beautiful than you expected and your sense of possibility is expanding.
+EMOTION_SURPRISE_3_FEELING_1: Astonished
+EMOTION_SURPRISE_3_FEELING_2: Awed
+EMOTION_SURPRISE_3_FEELING_3: Impressed
+
+EMOTION_SURPRISE_4_NAME: Disappointed
+EMOTION_SURPRISE_4_DESC: A feeling of sadness or displeasure when expectations are not met. Disappointment signals a gap between what you hoped for and reality.
+EMOTION_SURPRISE_4_QUESTION: What expectation wasn't met? What matters to you about this outcome?
+EMOTION_SURPRISE_4_OVERLOAD_RISK: If you over-use this feeling, you may slide into cynicism, giving up on future efforts or relationships.
+EMOTION_SURPRISE_4_OVERLOAD_TIP: To balance, name the expectation clearly, then decide whether to revise the goal, your strategy, or the timeline—and choose one next action.
+EMOTION_SURPRISE_4_ADAPTIVE_PURPOSE: Signals that reality did not match your hopes and something you cared about feels diminished or lost.
+EMOTION_SURPRISE_4_FEELING_1: Betrayed
+EMOTION_SURPRISE_4_FEELING_2: Dismayed
+EMOTION_SURPRISE_4_FEELING_3: Let down
+EMOTION_SURPRISE_4_BORDER_INFO: Disappointed is near Sadness because it involves loss of hope and unmet expectations.
+
+# ===== SADNESS EMOTIONS =====
+EMOTION_SADNESS_1_NAME: Hurt
+EMOTION_SADNESS_1_DESC: Emotional pain caused by something or someone. Hurt feelings often arise from perceived rejection, criticism, or loss.
+EMOTION_SADNESS_1_QUESTION: What value or relationship was impacted? What healing or repair would help?
+EMOTION_SADNESS_1_OVERLOAD_RISK: If you over-use this feeling, you may hold onto grudges, assume bad intentions, or close yourself off from repair.
+EMOTION_SADNESS_1_OVERLOAD_TIP: To balance, acknowledge the pain and why it matters, then consider whether and how you want to communicate it or seek healing support.
+EMOTION_SADNESS_1_ADAPTIVE_PURPOSE: Signals that something or someone important has wounded your sense of safety, worth, or connection.
+EMOTION_SADNESS_1_FEELING_1: Dismayed
+EMOTION_SADNESS_1_FEELING_2: Threatened
+EMOTION_SADNESS_1_FEELING_3: Wounded
+EMOTION_SADNESS_1_BORDER_INFO: Hurt is near Surprise because it often comes from unexpected emotional wounds.
+
+EMOTION_SADNESS_2_NAME: Depressed
+EMOTION_SADNESS_2_DESC: A state of deep sadness and low energy. Depression can make everything feel heavy and difficult to manage.
+EMOTION_SADNESS_2_QUESTION: What feels depleted or hopeless? What small source of care, support, or meaning can you reconnect with?
+EMOTION_SADNESS_2_OVERLOAD_RISK: If you over-use this feeling, you may stop seeing any possibility, withdraw completely, or neglect basic self-care.
+EMOTION_SADNESS_2_OVERLOAD_TIP: To balance, choose one tiny, compassionate action—such as reaching out, moving your body, or doing one simple task—that adds a bit of structure or support.
+EMOTION_SADNESS_2_ADAPTIVE_PURPOSE: Signals that your energy, motivation, or sense of meaning has dropped and you may need rest, support, or reorientation.
+EMOTION_SADNESS_2_FEELING_1: Bereft
+EMOTION_SADNESS_2_FEELING_2: Numb
+EMOTION_SADNESS_2_FEELING_3: Empty
+
+EMOTION_SADNESS_3_NAME: Lonely
+EMOTION_SADNESS_3_DESC: A painful feeling of isolation or disconnection from others. Loneliness highlights our need for meaningful connection.
+EMOTION_SADNESS_3_QUESTION: What connection do you need right now? Who could help you feel more seen or supported?
+EMOTION_SADNESS_3_OVERLOAD_RISK: If you over-use this feeling, you may believe you are fundamentally alone or unlovable and pull back even more.
+EMOTION_SADNESS_3_OVERLOAD_TIP: To balance, identify one small, safe way to reach toward connection—a message, a call, a shared space, or naming your need to someone you trust.
+EMOTION_SADNESS_3_ADAPTIVE_PURPOSE: Signals that your need for connection, belonging, or being seen is not being met.
+EMOTION_SADNESS_3_FEELING_1: Abandoned
+EMOTION_SADNESS_3_FEELING_2: Isolated
+EMOTION_SADNESS_3_FEELING_3: Disconnected
+
+EMOTION_SADNESS_4_NAME: Ashamed
+EMOTION_SADNESS_4_DESC: A painful feeling of humiliation or distress caused by believing you've done something wrong or embarrassing. Shame affects how you see yourself.
+EMOTION_SADNESS_4_QUESTION: What standard are you holding yourself to? What self-compassion or repair would support growth?
+EMOTION_SADNESS_4_OVERLOAD_RISK: If you over-use this feeling, you may turn a specific mistake into a belief that you are bad or unworthy and hide your true self.
+EMOTION_SADNESS_4_OVERLOAD_TIP: To balance, separate 'I did something' from 'I am something,' and choose one step of learning, repair, or apology that aligns with your values.
+EMOTION_SADNESS_4_ADAPTIVE_PURPOSE: Signals that your behavior or choices may not match your values and invites reflection, repair, and growth.
+EMOTION_SADNESS_4_FEELING_1: Remorseful
+EMOTION_SADNESS_4_FEELING_2: Guilty
+EMOTION_SADNESS_4_FEELING_3: Embarrassed
+EMOTION_SADNESS_4_BORDER_INFO: Ashamed is near Disgust because it involves negative judgment of oneself.
+
+# ===== DISGUST EMOTIONS =====
+EMOTION_DISGUST_1_NAME: Dislike
+EMOTION_DISGUST_1_DESC: A feeling of aversion or disapproval toward something or someone. Dislike helps you identify what doesn't align with your values.
+EMOTION_DISGUST_1_QUESTION: What feels misaligned with your values or preferences? What boundary or choice does this reveal?
+EMOTION_DISGUST_1_OVERLOAD_RISK: If you over-use this feeling, you may slide into harsh judgment, bias, or rejection of people or ideas too quickly.
+EMOTION_DISGUST_1_OVERLOAD_TIP: To balance, name specifically what you dislike—behavior, style, or impact—without condemning the whole person or situation, and decide what boundary is actually needed.
+EMOTION_DISGUST_1_ADAPTIVE_PURPOSE: Signals that something does not fit your tastes, needs, or values and you may want distance or a different choice.
+EMOTION_DISGUST_1_FEELING_1: Revolted
+EMOTION_DISGUST_1_FEELING_2: Withdrawn
+EMOTION_DISGUST_1_FEELING_3: Repulsed
+EMOTION_DISGUST_1_BORDER_INFO: Dislike is near Sadness because it involves emotional withdrawal and rejection.
+
+EMOTION_DISGUST_2_NAME: Avoidance
+EMOTION_DISGUST_2_DESC: A tendency to stay away from something unpleasant or uncomfortable. Avoidance is a protective response to things that feel threatening.
+EMOTION_DISGUST_2_QUESTION: What feels unsafe, overwhelming, or draining? How can you approach it with more support or clarity?
+EMOTION_DISGUST_2_OVERLOAD_RISK: If you over-use this feeling, you may delay important actions, stay stuck, or let problems quietly grow.
+EMOTION_DISGUST_2_OVERLOAD_TIP: To balance, break the avoided task or situation into one very small step and consider what support, information, or boundary would make it more manageable.
+EMOTION_DISGUST_2_ADAPTIVE_PURPOSE: Signals that something seems too threatening, overwhelming, or unpleasant to face with your current resources.
+EMOTION_DISGUST_2_FEELING_1: Hesitant
+EMOTION_DISGUST_2_FEELING_2: Averse
+EMOTION_DISGUST_2_FEELING_3: Reluctant
+
+EMOTION_DISGUST_3_NAME: Awful
+EMOTION_DISGUST_3_DESC: A strong negative feeling about something very unpleasant or disagreeable. Feeling awful signals that something is deeply wrong or distressing.
+EMOTION_DISGUST_3_QUESTION: What feels harmful or unacceptable? What standard or value is signaling a need for change?
+EMOTION_DISGUST_3_OVERLOAD_RISK: If you over-use this feeling, you may catastrophize, feel hopeless about change, or respond with only outrage instead of strategy.
+EMOTION_DISGUST_3_OVERLOAD_TIP: To balance, clarify what exactly is harmful, then choose one realistic action—personal, relational, or systemic—that moves even slightly toward repair.
+EMOTION_DISGUST_3_ADAPTIVE_PURPOSE: Signals that something feels deeply wrong, harmful, or out of integrity with your core values.
+EMOTION_DISGUST_3_FEELING_1: Repelled
+EMOTION_DISGUST_3_FEELING_2: Detested
+EMOTION_DISGUST_3_FEELING_3: Horrible
+
+EMOTION_DISGUST_4_NAME: Disapproval
+EMOTION_DISGUST_4_DESC: A negative judgment or opinion about someone or something. Disapproval reflects a conflict between your values and what you observe.
+EMOTION_DISGUST_4_QUESTION: What expectation wasn't met? What value is prompting this reaction, and what change do you hope for?
+EMOTION_DISGUST_4_OVERLOAD_RISK: If you over-use this feeling, you may become rigid, overly critical, or alienating to others.
+EMOTION_DISGUST_4_OVERLOAD_TIP: To balance, connect to the value underneath your disapproval and express it in a way that invites dialogue and improvement, not shame.
+EMOTION_DISGUST_4_ADAPTIVE_PURPOSE: Signals that a behavior or outcome does not meet your standards or values and that you care about doing better.
+EMOTION_DISGUST_4_FEELING_1: Loathing
+EMOTION_DISGUST_4_FEELING_2: Judgmental
+EMOTION_DISGUST_4_FEELING_3: Critical
+EMOTION_DISGUST_4_BORDER_INFO: Disapproval is near Anger because it involves critical evaluation and potential confrontation.
+
+# ===== ANGER EMOTIONS =====
+EMOTION_ANGER_1_NAME: Aggressive
+EMOTION_ANGER_1_DESC: A forceful and confrontational expression of anger. Aggression is often a response to feeling threatened or frustrated.
+EMOTION_ANGER_1_QUESTION: What boundary needs to be protected? What matters enough that you feel compelled to act?
+EMOTION_ANGER_1_OVERLOAD_RISK: If you over-use this feeling, you may lash out in ways that harm others, escalate conflict, or undermine your own goals.
+EMOTION_ANGER_1_OVERLOAD_TIP: To balance, pause before acting, use the energy to choose clear and firm words or actions, and focus on the outcome you truly want.
+EMOTION_ANGER_1_ADAPTIVE_PURPOSE: Signals that you perceive a serious threat, injustice, or violation and feel a strong drive to defend or protect.
+EMOTION_ANGER_1_FEELING_1: Hostile
+EMOTION_ANGER_1_FEELING_2: Provoked
+EMOTION_ANGER_1_FEELING_3: Combative
+EMOTION_ANGER_1_BORDER_INFO: Aggressive is near Disgust because it involves rejecting or pushing away what's unacceptable.
+
+EMOTION_ANGER_2_NAME: Mad
+EMOTION_ANGER_2_DESC: An intense feeling of displeasure or rage. Being mad signals that something has violated your boundaries or expectations.
+EMOTION_ANGER_2_QUESTION: What value or expectation was violated? What do you need to express or repair?
+EMOTION_ANGER_2_OVERLOAD_RISK: If you over-use this feeling, you may hold grudges, replay the story, or attack rather than seek resolution.
+EMOTION_ANGER_2_OVERLOAD_TIP: To balance, name specifically what was not okay and decide whether you want to set a boundary, ask for change, or consciously let it go.
+EMOTION_ANGER_2_ADAPTIVE_PURPOSE: Signals that something feels unfair or not okay and that you want change or acknowledgment.
+EMOTION_ANGER_2_FEELING_1: Enraged
+EMOTION_ANGER_2_FEELING_2: Furious
+EMOTION_ANGER_2_FEELING_3: Livid
+
+EMOTION_ANGER_3_NAME: Frustrated
+EMOTION_ANGER_3_DESC: A feeling of upset or annoyance when unable to achieve something. Frustration arises from blocked goals or unmet needs.
+EMOTION_ANGER_3_QUESTION: What's getting in the way of your goal? What shift—internal or external—would help you move forward?
+EMOTION_ANGER_3_OVERLOAD_RISK: If you over-use this feeling, you may give up, blame others, or push people too hard.
+EMOTION_ANGER_3_OVERLOAD_TIP: To balance, step back to clarify your goal, then choose one different approach, request, or boundary that could unlock movement.
+EMOTION_ANGER_3_ADAPTIVE_PURPOSE: Signals that your effort is blocked and you want progress, efficiency, or a different result.
+EMOTION_ANGER_3_FEELING_1: Annoyed
+EMOTION_ANGER_3_FEELING_2: Irritated
+EMOTION_ANGER_3_FEELING_3: Exasperated
+
+EMOTION_ANGER_4_NAME: Critical
+EMOTION_ANGER_4_DESC: A tendency to find fault or judge harshly. Being critical can be a form of anger directed at perceived flaws or failures.
+EMOTION_ANGER_4_QUESTION: What improvement do you see is needed? What outcome are you trying to protect or enhance?
+EMOTION_ANGER_4_OVERLOAD_RISK: If you over-use this feeling, you may default to fault-finding, discourage others, or block creativity and experimentation.
+EMOTION_ANGER_4_OVERLOAD_TIP: To balance, acknowledge at least one thing that is working before naming concerns, and frame your critique as a contribution to shared improvement.
+EMOTION_ANGER_4_ADAPTIVE_PURPOSE: Signals that you notice risks, errors, or potential improvements and care about quality or integrity.
+EMOTION_ANGER_4_FEELING_1: Sarcastic
+EMOTION_ANGER_4_FEELING_2: Skeptical
+EMOTION_ANGER_4_FEELING_3: Judgmental
+EMOTION_ANGER_4_BORDER_INFO: Critical is near Anticipation because it involves vigilance and preparation against potential problems.
+
+# ===== ANTICIPATION EMOTIONS =====
+EMOTION_ANTICIPATION_1_NAME: Excited
+EMOTION_ANTICIPATION_1_DESC: A feeling of enthusiastic eagerness about something that's going to happen. Excitement energizes you and creates positive anticipation.
+EMOTION_ANTICIPATION_1_QUESTION: What opportunity is energizing you? How can you channel this energy into intentional action?
+EMOTION_ANTICIPATION_1_OVERLOAD_RISK: If you over-use this feeling, you may overcommit, rush ahead without planning, or burn out.
+EMOTION_ANTICIPATION_1_OVERLOAD_TIP: To balance, match your energy with a realistic plan and pacing, and choose one clear next step instead of trying to do everything at once.
+EMOTION_ANTICIPATION_1_ADAPTIVE_PURPOSE: Signals that you feel energized by a possibility and are ready to engage with it.
+EMOTION_ANTICIPATION_1_FEELING_1: Passionate
+EMOTION_ANTICIPATION_1_FEELING_2: Energized
+EMOTION_ANTICIPATION_1_FEELING_3: Thrilled
+EMOTION_ANTICIPATION_1_BORDER_INFO: Excited is near Anger because it involves intense energy and readiness for action.
+
+EMOTION_ANTICIPATION_2_NAME: Eager
+EMOTION_ANTICIPATION_2_DESC: A keen desire or readiness to do or experience something. Eagerness drives you forward with enthusiasm and motivation.
+EMOTION_ANTICIPATION_2_QUESTION: What do you want to move toward? What first step would move you in that direction?
+EMOTION_ANTICIPATION_2_OVERLOAD_RISK: If you over-use this feeling, you may ignore red flags, skip reflection, or say yes too often.
+EMOTION_ANTICIPATION_2_OVERLOAD_TIP: To balance, pause to ask what information, boundaries, or preparation you need before you move, then take a thoughtful first step.
+EMOTION_ANTICIPATION_2_ADAPTIVE_PURPOSE: Signals that you feel ready to pursue something and want to move quickly toward it.
+EMOTION_ANTICIPATION_2_FEELING_1: Enthusiastic
+EMOTION_ANTICIPATION_2_FEELING_2: Motivated
+EMOTION_ANTICIPATION_2_FEELING_3: Keen
+
+EMOTION_ANTICIPATION_3_NAME: Interested
+EMOTION_ANTICIPATION_3_DESC: A feeling of wanting to learn more or be involved in something. Interest draws your attention and curiosity toward new experiences.
+EMOTION_ANTICIPATION_3_QUESTION: What is drawing your attention? What feels worth exploring or understanding more deeply?
+EMOTION_ANTICIPATION_3_OVERLOAD_RISK: If you over-use this feeling, you may scatter your focus, start many things, and finish few.
+EMOTION_ANTICIPATION_3_OVERLOAD_TIP: To balance, consciously choose one focus area for now and capture other interests on a list for later, so you can explore with intention.
+EMOTION_ANTICIPATION_3_ADAPTIVE_PURPOSE: Signals that your curiosity is activated and you see potential value in learning or exploring.
+EMOTION_ANTICIPATION_3_FEELING_1: Impatient
+EMOTION_ANTICIPATION_3_FEELING_2: Curious
+EMOTION_ANTICIPATION_3_FEELING_3: Engaged
+
+EMOTION_ANTICIPATION_4_NAME: Stressed
+EMOTION_ANTICIPATION_4_DESC: A state of mental or emotional strain from demanding circumstances. Stress signals that you're facing challenges that require energy and resources.
+EMOTION_ANTICIPATION_4_QUESTION: What pressures need attention? Where do you need relief, support, or clearer boundaries?
+EMOTION_ANTICIPATION_4_OVERLOAD_RISK: If you over-use this feeling, you may run in crisis mode, make reactive decisions, or exhaust yourself.
+EMOTION_ANTICIPATION_4_OVERLOAD_TIP: To balance, identify one demand you can reduce, delegate, or delay and one brief practice that helps restore your energy or clarity.
+EMOTION_ANTICIPATION_4_ADAPTIVE_PURPOSE: Signals that demands feel greater than your current resources and something needs to change.
+EMOTION_ANTICIPATION_4_FEELING_1: Overwhelmed
+EMOTION_ANTICIPATION_4_FEELING_2: Pressured
+EMOTION_ANTICIPATION_4_FEELING_3: Tense
+EMOTION_ANTICIPATION_4_BORDER_INFO: Stressed is near Joy because it involves high energy focused on achieving positive outcomes.
