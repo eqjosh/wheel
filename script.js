@@ -98,7 +98,7 @@ function updateSVGText() {
         if (!emotionGroup) return;
 
         // Get all text elements in this group
-        const textElements = emotionGroup.querySelectorAll('text tspan');
+        const textElements = emotionGroup.querySelectorAll('text');
 
         if (textElements.length === 0) return;
 
@@ -109,16 +109,49 @@ function updateSVGText() {
         // Update the related feelings (first N-1 text elements)
         relatedFeelings.forEach((feeling, index) => {
             if (textElements[index]) {
-                textElements[index].textContent = feeling;
+                const tspan = textElements[index].querySelector('tspan');
+                if (tspan) {
+                    tspan.textContent = feeling;
+                    // Set textLength to constrain the text width
+                    // Use a reference length based on average character width * character count
+                    const referenceLength = getTextReferenceLength(feeling.length, 'small');
+                    textElements[index].setAttribute('textLength', referenceLength);
+                    textElements[index].setAttribute('lengthAdjust', 'spacingAndGlyphs');
+                }
             }
         });
 
         // Update the main emotion name (last text element)
         const mainNameIndex = textElements.length - 1;
         if (textElements[mainNameIndex]) {
-            textElements[mainNameIndex].textContent = emotion.name;
+            const tspan = textElements[mainNameIndex].querySelector('tspan');
+            if (tspan) {
+                tspan.textContent = emotion.name;
+                // Set textLength to constrain the text width for main emotion name
+                const referenceLength = getTextReferenceLength(emotion.name.length, 'large');
+                textElements[mainNameIndex].setAttribute('textLength', referenceLength);
+                textElements[mainNameIndex].setAttribute('lengthAdjust', 'spacingAndGlyphs');
+            }
         }
     });
+}
+
+// Calculate reference length for text based on character count and size
+function getTextReferenceLength(charCount, size) {
+    // These values are calibrated based on the English text in the original SVG
+    // to ensure text fits within the wheel segments without overflow
+    if (size === 'large') {
+        // Main emotion names - constrain to a maximum width
+        // Scale down for longer words to prevent overflow
+        const baseWidth = 120;
+        const maxLength = 12; // approximate longest English emotion name
+        return Math.min(baseWidth, (baseWidth * maxLength) / Math.max(charCount, maxLength * 0.8));
+    } else {
+        // Related feelings - constrain to a smaller maximum width
+        const baseWidth = 85;
+        const maxLength = 11; // approximate longest related feeling
+        return Math.min(baseWidth, (baseWidth * maxLength) / Math.max(charCount, maxLength * 0.8));
+    }
 }
 
 // Initialize language selector
@@ -510,11 +543,11 @@ function showMessageAction() {
     if (!emotion || !emotion.question) return;
 
     const content = `
-        <p><strong>Emotional Wisdom Questions:</strong></p>
+        <p><strong>${localeData.ui.emotionalWisdomQuestionsLabel}:</strong></p>
         <p>${emotion.question}</p>
     `;
 
-    showModal(emotion.name, content);
+    showModal(`${emotion.name} - ${localeData.ui.emotionalWisdomQuestionsLabel}`, content);
 }
 
 // Action: Show opposite feeling
@@ -546,13 +579,13 @@ function showOverloadAction() {
     if (!emotion || !emotion.overloadRisk) return;
 
     const content = `
-        <p><strong>Risk of Overuse:</strong></p>
+        <p><strong>${localeData.ui.overloadRiskLabel}:</strong></p>
         <p>${emotion.overloadRisk}</p>
-        <p><strong>Balancing Tip:</strong></p>
+        <p><strong>${localeData.ui.overloadTipLabel}:</strong></p>
         <p>${emotion.overloadTip}</p>
     `;
 
-    showModal(emotion.name + ' - Overload', content);
+    showModal(`${emotion.name} - ${localeData.ui.overloadLabel}`, content);
 }
 
 // Action: Show quotation
@@ -585,5 +618,5 @@ function showQuotationAction() {
         `;
     });
 
-    showModal(emotion.name + ' - Quotations', quotesHtml);
+    showModal(`${emotion.name} - ${localeData.ui.quotationsLabel}`, quotesHtml);
 }

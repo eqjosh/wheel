@@ -22,7 +22,10 @@
     "overloadTipLabel": "Consiglio di Equilibrio",
     "exploreThisFeelingLabel": "Esplora questo Sentimento",
     "purposeLabel": "Scopo",
-    "emotionalAlgebraLabel": "Algebra Emotiva"
+    "emotionalAlgebraLabel": "Algebra Emotiva",
+    "emotionalWisdomQuestionsLabel": "Domande di Saggezza Emozionale",
+    "quotationsLabel": "Citazioni",
+    "overloadLabel": "Sovraccarico"
   },
   "emotions": [
     {

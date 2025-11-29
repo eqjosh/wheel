@@ -19,7 +19,10 @@
     "quotesLabel": "Inspirational Quotes",
     "adaptivePurposeLabel": "Adaptive Purpose",
     "overloadRiskLabel": "Overload Risk",
-    "overloadTipLabel": "Balance Tip"
+    "overloadTipLabel": "Balance Tip",
+    "emotionalWisdomQuestionsLabel": "Emotional Wisdom Questions",
+    "quotationsLabel": "Quotations",
+    "overloadLabel": "Overload"
   },
   "emotions": [
     {

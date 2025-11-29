@@ -22,7 +22,10 @@
     "overloadTipLabel": "バランス調整のヒント",
     "exploreThisFeelingLabel": "この感情を探求する",
     "purposeLabel": "目的",
-    "emotionalAlgebraLabel": "感情の代数"
+    "emotionalAlgebraLabel": "感情の代数",
+    "emotionalWisdomQuestionsLabel": "感情の知恵に関する質問",
+    "quotationsLabel": "引用",
+    "overloadLabel": "過負荷"
   },
   "emotions": [
     {
