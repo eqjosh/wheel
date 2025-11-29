@@ -1,0 +1,375 @@
+# 感情の輪 - 翻訳用英語テキスト
+# 形式: KEY: 翻訳対象テキスト
+# コロン(:)以降のテキストのみ翻訳してください
+
+# ===== UI 文字列 =====
+UI_LANGUAGE: English
+UI_TITLE: 感情の知恵の輪
+UI_WELCOME_MESSAGE: このインタラクティブな輪は、様々な感情を特定し理解するのに役立ちます。
+UI_HOW_TO_USE_TITLE: 使い方:
+UI_HOW_TO_USE_STEP_1: セグメントにカーソルを合わせるとハイライト表示されます
+UI_HOW_TO_USE_STEP_2: セグメントをクリックすると、その感情について詳しく学べます
+UI_HOW_TO_USE_STEP_3: 8つの核心感情と32の関連感情を探求しましょう
+UI_COPYRIGHT: ©ジョシュア・フリードマン 新刊より:
+UI_COPYRIGHT_LINK: Emotion Rules
+UI_VERSION: v2.9
+UI_RELATED_FEELINGS_LABEL: 関連する感情
+UI_BORDER_INFO_LABEL: 境界の洞察
+UI_QUOTES_LABEL: 心に響く引用
+UI_ADAPTIVE_PURPOSE_LABEL: 適応目的
+UI_OVERLOAD_RISK_LABEL: 過負荷リスク
+UI_OVERLOAD_TIP_LABEL: バランス調整のヒント
+
+# ===== 感情カテゴリ =====
+CATEGORY_JOY: 喜び
+CATEGORY_TRUST: 信頼
+CATEGORY_FEAR: 恐怖
+CATEGORY_SURPRISE: 驚き
+CATEGORY_SADNESS: 悲しみ
+CATEGORY_DISGUST: 嫌悪
+CATEGORY_ANGER: 怒り
+CATEGORY_ANTICIPATION: 期待
+
+# ===== 喜びの感情 =====
+EMOTION_JOY_1_NAME: 楽観的
+EMOTION_JOY_1_DESC: 未来に対する希望と自信の感情。楽観的であるとき、良いことが起こると信じ、人生に対して前向きな見方を保ちます。
+EMOTION_JOY_1_QUESTION: どんな可能性が見えますか？この状況でうまくいくことは何ですか？
+EMOTION_JOY_1_OVERLOAD_RISK: この感情を使いすぎると、現実的なリスクを見落としたり、他人が別のものを必要としている時に「前向きでいよう」と圧力をかける可能性があります。
+EMOTION_JOY_1_OVERLOAD_TIP: バランスを取るには、現実的な課題を一つ挙げ、それに対処するための具体的な一歩を踏み出すと同時に、可能性への感覚を尊重し続けましょう。
+EMOTION_JOY_1_ADAPTIVE_PURPOSE: ポジティブな可能性と潜在的な良い結果を見出していることを示します。
+EMOTION_JOY_1_FEELING_1: ポジティブ
+EMOTION_JOY_1_FEELING_2: 刺激を受けた
+EMOTION_JOY_1_FEELING_3: 希望に満ちた
+EMOTION_JOY_1_BORDER_INFO: 楽観的は先を見据える要素を含むため、期待に近い感情です。
+
+EMOTION_JOY_2_NAME: 自信
+EMOTION_JOY_2_DESC: 自身の能力や資質を評価することから生まれる自己確信。自信は行動を起こし、課題に立ち向かう力を与える。
+EMOTION_JOY_2_QUESTION: この状況にどんな強みを発揮できるか？何ができるか？
+EMOTION_JOY_2_OVERLOAD_RISK: この感情を使いすぎると、自分の能力を過大評価したり、他者の視点やニーズを軽視したりする恐れがあります。
+EMOTION_JOY_2_OVERLOAD_TIP: バランスを取るには、まだ意見や支援が必要な点はないか自問し、少なくとももう一人、別の意見を会話に招き入れましょう。
+EMOTION_JOY_2_ADAPTIVE_PURPOSE: 活用できるリソース、能力、経験があることを示すサインです。
+EMOTION_JOY_2_FEELING_1: 誇り
+EMOTION_JOY_2_FEELING_2: 自信
+EMOTION_JOY_2_FEELING_3: 力づけられている
+
+EMOTION_JOY_3_NAME: 喜び
+EMOTION_JOY_3_DESC: 強い喜びと幸福感。純粋な喜びは、喜びと満足感で満たされる強烈でポジティブな感情です。
+EMOTION_JOY_3_QUESTION: 継続したいうまくいっていることは？あなたを育み支えているものは？
+EMOTION_JOY_3_OVERLOAD_RISK: この感情を使いすぎると、問題を軽視したり、他人の痛みに無関心に見える可能性があります。
+EMOTION_JOY_3_OVERLOAD_TIP: バランスを取るには、良いものを楽しみつつ、同時にケアや修復が必要な点も優しく探りましょう。
+EMOTION_JOY_3_ADAPTIVE_PURPOSE: 重要な何かが機能しており、味わい続け、継続する価値があることを示すサイン。
+EMOTION_JOY_3_FEELING_1: 恍惚
+EMOTION_JOY_3_FEELING_2: 歓喜
+EMOTION_JOY_3_FEELING_3: 至福
+
+EMOTION_JOY_4_NAME: 愛おしさ
+EMOTION_JOY_4_DESC: 誰かや何かに対する深い愛情、思いやり、温かさ。愛は繋がりと帰属意識を生み出す。
+EMOTION_JOY_4_QUESTION: この人や状況のどんな点を大切に思いますか？どのように気遣いや支援を示せますか？
+EMOTION_JOY_4_OVERLOAD_RISK: この感情を使いすぎると、健全な境界線を失ったり、他者を気遣うあまり自身のニーズを顧みなくなる恐れがあります。
+EMOTION_JOY_4_OVERLOAD_TIP: バランスを取るには、感謝していること一つと自身のニーズ一つを明確にし、両方を尊重する行動を選択しましょう。
+EMOTION_JOY_4_ADAPTIVE_PURPOSE: あなたにとって大切な人や目的に繋がり、育み、投資したいという欲求を示します。
+EMOTION_JOY_4_FEELING_1: 受け入れる
+EMOTION_JOY_4_FEELING_2: 寛大
+EMOTION_JOY_4_FEELING_3: 愛情深い
+EMOTION_JOY_4_BORDER_INFO: 愛は信頼に近い感情です。なぜなら、思いやりと信頼性という基盤を伴うからです。
+
+# ===== 信頼の感情 =====
+EMOTION_TRUST_1_NAME: 感謝
+EMOTION_TRUST_1_DESC: 感謝と称賛の温かい気持ち。感謝は人生の良きものに気づき、価値を見出す助けとなります。
+EMOTION_TRUST_1_QUESTION: あなたを支え、育んでいるものは何ですか？ あなたが大切にしていることに貢献している人やものは誰ですか？
+EMOTION_TRUST_1_OVERLOAD_RISK: この感情を使いすぎると、「感謝すべきだ」という理由で不健全な状況を許容したり、本当のニーズを表現することを避けたりする可能性があります。
+EMOTION_TRUST_1_OVERLOAD_TIP: バランスを取るには、感謝と正直さを並行させましょう：うまくいっていることを評価しつつ、まだ伝えたいニーズや境界線を一つ特定してください。
+EMOTION_TRUST_1_ADAPTIVE_PURPOSE: あなたにとって重要な支援、資源、贈り物を受け取っていることを示すサインです。
+EMOTION_TRUST_1_FEELING_1: 充足感
+EMOTION_TRUST_1_FEELING_2: 称賛
+EMOTION_TRUST_1_FEELING_3: 感謝
+EMOTION_TRUST_1_BORDER_INFO: 感謝は喜びに近い感情です。なぜなら、ポジティブな経験への評価を伴うからです。
+
+EMOTION_TRUST_2_NAME: 平和
+EMOTION_TRUST_2_DESC: 心配や混乱から解放された、静寂と落ち着きの状態。平和は精神的・感情的な均衡をもたらします。
+EMOTION_TRUST_2_QUESTION: あなたを元気づけたり支えているものは何ですか？うまくいっていることは何ですか？
+EMOTION_TRUST_2_OVERLOAD_RISK: この感情を過剰に使うと、必要な対立を避けたり、重要な課題から距離を置いたりする可能性があります。
+EMOTION_TRUST_2_OVERLOAD_TIP: バランスを取るには、静けさを楽しみながら、勇気ある対話や小さな行動が必要な課題が残っていないか自問しましょう。
+EMOTION_TRUST_2_ADAPTIVE_PURPOSE: あなたのシステムが再調整され、休息と回復に十分な安全を感じていることを示すサインです。
+EMOTION_TRUST_2_FEELING_1: 穏やかさ
+EMOTION_TRUST_2_FEELING_2: 満足感
+EMOTION_TRUST_2_FEELING_3: 穏やかさ
+
+EMOTION_TRUST_3_NAME: 受け入れ
+EMOTION_TRUST_3_DESC: ありのままの自分を受け入れられ、価値を認められている感覚。受け入れは帰属意識と安心感を生み出す。
+EMOTION_TRUST_3_QUESTION: どこに帰属していると感じますか？ありのままのあなたを受け入れ、価値を認めてくれる人は誰ですか？
+EMOTION_TRUST_3_OVERLOAD_RISK: この感情を使いすぎると、所属を維持するために自己の一部を隠して過剰に適応してしまう可能性があります。
+EMOTION_TRUST_3_OVERLOAD_TIP: バランスを取るには、より本音を出しやすいと感じる安全な場所を自覚し、もう一つだけ正直な自分を共有してみてください。
+EMOTION_TRUST_3_ADAPTIVE_PURPOSE: 集団や関係性の中で、見られ、評価され、受け入れられていると感じるサインです。
+EMOTION_TRUST_3_FEELING_1: 価値を認められている
+EMOTION_TRUST_3_FEELING_2: 尊重されている
+EMOTION_TRUST_3_FEELING_3: 歓迎されている
+
+EMOTION_TRUST_4_NAME: 希望に満ちた
+EMOTION_TRUST_4_DESC: 良い結果への期待と願望の感覚。困難な時でも前進し続ける原動力となる。
+EMOTION_TRUST_4_QUESTION: 何を望んでいますか？どんな良い結果を想像していますか？
+EMOTION_TRUST_4_OVERLOAD_RISK: この感情を使いすぎると、変化を受動的に待ったり、非現実的な期待に固執したりする可能性があります。
+EMOTION_TRUST_4_OVERLOAD_TIP: バランスを取るには、希望の一部を今すぐ実行可能な具体的な行動に変換しましょう。
+EMOTION_TRUST_4_ADAPTIVE_PURPOSE: より良い未来を想像でき、それに惹かれていることを示します。
+EMOTION_TRUST_4_FEELING_1: 憧れ
+EMOTION_TRUST_4_FEELING_2: 期待感
+EMOTION_TRUST_4_FEELING_3: 楽観的
+EMOTION_TRUST_4_BORDER_INFO: 希望は未来への不確実性を伴うため、恐怖に近い位置にあります。
+
+# ===== 恐怖の感情 =====
+恐怖感情1名称: 緊張
+恐怖感情1説明: 不確実なものに対する不安や懸念の状態。緊張は、困難に感じられる状況や不慣れな状況に対する自然な反応である。
+EMOTION_FEAR_1_QUESTION: 何がリスクを生み出しているのか？何が予測不可能、あるいは制御不能に感じられるのか？
+EMOTION_FEAR_1_OVERLOAD_RISK: この感情を使いすぎると、あらゆる場所に危険を見出したり、考えすぎたり、仮定のシナリオに麻痺したりする可能性があります。
+EMOTION_FEAR_1_OVERLOAD_TIP: バランスを取るには、懸念している具体的なリスクを一つ挙げ、準備や仮定の検証のために取れる小さな行動を一つ考えましょう。
+EMOTION_FEAR_1_ADAPTIVE_PURPOSE: 何かが不確実または危険に感じられ、注意や準備が必要かもしれないという合図です。
+恐怖_1_感情_1: 脅威を感じる
+恐怖_1_感情_2: 不安
+恐怖_1_感情_3: そわそわする
+恐怖_1_境界情報: 緊張は信頼に近い感情です。脆弱性と安全への欲求が関わるためです。
+
+恐怖_2_名称: 怖がる
+恐怖_2_説明: 強い恐怖や警戒感。怖がることは、潜在的な危険を身体が警告する方法です。
+恐怖_2_質問: 危険にさらされている大切な人や物は何ですか？ どんな危険や危害を感じていますか？
+恐怖感情2の過剰リスク: この感情を使いすぎると、最も大切なものから距離を置いたり、重要な行動を「怖すぎる」と感じて避けたりする可能性があります。
+恐怖感情2の過剰対策: バランスを取るには、最も守りたいものを明確にし、大切にしているものを尊重しつつ安全を高める行動を一つ選びましょう。
+恐怖2の適応的目的: あなたが大切にしている何かが脅威にさらされ、保護や注意を必要としていることを示す。
+恐怖2の感情1: 怯える
+恐怖2の感情2: 恐怖に震える
+恐怖2の感情3: 警戒する
+
+EMOTION_FEAR_3_NAME: 不安
+EMOTION_FEAR_3_DESC: 不確実な結果に対する心配、緊張、または不安感。不安は準備や行動を起こすための合図となり得る。
+EMOTION_FEAR_3_QUESTION: どのような一般的な脅威や大きな不確実性が存在するのか？何に備え、何から身を守る必要があるのか？
+恐怖感情3の過剰リスク: この感情を使いすぎると、反芻（うさぎ）や最悪の事態を想定する思考（カタストロフィゼーション）、あるいは想像上の問題を作り出し、エネルギーを消耗する可能性があります。
+恐怖感情3の過剰対策: バランスを取るには、心配事を「影響を与えられそうなこと」と「影響を与えられないこと」に分類し、影響を与えられそうなことについて小さな一歩を選びましょう。
+恐怖感情3の適応目的: 長期的な脅威や不確実性を察知し、計画や保護が必要かもしれないことを知らせる信号です。
+恐怖感情3の感情1: 恐怖
+恐怖感情3の感情2: 心配
+恐怖感情3の感情3: 緊張
+
+EMOTION_FEAR_4_NAME: 不安
+EMOTION_FEAR_4_DESC: 自分自身や状況における自分の立場に対する自信や確信の欠如。不安はしばしば自己不信や拒絶への恐れに起因する。
+恐怖_4_質問: 何が自分を疑わせるのか？ 他人がどう思うか、どう見られるかを恐れているのか？
+恐怖_4_過剰リスク: この感情を使いすぎると、常に承認を求めたり、人に迎合したり、自分の貢献を控えたりしてしまう可能性がある。
+EMOTION_FEAR_4_OVERLOAD_TIP: バランスを取るには、自分の強みの具体的な証拠を思い出し、想像上の批判ではなく信頼できる相手から現実的なフィードバックを求めること。
+EMOTION_FEAR_4_ADAPTIVE_PURPOSE: 自分の価値感、能力、受け入れられ感が不安定に感じられ、安心感、学び、境界線が必要かもしれないというサイン。
+恐怖感情4_感情1: 拒絶された
+恐怖感情4_感情2: 不十分
+恐怖感情4_感情3: 不確実
+恐怖感情4_境界情報: 不安定は驚きに近い。自己価値への予期せぬ脅威を伴うため。
+
+# ===== 驚き（SURPRISE）の感情 =====
+EMOTION_SURPRISE_1_NAME: 驚いた
+EMOTION_SURPRISE_1_DESC: 予期せぬ出来事による突然の衝撃や警戒感。驚いた状態は驚きへの即時的・自動的な反応である。
+EMOTION_SURPRISE_1_QUESTION: 今、あなたの注意を必要とする突然の変化や合図は何ですか？
+EMOTION_SURPRISE_1_OVERLOAD_RISK: この感情を使いすぎると、常にびくびくしたり過度に警戒した状態になり、あらゆることを緊急事態として扱う可能性があります。
+EMOTION_SURPRISE_1_OVERLOAD_TIP: バランスを取るには、立ち止まって周囲を見渡し、呼吸を整え、実際に起きていることと自分が恐れていた可能性との違いを確認しましょう。
+EMOTION_SURPRISE_1_ADAPTIVE_PURPOSE: 予期せぬ出来事が発生し、注意を素早く向ける必要があることを知らせる信号です。
+EMOTION_SURPRISE_1_FEELING_1: 愕然とする
+EMOTION_SURPRISE_1_FEELING_2: 衝撃を受ける
+EMOTION_SURPRISE_1_FEELING_3: 呆然とする
+EMOTION_SURPRISE_1_BORDER_INFO: 驚愕は恐怖に近い感情です。突然の脅威や危険を感じる点で共通しています。
+
+EMOTION_SURPRISE_2_NAME: 混乱
+EMOTION_SURPRISE_2_DESC: 何かについて当惑したり不明瞭な状態。混乱は、情報が期待や理解と一致しないときに生じる。
+EMOTION_SURPRISE_2_QUESTION: 不足している情報や不明確な点は何か？理解を深めるために何が必要か？
+EMOTION_SURPRISE_2_OVERLOAD_RISK: この感情を使いすぎると、疑念に囚われたり、決断を遅らせたり、自分自身や他者について全てを疑うようになる可能性があります。
+EMOTION_SURPRISE_2_OVERLOAD_TIP: バランスを取るには、混乱を疑問に変えましょう：理解したいことを一つ明確にし、答えを探したり、実験したり、会話したりしてください。
+EMOTION_SURPRISE_2_ADAPTIVE_PURPOSE: 現在の理解が事実と合致せず、新しい情報や視点が必要かもしれないという合図です。
+EMOTION_SURPRISE_2_FEELING_1: 幻滅
+EMOTION_SURPRISE_2_FEELING_2: 困惑
+EMOTION_SURPRISE_2_FEELING_3: 戸惑い
+
+EMOTION_SURPRISE_3_NAME: 驚嘆
+EMOTION_SURPRISE_3_DESC: 強い驚きと畏敬の念。驚嘆は畏敬の念に満たされる、ポジティブな驚きの一形態。
+EMOTION_SURPRISE_3_QUESTION: 何が期待を超えていたのか？これはどんな可能性を開くのか？
+EMOTION_SURPRISE_3_OVERLOAD_RISK: この感情を使いすぎると、人や状況を理想化し、現実の限界やリスクを見逃す恐れがあります。
+EMOTION_SURPRISE_3_OVERLOAD_TIP: バランスを取るには、あなたを喜ばせるものを名指しすると同時に、この新たな可能性を探求する中で地に足をつけるための実践的な一歩や境界線を一つ挙げましょう。
+EMOTION_SURPRISE_3_ADAPTIVE_PURPOSE: 予想をはるかに超える素晴らしさ・大きさ・美しさを示し、可能性の感覚が広がっていることを示す。
+EMOTION_SURPRISE_3_FEELING_1: 驚嘆
+EMOTION_SURPRISE_3_FEELING_2: 畏敬
+EMOTION_SURPRISE_3_FEELING_3: 感銘
+
+EMOTION_SURPRISE_4_NAME: 失望
+EMOTION_SURPRISE_4_DESC: 期待が裏切られたときに感じる悲しみや不快感。失望は、望んでいたことと現実との間に生じた隔たりを示します。
+EMOTION_SURPRISE_4_QUESTION: どの期待が満たされなかったのか？この結果について、あなたにとって重要なことは何か？
+EMOTION_SURPRISE_4_OVERLOAD_RISK: この感情を使いすぎると、冷笑主義に陥り、将来の努力や人間関係を諦めてしまう恐れがある。
+EMOTION_SURPRISE_4_OVERLOAD_TIP: バランスを取るには、期待を明確に言葉にし、目標・戦略・スケジュールを修正するかを判断し、次の行動を一つ選ぶこと。
+EMOTION_SURPRISE_4_ADAPTIVE_PURPOSE: 現実が希望と合わず、大切にしていたものが損なわれたり失われたりしたことを示す。
+EMOTION_SURPRISE_4_FEELING_1: 裏切られた
+EMOTION_SURPRISE_4_FEELING_2: 落胆した
+EMOTION_SURPRISE_4_FEELING_3: 失望した
+EMOTION_SURPRISE_4_BORDER_INFO: 失望は悲しみに近い感情です。希望の喪失と期待外れを伴うためです。
+
+# ===== 悲しみに関連する感情 =====
+EMOTION_SADNESS_1_NAME: 傷つく
+EMOTION_SADNESS_1_DESC: 何らかの出来事や人物によって引き起こされる感情的な痛み。拒絶や批判、喪失感から生じることが多い。
+EMOTION_SADNESS_1_QUESTION: どのような価値や関係性が影響を受けましたか？どのような癒やしや修復が助けになりますか？
+EMOTION_SADNESS_1_OVERLOAD_RISK: この感情を使いすぎると、恨みを抱え続けたり、悪意を想定したり、修復から自らを閉ざしたりする可能性があります。
+悲しみ_1_過剰負荷_アドバイス: バランスを取るには、その痛みとそれが重要な理由を認め、それを伝えるか癒しのサポートを求めるか、その必要性と方法を考えてみてください。
+悲しみ_1_適応的目的: 重要な何か、あるいは誰かが、あなたの安全感、価値感、つながりの感覚を傷つけたことを知らせます。
+悲しみ_1_感情_1: 落胆
+悲しみ_1_感情_2: 脅威を感じる
+悲しみ_1_感情_3: 傷ついた
+悲しみ_1_境界情報: 傷つきは驚きに近い感情です。予期せぬ感情的な傷から生じることが多いためです。
+
+悲しみ_2_名前: 抑うつ
+悲しみ_2_説明: 深い悲しみと活力の低下状態。抑うつは全てを重く感じさせ、対処困難にします。
+EMOTION_SADNESS_2_QUESTION: 何が枯渇感や絶望感をもたらしていますか？ どんな小さな気遣い、支え、意味の再発見が可能ですか？
+EMOTION_SADNESS_2_OVERLOAD_RISK: この感情を過剰に使うと、可能性を見失い、完全に引きこもり、基本的な自己ケアを怠る恐れがあります。
+EMOTION_SADNESS_2_OVERLOAD_TIP: バランスを取るには、小さな思いやりのある行動を一つ選びましょう。例えば、誰かに連絡を取る、体を動かす、簡単なタスクを一つこなすなど、少しの構造や支えを加える行動です。
+EMOTION_SADNESS_2_ADAPTIVE_PURPOSE: エネルギー、やる気、または意味感が低下していることを示し、休息、サポート、または方向性の再調整が必要かもしれないというサインです。
+悲しみ_2_感情_1: 喪失感
+悲しみ_2_感情_2: 感覚の麻痺
+悲しみ_2_感情_3: 虚無感
+
+EMOTION_SADNESS_3_NAME: 孤独
+EMOTION_SADNESS_3_DESC: 他者からの孤立や断絶という痛ましい感覚。孤独は、意味ある繋がりの必要性を浮き彫りにします。
+悲しみ_3_質問: 今、どんな繋がりが必要ですか？誰があなたをもっと理解したり支えたりしてくれるでしょうか？
+悲しみ_3_過剰リスク: この感情を使いすぎると、自分は根本的に孤独で愛されない存在だと信じ込み、さらに引きこもってしまう可能性があります。
+EMOTION_SADNESS_3_OVERLOAD_TIP: バランスを取るには、小さな安全な方法で繋がりを求める方法を見つけましょう——メッセージ、電話、共有する空間、信頼できる人に自分の必要性を伝えることなど。
+EMOTION_SADNESS_3_ADAPTIVE_PURPOSE: 繋がり、帰属、認められるというあなたの必要性が満たされていないことを示しています。
+EMOTION_SADNESS_3_FEELING_1: 見捨てられた
+EMOTION_SADNESS_3_FEELING_2: 孤立した
+EMOTION_SADNESS_3_FEELING_3: 繋がりを失った
+
+EMOTION_SADNESS_4_NAME: 恥
+EMOTION_SADNESS_4_DESC: 自分が何か間違ったことや恥ずかしいことをしたと信じることで生じる、屈辱や苦痛を伴う感情。恥は自己認識に影響を与えます。
+EMOTION_SADNESS_4_QUESTION: あなたは自分自身にどんな基準を課していますか？成長を支える自己慈愛や修復とは何でしょうか？
+EMOTION_SADNESS_4_OVERLOAD_RISK: この感情を使いすぎると、特定の過ちを「自分は悪い人間だ」「価値がない」という信念に変え、本当の自分を隠してしまう可能性があります。
+EMOTION_SADNESS_4_OVERLOAD_TIP: バランスを取るには、「私は何かをした」と「私は何かである」を分離し、自分の価値観に沿った学び、修復、謝罪のいずれか一歩を選びましょう。
+EMOTION_SADNESS_4_ADAPTIVE_PURPOSE: 自分の行動や選択が価値観と一致していない可能性を示し、内省、修復、成長を促します。
+EMOTION_SADNESS_4_FEELING_1: 後悔
+EMOTION_SADNESS_4_FEELING_2: 罪悪感
+EMOTION_SADNESS_4_FEELING_3: 恥ずかしさ
+EMOTION_SADNESS_4_BORDER_INFO: 恥は嫌悪に近い感情です。自己に対する否定的な判断を伴うためです。
+
+# ===== 嫌悪の感情 =====
+EMOTION_DISGUST_1_NAME: 嫌悪
+EMOTION_DISGUST_1_DESC: 何事か、あるいは誰かに対する嫌悪感や不承認の感情。嫌悪は、自身の価値観と一致しないものを特定するのに役立ちます。
+EMOTION_DISGUST_1_QUESTION: あなたの価値観や好みに合致しないと感じるものは何ですか？これはどのような境界線や選択を示していますか？
+EMOTION_DISGUST_1_OVERLOAD_RISK: この感情を使いすぎると、過度に厳しい判断、偏見、人や考えの拒絶に陥る可能性があります。
+EMOTION_DISGUST_1_OVERLOAD_TIP: バランスを取るには、嫌悪の対象（行動・スタイル・影響など）を具体的に名指ししつつ、人や状況を全体的に非難せず、実際に必要な境界線を決定しましょう。
+EMOTION_DISGUST_1_ADAPTIVE_PURPOSE: 何かが自分の好み・ニーズ・価値観に合わないことを示し、距離を置くか別の選択が必要かもしれないと知らせます。
+嫌悪感_1_感情_1: 嫌悪
+嫌悪感_1_感情_2: 引きこもり
+嫌悪感_1_感情_3: 拒絶感
+嫌悪感_1_境界情報: 嫌悪感は悲しみと近接している。感情的な引きこもりや拒絶を伴うため。
+
+EMOTION_DISGUST_2_NAME: 回避
+EMOTION_DISGUST_2_DESC: 不快または居心地の悪いものから距離を置く傾向。回避は脅威を感じるものに対する防御反応です。
+EMOTION_DISGUST_2_QUESTION: 何が不安や圧倒感、消耗感をもたらしますか？より多くのサポートや明確さを持ってそれにどう向き合えますか？
+EMOTION_DISGUST_2_OVERLOAD_RISK: この感情を過剰に使うと、重要な行動を遅らせたり、行き詰まったり、問題が静かに大きくなる可能性があります。
+EMOTION_DISGUST_2_OVERLOAD_TIP: バランスを取るには、避けたいタスクや状況を非常に小さな一歩に分割し、どのようなサポート、情報、境界設定があればより管理しやすくなるかを考えてみてください。
+EMOTION_DISGUST_2_ADAPTIVE_PURPOSE: 現在のリソースでは対処が困難なほど脅威的、圧倒的、不快な状況であることを示すシグナルです。
+EMOTION_DISGUST_2_FEELING_1: 躊躇
+EMOTION_DISGUST_2_FEELING_2: 嫌悪
+EMOTION_DISGUST_2_FEELING_3: 消極的
+
+EMOTION_DISGUST_3_NAME: ひどい
+EMOTION_DISGUST_3_DESC: 非常に不快または不愉快なものに対する強い否定的な感情。ひどいと感じることは、何かが深く間違っているか苦痛であることを示す。
+EMOTION_DISGUST_3_QUESTION: 何が有害または受け入れがたいと感じられるか？ どのような基準や価値観が変化の必要性を示しているか？
+EMOTION_DISGUST_3_OVERLOAD_RISK: この感情を使いすぎると、事態を最悪に想定したり、変化への希望を失ったり、戦略ではなく怒りだけで反応したりする恐れがあります。
+EMOTION_DISGUST_3_OVERLOAD_TIP: バランスを取るには、何が具体的に有害かを明確にし、修復に向けて少しでも前進する現実的な行動（個人的、人間関係、制度的）を一つ選びましょう。
+EMOTION_DISGUST_3_ADAPTIVE_PURPOSE: 何かが深く間違っている、有害である、あるいはあなたの核心的価値観と整合していないと感じさせるシグナルです。
+EMOTION_DISGUST_3_FEELING_1: 嫌悪
+EMOTION_DISGUST_3_FEELING_2: 憎悪
+EMOTION_DISGUST_3_FEELING_3: 忌まわしい
+
+EMOTION_DISGUST_4_NAME: 不承認
+EMOTION_DISGUST_4_DESC: 誰かまたは何かに対する否定的な判断や意見。不承認は、あなたの価値観と観察対象との間の矛盾を反映しています。
+EMOTION_DISGUST_4_QUESTION: 満たされなかった期待は何か？この反応を引き起こしている価値観は何か？そして、どんな変化を望んでいるのか？
+EMOTION_DISGUST_4_OVERLOAD_RISK: この感情を使いすぎると、頑固になったり、過度に批判的になったり、他人を遠ざける恐れがあります。
+EMOTION_DISGUST_4_OVERLOAD_TIP: バランスを取るには、不承認の根底にある価値観と向き合い、恥ではなく対話と改善を促す形で表現しましょう。
+EMOTION_DISGUST_4_ADAPTIVE_PURPOSE: 行動や結果が自身の基準や価値観を満たしておらず、より良い状態を望んでいることを示すシグナルです。
+EMOTION_DISGUST_4_FEELING_1: 嫌悪
+EMOTION_DISGUST_4_FEELING_2: 批判的
+EMOTION_DISGUST_4_FEELING_3: 批判的
+EMOTION_DISGUST_4_BORDER_INFO: 不承認は批判的評価と潜在的な対立を伴うため、怒りに近い感情です。
+
+# ===== 怒りの感情 =====
+EMOTION_ANGER_1_NAME: 攻撃的
+EMOTION_ANGER_1_DESC: 力強く対立的な怒りの表現。攻撃性は脅威や挫折感への反応として現れることが多い。
+EMOTION_ANGER_1_QUESTION: 守るべき境界線は何か？行動せざるを得ないほど重要なことは何か？
+EMOTION_ANGER_1_OVERLOAD_RISK: この感情を過剰に使うと、他人を傷つけたり、対立を激化させたり、自身の目標を損なうような方法で暴走する恐れがある。
+怒りの感情1・過剰反応の対処法: 行動前に一呼吸置き、そのエネルギーを明確で断固たる言葉や行動の選択に活用し、真に望む結果に集中することでバランスを取ろう。
+怒りの感情1・適応的目的: 深刻な脅威・不正・侵害を感知し、防衛・保護への強い衝動を感じていることを示す。
+EMOTION_ANGER_1_FEELING_1: 敵意
+EMOTION_ANGER_1_FEELING_2: 挑発された
+EMOTION_ANGER_1_FEELING_3: 闘争的
+EMOTION_ANGER_1_BORDER_INFO: 攻撃性は嫌悪に近い。受け入れがたいものを拒絶したり押し返したりする性質を含むため。
+
+怒り_2_名称: 激怒
+怒り_2_説明: 強い不快感や激怒の感情。激怒は、何かがあなたの境界線や期待を侵害したことを示している。
+怒り_2_質問: どの価値観や期待が侵害されたのか？何を表現し、修復する必要があるのか？
+怒り感情2の過剰リスク: この感情を使いすぎると、恨みを抱いたり、出来事を繰り返し思い返したり、解決を求める代わりに攻撃的になる可能性があります。
+怒り感情2の過剰対策: バランスを取るには、具体的に何が問題だったかを明確にし、境界線を設定するか、変化を求めるか、意識的に手放すかを決めてください。
+怒り_2_適応的目的: 不公平さや問題点を示し、変化や承認を求める信号です。
+怒り_2_感情_1: 激怒
+怒り_2_感情_2: 猛烈な怒り
+怒り_2_感情_3: 激怒
+
+EMOTION_ANGER_3_NAME: フラストレーション
+EMOTION_ANGER_3_DESC: 何かを達成できない時の動揺や苛立ち。目標が阻まれたり、満たされない欲求から生じる。
+EMOTION_ANGER_3_QUESTION: 目標達成の妨げになっているものは何か？前進するために必要な変化（内的・外的）は何か？
+怒りの感情3_過剰リスク: この感情を使いすぎると、諦めたり、他人を責めたり、人に無理を強いたりする恐れがあります。
+怒りの感情3_過剰対策: バランスを取るには、一歩引いて目標を明確にし、動きを解き放つ可能性のある別のアプローチ、要求、境界線を一つの選択してください。
+EMOTION_ANGER_3_ADAPTIVE_PURPOSE: 努力が阻まれ、進展・効率・異なる結果を求めていることを示す。
+EMOTION_ANGER_3_FEELING_1: いらだち
+EMOTION_ANGER_3_FEELING_2: 苛立ち
+EMOTION_ANGER_3_FEELING_3: 憤り
+
+EMOTION_ANGER_4_NAME: 批判的
+EMOTION_ANGER_4_DESC: 欠点を見つけたり厳しく判断する傾向。批判的であることは、認識された欠陥や失敗に向けられた怒りの一形態となり得る。
+怒り_4_質問: どのような改善が必要だとお考えですか？ どのような結果を守り、高めようとしていますか？
+怒り_4_過剰使用リスク: この感情を過剰に使用すると、欠点探しに陥り、他者を落胆させ、創造性や実験を阻害する可能性があります。
+EMOTION_ANGER_4_OVERLOAD_TIP: バランスを取るには、懸念を指摘する前に少なくとも1つの良い点を認め、批判を「共同の改善への貢献」として位置付けましょう。
+EMOTION_ANGER_4_ADAPTIVE_PURPOSE: リスクや誤り、改善の可能性に気づき、品質や完全性を重視していることを示すサインです。
+EMOTION_ANGER_4_FEELING_1: 皮肉
+EMOTION_ANGER_4_FEELING_2: 懐疑的
+EMOTION_ANGER_4_FEELING_3: 批判的
+EMOTION_ANGER_4_BORDER_INFO: 批判的感情は警戒心と問題への備えを伴うため、期待感情に近い性質を持つ。
+
+# ===== 予期感情 =====
+EMOTION_ANTICIPATION_1_NAME: 興奮
+EMOTION_ANTICIPATION_1_DESC: これから起こることに熱狂的な期待を抱く感情。興奮はエネルギーを与え、前向きな予感を生み出す。
+EMOTION_ANTICIPATION_1_QUESTION: どんな機会があなたに活力を与えていますか？このエネルギーを意図的な行動にどう向けられますか？
+EMOTION_ANTICIPATION_1_OVERLOAD_RISK: この感情を使いすぎると、過剰な約束、計画なしの突進、燃え尽き症候群を引き起こす可能性があります。
+EMOTION_ANTICIPATION_1_OVERLOAD_TIP: バランスを取るには、現実的な計画とペースにエネルギーを合わせ、一度に全てをこなそうとせず、明確な次のステップを一つ選ぶこと。
+EMOTION_ANTICIPATION_1_ADAPTIVE_PURPOSE: 可能性に活力を感じ、それに取り組む準備ができていることを示す。
+EMOTION_ANTICIPATION_1_FEELING_1: 情熱的
+EMOTION_ANTICIPATION_1_FEELING_2: エネルギーに満ちた
+EMOTION_ANTICIPATION_1_FEELING_3: 興奮した
+EMOTION_ANTICIPATION_1_BORDER_INFO: 興奮は激しいエネルギーと行動準備を伴うため、怒りに近い感情です。
+
+EMOTION_ANTICIPATION_2_NAME: 熱望
+EMOTION_ANTICIPATION_2_DESC: 何かを成し遂げたり体験したりしたいという強い欲求や準備態勢。熱望は熱意と動機付けをもってあなたを前進させます。
+EMOTION_ANTICIPATION_2_QUESTION: 何を目標に進みたいですか？その方向へ進むための最初の一歩は何ですか？
+EMOTION_ANTICIPATION_2_OVERLOAD_RISK: この感情を使いすぎると、危険信号を見逃したり、反省を省略したり、頻繁に承諾しすぎたりする可能性があります。
+EMOTION_ANTICIPATION_2_OVERLOAD_TIP: バランスを取るには、行動前に必要な情報・境界線・準備を問うため一時停止し、熟考した上で最初のステップを踏み出しましょう。
+EMOTION_ANTICIPATION_2_ADAPTIVE_PURPOSE: 何かを追求する準備が整い、迅速に前進したいという意思を示す信号です。
+EMOTION_ANTICIPATION_2_FEELING_1: 熱意に満ちた
+EMOTION_ANTICIPATION_2_FEELING_2: 意欲的な
+EMOTION_ANTICIPATION_2_FEELING_3: 鋭敏な
+
+EMOTION_ANTICIPATION_3_NAME: 興味
+EMOTION_ANTICIPATION_3_DESC: もっと知りたい、何かに関わりたいという気持ち。興味はあなたの注意と好奇心を新しい体験へと引き寄せます。
+EMOTION_ANTICIPATION_3_QUESTION: 何があなたの注意を引いていますか？ もっと深く探求したり理解したりする価値があると感じるものは何ですか？
+EMOTION_ANTICIPATION_3_OVERLOAD_RISK: この感情を使いすぎると、集中力が散漫になり、多くのことを始めてもほとんど終わらせられなくなる可能性があります。
+EMOTION_ANTICIPATION_3_OVERLOAD_TIP: バランスを取るには、今は意識的に一つの焦点領域を選び、他の興味は後で探求できるようリストにまとめておきましょう。
+EMOTION_ANTICIPATION_3_ADAPTIVE_PURPOSE: 好奇心が活性化し、学習や探求に潜在的な価値を見出していることを示します。
+EMOTION_ANTICIPATION_3_FEELING_1: 焦り
+EMOTION_ANTICIPATION_3_FEELING_2: 好奇心
+EMOTION_ANTICIPATION_3_FEELING_3: 没頭
+
+EMOTION_ANTICIPATION_4_NAME: ストレス
+EMOTION_ANTICIPATION_4_DESC: 要求の厳しい状況による精神的・感情的な緊張状態。ストレスは、エネルギーとリソースを必要とする課題に直面していることを示します。
+EMOTION_ANTICIPATION_4_QUESTION: どのプレッシャーに注意が必要ですか？どこで緩和、サポート、または明確な境界線が必要ですか？
+EMOTION_ANTICIPATION_4_OVERLOAD_RISK: この感情を使いすぎると、危機モードで行動したり、反応的な決断をしたり、自分を消耗させたりする可能性があります。
+EMOTION_ANTICIPATION_4_OVERLOAD_TIP: バランスを取るには、減らせる・委任できる・延期できる要求を一つ特定し、エネルギーや明晰さを回復する短い実践を一つ見つけましょう。
+EMOTION_ANTICIPATION_4_ADAPTIVE_PURPOSE: 要求が現在のリソースを上回っていると感じられ、何かを変える必要があることを示します。
+感情_予期_4_感覚_1: 圧倒される
+感情_予期_4_感覚_2: 圧迫される
+感情_予期_4_感覚_3: 緊張する
+感情_予期_4_境界情報: ストレスは喜びに近い。なぜなら、ポジティブな結果を達成するために高いエネルギーが集中する状態だからだ。

@@ -359,8 +359,20 @@
       <circle class="cls-1" cx="2446.57" cy="2439.95" r="540.7"/>
     </clipPath>
   </defs>
+  <g id="joy4-background">
+    <path class="cls-32" d="M2835.67,2062.73c-29.98-30.13-59.13-52.26-82.74-67.99,147.42-219.11,294.85-438.21,442.27-657.32,59.29,40.02,129.84,94.56,201.81,167.2"/>
+  </g>
+  <g id="joy3-background">
+    <path class="cls-32" d="M2752.39,1992.13c-35.47-23.42-68.51-39.17-94.82-49.77,99.87-244.48,199.74-488.95,299.61-733.43,66.18,27.15,146.34,66.23,231.56,122.74"/>
+  </g>
+  <g id="joy2-background">
+    <path class="cls-32" d="M2649.95,1942.21c-39.37-16.02-74.86-24.99-102.73-30.24,50.05-259.3,100.1-518.6,150.14-777.9,70.21,13.66,156.47,36.28,251.11,75.01"/>
+  </g>
+  <g id="joy-1-background">
+    <path class="cls-32" d="M2552.18,1909.97c-41.71-8.19-78.26-10.2-106.62-10.02-.49-264.09-.99-528.17-1.48-792.26,71.53-.03,160.53,5.67,260.83,25.57"/>
+  </g>
   <g id="joy-background">
-    <path class="cls-32" d="M2444.07,1106.69c368.58,0,705.27,151.4,946.82,392.94l-944.32,946.94-2.5-1339.88Z"/>
+    <path class="cls-32" d="M2444.07,1899.75c151.66,0,290.2,61.79,389.59,160.36l-388.56,386.46-1.03-546.82Z"/>
   </g>
   <g id="trust-background">
     <path class="cls-92" d="M3384,1493.95c262.39,258.85,395.76,603.08,398.08,944.67l-1337.28,10.95,939.19-955.62Z"/>
@@ -563,7 +575,7 @@
     <text class="cls-95" transform="translate(2552.66 2943.1) rotate(-15.72)"><tspan x="0" y="0">u</tspan></text>
     <text class="cls-95" transform="translate(2603.5 2928.67) rotate(-21.69)"><tspan x="0" y="0">p</tspan></text>
     <text class="cls-95" transform="translate(2652.74 2908.53) rotate(-26.44)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-95" transform="translate(2680.56 2894.54) rotate(-29.36)"><tspan x="0" y="0">i</tspan></text>
+    <text class="cls-95" transform="translate(2680.54 2894.55) rotate(-29.35)"><tspan x="0" y="0">i</tspan></text>
     <text class="cls-95" transform="translate(2699.96 2883.95) rotate(-32.89)"><tspan x="0" y="0">s</tspan></text>
     <text class="cls-95" transform="translate(2736.4 2860.41) rotate(-37.92)"><tspan x="0" y="0">e</tspan></text>
     <text class="cls-95" transform="translate(2773.76 2830.68) rotate(-41.55)"><tspan x="0" y="0"> </tspan></text>

@@ -1,0 +1,556 @@
+{
+  "language": "English",
+  "languageCode": "en",
+  "ui": {
+    "title": "Emotional Wisdom Wheel",
+    "welcomeMessage": "This interactive wheel helps you identify and understand different emotions.",
+    "howToUseTitle": "How to use:",
+    "howToUseSteps": [
+      "Hover over any segment to highlight it",
+      "Click on a segment to learn more about that emotion",
+      "Explore the 8 core emotions and 32 related feelings"
+    ],
+    "copyright": "©Joshua Freedman from the new book:",
+    "copyrightLink": "Emotion Rules",
+    "version": "v2.9",
+    "modalClose": "×",
+    "relatedFeelingsLabel": "Related Feelings",
+    "borderInfoLabel": "Border Insight",
+    "quotesLabel": "Inspirational Quotes",
+    "adaptivePurposeLabel": "Adaptive Purpose",
+    "overloadRiskLabel": "Overload Risk",
+    "overloadTipLabel": "Balance Tip"
+  },
+  "emotions": [
+    {
+      "id": "joy-1-optimistic",
+      "name": "Optimistic",
+      "category": "Joy",
+      "description": "A feeling of hopefulness and confidence about the future. When you're optimistic, you believe that good things will happen and maintain a positive outlook on life.",
+      "question": "What possibilities do you see? What could go right in this situation?",
+      "overloadRisk": "If you over-use this feeling, you may overlook real risks or pressure others to 'stay positive' when they need something different.",
+      "overloadTip": "To balance, name one real challenge and one concrete step to prepare for it while still honoring your sense of possibility.",
+      "adaptivePurpose": "Signals that you see positive possibilities and potential good outcomes.",
+      "relatedFeelings": ["Positive", "Inspired", "Hopeful"],
+      "borderInfo": "Optimistic is near Anticipation because it has a component of looking ahead."
+    },
+    {
+      "id": "joy-2-confident",
+      "name": "Confident",
+      "category": "Joy",
+      "description": "A sense of self-assurance arising from appreciation of your abilities or qualities. Confidence empowers you to take action and face challenges.",
+      "question": "What strengths can you bring to this situation? What are you capable of doing?",
+      "overloadRisk": "If you over-use this feeling, you may overestimate your capacity or dismiss others' perspectives and needs.",
+      "overloadTip": "To balance, ask yourself where you still need input or support, and invite at least one other voice into the conversation.",
+      "adaptivePurpose": "Signals that you have resources, abilities, or experience you can draw on.",
+      "relatedFeelings": ["Proud", "Self-assured", "Empowered"]
+    },
+    {
+      "id": "joy-3-joyful",
+      "name": "Joyful",
+      "category": "Joy",
+      "description": "A feeling of great pleasure and happiness. Pure joy is an intense, positive emotion that fills you with delight and contentment.",
+      "question": "What is going well that you want to continue? What is nourishing or supportive?",
+      "overloadRisk": "If you over-use this feeling, you may skip over problems or appear insensitive to others' pain.",
+      "overloadTip": "To balance, enjoy what is good and gently scan for anything that also needs care or repair.",
+      "adaptivePurpose": "Signals that something important is working and worth savoring and continuing.",
+      "relatedFeelings": ["Ecstatic", "Delighted", "Blissful"]
+    },
+    {
+      "id": "joy-4-loving",
+      "name": "Loving",
+      "category": "Joy",
+      "description": "A deep feeling of affection, care, and warmth toward someone or something. Love creates connection and a sense of belonging.",
+      "question": "What do you appreciate about this person or situation? How can you show care and support?",
+      "overloadRisk": "If you over-use this feeling, you may lose healthy boundaries or neglect your own needs while caring for others.",
+      "overloadTip": "To balance, name one thing you appreciate and one need of your own, and choose a step that honors both.",
+      "adaptivePurpose": "Signals a desire to connect, nurture, and invest in people or causes that matter to you.",
+      "relatedFeelings": ["Embracing", "Generous", "Affectionate"],
+      "borderInfo": "Loving is near Trust because it involves a foundation of care and reliability."
+    },
+    {
+      "id": "trust-1-grateful",
+      "name": "Grateful",
+      "category": "Trust",
+      "description": "A warm feeling of thankfulness and appreciation. Gratitude helps you recognize and value the good things in your life.",
+      "question": "What is supporting or nourishing you? Who or what is contributing to what you care about?",
+      "overloadRisk": "If you over-use this feeling, you may tolerate unhealthy situations or avoid expressing real needs because 'you should be grateful.'",
+      "overloadTip": "To balance, let gratitude stand beside honesty: appreciate what is working and identify one need or boundary you still want to express.",
+      "adaptivePurpose": "Signals that you are receiving support, resources, or gifts that matter to you.",
+      "relatedFeelings": ["Fulfilled", "Admiration", "Thankful"],
+      "borderInfo": "Grateful is near Joy because it involves appreciation for positive experiences."
+    },
+    {
+      "id": "trust-2-peaceful",
+      "name": "Peaceful",
+      "category": "Trust",
+      "description": "A state of tranquility and calm, free from worry or disturbance. Peace brings mental and emotional equilibrium.",
+      "question": "What is recharging or supporting you? What's going right?",
+      "overloadRisk": "If you over-use this feeling, you may avoid necessary conflict or disengage from important challenges.",
+      "overloadTip": "To balance, enjoy the calm and ask if there is any issue that still needs a courageous conversation or small action.",
+      "adaptivePurpose": "Signals that your system is re-centering and you feel safe enough to rest and restore.",
+      "relatedFeelings": ["Calm", "Content", "Serene"]
+    },
+    {
+      "id": "trust-3-accepted",
+      "name": "Accepted",
+      "category": "Trust",
+      "description": "A feeling of being welcomed and valued for who you are. Acceptance creates a sense of belonging and security.",
+      "question": "Where do you feel you belong? Who accepts and values you as you are?",
+      "overloadRisk": "If you over-use this feeling, you may over-conform, hiding parts of yourself to keep belonging.",
+      "overloadTip": "To balance, notice where you feel safe enough to be more authentic, and share one more honest piece of yourself.",
+      "adaptivePurpose": "Signals that you feel seen, valued, and included in a group or relationship.",
+      "relatedFeelings": ["Valued", "Respected", "Welcomed"]
+    },
+    {
+      "id": "trust-4-hopeful",
+      "name": "Hopeful",
+      "category": "Trust",
+      "description": "A feeling of expectation and desire for positive outcomes. Hope motivates you to keep moving forward even in difficult times.",
+      "question": "What are you hoping for? What positive outcome do you envision?",
+      "overloadRisk": "If you over-use this feeling, you may wait passively for change or cling to unrealistic expectations.",
+      "overloadTip": "To balance, translate one part of your hope into a specific, doable step you can take now.",
+      "adaptivePurpose": "Signals that you can imagine a better future and feel drawn toward it.",
+      "relatedFeelings": ["Longing", "Expectant", "Optimistic"],
+      "borderInfo": "Hopeful is near Fear because it involves uncertainty about the future."
+    },
+    {
+      "id": "fear-1-nervous",
+      "name": "Nervous",
+      "category": "Fear",
+      "description": "A state of unease or apprehension about something uncertain. Nervousness is a natural response to situations that feel challenging or unfamiliar.",
+      "question": "What is creating risk? What feels unpredictable or out of control?",
+      "overloadRisk": "If you over-use this feeling, you may see danger everywhere, overthink, or become paralyzed by what-if scenarios.",
+      "overloadTip": "To balance, name one specific risk you are concerned about and one small action you can take to prepare or test your assumptions.",
+      "adaptivePurpose": "Signals that something feels uncertain or risky and may need caution or preparation.",
+      "relatedFeelings": ["Threatened", "Uneasy", "Jittery"],
+      "borderInfo": "Nervous is near Trust because it involves vulnerability and the need for safety."
+    },
+    {
+      "id": "fear-2-scared",
+      "name": "Scared",
+      "category": "Fear",
+      "description": "An intense feeling of fear or alarm. Being scared is your body's way of alerting you to potential danger.",
+      "question": "What or who do you care about that's at risk? What danger or harm are you sensing?",
+      "overloadRisk": "If you over-use this feeling, you may withdraw from what matters most or avoid important steps because they feel too scary.",
+      "overloadTip": "To balance, clarify what you most want to protect and choose one action that increases safety while still honoring what you care about.",
+      "adaptivePurpose": "Signals that something you care about feels threatened and needs protection or attention.",
+      "relatedFeelings": ["Frightened", "Terrified", "Alarmed"]
+    },
+    {
+      "id": "fear-3-anxious",
+      "name": "Anxious",
+      "category": "Fear",
+      "description": "A feeling of worry, nervousness, or unease about something with an uncertain outcome. Anxiety can be a signal to prepare or take action.",
+      "question": "What general threats or big uncertainties are present? What do you need to prepare for or protect against?",
+      "overloadRisk": "If you over-use this feeling, you may ruminate, catastrophize, or create imagined problems that drain your energy.",
+      "overloadTip": "To balance, sort your worries into 'things I can influence' and 'things I cannot,' then choose one small step on something you can influence.",
+      "adaptivePurpose": "Signals that you are scanning for long-term threats or uncertainties that may need planning or protection.",
+      "relatedFeelings": ["Dread", "Worry", "Tense"]
+    },
+    {
+      "id": "fear-4-insecure",
+      "name": "Insecure",
+      "category": "Fear",
+      "description": "A lack of confidence or certainty about yourself or your place in a situation. Insecurity often stems from self-doubt or fear of rejection.",
+      "question": "What makes you doubt yourself? What do you fear others might think or see?",
+      "overloadRisk": "If you over-use this feeling, you may constantly seek validation, people-please, or hold back your contributions.",
+      "overloadTip": "To balance, remember concrete evidence of your strengths and seek grounded feedback from someone you trust, not just imagined criticism.",
+      "adaptivePurpose": "Signals that your sense of worth, competence, or acceptance feels shaky and you may need reassurance, learning, or boundaries.",
+      "relatedFeelings": ["Rejected", "Inadequate", "Uncertain"],
+      "borderInfo": "Insecure is near Surprise because it involves unexpected threats to self-worth."
+    },
+    {
+      "id": "surprise-1-startled",
+      "name": "Startled",
+      "category": "Surprise",
+      "description": "A sudden feeling of shock or alarm caused by something unexpected. Being startled is an immediate, automatic response to surprise.",
+      "question": "What sudden change or signal needs your attention right now?",
+      "overloadRisk": "If you over-use this feeling, you may remain jumpy or hyper-alert, treating everything as an emergency.",
+      "overloadTip": "To balance, pause to look, breathe, and check what is actually happening now versus what you feared might be happening.",
+      "adaptivePurpose": "Signals that something unexpected just happened and your attention needs to orient quickly.",
+      "relatedFeelings": ["Appalled", "Shocked", "Stunned"],
+      "borderInfo": "Startled is near Fear because it involves a sudden sense of threat or danger."
+    },
+    {
+      "id": "surprise-2-confused",
+      "name": "Confused",
+      "category": "Surprise",
+      "description": "A state of being bewildered or unclear about something. Confusion occurs when information doesn't match your expectations or understanding.",
+      "question": "What information is missing or unclear? What would help you make sense of this?",
+      "overloadRisk": "If you over-use this feeling, you may get stuck in doubt, delay decisions, or question everything about yourself and others.",
+      "overloadTip": "To balance, turn confusion into a question: define one thing you want to understand and seek an answer, experiment, or conversation.",
+      "adaptivePurpose": "Signals that your current understanding does not fit the facts and you may need new information or perspective.",
+      "relatedFeelings": ["Disillusioned", "Perplexed", "Bewildered"]
+    },
+    {
+      "id": "surprise-3-amazed",
+      "name": "Amazed",
+      "category": "Surprise",
+      "description": "A feeling of great wonder and astonishment. Amazement is a positive form of surprise that fills you with awe.",
+      "question": "What exceeded your expectations? What possibility does this open?",
+      "overloadRisk": "If you over-use this feeling, you may idealize people or situations and miss real limits or risks.",
+      "overloadTip": "To balance, name what delights you and also one practical step or boundary that keeps you grounded while you explore this new possibility.",
+      "adaptivePurpose": "Signals that something is far better, bigger, or more beautiful than you expected and your sense of possibility is expanding.",
+      "relatedFeelings": ["Astonished", "Awed", "Impressed"]
+    },
+    {
+      "id": "surprise-4-disappointed",
+      "name": "Disappointed",
+      "category": "Surprise",
+      "description": "A feeling of sadness or displeasure when expectations are not met. Disappointment signals a gap between what you hoped for and reality.",
+      "question": "What expectation wasn't met? What matters to you about this outcome?",
+      "overloadRisk": "If you over-use this feeling, you may slide into cynicism, giving up on future efforts or relationships.",
+      "overloadTip": "To balance, name the expectation clearly, then decide whether to revise the goal, your strategy, or the timeline—and choose one next action.",
+      "adaptivePurpose": "Signals that reality did not match your hopes and something you cared about feels diminished or lost.",
+      "relatedFeelings": ["Betrayed", "Dismayed", "Let down"],
+      "borderInfo": "Disappointed is near Sadness because it involves loss of hope and unmet expectations."
+    },
+    {
+      "id": "sad-1-hurt",
+      "name": "Hurt",
+      "category": "Sadness",
+      "description": "Emotional pain caused by something or someone. Hurt feelings often arise from perceived rejection, criticism, or loss.",
+      "question": "What value or relationship was impacted? What healing or repair would help?",
+      "overloadRisk": "If you over-use this feeling, you may hold onto grudges, assume bad intentions, or close yourself off from repair.",
+      "overloadTip": "To balance, acknowledge the pain and why it matters, then consider whether and how you want to communicate it or seek healing support.",
+      "adaptivePurpose": "Signals that something or someone important has wounded your sense of safety, worth, or connection.",
+      "relatedFeelings": ["Dismayed", "Threatened", "Wounded"],
+      "borderInfo": "Hurt is near Surprise because it often comes from unexpected emotional wounds."
+    },
+    {
+      "id": "sad-2-depressed",
+      "name": "Depressed",
+      "category": "Sadness",
+      "description": "A state of deep sadness and low energy. Depression can make everything feel heavy and difficult to manage.",
+      "question": "What feels depleted or hopeless? What small source of care, support, or meaning can you reconnect with?",
+      "overloadRisk": "If you over-use this feeling, you may stop seeing any possibility, withdraw completely, or neglect basic self-care.",
+      "overloadTip": "To balance, choose one tiny, compassionate action—such as reaching out, moving your body, or doing one simple task—that adds a bit of structure or support.",
+      "adaptivePurpose": "Signals that your energy, motivation, or sense of meaning has dropped and you may need rest, support, or reorientation.",
+      "relatedFeelings": ["Bereft", "Numb", "Empty"]
+    },
+    {
+      "id": "sad-3-lonely",
+      "name": "Lonely",
+      "category": "Sadness",
+      "description": "A painful feeling of isolation or disconnection from others. Loneliness highlights our need for meaningful connection.",
+      "question": "What connection do you need right now? Who could help you feel more seen or supported?",
+      "overloadRisk": "If you over-use this feeling, you may believe you are fundamentally alone or unlovable and pull back even more.",
+      "overloadTip": "To balance, identify one small, safe way to reach toward connection—a message, a call, a shared space, or naming your need to someone you trust.",
+      "adaptivePurpose": "Signals that your need for connection, belonging, or being seen is not being met.",
+      "relatedFeelings": ["Abandoned", "Isolated", "Disconnected"]
+    },
+    {
+      "id": "sad-4-ashamed",
+      "name": "Ashamed",
+      "category": "Sadness",
+      "description": "A painful feeling of humiliation or distress caused by believing you've done something wrong or embarrassing. Shame affects how you see yourself.",
+      "question": "What standard are you holding yourself to? What self-compassion or repair would support growth?",
+      "overloadRisk": "If you over-use this feeling, you may turn a specific mistake into a belief that you are bad or unworthy and hide your true self.",
+      "overloadTip": "To balance, separate 'I did something' from 'I am something,' and choose one step of learning, repair, or apology that aligns with your values.",
+      "adaptivePurpose": "Signals that your behavior or choices may not match your values and invites reflection, repair, and growth.",
+      "relatedFeelings": ["Remorseful", "Guilty", "Embarrassed"],
+      "borderInfo": "Ashamed is near Disgust because it involves negative judgment of oneself."
+    },
+    {
+      "id": "disgust-1-dislike",
+      "name": "Dislike",
+      "category": "Disgust",
+      "description": "A feeling of aversion or disapproval toward something or someone. Dislike helps you identify what doesn't align with your values.",
+      "question": "What feels misaligned with your values or preferences? What boundary or choice does this reveal?",
+      "overloadRisk": "If you over-use this feeling, you may slide into harsh judgment, bias, or rejection of people or ideas too quickly.",
+      "overloadTip": "To balance, name specifically what you dislike—behavior, style, or impact—without condemning the whole person or situation, and decide what boundary is actually needed.",
+      "adaptivePurpose": "Signals that something does not fit your tastes, needs, or values and you may want distance or a different choice.",
+      "relatedFeelings": ["Revolted", "Withdrawn", "Repulsed"],
+      "borderInfo": "Dislike is near Sadness because it involves emotional withdrawal and rejection."
+    },
+    {
+      "id": "disgust-2-avoidance",
+      "name": "Avoidance",
+      "category": "Disgust",
+      "description": "A tendency to stay away from something unpleasant or uncomfortable. Avoidance is a protective response to things that feel threatening.",
+      "question": "What feels unsafe, overwhelming, or draining? How can you approach it with more support or clarity?",
+      "overloadRisk": "If you over-use this feeling, you may delay important actions, stay stuck, or let problems quietly grow.",
+      "overloadTip": "To balance, break the avoided task or situation into one very small step and consider what support, information, or boundary would make it more manageable.",
+      "adaptivePurpose": "Signals that something seems too threatening, overwhelming, or unpleasant to face with your current resources.",
+      "relatedFeelings": ["Hesitant", "Averse", "Reluctant"]
+    },
+    {
+      "id": "disgust-3-aweful",
+      "name": "Awful",
+      "category": "Disgust",
+      "description": "A strong negative feeling about something very unpleasant or disagreeable. Feeling awful signals that something is deeply wrong or distressing.",
+      "question": "What feels harmful or unacceptable? What standard or value is signaling a need for change?",
+      "overloadRisk": "If you over-use this feeling, you may catastrophize, feel hopeless about change, or respond with only outrage instead of strategy.",
+      "overloadTip": "To balance, clarify what exactly is harmful, then choose one realistic action—personal, relational, or systemic—that moves even slightly toward repair.",
+      "adaptivePurpose": "Signals that something feels deeply wrong, harmful, or out of integrity with your core values.",
+      "relatedFeelings": ["Repelled", "Detested", "Horrible"]
+    },
+    {
+      "id": "disgust-4-disapproval",
+      "name": "Disapproval",
+      "category": "Disgust",
+      "description": "A negative judgment or opinion about someone or something. Disapproval reflects a conflict between your values and what you observe.",
+      "question": "What expectation wasn't met? What value is prompting this reaction, and what change do you hope for?",
+      "overloadRisk": "If you over-use this feeling, you may become rigid, overly critical, or alienating to others.",
+      "overloadTip": "To balance, connect to the value underneath your disapproval and express it in a way that invites dialogue and improvement, not shame.",
+      "adaptivePurpose": "Signals that a behavior or outcome does not meet your standards or values and that you care about doing better.",
+      "relatedFeelings": ["Loathing", "Judgmental", "Critical"],
+      "borderInfo": "Disapproval is near Anger because it involves critical evaluation and potential confrontation."
+    },
+    {
+      "id": "anger-1-aggressive",
+      "name": "Aggressive",
+      "category": "Anger",
+      "description": "A forceful and confrontational expression of anger. Aggression is often a response to feeling threatened or frustrated.",
+      "question": "What boundary needs to be protected? What matters enough that you feel compelled to act?",
+      "overloadRisk": "If you over-use this feeling, you may lash out in ways that harm others, escalate conflict, or undermine your own goals.",
+      "overloadTip": "To balance, pause before acting, use the energy to choose clear and firm words or actions, and focus on the outcome you truly want.",
+      "adaptivePurpose": "Signals that you perceive a serious threat, injustice, or violation and feel a strong drive to defend or protect.",
+      "relatedFeelings": ["Hostile", "Provoked", "Combative"],
+      "borderInfo": "Aggressive is near Disgust because it involves rejecting or pushing away what's unacceptable."
+    },
+    {
+      "id": "anger-2-mad",
+      "name": "Mad",
+      "category": "Anger",
+      "description": "An intense feeling of displeasure or rage. Being mad signals that something has violated your boundaries or expectations.",
+      "question": "What value or expectation was violated? What do you need to express or repair?",
+      "overloadRisk": "If you over-use this feeling, you may hold grudges, replay the story, or attack rather than seek resolution.",
+      "overloadTip": "To balance, name specifically what was not okay and decide whether you want to set a boundary, ask for change, or consciously let it go.",
+      "adaptivePurpose": "Signals that something feels unfair or not okay and that you want change or acknowledgment.",
+      "relatedFeelings": ["Enraged", "Furious", "Livid"]
+    },
+    {
+      "id": "anger-3-frustrated",
+      "name": "Frustrated",
+      "category": "Anger",
+      "description": "A feeling of upset or annoyance when unable to achieve something. Frustration arises from blocked goals or unmet needs.",
+      "question": "What's getting in the way of your goal? What shift—internal or external—would help you move forward?",
+      "overloadRisk": "If you over-use this feeling, you may give up, blame others, or push people too hard.",
+      "overloadTip": "To balance, step back to clarify your goal, then choose one different approach, request, or boundary that could unlock movement.",
+      "adaptivePurpose": "Signals that your effort is blocked and you want progress, efficiency, or a different result.",
+      "relatedFeelings": ["Annoyed", "Irritated", "Exasperated"]
+    },
+    {
+      "id": "anger-4-critical",
+      "name": "Critical",
+      "category": "Anger",
+      "description": "A tendency to find fault or judge harshly. Being critical can be a form of anger directed at perceived flaws or failures.",
+      "question": "What improvement do you see is needed? What outcome are you trying to protect or enhance?",
+      "overloadRisk": "If you over-use this feeling, you may default to fault-finding, discourage others, or block creativity and experimentation.",
+      "overloadTip": "To balance, acknowledge at least one thing that is working before naming concerns, and frame your critique as a contribution to shared improvement.",
+      "adaptivePurpose": "Signals that you notice risks, errors, or potential improvements and care about quality or integrity.",
+      "relatedFeelings": ["Sarcastic", "Skeptical", "Judgmental"],
+      "borderInfo": "Critical is near Anticipation because it involves vigilance and preparation against potential problems."
+    },
+    {
+      "id": "anticipation-1-excited",
+      "name": "Excited",
+      "category": "Anticipation",
+      "description": "A feeling of enthusiastic eagerness about something that's going to happen. Excitement energizes you and creates positive anticipation.",
+      "question": "What opportunity is energizing you? How can you channel this energy into intentional action?",
+      "overloadRisk": "If you over-use this feeling, you may overcommit, rush ahead without planning, or burn out.",
+      "overloadTip": "To balance, match your energy with a realistic plan and pacing, and choose one clear next step instead of trying to do everything at once.",
+      "adaptivePurpose": "Signals that you feel energized by a possibility and are ready to engage with it.",
+      "relatedFeelings": ["Passionate", "Energized", "Thrilled"],
+      "borderInfo": "Excited is near Anger because it involves intense energy and readiness for action."
+    },
+    {
+      "id": "anticipation-2-eager",
+      "name": "Eager",
+      "category": "Anticipation",
+      "description": "A keen desire or readiness to do or experience something. Eagerness drives you forward with enthusiasm and motivation.",
+      "question": "What do you want to move toward? What first step would move you in that direction?",
+      "overloadRisk": "If you over-use this feeling, you may ignore red flags, skip reflection, or say yes too often.",
+      "overloadTip": "To balance, pause to ask what information, boundaries, or preparation you need before you move, then take a thoughtful first step.",
+      "adaptivePurpose": "Signals that you feel ready to pursue something and want to move quickly toward it.",
+      "relatedFeelings": ["Enthusiastic", "Motivated", "Keen"]
+    },
+    {
+      "id": "anticipation-3-interested",
+      "name": "Interested",
+      "category": "Anticipation",
+      "description": "A feeling of wanting to learn more or be involved in something. Interest draws your attention and curiosity toward new experiences.",
+      "question": "What is drawing your attention? What feels worth exploring or understanding more deeply?",
+      "overloadRisk": "If you over-use this feeling, you may scatter your focus, start many things, and finish few.",
+      "overloadTip": "To balance, consciously choose one focus area for now and capture other interests on a list for later, so you can explore with intention.",
+      "adaptivePurpose": "Signals that your curiosity is activated and you see potential value in learning or exploring.",
+      "relatedFeelings": ["Impatient", "Curious", "Engaged"]
+    },
+    {
+      "id": "anticipation-4-stressed",
+      "name": "Stressed",
+      "category": "Anticipation",
+      "description": "A state of mental or emotional strain from demanding circumstances. Stress signals that you're facing challenges that require energy and resources.",
+      "question": "What pressures need attention? Where do you need relief, support, or clearer boundaries?",
+      "overloadRisk": "If you over-use this feeling, you may run in crisis mode, make reactive decisions, or exhaust yourself.",
+      "overloadTip": "To balance, identify one demand you can reduce, delegate, or delay and one brief practice that helps restore your energy or clarity.",
+      "adaptivePurpose": "Signals that demands feel greater than your current resources and something needs to change.",
+      "relatedFeelings": ["Overwhelmed", "Pressured", "Tense"],
+      "borderInfo": "Stressed is near Joy because it involves high energy focused on achieving positive outcomes."
+    }
+  ],
+  "quotes": {
+    "joy-1-optimistic": [
+      {"text": "The sun'll come out tomorrow.", "speaker": "Annie", "work": "Annie"},
+      {"text": "There's some good in this world, and it's worth fighting for.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings: The Two Towers"},
+      {"text": "Even miracles take a little time.", "speaker": "Fairy Godmother", "work": "Cinderella"}
+    ],
+    "joy-2-confident": [
+      {"text": "I am no bird; and no net ensnares me.", "speaker": "Jane Eyre", "work": "Jane Eyre"},
+      {"text": "I know my worth.", "speaker": "Carol Danvers", "work": "Captain Marvel"},
+      {"text": "She wasn't fragile like a flower… she was fragile like a bomb.", "speaker": "Taylor Swift", "work": "Miss Americana"}
+    ],
+    "joy-3-joyful": [
+      {"text": "I'm walking on sunshine, and don't it feel good!", "speaker": "Katrina & The Waves", "work": "Walking on Sunshine"},
+      {"text": "Here comes the sun, and I say, it's all right.", "speaker": "George Harrison", "work": "The Beatles"},
+      {"text": "To infinity and beyond!", "speaker": "Buzz Lightyear", "work": "Toy Story"}
+    ],
+    "joy-4-loving": [
+      {"text": "All you need is love.", "speaker": "John Lennon", "work": "The Beatles"},
+      {"text": "Whatever our souls are made of, his and mine are the same.", "speaker": "Emily Brontë", "work": "Wuthering Heights"},
+      {"text": "After all this time?", "speaker": "Severus Snape", "work": "Harry Potter and the Deathly Hallows"}
+    ],
+    "anticipation-1-excited": [
+      {"text": "I'm so excited, and I just can't hide it!", "speaker": "The Pointer Sisters", "work": "I'm So Excited"},
+      {"text": "Adventure is out there!", "speaker": "Ellie", "work": "Up"},
+      {"text": "This is gonna be good.", "speaker": "", "work": "The Hunger Games"}
+    ],
+    "anticipation-2-eager": [
+      {"text": "I can't wait!", "speaker": "Hermione Granger", "work": "Harry Potter"},
+      {"text": "I want to go to there.", "speaker": "Liz Lemon", "work": "30 Rock"},
+      {"text": "Show me what you got.", "speaker": "", "work": "Top Gun"}
+    ],
+    "anticipation-3-interested": [
+      {"text": "Tell me more.", "speaker": "", "work": "Grease"},
+      {"text": "Curioser and curioser!", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "So… what happens next?", "speaker": "", "work": "The Princess Bride"}
+    ],
+    "anticipation-4-stressed": [
+      {"text": "I'm under a lot of pressure.", "speaker": "Peter Parker", "work": "Spider-Man 2"},
+      {"text": "It's too much.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"},
+      {"text": "I'm hanging by a thread.", "speaker": "", "work": "Inside Out 2"}
+    ],
+    "anger-1-aggressive": [
+      {"text": "Don't make me angry. You wouldn't like me when I'm angry.", "speaker": "Bruce Banner", "work": "The Incredible Hulk"},
+      {"text": "You dare challenge me?", "speaker": "Thor", "work": "Thor"},
+      {"text": "Say hello to my little friend!", "speaker": "Tony Montana", "work": "Scarface"}
+    ],
+    "anger-2-mad": [
+      {"text": "I am very angry with you!", "speaker": "Professor McGonagall", "work": "Harry Potter"},
+      {"text": "You can't handle the truth!", "speaker": "Colonel Jessup", "work": "A Few Good Men"},
+      {"text": "This means war.", "speaker": "Bugs Bunny", "work": "Looney Tunes"}
+    ],
+    "anger-3-frustrated": [
+      {"text": "Why is everything so complicated?", "speaker": "Avril Lavigne", "work": "Complicated"},
+      {"text": "I'm trying, okay?", "speaker": "", "work": "Spider-Man: Homecoming"},
+      {"text": "This is not going the way you think.", "speaker": "Luke Skywalker", "work": "Star Wars: The Last Jedi"}
+    ],
+    "anger-4-critical": [
+      {"text": "I'm not impressed.", "speaker": "", "work": "Gladiator"},
+      {"text": "Frankly, my dear, I don't give a damn.", "speaker": "Rhett Butler", "work": "Gone With the Wind"},
+      {"text": "That's… not ideal.", "speaker": "Sherlock Holmes", "work": "Sherlock (BBC)"}
+    ],
+    "disgust-1-dislike": [
+      {"text": "I don't like this.", "speaker": "Rey", "work": "Star Wars: The Force Awakens"},
+      {"text": "Ew, David!", "speaker": "Alexis Rose", "work": "Schitt's Creek"},
+      {"text": "That's disgusting!", "speaker": "Hermione Granger", "work": "Harry Potter"}
+    ],
+    "disgust-2-avoidance": [
+      {"text": "Get it away from me!", "speaker": "Indiana Jones", "work": "Indiana Jones and the Temple of Doom"},
+      {"text": "Nope, not today.", "speaker": "", "work": "Brooklyn Nine-Nine"},
+      {"text": "I'm not touching that.", "speaker": "", "work": "Finding Nemo"}
+    ],
+    "disgust-3-aweful": [
+      {"text": "This is awful.", "speaker": "Bilbo Baggins", "work": "The Hobbit"},
+      {"text": "That's the worst thing I've ever tasted!", "speaker": "Remy", "work": "Ratatouille"},
+      {"text": "What fresh hell is this?", "speaker": "Dorothy Parker", "work": ""}
+    ],
+    "disgust-4-disapproval": [
+      {"text": "I'm disappointed in you.", "speaker": "Mufasa", "work": "The Lion King"},
+      {"text": "You should not have done that.", "speaker": "Gandalf", "work": "The Lord of the Rings: The Fellowship of the Ring"},
+      {"text": "I expected better.", "speaker": "Steve Rogers", "work": "Marvel Cinematic Universe"}
+    ],
+    "sad-1-hurt": [
+      {"text": "You hurt me.", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "The wound is the place where the light enters you.", "speaker": "Rumi", "work": ""},
+      {"text": "The heart was made to be broken.", "speaker": "Oscar Wilde", "work": ""}
+    ],
+    "sad-2-depressed": [
+      {"text": "I feel so blue.", "speaker": "Billie Holiday", "work": "Am I Blue?"},
+      {"text": "Every night I lie in bed, the brightest colors fill my head… but I can't shake this feeling.", "speaker": "", "work": "The Greatest Showman"},
+      {"text": "Hello darkness, my old friend.", "speaker": "Simon & Garfunkel", "work": "The Sound of Silence"}
+    ],
+    "sad-3-lonely": [
+      {"text": "All by myself… don't want to be all by myself anymore.", "speaker": "Celine Dion", "work": "All By Myself"},
+      {"text": "Eleanor Rigby… lives in a dream.", "speaker": "The Beatles", "work": "Eleanor Rigby"},
+      {"text": "I've never felt so alone.", "speaker": "Harry Potter", "work": "Harry Potter and the Order of the Phoenix"}
+    ],
+    "sad-4-ashamed": [
+      {"text": "I'm ashamed of what I've done.", "speaker": "Jean Valjean", "work": "Les Misérables"},
+      {"text": "Shame is an unhappy emotion invented by pietists to exploit humanity.", "speaker": "William Blake", "work": "The Marriage of Heaven and Hell"},
+      {"text": "I'm not proud of myself.", "speaker": "Bruce Wayne", "work": "Batman Begins"}
+    ],
+    "surprise-1-startled": [
+      {"text": "You startled me!", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "Great Scott!", "speaker": "Doc Brown", "work": "Back to the Future"},
+      {"text": "What was that?", "speaker": "Bilbo Baggins", "work": "The Hobbit"}
+    ],
+    "surprise-2-confused": [
+      {"text": "I don't understand.", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "Toto, I've a feeling we're not in Kansas anymore.", "speaker": "Dorothy", "work": "The Wizard of Oz"},
+      {"text": "It's all a bit of a blur.", "speaker": "Bridget Jones", "work": "Bridget Jones's Diary"}
+    ],
+    "surprise-3-amazed": [
+      {"text": "This is incredible.", "speaker": "", "work": "Jurassic Park"},
+      {"text": "It's full of stars.", "speaker": "Dave Bowman", "work": "2001: A Space Odyssey"},
+      {"text": "I can't believe my eyes!", "speaker": "", "work": "The Lion King"}
+    ],
+    "surprise-4-disappointed": [
+      {"text": "I'm disappointed in you.", "speaker": "Atticus Finch", "work": "To Kill a Mockingbird"},
+      {"text": "You were supposed to be the chosen one!", "speaker": "Obi-Wan Kenobi", "work": "Star Wars: Episode III – Revenge of the Sith"},
+      {"text": "This is not what I hoped for.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "trust-1-grateful": [
+      {"text": "Thank you, thank you very much.", "speaker": "Elvis Presley", "work": ""},
+      {"text": "I've got sunshine on a cloudy day.", "speaker": "The Temptations", "work": "My Girl"},
+      {"text": "These are a few of my favorite things.", "speaker": "", "work": "The Sound of Music"}
+    ],
+    "trust-2-peaceful": [
+      {"text": "I feel at peace.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings"},
+      {"text": "Let it be.", "speaker": "The Beatles", "work": "Let It Be"},
+      {"text": "Be still, and know…", "speaker": "", "work": "Psalm 46:10"}
+    ],
+    "trust-3-accepted": [
+      {"text": "You have been my friend. That in itself is a tremendous thing.", "speaker": "Charlotte", "work": "Charlotte's Web"},
+      {"text": "You belong with me.", "speaker": "Taylor Swift", "work": "You Belong With Me"},
+      {"text": "Come as you are.", "speaker": "Kurt Cobain", "work": "Come As You Are"}
+    ],
+    "trust-4-hopeful": [
+      {"text": "Hope is a good thing, maybe the best of things.", "speaker": "Andy Dufresne", "work": "The Shawshank Redemption"},
+      {"text": "There's a sunrise every morning that you're missing.", "speaker": "", "work": "Dear Evan Hansen"},
+      {"text": "Even the darkest night will end and the sun will rise.", "speaker": "", "work": "Les Misérables"}
+    ],
+    "fear-1-nervous": [
+      {"text": "I've got a bad feeling about this.", "speaker": "Han Solo", "work": "Star Wars"},
+      {"text": "My hands are shaking.", "speaker": "", "work": "The Hunger Games"},
+      {"text": "Courage is not the absence of fear.", "speaker": "Nelson Mandela", "work": ""}
+    ],
+    "fear-2-scared": [
+      {"text": "I'm scared.", "speaker": "Coraline", "work": "Coraline"},
+      {"text": "They're here…", "speaker": "Carol Anne", "work": "Poltergeist"},
+      {"text": "Please don't let this be real.", "speaker": "", "work": "Stranger Things"}
+    ],
+    "fear-3-anxious": [
+      {"text": "I can't calm down.", "speaker": "", "work": "Inside Out"},
+      {"text": "I'm worried about everything.", "speaker": "", "work": "Harry Potter and the Deathly Hallows"},
+      {"text": "Something is wrong… I can feel it.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "fear-4-insecure": [
+      {"text": "I don't feel good enough.", "speaker": "", "work": "The Perks of Being a Wallflower"},
+      {"text": "You think I'm not good enough.", "speaker": "", "work": "Lady Bird"},
+      {"text": "Am I strong enough?", "speaker": "", "work": "Mulan"}
+    ]
+  }
+}
