@@ -112,11 +112,6 @@ function updateSVGText() {
                 const tspan = textElements[index].querySelector('tspan');
                 if (tspan) {
                     tspan.textContent = feeling;
-                    // Set textLength to constrain the text width
-                    // Use a reference length based on average character width * character count
-                    const referenceLength = getTextReferenceLength(feeling.length, 'small');
-                    textElements[index].setAttribute('textLength', referenceLength);
-                    textElements[index].setAttribute('lengthAdjust', 'spacingAndGlyphs');
                 }
             }
         });
@@ -127,31 +122,9 @@ function updateSVGText() {
             const tspan = textElements[mainNameIndex].querySelector('tspan');
             if (tspan) {
                 tspan.textContent = emotion.name;
-                // Set textLength to constrain the text width for main emotion name
-                const referenceLength = getTextReferenceLength(emotion.name.length, 'large');
-                textElements[mainNameIndex].setAttribute('textLength', referenceLength);
-                textElements[mainNameIndex].setAttribute('lengthAdjust', 'spacingAndGlyphs');
             }
         }
     });
-}
-
-// Calculate reference length for text based on character count and size
-function getTextReferenceLength(charCount, size) {
-    // These values are calibrated based on the English text in the original SVG
-    // to ensure text fits within the wheel segments without overflow
-    if (size === 'large') {
-        // Main emotion names - constrain to a maximum width
-        // Scale down for longer words to prevent overflow
-        const baseWidth = 120;
-        const maxLength = 12; // approximate longest English emotion name
-        return Math.min(baseWidth, (baseWidth * maxLength) / Math.max(charCount, maxLength * 0.8));
-    } else {
-        // Related feelings - constrain to a smaller maximum width
-        const baseWidth = 85;
-        const maxLength = 11; // approximate longest related feeling
-        return Math.min(baseWidth, (baseWidth * maxLength) / Math.max(charCount, maxLength * 0.8));
-    }
 }
 
 // Initialize language selector
