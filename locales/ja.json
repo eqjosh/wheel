@@ -557,544 +557,544 @@
   "quotes": {
     "joy-1-optimistic": [
       {
-        "text": "The sun'll come out tomorrow.",
+        "text": "明日はきっと太陽が昇る。",
         "speaker": "Annie",
         "work": "Annie"
       },
       {
-        "text": "There's some good in this world, and it's worth fighting for.",
+        "text": "この世界には善きものがある。そして、それは戦う価値がある。",
         "speaker": "Samwise Gamgee",
         "work": "The Lord of the Rings: The Two Towers"
       },
       {
-        "text": "Even miracles take a little time.",
+        "text": "奇跡だって少し時間がかかるのよ。",
         "speaker": "Fairy Godmother",
         "work": "Cinderella"
       }
     ],
     "joy-2-confident": [
       {
-        "text": "I am no bird; and no net ensnares me.",
+        "text": "私は鳥ではない。網で捕らえられることもない。",
         "speaker": "Jane Eyre",
         "work": "Jane Eyre"
       },
       {
-        "text": "I know my worth.",
+        "text": "私は自分の価値を知っている。",
         "speaker": "Carol Danvers",
         "work": "Captain Marvel"
       },
       {
-        "text": "She wasn't fragile like a flower… she was fragile like a bomb.",
+        "text": "彼女は花のように繊細なのではなく…爆弾のように繊細だった。",
         "speaker": "Taylor Swift",
         "work": "Miss Americana"
       }
     ],
     "joy-3-joyful": [
       {
-        "text": "I'm walking on sunshine, and don't it feel good!",
+        "text": "太陽の上を歩いてる、最高の気分！",
         "speaker": "Katrina & The Waves",
         "work": "Walking on Sunshine"
       },
       {
-        "text": "Here comes the sun, and I say, it's all right.",
+        "text": "太陽が昇る、そして私は言う、大丈夫だと。",
         "speaker": "George Harrison",
         "work": "The Beatles"
       },
       {
-        "text": "To infinity and beyond!",
+        "text": "無限の彼方へ、さあ行くぞ！",
         "speaker": "Buzz Lightyear",
         "work": "Toy Story"
       }
     ],
     "joy-4-loving": [
       {
-        "text": "All you need is love.",
+        "text": "愛こそすべて。",
         "speaker": "John Lennon",
         "work": "The Beatles"
       },
       {
-        "text": "Whatever our souls are made of, his and mine are the same.",
+        "text": "私たちの魂が何でできているにせよ、彼と私は同じものでできている。",
         "speaker": "Emily Brontë",
         "work": "Wuthering Heights"
       },
       {
-        "text": "After all this time?",
+        "text": "こんなに長い時間が経っても？",
         "speaker": "Severus Snape",
         "work": "Harry Potter and the Deathly Hallows"
       }
     ],
     "anticipation-1-excited": [
       {
-        "text": "I'm so excited, and I just can't hide it!",
+        "text": "とても興奮してる、隠しきれないわ！",
         "speaker": "The Pointer Sisters",
         "work": "I'm So Excited"
       },
       {
-        "text": "Adventure is out there!",
+        "text": "冒険はそこにある！",
         "speaker": "Ellie",
         "work": "Up"
       },
       {
-        "text": "This is gonna be good.",
+        "text": "これは良いものになりそうだ。",
         "speaker": "",
         "work": "The Hunger Games"
       }
     ],
     "anticipation-2-eager": [
       {
-        "text": "I can't wait!",
+        "text": "待ちきれないわ！",
         "speaker": "Hermione Granger",
         "work": "Harry Potter"
       },
       {
-        "text": "I want to go to there.",
+        "text": "そこに行きたい。",
         "speaker": "Liz Lemon",
         "work": "30 Rock"
       },
       {
-        "text": "Show me what you got.",
+        "text": "見せてもらおうか。",
         "speaker": "",
         "work": "Top Gun"
       }
     ],
     "anticipation-3-interested": [
       {
-        "text": "Tell me more.",
+        "text": "もっと教えて。",
         "speaker": "",
         "work": "Grease"
       },
       {
-        "text": "Curioser and curioser!",
+        "text": "ますます不思議になるわ！",
         "speaker": "Alice",
         "work": "Alice's Adventures in Wonderland"
       },
       {
-        "text": "So… what happens next?",
+        "text": "それで…次はどうなるの？",
         "speaker": "",
         "work": "The Princess Bride"
       }
     ],
     "anticipation-4-stressed": [
       {
-        "text": "I'm under a lot of pressure.",
+        "text": "私は大きなプレッシャーの下にいる。",
         "speaker": "Peter Parker",
         "work": "Spider-Man 2"
       },
       {
-        "text": "It's too much.",
+        "text": "重すぎる。",
         "speaker": "Frodo Baggins",
         "work": "The Lord of the Rings"
       },
       {
-        "text": "I'm hanging by a thread.",
+        "text": "糸一本でぶら下がっているようなものだ。",
         "speaker": "",
         "work": "Inside Out 2"
       }
     ],
     "anger-1-aggressive": [
       {
-        "text": "Don't make me angry. You wouldn't like me when I'm angry.",
+        "text": "怒らせないほうがいい。怒った私は好きにならないだろう。",
         "speaker": "Bruce Banner",
         "work": "The Incredible Hulk"
       },
       {
-        "text": "You dare challenge me?",
+        "text": "私に挑戦するつもりか？",
         "speaker": "Thor",
         "work": "Thor"
       },
       {
-        "text": "Say hello to my little friend!",
+        "text": "我が友に挨拶しろ！",
         "speaker": "Tony Montana",
         "work": "Scarface"
       }
     ],
     "anger-2-mad": [
       {
-        "text": "I am very angry with you!",
+        "text": "あなたにとても腹を立てています！",
         "speaker": "Professor McGonagall",
         "work": "Harry Potter"
       },
       {
-        "text": "You can't handle the truth!",
+        "text": "真実には耐えられない！",
         "speaker": "Colonel Jessup",
         "work": "A Few Good Men"
       },
       {
-        "text": "This means war.",
+        "text": "これは戦争だ。",
         "speaker": "Bugs Bunny",
         "work": "Looney Tunes"
       }
     ],
     "anger-3-frustrated": [
       {
-        "text": "Why is everything so complicated?",
+        "text": "どうしてこんなに複雑なの？",
         "speaker": "Avril Lavigne",
         "work": "Complicated"
       },
       {
-        "text": "I'm trying, okay?",
+        "text": "頑張ってるんだけど、わかる？",
         "speaker": "",
         "work": "Spider-Man: Homecoming"
       },
       {
-        "text": "This is not going the way you think.",
+        "text": "君が思っているようには進んでいない。",
         "speaker": "Luke Skywalker",
         "work": "Star Wars: The Last Jedi"
       }
     ],
     "anger-4-critical": [
       {
-        "text": "I'm not impressed.",
+        "text": "感心しないな。",
         "speaker": "",
         "work": "Gladiator"
       },
       {
-        "text": "Frankly, my dear, I don't give a damn.",
+        "text": "率直に言って、全く気にしない。",
         "speaker": "Rhett Butler",
         "work": "Gone With the Wind"
       },
       {
-        "text": "That's… not ideal.",
+        "text": "それは…理想的ではないな。",
         "speaker": "Sherlock Holmes",
         "work": "Sherlock (BBC)"
       }
     ],
     "disgust-1-dislike": [
       {
-        "text": "I don't like this.",
+        "text": "これは好きじゃない。",
         "speaker": "Rey",
         "work": "Star Wars: The Force Awakens"
       },
       {
-        "text": "Ew, David!",
+        "text": "えー、デビッド！",
         "speaker": "Alexis Rose",
         "work": "Schitt's Creek"
       },
       {
-        "text": "That's disgusting!",
+        "text": "それって最悪！",
         "speaker": "Hermione Granger",
         "work": "Harry Potter"
       }
     ],
     "disgust-2-avoidance": [
       {
-        "text": "Get it away from me!",
+        "text": "私から離して！",
         "speaker": "Indiana Jones",
         "work": "Indiana Jones and the Temple of Doom"
       },
       {
-        "text": "Nope, not today.",
+        "text": "今日はやめとく。",
         "speaker": "",
         "work": "Brooklyn Nine-Nine"
       },
       {
-        "text": "I'm not touching that.",
+        "text": "触らないよ。",
         "speaker": "",
         "work": "Finding Nemo"
       }
     ],
     "disgust-3-aweful": [
       {
-        "text": "This is awful.",
+        "text": "ひどいものだ。",
         "speaker": "Bilbo Baggins",
         "work": "The Hobbit"
       },
       {
-        "text": "That's the worst thing I've ever tasted!",
+        "text": "今まで味わった中で最悪だ！",
         "speaker": "Remy",
         "work": "Ratatouille"
       },
       {
-        "text": "What fresh hell is this?",
+        "text": "これは一体何の地獄だ？",
         "speaker": "Dorothy Parker",
         "work": ""
       }
     ],
     "disgust-4-disapproval": [
       {
-        "text": "I'm disappointed in you.",
+        "text": "失望したよ。",
         "speaker": "Mufasa",
         "work": "The Lion King"
       },
       {
-        "text": "You should not have done that.",
+        "text": "そんなことをすべきではなかった。",
         "speaker": "Gandalf",
         "work": "The Lord of the Rings: The Fellowship of the Ring"
       },
       {
-        "text": "I expected better.",
+        "text": "もっとできると期待していた。",
         "speaker": "Steve Rogers",
         "work": "Marvel Cinematic Universe"
       }
     ],
     "sad-1-hurt": [
       {
-        "text": "You hurt me.",
+        "text": "あなたは私を傷つけた。",
         "speaker": "Elizabeth Bennet",
         "work": "Pride and Prejudice"
       },
       {
-        "text": "The wound is the place where the light enters you.",
+        "text": "傷は光が入る場所だ。",
         "speaker": "Rumi",
         "work": ""
       },
       {
-        "text": "The heart was made to be broken.",
+        "text": "心は傷つくためにある。",
         "speaker": "Oscar Wilde",
         "work": ""
       }
     ],
     "sad-2-depressed": [
       {
-        "text": "I feel so blue.",
+        "text": "とても憂鬱な気分。",
         "speaker": "Billie Holiday",
         "work": "Am I Blue?"
       },
       {
-        "text": "Every night I lie in bed, the brightest colors fill my head… but I can't shake this feeling.",
+        "text": "毎晩ベッドに横たわると、鮮やかな色が頭に浮かぶ…でもこの気持ちは消えない。",
         "speaker": "",
         "work": "The Greatest Showman"
       },
       {
-        "text": "Hello darkness, my old friend.",
+        "text": "やあ、暗闇よ、我が古き友よ。",
         "speaker": "Simon & Garfunkel",
         "work": "The Sound of Silence"
       }
     ],
     "sad-3-lonely": [
       {
-        "text": "All by myself… don't want to be all by myself anymore.",
+        "text": "ひとりぼっち…もうひとりぼっちでいたくない。",
         "speaker": "Celine Dion",
         "work": "All By Myself"
       },
       {
-        "text": "Eleanor Rigby… lives in a dream.",
+        "text": "エレノア・リグビー…夢の中で生きている。",
         "speaker": "The Beatles",
         "work": "Eleanor Rigby"
       },
       {
-        "text": "I've never felt so alone.",
+        "text": "こんなに孤独を感じたことはない。",
         "speaker": "Harry Potter",
         "work": "Harry Potter and the Order of the Phoenix"
       }
     ],
     "sad-4-ashamed": [
       {
-        "text": "I'm ashamed of what I've done.",
+        "text": "自分がしたことを恥じている。",
         "speaker": "Jean Valjean",
         "work": "Les Misérables"
       },
       {
-        "text": "Shame is an unhappy emotion invented by pietists to exploit humanity.",
+        "text": "恥は敬虔主義者が人間性を搾取するために考案した不幸な感情だ。",
         "speaker": "William Blake",
         "work": "The Marriage of Heaven and Hell"
       },
       {
-        "text": "I'm not proud of myself.",
+        "text": "自分を誇りに思えない。",
         "speaker": "Bruce Wayne",
         "work": "Batman Begins"
       }
     ],
     "surprise-1-startled": [
       {
-        "text": "You startled me!",
+        "text": "びっくりしたわ！",
         "speaker": "Elizabeth Bennet",
         "work": "Pride and Prejudice"
       },
       {
-        "text": "Great Scott!",
+        "text": "なんてこった！",
         "speaker": "Doc Brown",
         "work": "Back to the Future"
       },
       {
-        "text": "What was that?",
+        "text": "今のは何だ？",
         "speaker": "Bilbo Baggins",
         "work": "The Hobbit"
       }
     ],
     "surprise-2-confused": [
       {
-        "text": "I don't understand.",
+        "text": "理解できない。",
         "speaker": "Alice",
         "work": "Alice's Adventures in Wonderland"
       },
       {
-        "text": "Toto, I've a feeling we're not in Kansas anymore.",
+        "text": "トト、もうカンザスにいないみたい。",
         "speaker": "Dorothy",
         "work": "The Wizard of Oz"
       },
       {
-        "text": "It's all a bit of a blur.",
+        "text": "全部ぼやけてる。",
         "speaker": "Bridget Jones",
         "work": "Bridget Jones's Diary"
       }
     ],
     "surprise-3-amazed": [
       {
-        "text": "This is incredible.",
+        "text": "信じられない。",
         "speaker": "",
         "work": "Jurassic Park"
       },
       {
-        "text": "It's full of stars.",
+        "text": "星でいっぱいだ。",
         "speaker": "Dave Bowman",
         "work": "2001: A Space Odyssey"
       },
       {
-        "text": "I can't believe my eyes!",
+        "text": "自分の目が信じられない！",
         "speaker": "",
         "work": "The Lion King"
       }
     ],
     "surprise-4-disappointed": [
       {
-        "text": "I'm disappointed in you.",
+        "text": "失望したよ。",
         "speaker": "Atticus Finch",
         "work": "To Kill a Mockingbird"
       },
       {
-        "text": "You were supposed to be the chosen one!",
+        "text": "君は選ばれし者だったのに！",
         "speaker": "Obi-Wan Kenobi",
         "work": "Star Wars: Episode III – Revenge of the Sith"
       },
       {
-        "text": "This is not what I hoped for.",
+        "text": "これは望んでいたものではない。",
         "speaker": "Frodo Baggins",
         "work": "The Lord of the Rings"
       }
     ],
     "trust-1-grateful": [
       {
-        "text": "Thank you, thank you very much.",
+        "text": "ありがとう、本当にありがとう。",
         "speaker": "Elvis Presley",
         "work": ""
       },
       {
-        "text": "I've got sunshine on a cloudy day.",
+        "text": "曇りの日でも太陽が輝いている。",
         "speaker": "The Temptations",
         "work": "My Girl"
       },
       {
-        "text": "These are a few of my favorite things.",
+        "text": "これらは私のお気に入りのものたち。",
         "speaker": "",
         "work": "The Sound of Music"
       }
     ],
     "trust-2-peaceful": [
       {
-        "text": "I feel at peace.",
+        "text": "心が平和だ。",
         "speaker": "Samwise Gamgee",
         "work": "The Lord of the Rings"
       },
       {
-        "text": "Let it be.",
+        "text": "なるがままに。",
         "speaker": "The Beatles",
         "work": "Let It Be"
       },
       {
-        "text": "Be still, and know…",
+        "text": "静かに、そして知りなさい…",
         "speaker": "",
         "work": "Psalm 46:10"
       }
     ],
     "trust-3-accepted": [
       {
-        "text": "You have been my friend. That in itself is a tremendous thing.",
+        "text": "あなたは私の友達でいてくれた。それ自体が素晴らしいこと。",
         "speaker": "Charlotte",
         "work": "Charlotte's Web"
       },
       {
-        "text": "You belong with me.",
+        "text": "あなたは私と一緒にいるべき人。",
         "speaker": "Taylor Swift",
         "work": "You Belong With Me"
       },
       {
-        "text": "Come as you are.",
+        "text": "ありのままで来て。",
         "speaker": "Kurt Cobain",
         "work": "Come As You Are"
       }
     ],
     "trust-4-hopeful": [
       {
-        "text": "Hope is a good thing, maybe the best of things.",
+        "text": "希望は良いものだ、おそらく最高のものだ。",
         "speaker": "Andy Dufresne",
         "work": "The Shawshank Redemption"
       },
       {
-        "text": "There's a sunrise every morning that you're missing.",
+        "text": "毎朝日の出があるのに、君は見逃している。",
         "speaker": "",
         "work": "Dear Evan Hansen"
       },
       {
-        "text": "Even the darkest night will end and the sun will rise.",
+        "text": "最も暗い夜でさえ終わり、太陽は昇る。",
         "speaker": "",
         "work": "Les Misérables"
       }
     ],
     "fear-1-nervous": [
       {
-        "text": "I've got a bad feeling about this.",
+        "text": "嫌な予感がする。",
         "speaker": "Han Solo",
         "work": "Star Wars"
       },
       {
-        "text": "My hands are shaking.",
+        "text": "手が震えている。",
         "speaker": "",
         "work": "The Hunger Games"
       },
       {
-        "text": "Courage is not the absence of fear.",
+        "text": "勇気とは恐怖がないことではない。",
         "speaker": "Nelson Mandela",
         "work": ""
       }
     ],
     "fear-2-scared": [
       {
-        "text": "I'm scared.",
+        "text": "怖い。",
         "speaker": "Coraline",
         "work": "Coraline"
       },
       {
-        "text": "They're here…",
+        "text": "彼らがここにいる…",
         "speaker": "Carol Anne",
         "work": "Poltergeist"
       },
       {
-        "text": "Please don't let this be real.",
+        "text": "どうか現実じゃありませんように。",
         "speaker": "",
         "work": "Stranger Things"
       }
     ],
     "fear-3-anxious": [
       {
-        "text": "I can't calm down.",
+        "text": "落ち着けない。",
         "speaker": "",
         "work": "Inside Out"
       },
       {
-        "text": "I'm worried about everything.",
+        "text": "すべてが心配だ。",
         "speaker": "",
         "work": "Harry Potter and the Deathly Hallows"
       },
       {
-        "text": "Something is wrong… I can feel it.",
+        "text": "何かがおかしい…感じる。",
         "speaker": "Frodo Baggins",
         "work": "The Lord of the Rings"
       }
     ],
     "fear-4-insecure": [
       {
-        "text": "I don't feel good enough.",
+        "text": "自分が十分だと感じられない。",
         "speaker": "",
         "work": "The Perks of Being a Wallflower"
       },
       {
-        "text": "You think I'm not good enough.",
+        "text": "私が十分じゃないと思ってるでしょ。",
         "speaker": "",
         "work": "Lady Bird"
       },
       {
-        "text": "Am I strong enough?",
+        "text": "私は十分強いだろうか？",
         "speaker": "",
         "work": "Mulan"
       }
