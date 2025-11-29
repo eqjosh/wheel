@@ -19,7 +19,10 @@
     "quotesLabel": "Citazioni Ispiratrici",
     "adaptivePurposeLabel": "Scopo Adattivo",
     "overloadRiskLabel": "Rischio di Sovraccarico",
-    "overloadTipLabel": "Consiglio di Equilibrio"
+    "overloadTipLabel": "Consiglio di Equilibrio",
+    "exploreThisFeelingLabel": "Esplora questo Sentimento",
+    "purposeLabel": "Scopo",
+    "emotionalAlgebraLabel": "Algebra Emotiva"
   },
   "emotions": [
     {
@@ -31,7 +34,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti trascurare rischi reali o fare pressione sugli altri affinché 'rimangano positivi' quando hanno bisogno di qualcos'altro.",
       "overloadTip": "Per equilibrare, nomina una sfida reale e un passo concreto per prepararti ad essa pur onorando il tuo senso di possibilità.",
       "adaptivePurpose": "Segnala che vedi possibilità positive e potenziali buoni risultati.",
-      "relatedFeelings": ["Positivo", "Ispirato", "Speranzoso"],
+      "relatedFeelings": [
+        "Positivo",
+        "Ispirato",
+        "Speranzoso"
+      ],
       "borderInfo": "Ottimista è vicino ad Anticipazione perché ha una componente di guardare avanti."
     },
     {
@@ -43,7 +50,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti sopravvalutare la tua capacità o ignorare le prospettive e i bisogni degli altri.",
       "overloadTip": "Per equilibrare, chiediti dove hai ancora bisogno di input o supporto, e invita almeno un'altra voce nella conversazione.",
       "adaptivePurpose": "Segnala che hai risorse, abilità o esperienza su cui puoi fare affidamento.",
-      "relatedFeelings": ["Orgoglioso", "Sicuro di sé", "Potenziato"]
+      "relatedFeelings": [
+        "Orgoglioso",
+        "Sicuro di sé",
+        "Potenziato"
+      ]
     },
     {
       "id": "joy-3-joyful",
@@ -54,7 +65,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti saltare i problemi o sembrare insensibile al dolore degli altri.",
       "overloadTip": "Per equilibrare, goditi ciò che è buono e scansiona delicatamente qualsiasi cosa che necessiti anche di cura o riparazione.",
       "adaptivePurpose": "Segnala che qualcosa di importante sta funzionando e vale la pena assaporarlo e continuarlo.",
-      "relatedFeelings": ["Estatico", "Deliziato", "Beato"]
+      "relatedFeelings": [
+        "Estatico",
+        "Deliziato",
+        "Beato"
+      ]
     },
     {
       "id": "joy-4-loving",
@@ -65,7 +80,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti perdere confini sani o trascurare i tuoi bisogni mentre ti prendi cura degli altri.",
       "overloadTip": "Per equilibrare, nomina una cosa che apprezzi e un tuo bisogno, e scegli un passo che onori entrambi.",
       "adaptivePurpose": "Segnala un desiderio di connettersi, nutrire e investire in persone o cause che ti stanno a cuore.",
-      "relatedFeelings": ["Abbracciante", "Generoso", "Affettuoso"],
+      "relatedFeelings": [
+        "Abbracciante",
+        "Generoso",
+        "Affettuoso"
+      ],
       "borderInfo": "Amorevole è vicino a Fiducia perché coinvolge una base di cura e affidabilità."
     },
     {
@@ -77,7 +96,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti tollerare situazioni malsane o evitare di esprimere bisogni reali perché 'dovresti essere grato.'",
       "overloadTip": "Per equilibrare, lascia che la gratitudine stia accanto all'onestà: apprezza ciò che funziona e identifica un bisogno o confine che vuoi ancora esprimere.",
       "adaptivePurpose": "Segnala che stai ricevendo supporto, risorse o doni che contano per te.",
-      "relatedFeelings": ["Appagato", "Ammirazione", "Riconoscente"],
+      "relatedFeelings": [
+        "Appagato",
+        "Ammirazione",
+        "Riconoscente"
+      ],
       "borderInfo": "Grato è vicino a Gioia perché coinvolge apprezzamento per esperienze positive."
     },
     {
@@ -89,7 +112,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti evitare conflitti necessari o disimpegnarti da sfide importanti.",
       "overloadTip": "Per equilibrare, goditi la calma e chiediti se c'è qualche questione che necessita ancora di una conversazione coraggiosa o di una piccola azione.",
       "adaptivePurpose": "Segnala che il tuo sistema si sta riallineando e ti senti abbastanza al sicuro per riposare e ripristinarti.",
-      "relatedFeelings": ["Calmo", "Contento", "Sereno"]
+      "relatedFeelings": [
+        "Calmo",
+        "Contento",
+        "Sereno"
+      ]
     },
     {
       "id": "trust-3-accepted",
@@ -100,7 +127,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti conformarti troppo, nascondendo parti di te stesso per mantenere l'appartenenza.",
       "overloadTip": "Per equilibrare, nota dove ti senti abbastanza sicuro per essere più autentico e condividi un pezzo più onesto di te stesso.",
       "adaptivePurpose": "Segnala che ti senti visto, valorizzato e incluso in un gruppo o relazione.",
-      "relatedFeelings": ["Valorizzato", "Rispettato", "Benvenuto"]
+      "relatedFeelings": [
+        "Valorizzato",
+        "Rispettato",
+        "Benvenuto"
+      ]
     },
     {
       "id": "trust-4-hopeful",
@@ -111,7 +142,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti aspettare passivamente il cambiamento o aggrapparti a aspettative irrealistiche.",
       "overloadTip": "Per equilibrare, traduci una parte della tua speranza in un passo specifico e fattibile che puoi fare ora.",
       "adaptivePurpose": "Segnala che puoi immaginare un futuro migliore e ti senti attratto verso di esso.",
-      "relatedFeelings": ["Desideroso", "Aspettante", "Ottimista"],
+      "relatedFeelings": [
+        "Desideroso",
+        "Aspettante",
+        "Ottimista"
+      ],
       "borderInfo": "Speranzoso è vicino a Paura perché coinvolge incertezza sul futuro."
     },
     {
@@ -123,7 +158,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti vedere pericoli ovunque, pensare troppo o rimanere paralizzato da scenari ipotetici.",
       "overloadTip": "Per equilibrare, nomina un rischio specifico che ti preoccupa e una piccola azione che puoi intraprendere per prepararti o testare le tue supposizioni.",
       "adaptivePurpose": "Segnala che qualcosa sembra incerto o rischioso e potrebbe richiedere cautela o preparazione.",
-      "relatedFeelings": ["Minacciato", "Inquieto", "Agitato"],
+      "relatedFeelings": [
+        "Minacciato",
+        "Inquieto",
+        "Agitato"
+      ],
       "borderInfo": "Nervoso è vicino a Fiducia perché coinvolge vulnerabilità e il bisogno di sicurezza."
     },
     {
@@ -135,7 +174,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti ritirarti da ciò che ti sta più a cuore o evitare passi importanti perché sembrano troppo spaventosi.",
       "overloadTip": "Per equilibrare, chiarisci cosa vuoi proteggere di più e scegli un'azione che aumenti la sicurezza pur onorando ciò che ti sta a cuore.",
       "adaptivePurpose": "Segnala che qualcosa a cui tieni si sente minacciato e necessita di protezione o attenzione.",
-      "relatedFeelings": ["Impaurito", "Terrorizzato", "Allarmato"]
+      "relatedFeelings": [
+        "Impaurito",
+        "Terrorizzato",
+        "Allarmato"
+      ]
     },
     {
       "id": "fear-3-anxious",
@@ -146,7 +189,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti rimuginare, catastrofizzare o creare problemi immaginari che prosciugano la tua energia.",
       "overloadTip": "Per equilibrare, classifica le tue preoccupazioni in 'cose che posso influenzare' e 'cose che non posso,' poi scegli un piccolo passo su qualcosa che puoi influenzare.",
       "adaptivePurpose": "Segnala che stai scansionando minacce a lungo termine o incertezze che potrebbero richiedere pianificazione o protezione.",
-      "relatedFeelings": ["Terrore", "Preoccupato", "Teso"]
+      "relatedFeelings": [
+        "Terrore",
+        "Preoccupato",
+        "Teso"
+      ]
     },
     {
       "id": "fear-4-insecure",
@@ -157,7 +204,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti cercare costantemente conferme, compiacere le persone o trattenere i tuoi contributi.",
       "overloadTip": "Per equilibrare, ricorda prove concrete dei tuoi punti di forza e cerca feedback fondato da qualcuno di cui ti fidi, non solo critiche immaginate.",
       "adaptivePurpose": "Segnala che il tuo senso di valore, competenza o accettazione si sente traballante e potresti aver bisogno di rassicurazione, apprendimento o confini.",
-      "relatedFeelings": ["Rifiutato", "Inadeguato", "Incerto"],
+      "relatedFeelings": [
+        "Rifiutato",
+        "Inadeguato",
+        "Incerto"
+      ],
       "borderInfo": "Insicuro è vicino a Sorpresa perché coinvolge minacce inaspettate all'autostima."
     },
     {
@@ -169,7 +220,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti rimanere nervoso o iper-vigile, trattando tutto come un'emergenza.",
       "overloadTip": "Per equilibrare, fermati per guardare, respirare e verificare cosa sta realmente accadendo ora rispetto a ciò che temevi potesse accadere.",
       "adaptivePurpose": "Segnala che qualcosa di inaspettato è appena successo e la tua attenzione deve orientarsi rapidamente.",
-      "relatedFeelings": ["Inorridito", "Scioccato", "Stordito"],
+      "relatedFeelings": [
+        "Inorridito",
+        "Scioccato",
+        "Stordito"
+      ],
       "borderInfo": "Sobbalzato è vicino a Paura perché coinvolge un senso improvviso di minaccia o pericolo."
     },
     {
@@ -181,7 +236,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti rimanere bloccato nel dubbio, ritardare decisioni o mettere in discussione tutto su te stesso e gli altri.",
       "overloadTip": "Per equilibrare, trasforma la confusione in una domanda: definisci una cosa che vuoi capire e cerca una risposta, un esperimento o una conversazione.",
       "adaptivePurpose": "Segnala che la tua comprensione attuale non si adatta ai fatti e potresti aver bisogno di nuove informazioni o prospettive.",
-      "relatedFeelings": ["Disilluso", "Perplesso", "Sconcertato"]
+      "relatedFeelings": [
+        "Disilluso",
+        "Perplesso",
+        "Sconcertato"
+      ]
     },
     {
       "id": "surprise-3-amazed",
@@ -192,7 +251,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti idealizzare persone o situazioni e perdere di vista limiti o rischi reali.",
       "overloadTip": "Per equilibrare, nomina ciò che ti delizia e anche un passo pratico o confine che ti tiene con i piedi per terra mentre esplori questa nuova possibilità.",
       "adaptivePurpose": "Segnala che qualcosa è molto meglio, più grande o più bello di quanto ti aspettassi e il tuo senso di possibilità si sta espandendo.",
-      "relatedFeelings": ["Stupefatto", "Meravigliato", "Impressionato"]
+      "relatedFeelings": [
+        "Stupefatto",
+        "Meravigliato",
+        "Impressionato"
+      ]
     },
     {
       "id": "surprise-4-disappointed",
@@ -203,7 +266,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti scivolare nel cinismo, rinunciando a sforzi o relazioni future.",
       "overloadTip": "Per equilibrare, nomina chiaramente l'aspettativa, poi decidi se rivedere l'obiettivo, la tua strategia o la tempistica—e scegli una prossima azione.",
       "adaptivePurpose": "Segnala che la realtà non corrisponde alle tue speranze e qualcosa a cui tenevi si sente diminuito o perso.",
-      "relatedFeelings": ["Tradito", "Costernato", "Deluso"],
+      "relatedFeelings": [
+        "Tradito",
+        "Costernato",
+        "Deluso"
+      ],
       "borderInfo": "Deluso è vicino a Tristezza perché coinvolge perdita di speranza e aspettative non soddisfatte."
     },
     {
@@ -215,7 +282,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti aggrapparti ai rancori, assumere cattive intenzioni o chiuderti alla riparazione.",
       "overloadTip": "Per equilibrare, riconosci il dolore e perché conta, poi considera se e come vuoi comunicarlo o cercare supporto curativo.",
       "adaptivePurpose": "Segnala che qualcosa o qualcuno importante ha ferito il tuo senso di sicurezza, valore o connessione.",
-      "relatedFeelings": ["Costernato", "Minacciato", "Ferito"],
+      "relatedFeelings": [
+        "Costernato",
+        "Minacciato",
+        "Ferito"
+      ],
       "borderInfo": "Ferito è vicino a Sorpresa perché spesso deriva da ferite emotive inaspettate."
     },
     {
@@ -227,7 +298,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti smettere di vedere qualsiasi possibilità, ritirarti completamente o trascurare l'autocura di base.",
       "overloadTip": "Per equilibrare, scegli una piccola azione compassionevole—come raggiungere qualcuno, muovere il tuo corpo o fare un compito semplice—che aggiunga un po' di struttura o supporto.",
       "adaptivePurpose": "Segnala che la tua energia, motivazione o senso di significato è calato e potresti aver bisogno di riposo, supporto o riorientamento.",
-      "relatedFeelings": ["Spogliato", "Intorpidito", "Vuoto"]
+      "relatedFeelings": [
+        "Spogliato",
+        "Intorpidito",
+        "Vuoto"
+      ]
     },
     {
       "id": "sad-3-lonely",
@@ -238,7 +313,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti credere di essere fondamentalmente solo o non amabile e ritirarti ancora di più.",
       "overloadTip": "Per equilibrare, identifica un modo piccolo e sicuro per tendere verso la connessione—un messaggio, una chiamata, uno spazio condiviso, o nominare il tuo bisogno a qualcuno di cui ti fidi.",
       "adaptivePurpose": "Segnala che il tuo bisogno di connessione, appartenenza o essere visto non viene soddisfatto.",
-      "relatedFeelings": ["Abbandonato", "Isolato", "Disconnesso"]
+      "relatedFeelings": [
+        "Abbandonato",
+        "Isolato",
+        "Disconnesso"
+      ]
     },
     {
       "id": "sad-4-ashamed",
@@ -249,7 +328,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti trasformare un errore specifico in una convinzione di essere cattivo o indegno e nascondere il tuo vero io.",
       "overloadTip": "Per equilibrare, separa 'ho fatto qualcosa' da 'sono qualcosa,' e scegli un passo di apprendimento, riparazione o scusa che si allinei con i tuoi valori.",
       "adaptivePurpose": "Segnala che il tuo comportamento o le tue scelte potrebbero non corrispondere ai tuoi valori e invita alla riflessione, riparazione e crescita.",
-      "relatedFeelings": ["Pentito", "Colpevole", "Imbarazzato"],
+      "relatedFeelings": [
+        "Pentito",
+        "Colpevole",
+        "Imbarazzato"
+      ],
       "borderInfo": "Vergognoso è vicino a Disgusto perché coinvolge giudizio negativo di se stessi."
     },
     {
@@ -261,7 +344,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti scivolare in giudizi severi, pregiudizi o rifiuto di persone o idee troppo rapidamente.",
       "overloadTip": "Per equilibrare, nomina specificamente ciò che non ti piace—comportamento, stile o impatto—senza condannare l'intera persona o situazione, e decidi quale confine è effettivamente necessario.",
       "adaptivePurpose": "Segnala che qualcosa non si adatta ai tuoi gusti, bisogni o valori e potresti volere distanza o una scelta diversa.",
-      "relatedFeelings": ["Rivoltato", "Ritirato", "Repulso"],
+      "relatedFeelings": [
+        "Rivoltato",
+        "Ritirato",
+        "Repulso"
+      ],
       "borderInfo": "Antipatia è vicino a Tristezza perché coinvolge ritiro emotivo e rifiuto."
     },
     {
@@ -273,7 +360,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti ritardare azioni importanti, rimanere bloccato o lasciare che i problemi crescano silenziosamente.",
       "overloadTip": "Per equilibrare, suddividi il compito o la situazione evitata in un passo molto piccolo e considera quale supporto, informazione o confine lo renderebbe più gestibile.",
       "adaptivePurpose": "Segnala che qualcosa sembra troppo minaccioso, schiacciante o spiacevole da affrontare con le tue risorse attuali.",
-      "relatedFeelings": ["Esitante", "Avverso", "Riluttante"]
+      "relatedFeelings": [
+        "Esitante",
+        "Avverso",
+        "Riluttante"
+      ]
     },
     {
       "id": "disgust-3-aweful",
@@ -284,7 +375,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti catastrofizzare, sentirti senza speranza riguardo al cambiamento o rispondere solo con sdegno invece di strategia.",
       "overloadTip": "Per equilibrare, chiarisci cosa esattamente è dannoso, poi scegli un'azione realistica—personale, relazionale o sistemica—che si muova anche leggermente verso la riparazione.",
       "adaptivePurpose": "Segnala che qualcosa si sente profondamente sbagliato, dannoso o fuori integrità con i tuoi valori fondamentali.",
-      "relatedFeelings": ["Repulso", "Detestato", "Orribile"]
+      "relatedFeelings": [
+        "Repulso",
+        "Detestato",
+        "Orribile"
+      ]
     },
     {
       "id": "disgust-4-disapproval",
@@ -295,7 +390,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti diventare rigido, eccessivamente critico o alienare gli altri.",
       "overloadTip": "Per equilibrare, connettiti al valore sottostante la tua disapprovazione ed esprimilo in un modo che inviti al dialogo e al miglioramento, non alla vergogna.",
       "adaptivePurpose": "Segnala che un comportamento o risultato non soddisfa i tuoi standard o valori e che ti importa di fare meglio.",
-      "relatedFeelings": ["Detestante", "Giudicante", "Critico"],
+      "relatedFeelings": [
+        "Detestante",
+        "Giudicante",
+        "Critico"
+      ],
       "borderInfo": "Disapprovazione è vicino a Rabbia perché coinvolge valutazione critica e potenziale confronto."
     },
     {
@@ -307,7 +406,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti attaccare in modi che danneggiano gli altri, escalano il conflitto o minano i tuoi obiettivi.",
       "overloadTip": "Per equilibrare, fermati prima di agire, usa l'energia per scegliere parole o azioni chiare e ferme, e concentrati sul risultato che vuoi veramente.",
       "adaptivePurpose": "Segnala che percepisci una seria minaccia, ingiustizia o violazione e senti una forte spinta a difendere o proteggere.",
-      "relatedFeelings": ["Ostile", "Provocato", "Combattivo"],
+      "relatedFeelings": [
+        "Ostile",
+        "Provocato",
+        "Combattivo"
+      ],
       "borderInfo": "Aggressivo è vicino a Disgusto perché coinvolge il rifiutare o allontanare ciò che è inaccettabile."
     },
     {
@@ -319,7 +422,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti serbare rancore, ripetere la storia o attaccare invece di cercare risoluzione.",
       "overloadTip": "Per equilibrare, nomina specificamente cosa non andava bene e decidi se vuoi stabilire un confine, chiedere un cambiamento o lasciarlo andare consapevolmente.",
       "adaptivePurpose": "Segnala che qualcosa si sente ingiusto o non va bene e che vuoi cambiamento o riconoscimento.",
-      "relatedFeelings": ["Infuriato", "Furioso", "Livido"]
+      "relatedFeelings": [
+        "Infuriato",
+        "Furioso",
+        "Livido"
+      ]
     },
     {
       "id": "anger-3-frustrated",
@@ -330,7 +437,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti arrenderti, incolpare gli altri o spingere troppo le persone.",
       "overloadTip": "Per equilibrare, fai un passo indietro per chiarire il tuo obiettivo, poi scegli un approccio, richiesta o confine diverso che possa sbloccare il movimento.",
       "adaptivePurpose": "Segnala che il tuo sforzo è bloccato e vuoi progresso, efficienza o un risultato diverso.",
-      "relatedFeelings": ["Infastidito", "Irritato", "Esasperato"]
+      "relatedFeelings": [
+        "Infastidito",
+        "Irritato",
+        "Esasperato"
+      ]
     },
     {
       "id": "anger-4-critical",
@@ -341,7 +452,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti cadere nel trovare difetti, scoraggiare gli altri o bloccare creatività e sperimentazione.",
       "overloadTip": "Per equilibrare, riconosci almeno una cosa che funziona prima di nominare preoccupazioni, e inquadra la tua critica come un contributo al miglioramento condiviso.",
       "adaptivePurpose": "Segnala che noti rischi, errori o potenziali miglioramenti e ti importa della qualità o integrità.",
-      "relatedFeelings": ["Sarcastico", "Scettico", "Giudicante"],
+      "relatedFeelings": [
+        "Sarcastico",
+        "Scettico",
+        "Giudicante"
+      ],
       "borderInfo": "Critico è vicino ad Anticipazione perché coinvolge vigilanza e preparazione contro potenziali problemi."
     },
     {
@@ -353,7 +468,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti impegnarti troppo, affrettarti senza pianificare o esaurirti.",
       "overloadTip": "Per equilibrare, abbina la tua energia con un piano realistico e un ritmo, e scegli un prossimo passo chiaro invece di cercare di fare tutto in una volta.",
       "adaptivePurpose": "Segnala che ti senti energizzato da una possibilità e sei pronto a impegnarti con essa.",
-      "relatedFeelings": ["Appassionato", "Energizzato", "Entusiasta"],
+      "relatedFeelings": [
+        "Appassionato",
+        "Energizzato",
+        "Entusiasta"
+      ],
       "borderInfo": "Eccitato è vicino a Rabbia perché coinvolge energia intensa e prontezza all'azione."
     },
     {
@@ -365,7 +484,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti ignorare segnali di pericolo, saltare la riflessione o dire di sì troppo spesso.",
       "overloadTip": "Per equilibrare, fermati per chiedere quali informazioni, confini o preparazione ti servono prima di muoverti, poi fai un primo passo ponderato.",
       "adaptivePurpose": "Segnala che ti senti pronto a perseguire qualcosa e vuoi muoverti rapidamente verso di esso.",
-      "relatedFeelings": ["Entusiasta", "Motivato", "Desideroso"]
+      "relatedFeelings": [
+        "Entusiasta",
+        "Motivato",
+        "Desideroso"
+      ]
     },
     {
       "id": "anticipation-3-interested",
@@ -376,7 +499,11 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti disperdere la tua concentrazione, iniziare molte cose e finirne poche.",
       "overloadTip": "Per equilibrare, scegli consapevolmente un'area di focus per ora e cattura altri interessi in una lista per dopo, così puoi esplorare con intenzione.",
       "adaptivePurpose": "Segnala che la tua curiosità è attivata e vedi potenziale valore nell'apprendere o esplorare.",
-      "relatedFeelings": ["Impaziente", "Curioso", "Coinvolto"]
+      "relatedFeelings": [
+        "Impaziente",
+        "Curioso",
+        "Coinvolto"
+      ]
     },
     {
       "id": "anticipation-4-stressed",
@@ -387,170 +514,558 @@
       "overloadRisk": "Se usi eccessivamente questo sentimento, potresti operare in modalità crisi, prendere decisioni reattive o esaurirti.",
       "overloadTip": "Per equilibrare, identifica una richiesta che puoi ridurre, delegare o ritardare e una breve pratica che aiuti a ripristinare la tua energia o chiarezza.",
       "adaptivePurpose": "Segnala che le richieste sembrano maggiori delle tue risorse attuali e qualcosa deve cambiare.",
-      "relatedFeelings": ["Sopraffatto", "Pressato", "Teso"],
+      "relatedFeelings": [
+        "Sopraffatto",
+        "Pressato",
+        "Teso"
+      ],
       "borderInfo": "Stressato è vicino a Gioia perché coinvolge alta energia focalizzata sul raggiungimento di risultati positivi."
     }
   ],
   "quotes": {
     "joy-1-optimistic": [
-      {"text": "The sun'll come out tomorrow.", "speaker": "Annie", "work": "Annie"},
-      {"text": "There's some good in this world, and it's worth fighting for.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings: The Two Towers"},
-      {"text": "Even miracles take a little time.", "speaker": "Fairy Godmother", "work": "Cinderella"}
+      {
+        "text": "Il sole sorgerà domani.",
+        "speaker": "Annie",
+        "work": "Annie"
+      },
+      {
+        "text": "C'è del bene in questo mondo, e vale la pena lottare per esso.",
+        "speaker": "Samwise Gamgee",
+        "work": "The Lord of the Rings: The Two Towers"
+      },
+      {
+        "text": "Anche i miracoli richiedono un po' di tempo.",
+        "speaker": "Fairy Godmother",
+        "work": "Cinderella"
+      }
     ],
     "joy-2-confident": [
-      {"text": "I am no bird; and no net ensnares me.", "speaker": "Jane Eyre", "work": "Jane Eyre"},
-      {"text": "I know my worth.", "speaker": "Carol Danvers", "work": "Captain Marvel"},
-      {"text": "She wasn't fragile like a flower… she was fragile like a bomb.", "speaker": "Taylor Swift", "work": "Miss Americana"}
+      {
+        "text": "Non sono un uccello; e nessuna rete mi intrappola.",
+        "speaker": "Jane Eyre",
+        "work": "Jane Eyre"
+      },
+      {
+        "text": "Conosco il mio valore.",
+        "speaker": "Carol Danvers",
+        "work": "Captain Marvel"
+      },
+      {
+        "text": "Non era fragile come un fiore... era fragile come una bomba.",
+        "speaker": "Taylor Swift",
+        "work": "Miss Americana"
+      }
     ],
     "joy-3-joyful": [
-      {"text": "I'm walking on sunshine, and don't it feel good!", "speaker": "Katrina & The Waves", "work": "Walking on Sunshine"},
-      {"text": "Here comes the sun, and I say, it's all right.", "speaker": "George Harrison", "work": "The Beatles"},
-      {"text": "To infinity and beyond!", "speaker": "Buzz Lightyear", "work": "Toy Story"}
+      {
+        "text": "Cammino sul sole, e che bella sensazione!",
+        "speaker": "Katrina & The Waves",
+        "work": "Walking on Sunshine"
+      },
+      {
+        "text": "Ecco che arriva il sole, e dico, va tutto bene.",
+        "speaker": "George Harrison",
+        "work": "The Beatles"
+      },
+      {
+        "text": "Verso l'infinito e oltre!",
+        "speaker": "Buzz Lightyear",
+        "work": "Toy Story"
+      }
     ],
     "joy-4-loving": [
-      {"text": "All you need is love.", "speaker": "John Lennon", "work": "The Beatles"},
-      {"text": "Whatever our souls are made of, his and mine are the same.", "speaker": "Emily Brontë", "work": "Wuthering Heights"},
-      {"text": "After all this time?", "speaker": "Severus Snape", "work": "Harry Potter and the Deathly Hallows"}
+      {
+        "text": "Tutto ciò di cui hai bisogno è l'amore.",
+        "speaker": "John Lennon",
+        "work": "The Beatles"
+      },
+      {
+        "text": "Di qualunque cosa siano fatte le nostre anime, la sua e la mia sono la stessa.",
+        "speaker": "Emily Brontë",
+        "work": "Wuthering Heights"
+      },
+      {
+        "text": "Dopo tutto questo tempo?",
+        "speaker": "Severus Snape",
+        "work": "Harry Potter and the Deathly Hallows"
+      }
     ],
     "anticipation-1-excited": [
-      {"text": "I'm so excited, and I just can't hide it!", "speaker": "The Pointer Sisters", "work": "I'm So Excited"},
-      {"text": "Adventure is out there!", "speaker": "Ellie", "work": "Up"},
-      {"text": "This is gonna be good.", "speaker": "", "work": "The Hunger Games"}
+      {
+        "text": "Sono così emozionata, e non riesco a nasconderlo!",
+        "speaker": "The Pointer Sisters",
+        "work": "I'm So Excited"
+      },
+      {
+        "text": "L'avventura è là fuori!",
+        "speaker": "Ellie",
+        "work": "Up"
+      },
+      {
+        "text": "Questo sarà bello.",
+        "speaker": "",
+        "work": "The Hunger Games"
+      }
     ],
     "anticipation-2-eager": [
-      {"text": "I can't wait!", "speaker": "Hermione Granger", "work": "Harry Potter"},
-      {"text": "I want to go to there.", "speaker": "Liz Lemon", "work": "30 Rock"},
-      {"text": "Show me what you got.", "speaker": "", "work": "Top Gun"}
+      {
+        "text": "Non vedo l'ora!",
+        "speaker": "Hermione Granger",
+        "work": "Harry Potter"
+      },
+      {
+        "text": "Voglio andare lì.",
+        "speaker": "Liz Lemon",
+        "work": "30 Rock"
+      },
+      {
+        "text": "Fammi vedere cosa hai.",
+        "speaker": "",
+        "work": "Top Gun"
+      }
     ],
     "anticipation-3-interested": [
-      {"text": "Tell me more.", "speaker": "", "work": "Grease"},
-      {"text": "Curioser and curioser!", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
-      {"text": "So… what happens next?", "speaker": "", "work": "The Princess Bride"}
+      {
+        "text": "Raccontami di più.",
+        "speaker": "",
+        "work": "Grease"
+      },
+      {
+        "text": "Sempre più curioso!",
+        "speaker": "Alice",
+        "work": "Alice's Adventures in Wonderland"
+      },
+      {
+        "text": "Allora... cosa succede dopo?",
+        "speaker": "",
+        "work": "The Princess Bride"
+      }
     ],
     "anticipation-4-stressed": [
-      {"text": "I'm under a lot of pressure.", "speaker": "Peter Parker", "work": "Spider-Man 2"},
-      {"text": "It's too much.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"},
-      {"text": "I'm hanging by a thread.", "speaker": "", "work": "Inside Out 2"}
+      {
+        "text": "Sono sotto molta pressione.",
+        "speaker": "Peter Parker",
+        "work": "Spider-Man 2"
+      },
+      {
+        "text": "È troppo.",
+        "speaker": "Frodo Baggins",
+        "work": "The Lord of the Rings"
+      },
+      {
+        "text": "Appeso a un filo.",
+        "speaker": "",
+        "work": "Inside Out 2"
+      }
     ],
     "anger-1-aggressive": [
-      {"text": "Don't make me angry. You wouldn't like me when I'm angry.", "speaker": "Bruce Banner", "work": "The Incredible Hulk"},
-      {"text": "You dare challenge me?", "speaker": "Thor", "work": "Thor"},
-      {"text": "Say hello to my little friend!", "speaker": "Tony Montana", "work": "Scarface"}
+      {
+        "text": "Non farmi arrabbiare. Non ti piacerei quando sono arrabbiato.",
+        "speaker": "Bruce Banner",
+        "work": "The Incredible Hulk"
+      },
+      {
+        "text": "Osi sfidarmi?",
+        "speaker": "Thor",
+        "work": "Thor"
+      },
+      {
+        "text": "Saluta il mio piccolo amico!",
+        "speaker": "Tony Montana",
+        "work": "Scarface"
+      }
     ],
     "anger-2-mad": [
-      {"text": "I am very angry with you!", "speaker": "Professor McGonagall", "work": "Harry Potter"},
-      {"text": "You can't handle the truth!", "speaker": "Colonel Jessup", "work": "A Few Good Men"},
-      {"text": "This means war.", "speaker": "Bugs Bunny", "work": "Looney Tunes"}
+      {
+        "text": "Sono molto arrabbiata con te!",
+        "speaker": "Professor McGonagall",
+        "work": "Harry Potter"
+      },
+      {
+        "text": "Non puoi gestire la verità!",
+        "speaker": "Colonel Jessup",
+        "work": "A Few Good Men"
+      },
+      {
+        "text": "Questa è guerra.",
+        "speaker": "Bugs Bunny",
+        "work": "Looney Tunes"
+      }
     ],
     "anger-3-frustrated": [
-      {"text": "Why is everything so complicated?", "speaker": "Avril Lavigne", "work": "Complicated"},
-      {"text": "I'm trying, okay?", "speaker": "", "work": "Spider-Man: Homecoming"},
-      {"text": "This is not going the way you think.", "speaker": "Luke Skywalker", "work": "Star Wars: The Last Jedi"}
+      {
+        "text": "Perché è tutto così complicato?",
+        "speaker": "Avril Lavigne",
+        "work": "Complicated"
+      },
+      {
+        "text": "Ci sto provando, ok?",
+        "speaker": "",
+        "work": "Spider-Man: Homecoming"
+      },
+      {
+        "text": "Non sta andando come pensi.",
+        "speaker": "Luke Skywalker",
+        "work": "Star Wars: The Last Jedi"
+      }
     ],
     "anger-4-critical": [
-      {"text": "I'm not impressed.", "speaker": "", "work": "Gladiator"},
-      {"text": "Frankly, my dear, I don't give a damn.", "speaker": "Rhett Butler", "work": "Gone With the Wind"},
-      {"text": "That's… not ideal.", "speaker": "Sherlock Holmes", "work": "Sherlock (BBC)"}
+      {
+        "text": "Non sono impressionato.",
+        "speaker": "",
+        "work": "Gladiator"
+      },
+      {
+        "text": "Francamente, mia cara, non me ne importa nulla.",
+        "speaker": "Rhett Butler",
+        "work": "Gone With the Wind"
+      },
+      {
+        "text": "Questo... non è l'ideale.",
+        "speaker": "Sherlock Holmes",
+        "work": "Sherlock (BBC)"
+      }
     ],
     "disgust-1-dislike": [
-      {"text": "I don't like this.", "speaker": "Rey", "work": "Star Wars: The Force Awakens"},
-      {"text": "Ew, David!", "speaker": "Alexis Rose", "work": "Schitt's Creek"},
-      {"text": "That's disgusting!", "speaker": "Hermione Granger", "work": "Harry Potter"}
+      {
+        "text": "Non mi piace questo.",
+        "speaker": "Rey",
+        "work": "Star Wars: The Force Awakens"
+      },
+      {
+        "text": "Bleah, David!",
+        "speaker": "Alexis Rose",
+        "work": "Schitt's Creek"
+      },
+      {
+        "text": "È disgustoso!",
+        "speaker": "Hermione Granger",
+        "work": "Harry Potter"
+      }
     ],
     "disgust-2-avoidance": [
-      {"text": "Get it away from me!", "speaker": "Indiana Jones", "work": "Indiana Jones and the Temple of Doom"},
-      {"text": "Nope, not today.", "speaker": "", "work": "Brooklyn Nine-Nine"},
-      {"text": "I'm not touching that.", "speaker": "", "work": "Finding Nemo"}
+      {
+        "text": "Toglilo da me!",
+        "speaker": "Indiana Jones",
+        "work": "Indiana Jones and the Temple of Doom"
+      },
+      {
+        "text": "No, non oggi.",
+        "speaker": "",
+        "work": "Brooklyn Nine-Nine"
+      },
+      {
+        "text": "Non lo toccherò.",
+        "speaker": "",
+        "work": "Finding Nemo"
+      }
     ],
     "disgust-3-aweful": [
-      {"text": "This is awful.", "speaker": "Bilbo Baggins", "work": "The Hobbit"},
-      {"text": "That's the worst thing I've ever tasted!", "speaker": "Remy", "work": "Ratatouille"},
-      {"text": "What fresh hell is this?", "speaker": "Dorothy Parker", "work": ""}
+      {
+        "text": "Questo è terribile.",
+        "speaker": "Bilbo Baggins",
+        "work": "The Hobbit"
+      },
+      {
+        "text": "Questa è la cosa peggiore che abbia mai assaggiato!",
+        "speaker": "Remy",
+        "work": "Ratatouille"
+      },
+      {
+        "text": "Che nuovo inferno è questo?",
+        "speaker": "Dorothy Parker",
+        "work": ""
+      }
     ],
     "disgust-4-disapproval": [
-      {"text": "I'm disappointed in you.", "speaker": "Mufasa", "work": "The Lion King"},
-      {"text": "You should not have done that.", "speaker": "Gandalf", "work": "The Lord of the Rings: The Fellowship of the Ring"},
-      {"text": "I expected better.", "speaker": "Steve Rogers", "work": "Marvel Cinematic Universe"}
+      {
+        "text": "Sono deluso da te.",
+        "speaker": "Mufasa",
+        "work": "The Lion King"
+      },
+      {
+        "text": "Non avresti dovuto farlo.",
+        "speaker": "Gandalf",
+        "work": "The Lord of the Rings: The Fellowship of the Ring"
+      },
+      {
+        "text": "Mi aspettavo di meglio.",
+        "speaker": "Steve Rogers",
+        "work": "Marvel Cinematic Universe"
+      }
     ],
     "sad-1-hurt": [
-      {"text": "You hurt me.", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
-      {"text": "The wound is the place where the light enters you.", "speaker": "Rumi", "work": ""},
-      {"text": "The heart was made to be broken.", "speaker": "Oscar Wilde", "work": ""}
+      {
+        "text": "Mi hai ferito.",
+        "speaker": "Elizabeth Bennet",
+        "work": "Pride and Prejudice"
+      },
+      {
+        "text": "La ferita è il luogo da dove entra la luce.",
+        "speaker": "Rumi",
+        "work": ""
+      },
+      {
+        "text": "Il cuore è stato fatto per essere spezzato.",
+        "speaker": "Oscar Wilde",
+        "work": ""
+      }
     ],
     "sad-2-depressed": [
-      {"text": "I feel so blue.", "speaker": "Billie Holiday", "work": "Am I Blue?"},
-      {"text": "Every night I lie in bed, the brightest colors fill my head… but I can't shake this feeling.", "speaker": "", "work": "The Greatest Showman"},
-      {"text": "Hello darkness, my old friend.", "speaker": "Simon & Garfunkel", "work": "The Sound of Silence"}
+      {
+        "text": "Mi sento così triste.",
+        "speaker": "Billie Holiday",
+        "work": "Am I Blue?"
+      },
+      {
+        "text": "Ogni notte mi sdraio a letto, i colori più brillanti riempiono la mia testa... ma non riesco a scuotere questa sensazione.",
+        "speaker": "",
+        "work": "The Greatest Showman"
+      },
+      {
+        "text": "Ciao oscurità, mia vecchia amica.",
+        "speaker": "Simon & Garfunkel",
+        "work": "The Sound of Silence"
+      }
     ],
     "sad-3-lonely": [
-      {"text": "All by myself… don't want to be all by myself anymore.", "speaker": "Celine Dion", "work": "All By Myself"},
-      {"text": "Eleanor Rigby… lives in a dream.", "speaker": "The Beatles", "work": "Eleanor Rigby"},
-      {"text": "I've never felt so alone.", "speaker": "Harry Potter", "work": "Harry Potter and the Order of the Phoenix"}
+      {
+        "text": "Tutto solo... non voglio più stare tutto solo.",
+        "speaker": "Celine Dion",
+        "work": "All By Myself"
+      },
+      {
+        "text": "Eleanor Rigby... vive in un sogno.",
+        "speaker": "The Beatles",
+        "work": "Eleanor Rigby"
+      },
+      {
+        "text": "Non mi sono mai sentito così solo.",
+        "speaker": "Harry Potter",
+        "work": "Harry Potter and the Order of the Phoenix"
+      }
     ],
     "sad-4-ashamed": [
-      {"text": "I'm ashamed of what I've done.", "speaker": "Jean Valjean", "work": "Les Misérables"},
-      {"text": "Shame is an unhappy emotion invented by pietists to exploit humanity.", "speaker": "William Blake", "work": "The Marriage of Heaven and Hell"},
-      {"text": "I'm not proud of myself.", "speaker": "Bruce Wayne", "work": "Batman Begins"}
+      {
+        "text": "Mi vergogno di quello che ho fatto.",
+        "speaker": "Jean Valjean",
+        "work": "Les Misérables"
+      },
+      {
+        "text": "La vergogna è un'emozione infelice inventata dai pietisti per sfruttare l'umanità.",
+        "speaker": "William Blake",
+        "work": "The Marriage of Heaven and Hell"
+      },
+      {
+        "text": "Non sono orgoglioso di me stesso.",
+        "speaker": "Bruce Wayne",
+        "work": "Batman Begins"
+      }
     ],
     "surprise-1-startled": [
-      {"text": "You startled me!", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
-      {"text": "Great Scott!", "speaker": "Doc Brown", "work": "Back to the Future"},
-      {"text": "What was that?", "speaker": "Bilbo Baggins", "work": "The Hobbit"}
+      {
+        "text": "Mi hai fatto sobbalzare!",
+        "speaker": "Elizabeth Bennet",
+        "work": "Pride and Prejudice"
+      },
+      {
+        "text": "Santo cielo!",
+        "speaker": "Doc Brown",
+        "work": "Back to the Future"
+      },
+      {
+        "text": "Cos'era quello?",
+        "speaker": "Bilbo Baggins",
+        "work": "The Hobbit"
+      }
     ],
     "surprise-2-confused": [
-      {"text": "I don't understand.", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
-      {"text": "Toto, I've a feeling we're not in Kansas anymore.", "speaker": "Dorothy", "work": "The Wizard of Oz"},
-      {"text": "It's all a bit of a blur.", "speaker": "Bridget Jones", "work": "Bridget Jones's Diary"}
+      {
+        "text": "Non capisco.",
+        "speaker": "Alice",
+        "work": "Alice's Adventures in Wonderland"
+      },
+      {
+        "text": "Toto, ho la sensazione che non siamo più in Kansas.",
+        "speaker": "Dorothy",
+        "work": "The Wizard of Oz"
+      },
+      {
+        "text": "È tutto sfocato.",
+        "speaker": "Bridget Jones",
+        "work": "Bridget Jones's Diary"
+      }
     ],
     "surprise-3-amazed": [
-      {"text": "This is incredible.", "speaker": "", "work": "Jurassic Park"},
-      {"text": "It's full of stars.", "speaker": "Dave Bowman", "work": "2001: A Space Odyssey"},
-      {"text": "I can't believe my eyes!", "speaker": "", "work": "The Lion King"}
+      {
+        "text": "Questo è incredibile.",
+        "speaker": "",
+        "work": "Jurassic Park"
+      },
+      {
+        "text": "È pieno di stelle.",
+        "speaker": "Dave Bowman",
+        "work": "2001: A Space Odyssey"
+      },
+      {
+        "text": "Non posso credere ai miei occhi!",
+        "speaker": "",
+        "work": "The Lion King"
+      }
     ],
     "surprise-4-disappointed": [
-      {"text": "I'm disappointed in you.", "speaker": "Atticus Finch", "work": "To Kill a Mockingbird"},
-      {"text": "You were supposed to be the chosen one!", "speaker": "Obi-Wan Kenobi", "work": "Star Wars: Episode III – Revenge of the Sith"},
-      {"text": "This is not what I hoped for.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+      {
+        "text": "Sono deluso da te.",
+        "speaker": "Atticus Finch",
+        "work": "To Kill a Mockingbird"
+      },
+      {
+        "text": "Dovevi essere il prescelto!",
+        "speaker": "Obi-Wan Kenobi",
+        "work": "Star Wars: Episode III – Revenge of the Sith"
+      },
+      {
+        "text": "Questo non è ciò che speravo.",
+        "speaker": "Frodo Baggins",
+        "work": "The Lord of the Rings"
+      }
     ],
     "trust-1-grateful": [
-      {"text": "Thank you, thank you very much.", "speaker": "Elvis Presley", "work": ""},
-      {"text": "I've got sunshine on a cloudy day.", "speaker": "The Temptations", "work": "My Girl"},
-      {"text": "These are a few of my favorite things.", "speaker": "", "work": "The Sound of Music"}
+      {
+        "text": "Grazie, grazie mille.",
+        "speaker": "Elvis Presley",
+        "work": ""
+      },
+      {
+        "text": "Ho il sole in un giorno nuvoloso.",
+        "speaker": "The Temptations",
+        "work": "My Girl"
+      },
+      {
+        "text": "Queste sono alcune delle mie cose preferite.",
+        "speaker": "",
+        "work": "The Sound of Music"
+      }
     ],
     "trust-2-peaceful": [
-      {"text": "I feel at peace.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings"},
-      {"text": "Let it be.", "speaker": "The Beatles", "work": "Let It Be"},
-      {"text": "Be still, and know…", "speaker": "", "work": "Psalm 46:10"}
+      {
+        "text": "Mi sento in pace.",
+        "speaker": "Samwise Gamgee",
+        "work": "The Lord of the Rings"
+      },
+      {
+        "text": "Lascia che sia.",
+        "speaker": "The Beatles",
+        "work": "Let It Be"
+      },
+      {
+        "text": "Stai fermo, e saprai...",
+        "speaker": "",
+        "work": "Psalm 46:10"
+      }
     ],
     "trust-3-accepted": [
-      {"text": "You have been my friend. That in itself is a tremendous thing.", "speaker": "Charlotte", "work": "Charlotte's Web"},
-      {"text": "You belong with me.", "speaker": "Taylor Swift", "work": "You Belong With Me"},
-      {"text": "Come as you are.", "speaker": "Kurt Cobain", "work": "Come As You Are"}
+      {
+        "text": "Sei stato mio amico. Questo di per sé è una cosa tremenda.",
+        "speaker": "Charlotte",
+        "work": "Charlotte's Web"
+      },
+      {
+        "text": "Appartieni con me.",
+        "speaker": "Taylor Swift",
+        "work": "You Belong With Me"
+      },
+      {
+        "text": "Vieni come sei.",
+        "speaker": "Kurt Cobain",
+        "work": "Come As You Are"
+      }
     ],
     "trust-4-hopeful": [
-      {"text": "Hope is a good thing, maybe the best of things.", "speaker": "Andy Dufresne", "work": "The Shawshank Redemption"},
-      {"text": "There's a sunrise every morning that you're missing.", "speaker": "", "work": "Dear Evan Hansen"},
-      {"text": "Even the darkest night will end and the sun will rise.", "speaker": "", "work": "Les Misérables"}
+      {
+        "text": "La speranza è una cosa buona, forse la migliore.",
+        "speaker": "Andy Dufresne",
+        "work": "The Shawshank Redemption"
+      },
+      {
+        "text": "C'è un'alba ogni mattina che ti stai perdendo.",
+        "speaker": "",
+        "work": "Dear Evan Hansen"
+      },
+      {
+        "text": "Anche la notte più buia finirà e il sole sorgerà.",
+        "speaker": "",
+        "work": "Les Misérables"
+      }
     ],
     "fear-1-nervous": [
-      {"text": "I've got a bad feeling about this.", "speaker": "Han Solo", "work": "Star Wars"},
-      {"text": "My hands are shaking.", "speaker": "", "work": "The Hunger Games"},
-      {"text": "Courage is not the absence of fear.", "speaker": "Nelson Mandela", "work": ""}
+      {
+        "text": "Ho un brutto presentimento su questo.",
+        "speaker": "Han Solo",
+        "work": "Star Wars"
+      },
+      {
+        "text": "Le mie mani tremano.",
+        "speaker": "",
+        "work": "The Hunger Games"
+      },
+      {
+        "text": "Il coraggio non è l'assenza di paura.",
+        "speaker": "Nelson Mandela",
+        "work": ""
+      }
     ],
     "fear-2-scared": [
-      {"text": "I'm scared.", "speaker": "Coraline", "work": "Coraline"},
-      {"text": "They're here…", "speaker": "Carol Anne", "work": "Poltergeist"},
-      {"text": "Please don't let this be real.", "speaker": "", "work": "Stranger Things"}
+      {
+        "text": "Ho paura.",
+        "speaker": "Coraline",
+        "work": "Coraline"
+      },
+      {
+        "text": "Sono qui...",
+        "speaker": "Carol Anne",
+        "work": "Poltergeist"
+      },
+      {
+        "text": "Per favore, che questo non sia reale.",
+        "speaker": "",
+        "work": "Stranger Things"
+      }
     ],
     "fear-3-anxious": [
-      {"text": "I can't calm down.", "speaker": "", "work": "Inside Out"},
-      {"text": "I'm worried about everything.", "speaker": "", "work": "Harry Potter and the Deathly Hallows"},
-      {"text": "Something is wrong… I can feel it.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+      {
+        "text": "Non riesco a calmarmi.",
+        "speaker": "",
+        "work": "Inside Out"
+      },
+      {
+        "text": "Sono preoccupato per tutto.",
+        "speaker": "",
+        "work": "Harry Potter and the Deathly Hallows"
+      },
+      {
+        "text": "Qualcosa non va... lo sento.",
+        "speaker": "Frodo Baggins",
+        "work": "The Lord of the Rings"
+      }
     ],
     "fear-4-insecure": [
-      {"text": "I don't feel good enough.", "speaker": "", "work": "The Perks of Being a Wallflower"},
-      {"text": "You think I'm not good enough.", "speaker": "", "work": "Lady Bird"},
-      {"text": "Am I strong enough?", "speaker": "", "work": "Mulan"}
+      {
+        "text": "Non mi sento abbastanza bravo.",
+        "speaker": "",
+        "work": "The Perks of Being a Wallflower"
+      },
+      {
+        "text": "Pensi che non sia abbastanza bravo.",
+        "speaker": "",
+        "work": "Lady Bird"
+      },
+      {
+        "text": "Sono abbastanza forte?",
+        "speaker": "",
+        "work": "Mulan"
+      }
     ]
   }
 }
