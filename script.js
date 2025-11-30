@@ -4,6 +4,139 @@ let emotionsData = {};
 let currentEmotionId = null;
 let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let localeData = null;
+let hasInteracted = localStorage.getItem('hasInteracted') === 'true';
+
+// Related emotions mapping - suggests emotions that provide complementary insights
+const relatedEmotionsMap = {
+    'joy-1-optimistic': [
+        { id: 'anticipation-1-excited', reason: 'channels optimistic energy into action' },
+        { id: 'trust-4-hopeful', reason: 'deepens future-oriented positivity' }
+    ],
+    'joy-2-confident': [
+        { id: 'anticipation-2-eager', reason: 'transforms confidence into readiness' },
+        { id: 'anger-4-critical', reason: 'balances with self-assessment' }
+    ],
+    'joy-3-joyful': [
+        { id: 'surprise-3-amazed', reason: 'expands into wonder and awe' },
+        { id: 'trust-1-grateful', reason: 'grounds joy in appreciation' }
+    ],
+    'joy-4-loving': [
+        { id: 'trust-2-peaceful', reason: 'finds security in connection' },
+        { id: 'trust-3-accepted', reason: 'explores mutual belonging' }
+    ],
+    'trust-1-grateful': [
+        { id: 'joy-3-joyful', reason: 'celebrates what you appreciate' },
+        { id: 'trust-4-hopeful', reason: 'builds forward momentum' }
+    ],
+    'trust-2-peaceful': [
+        { id: 'trust-3-accepted', reason: 'deepens safe belonging' },
+        { id: 'joy-4-loving', reason: 'embraces contentment in connection' }
+    ],
+    'trust-3-accepted': [
+        { id: 'joy-2-confident', reason: 'builds secure self-worth' },
+        { id: 'trust-2-peaceful', reason: 'relaxes into presence' }
+    ],
+    'trust-4-hopeful': [
+        { id: 'anticipation-3-interested', reason: 'turns hope into curious exploration' },
+        { id: 'fear-1-nervous', reason: 'acknowledges uncertainty honestly' }
+    ],
+    'fear-1-nervous': [
+        { id: 'anticipation-1-excited', reason: 'channels anticipatory energy positively' },
+        { id: 'anticipation-3-interested', reason: 'transforms worry into curiosity' }
+    ],
+    'fear-2-scared': [
+        { id: 'joy-4-loving', reason: 'reconnects with what you're protecting' },
+        { id: 'anger-1-aggressive', reason: 'explores defensive energy' }
+    ],
+    'fear-3-anxious': [
+        { id: 'anticipation-4-stressed', reason: 'recognizes shared pressure patterns' },
+        { id: 'surprise-2-confused', reason: 'addresses underlying uncertainty' }
+    ],
+    'fear-4-insecure': [
+        { id: 'joy-2-confident', reason: 'builds self-assurance' },
+        { id: 'sad-1-hurt', reason: 'explores underlying wounds' }
+    ],
+    'surprise-1-startled': [
+        { id: 'fear-1-nervous', reason: 'processes alarm signals' },
+        { id: 'surprise-3-amazed', reason: 'finds positive reframing' }
+    ],
+    'surprise-2-confused': [
+        { id: 'anticipation-3-interested', reason: 'approaches with curiosity' },
+        { id: 'anger-3-frustrated', reason: 'addresses clarity needs' }
+    ],
+    'surprise-3-amazed': [
+        { id: 'joy-3-joyful', reason: 'celebrates wonder fully' },
+        { id: 'anticipation-1-excited', reason: 'energizes new possibilities' }
+    ],
+    'surprise-4-disappointed': [
+        { id: 'sad-1-hurt', reason: 'honors emotional impact' },
+        { id: 'trust-4-hopeful', reason: 'rebuilds expectation' }
+    ],
+    'sad-1-hurt': [
+        { id: 'surprise-4-disappointed', reason: 'examines unmet expectations' },
+        { id: 'joy-4-loving', reason: 'reconnects with relationship value' }
+    ],
+    'sad-2-depressed': [
+        { id: 'sad-3-lonely', reason: 'addresses connection needs' },
+        { id: 'trust-2-peaceful', reason: 'finds rest and restoration' }
+    ],
+    'sad-3-lonely': [
+        { id: 'trust-3-accepted', reason: 'explores belonging needs' },
+        { id: 'joy-4-loving', reason: 'remembers connection desire' }
+    ],
+    'sad-4-ashamed': [
+        { id: 'surprise-4-disappointed', reason: 'separates action from identity' },
+        { id: 'anger-4-critical', reason: 'channels toward growth' }
+    ],
+    'disgust-1-dislike': [
+        { id: 'disgust-4-disapproval', reason: 'clarifies value misalignment' },
+        { id: 'disgust-2-avoidance', reason: 'explores boundary needs' }
+    ],
+    'disgust-2-avoidance': [
+        { id: 'fear-3-anxious', reason: 'examines threat perception' },
+        { id: 'anticipation-3-interested', reason: 'approaches with support' }
+    ],
+    'disgust-3-aweful': [
+        { id: 'anger-1-aggressive', reason: 'channels protective response' },
+        { id: 'surprise-4-disappointed', reason: 'processes expectation violation' }
+    ],
+    'disgust-4-disapproval': [
+        { id: 'anger-4-critical', reason: 'shifts to constructive evaluation' },
+        { id: 'anger-3-frustrated', reason: 'activates change desire' }
+    ],
+    'anger-1-aggressive': [
+        { id: 'fear-2-scared', reason: 'identifies what feels threatened' },
+        { id: 'disgust-4-disapproval', reason: 'examines violated standards' }
+    ],
+    'anger-2-mad': [
+        { id: 'anger-3-frustrated', reason: 'explores blocked goals' },
+        { id: 'sad-1-hurt', reason: 'acknowledges boundary violation' }
+    ],
+    'anger-3-frustrated': [
+        { id: 'anticipation-3-interested', reason: 'finds new approaches' },
+        { id: 'anticipation-4-stressed', reason: 'manages pressure together' }
+    ],
+    'anger-4-critical': [
+        { id: 'surprise-4-disappointed', reason: 'addresses unmet standards' },
+        { id: 'anticipation-2-eager', reason: 'drives improvement forward' }
+    ],
+    'anticipation-1-excited': [
+        { id: 'joy-1-optimistic', reason: 'grounds in positive expectation' },
+        { id: 'fear-1-nervous', reason: 'balances energy with awareness' }
+    ],
+    'anticipation-2-eager': [
+        { id: 'anticipation-3-interested', reason: 'deepens engaged curiosity' },
+        { id: 'anger-3-frustrated', reason: 'acknowledges obstacles' }
+    ],
+    'anticipation-3-interested': [
+        { id: 'surprise-2-confused', reason: 'embraces exploring unknowns' },
+        { id: 'surprise-3-amazed', reason: 'opens to discovery' }
+    ],
+    'anticipation-4-stressed': [
+        { id: 'anger-3-frustrated', reason: 'addresses obstacles directly' },
+        { id: 'fear-3-anxious', reason: 'sorts uncertainty patterns' }
+    ]
+};
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
@@ -12,6 +145,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeInteractivity();
     initializeModal();
     initializeLanguageSelector();
+
+    // Show initial guidance if user hasn't interacted before
+    if (!hasInteracted) {
+        setTimeout(() => showInitialGuidance(), 1000);
+    }
 });
 
 // Load external SVG file and inject it into the DOM
@@ -334,6 +472,12 @@ function handleSegmentClick(e, segment, segmentId, allSegments) {
         text.style.transition = 'filter 0.2s ease';
     });
 
+    // Mark as interacted
+    if (!hasInteracted) {
+        hasInteracted = true;
+        localStorage.setItem('hasInteracted', 'true');
+    }
+
     // Update info panel
     updateInfoPanel(segmentId);
 }
@@ -413,6 +557,33 @@ function updateInfoPanel(emotionId) {
         </div>
     `;
 
+    // Add related emotions suggestions
+    const relatedEmotions = relatedEmotionsMap[emotionId];
+    if (relatedEmotions && relatedEmotions.length > 0) {
+        html += `
+            <div class="related-emotions">
+                <div class="related-emotions-title">You might also explore:</div>
+                <div class="related-emotions-list">
+        `;
+
+        relatedEmotions.forEach(related => {
+            const relatedEmotion = emotionsData[related.id];
+            if (relatedEmotion) {
+                html += `
+                    <div class="related-emotion-item" onclick="navigateToEmotion('${related.id}')">
+                        <span class="related-emotion-name">${relatedEmotion.name}</span>
+                        <span class="related-emotion-reason">— ${related.reason}</span>
+                    </div>
+                `;
+            }
+        });
+
+        html += `
+                </div>
+            </div>
+        `;
+    }
+
     html += `</div>`;
 
     infoContent.innerHTML = html;
@@ -447,6 +618,9 @@ function showWelcomeMessage() {
 
     infoContent.innerHTML = `
         <div class="welcome-message">
+            <button class="random-feeling-btn" onclick="selectRandomFeeling()">
+                🎲 Explore a Random Feeling
+            </button>
             <p>${ui.welcomeMessage}</p>
             <p><strong>${ui.howToUseTitle}</strong></p>
             <ul>
@@ -592,4 +766,77 @@ function showQuotationAction() {
     });
 
     showModal(`${emotion.name} - ${localeData.ui.quotationsLabel}`, quotesHtml);
+}
+
+// Show initial guidance animation on first visit
+function showInitialGuidance() {
+    const svg = document.querySelector('#svg-wrapper svg');
+    if (!svg) return;
+
+    // Pick a random segment to highlight
+    const allEmotionIds = Object.keys(emotionsData);
+    const randomId = allEmotionIds[Math.floor(Math.random() * allEmotionIds.length)];
+
+    // Get the background element for this emotion
+    const backgroundId = getBackgroundId(randomId);
+    const background = svg.querySelector(`#${backgroundId}`);
+
+    if (background) {
+        // Add the guide-hint class to trigger animation
+        background.classList.add('guide-hint');
+
+        // Remove the class after animation completes (6 seconds = 2s * 3 iterations)
+        setTimeout(() => {
+            background.classList.remove('guide-hint');
+        }, 6000);
+    }
+}
+
+// Select and navigate to a random feeling
+function selectRandomFeeling() {
+    const allEmotionIds = Object.keys(emotionsData);
+    const randomId = allEmotionIds[Math.floor(Math.random() * allEmotionIds.length)];
+    navigateToEmotion(randomId);
+
+    // Mark as interacted
+    if (!hasInteracted) {
+        hasInteracted = true;
+        localStorage.setItem('hasInteracted', 'true');
+    }
+}
+
+// Navigate to a specific emotion
+function navigateToEmotion(emotionId) {
+    const svg = document.querySelector('#svg-wrapper svg');
+    if (!svg) return;
+
+    const emotion = emotionsData[emotionId];
+    if (!emotion) return;
+
+    // Update the info panel
+    updateInfoPanel(emotionId);
+
+    // Highlight the segment in the SVG
+    const backgroundId = getBackgroundId(emotionId);
+    const background = svg.querySelector(`#${backgroundId}`);
+
+    if (background) {
+        // Remove active class from all segments
+        svg.querySelectorAll('g.active').forEach(g => g.classList.remove('active'));
+
+        // Add active class to this segment
+        background.classList.add('active');
+    }
+
+    // Mark as interacted
+    if (!hasInteracted) {
+        hasInteracted = true;
+        localStorage.setItem('hasInteracted', 'true');
+    }
+
+    // Scroll to top of info panel on mobile
+    const infoPanel = document.querySelector('.info-panel');
+    if (infoPanel && window.innerWidth <= 1200) {
+        infoPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }

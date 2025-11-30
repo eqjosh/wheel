@@ -226,10 +226,10 @@ body {
 #svg-wrapper g[id*="-3-"],
 #svg-wrapper g[id*="-4-"] {
     cursor: pointer;
-    transition: filter 0.2s ease, opacity 0.2s ease;
+    transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover effect */
+/* Hover effect - Enhanced for better visual feedback */
 #svg-wrapper g[id*="-1-"]:hover,
 #svg-wrapper g[id*="-2-"]:hover,
 #svg-wrapper g[id*="-3-"]:hover,
@@ -237,12 +237,27 @@ body {
 #svg-wrapper g[id="joy2-background"]:hover,
 #svg-wrapper g[id="joy3-background"]:hover,
 #svg-wrapper g[id="joy4-background"]:hover {
-    filter: brightness(1.15) drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+    filter: brightness(1.2) drop-shadow(0 0 12px rgba(0, 0, 0, 0.4));
+    transform: scale(1.02);
 }
 
 /* Active/Click effect */
 #svg-wrapper g.active {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Initial guidance animation */
+@keyframes guidancePulse {
+    0%, 100% {
+        filter: brightness(1) drop-shadow(0 0 0px rgba(102, 126, 234, 0));
+    }
+    50% {
+        filter: brightness(1.3) drop-shadow(0 0 20px rgba(102, 126, 234, 0.8));
+    }
+}
+
+#svg-wrapper g.guide-hint {
+    animation: guidancePulse 2s ease-in-out 3;
 }
 
 /* Responsive design */
@@ -291,6 +306,85 @@ body {
     .emotion-title {
         font-size: 1.5em;
     }
+}
+
+/* Random Feeling Button */
+.random-feeling-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.random-feeling-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.random-feeling-btn:active {
+    transform: translateY(0);
+}
+
+/* Related Emotions Section */
+.related-emotions {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9ff;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.related-emotions-title {
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+.related-emotions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.related-emotion-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #e0e0f0;
+}
+
+.related-emotion-item:hover {
+    background: #667eea;
+    color: white;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.related-emotion-name {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.related-emotion-reason {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.related-emotion-item:hover .related-emotion-reason {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Explore This Feeling Section */
