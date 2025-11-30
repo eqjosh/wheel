@@ -98,16 +98,9 @@ function updateSVGText() {
         if (!emotionGroup) return;
 
         // Get all text elements in this group
-        const textElements = emotionGroup.querySelectorAll('text');
-        const tspanElements = emotionGroup.querySelectorAll('text tspan');
+        const textElements = emotionGroup.querySelectorAll('text tspan');
 
-        if (tspanElements.length === 0) return;
-
-        // Ensure all text elements have text-anchor set as both attribute and style
-        textElements.forEach(textEl => {
-            textEl.setAttribute('text-anchor', 'middle');
-            textEl.style.textAnchor = 'middle';
-        });
+        if (textElements.length === 0) return;
 
         // Update related feelings and emotion name
         // The pattern is: related feeling(s), then the main emotion name (usually last and largest)
@@ -115,49 +108,17 @@ function updateSVGText() {
 
         // Update the related feelings (first N-1 text elements)
         relatedFeelings.forEach((feeling, index) => {
-            if (tspanElements[index]) {
-                tspanElements[index].textContent = feeling;
-                // Dynamically adjust font size for longer text
-                adjustTextSize(textElements[index], feeling);
+            if (textElements[index]) {
+                textElements[index].textContent = feeling;
             }
         });
 
         // Update the main emotion name (last text element)
-        const mainNameIndex = tspanElements.length - 1;
-        if (tspanElements[mainNameIndex]) {
-            tspanElements[mainNameIndex].textContent = emotion.name;
-            // Dynamically adjust font size for longer text
-            adjustTextSize(textElements[mainNameIndex], emotion.name);
+        const mainNameIndex = textElements.length - 1;
+        if (textElements[mainNameIndex]) {
+            textElements[mainNameIndex].textContent = emotion.name;
         }
     });
-}
-
-// Adjust text size based on character length to prevent overflow
-function adjustTextSize(textElement, content) {
-    if (!textElement || !content) return;
-
-    const baseLength = 12; // Reference length for English words
-    const textLength = content.length;
-
-    // Get the original font size from the text element's class
-    const computedStyle = window.getComputedStyle(textElement);
-    const originalSize = parseFloat(computedStyle.fontSize);
-
-    // Calculate scale factor - reduce size for longer text
-    let scaleFactor = 1;
-    if (textLength > baseLength) {
-        scaleFactor = baseLength / textLength;
-        // Don't scale down more than 70% of original size
-        scaleFactor = Math.max(scaleFactor, 0.7);
-    }
-
-    // Apply the scaled font size
-    if (scaleFactor < 1) {
-        textElement.style.fontSize = (originalSize * scaleFactor) + 'px';
-    } else {
-        // Reset to original size if text is short enough
-        textElement.style.fontSize = '';
-    }
 }
 
 // Initialize language selector
