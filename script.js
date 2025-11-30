@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Show initial guidance if user hasn't interacted before
     if (!hasInteracted) {
-        setTimeout(() => showInitialGuidance(), 1000);
+        setTimeout(() => showInitialGuidance(), 2000);
     }
 });
 
@@ -622,14 +622,14 @@ function showWelcomeMessage() {
 
     infoContent.innerHTML = `
         <div class="welcome-message">
-            <button class="random-feeling-btn" onclick="selectRandomFeeling()">
-                🎲 Explore a Random Feeling
-            </button>
             <p>${ui.welcomeMessage}</p>
             <p><strong>${ui.howToUseTitle}</strong></p>
             <ul>
                 ${stepsHtml}
             </ul>
+            <button class="random-feeling-btn" onclick="selectRandomFeeling()">
+                🎲 Explore a Random Feeling
+            </button>
         </div>
     `;
 }
@@ -821,15 +821,27 @@ function navigateToEmotion(emotionId) {
     updateInfoPanel(emotionId);
 
     // Highlight the segment in the SVG
-    const backgroundId = getBackgroundId(emotionId);
-    const background = svg.querySelector(`#${backgroundId}`);
+    const segment = svg.querySelector(`#${emotionId}`);
+    const allSegments = svg.querySelectorAll('g[id*="-1-"], g[id*="-2-"], g[id*="-3-"], g[id*="-4-"]');
 
-    if (background) {
-        // Remove active class from all segments
-        svg.querySelectorAll('g.active').forEach(g => g.classList.remove('active'));
+    if (segment) {
+        // Remove active class and text effects from all segments
+        allSegments.forEach(s => {
+            s.classList.remove('active');
+            // Remove text drop shadow
+            const texts = s.querySelectorAll('text');
+            texts.forEach(t => t.style.filter = '');
+        });
 
         // Add active class to this segment
-        background.classList.add('active');
+        segment.classList.add('active');
+
+        // Add text drop shadow to active segment
+        const texts = segment.querySelectorAll('text');
+        texts.forEach(text => {
+            text.style.filter = 'drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4))';
+            text.style.transition = 'filter 0.2s ease';
+        });
     }
 
     // Mark as interacted

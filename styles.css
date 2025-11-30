@@ -176,43 +176,54 @@ body {
 }
 
 .emotion-title {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    margin-bottom: 6px;
     text-transform: capitalize;
 }
 
 .emotion-category {
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: #888;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .emotion-description {
     color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+.purpose-info {
+    margin-bottom: 8px;
+}
+
+.purpose-info p {
+    color: #555;
+    line-height: 1.6;
 }
 
 .related-feelings {
-    margin-top: 5px;
+    margin-top: 0px;
     padding-top: 0px;
+    margin-bottom: 8px;
 }
 
 .related-feelings p {
     color: #555;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .border-info {
-    margin-top: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .border-info p {
     color: #555;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .info-label {
@@ -335,8 +346,8 @@ body {
 
 /* Related Emotions Section */
 .related-emotions {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 12px;
     background: #f8f9ff;
     border-radius: 8px;
     border-left: 4px solid #667eea;
@@ -345,8 +356,8 @@ body {
 .related-emotions-title {
     font-weight: 700;
     color: #667eea;
-    margin-bottom: 12px;
-    font-size: 1em;
+    margin-bottom: 10px;
+    font-size: 0.95em;
 }
 
 .related-emotions-list {
@@ -369,7 +380,7 @@ body {
 .related-emotion-item:hover {
     background: #667eea;
     color: white;
-    transform: translateX(5px);
+    transform: translateX(2px);
     box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
 }
 
@@ -389,15 +400,16 @@ body {
 
 /* Explore This Feeling Section */
 .explore-feeling {
-    margin-top: 25px;
-    padding-top: 20px;
+    margin-top: 15px;
+    padding-top: 15px;
     border-top: 2px solid #f0f0f0;
 }
 
 .explore-label {
     font-weight: 700;
     color: #667eea;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
 }
 
 /* Action Icons */
