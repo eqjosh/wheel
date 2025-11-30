@@ -15,11 +15,12 @@
     "version": "v2.9",
     "modalClose": "×",
     "relatedFeelingsLabel": "Related Feelings",
-    "borderInfoLabel": "Border Insight",
+    "borderInfoLabel": "Emotional Algebra",
     "quotesLabel": "Inspirational Quotes",
     "adaptivePurposeLabel": "Adaptive Purpose",
     "overloadRiskLabel": "Overload Risk",
     "overloadTipLabel": "Balance Tip",
+    "exploreThisFeelingLabel": "Explore the Emotional Wisdom of {feeling}",
     "emotionalWisdomQuestionsLabel": "Emotional Wisdom Questions",
     "quotationsLabel": "Quotations",
     "overloadLabel": "Overload"

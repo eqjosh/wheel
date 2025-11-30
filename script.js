@@ -403,7 +403,7 @@ function updateInfoPanel(emotionId) {
     // Add explore this feeling section with action icons
     html += `
         <div class="explore-feeling">
-            <p class="explore-label">${localeData.ui.exploreThisFeelingLabel}:</p>
+            <p class="explore-label">${localeData.ui.exploreThisFeelingLabel.replace('{feeling}', emotion.name)}:</p>
             <div class="action-icons">
                 <img src="action-message.png" class="action-icon" id="action-message" title="View guiding question" alt="Message">
                 <img src="action-overload.png" class="action-icon" id="action-overload" title="View overload risk" alt="Overload">
