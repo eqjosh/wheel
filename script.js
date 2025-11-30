@@ -103,6 +103,11 @@ function updateSVGText() {
 
         if (tspanElements.length === 0) return;
 
+        // Ensure all text elements have text-anchor attribute set
+        textElements.forEach(textEl => {
+            textEl.setAttribute('text-anchor', 'middle');
+        });
+
         // Update related feelings and emotion name
         // The pattern is: related feeling(s), then the main emotion name (usually last and largest)
         const relatedFeelings = emotion.relatedFeelings || [];
@@ -111,6 +116,9 @@ function updateSVGText() {
         relatedFeelings.forEach((feeling, index) => {
             if (tspanElements[index]) {
                 tspanElements[index].textContent = feeling;
+                // Ensure tspan has proper positioning for centered text
+                tspanElements[index].setAttribute('x', '0');
+                tspanElements[index].setAttribute('y', '0');
                 // Dynamically adjust font size for longer text
                 adjustTextSize(textElements[index], feeling);
             }
@@ -120,6 +128,9 @@ function updateSVGText() {
         const mainNameIndex = tspanElements.length - 1;
         if (tspanElements[mainNameIndex]) {
             tspanElements[mainNameIndex].textContent = emotion.name;
+            // Ensure tspan has proper positioning for centered text
+            tspanElements[mainNameIndex].setAttribute('x', '0');
+            tspanElements[mainNameIndex].setAttribute('y', '0');
             // Dynamically adjust font size for longer text
             adjustTextSize(textElements[mainNameIndex], emotion.name);
         }
