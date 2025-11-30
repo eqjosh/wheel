@@ -20,7 +20,7 @@
     "adaptivePurposeLabel": "適応目的",
     "overloadRiskLabel": "過負荷リスク",
     "overloadTipLabel": "バランス調整のヒント",
-    "exploreThisFeelingLabel": "この感情を探求する",
+    "exploreThisFeelingLabel": "{feeling}の感情の知恵を探求する",
     "purposeLabel": "目的",
     "emotionalAlgebraLabel": "感情の代数",
     "emotionalWisdomQuestionsLabel": "感情の知恵に関する質問",
