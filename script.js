@@ -45,7 +45,7 @@ const relatedEmotionsMap = {
         { id: 'anticipation-3-interested', reason: 'transforms worry into curiosity' }
     ],
     'fear-2-scared': [
-        { id: 'joy-4-loving', reason: 'reconnects with what you're protecting' },
+        { id: 'joy-4-loving', reason: 'reconnects with what you are protecting' },
         { id: 'anger-1-aggressive', reason: 'explores defensive energy' }
     ],
     'fear-3-anxious': [
