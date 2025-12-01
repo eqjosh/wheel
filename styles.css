@@ -273,9 +273,10 @@ body {
 
 /* Enhanced guidance flash - uses hover effect */
 #svg-wrapper g.guide-hint-flash {
-    filter: brightness(1.2) drop-shadow(0 0 12px rgba(0, 0, 0, 0.4));
-    transform: scale(1.02);
-    transition: all 0.3s ease;
+    filter: brightness(1.2) drop-shadow(0 0 12px rgba(0, 0, 0, 0.4)) !important;
+    transform: scale(1.02) !important;
+    transform-origin: center !important;
+    transition: all 0.3s ease !important;
 }
 
 /* Responsive design */

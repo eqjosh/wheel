@@ -5,6 +5,7 @@ let currentEmotionId = null;
 let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let localeData = null;
 let hasInteracted = localStorage.getItem('hasInteracted') === 'true';
+let guidanceShouldStop = false; // Track whether to stop guidance animation
 
 // Related emotions mapping - suggests emotions that provide complementary insights
 const relatedEmotionsMap = {
@@ -454,6 +455,9 @@ function initializeInteractivity() {
 function handleSegmentClick(e, segment, segmentId, allSegments) {
     e.stopPropagation();
 
+    // Stop guidance animation on first click
+    stopGuidance();
+
     // Remove active class and text effects from all segments
     allSegments.forEach(s => {
         s.classList.remove('active');
@@ -573,10 +577,16 @@ function updateInfoPanel(emotionId) {
         relatedEmotions.forEach(related => {
             const relatedEmotion = emotionsData[related.id];
             if (relatedEmotion) {
+                // Get localized reason or fall back to English
+                const reasonKey = `${emotionId}-${related.id}`;
+                const localizedReason = localeData.relatedEmotionReasons && localeData.relatedEmotionReasons[reasonKey]
+                    ? localeData.relatedEmotionReasons[reasonKey]
+                    : related.reason;
+
                 html += `
                     <div class="related-emotion-item" onclick="navigateToEmotion('${related.id}')">
                         <span class="related-emotion-name">${relatedEmotion.name}</span>
-                        <span class="related-emotion-reason">— ${related.reason}</span>
+                        <span class="related-emotion-reason">— ${localizedReason}</span>
                     </div>
                 `;
             }
@@ -782,18 +792,20 @@ function showInitialGuidance() {
     const guidanceEmotions = [
         'joy-3-joyful',           // Joy (top)
         'anticipation-1-excited', // Anticipation (right side)
-        'sadness-3-lonely',       // Sadness (bottom left)
+        'sad-3-lonely',           // Sadness (bottom left) - fixed ID
         'fear-1-nervous',         // Fear (left)
         'anger-2-mad'             // Anger (bottom)
     ];
 
     // Flash through each emotion sequentially
     let currentIndex = 0;
-    const flashDuration = 800; // How long each flash lasts (ms)
-    const pauseBetween = 200;  // Pause between flashes (ms)
+    const flashDuration = 700; // How long each flash lasts (ms)
+    const pauseBetween = 150;  // Pause between flashes (ms)
+    const pauseBetweenLoops = 800; // Pause before starting new loop (ms)
 
     function flashNextEmotion() {
-        if (currentIndex >= guidanceEmotions.length) return;
+        // Stop if user has interacted
+        if (guidanceShouldStop) return;
 
         const emotionId = guidanceEmotions[currentIndex];
         const segment = svg.querySelector(`#${emotionId}`);
@@ -804,17 +816,36 @@ function showInitialGuidance() {
 
             // Remove after flash duration
             setTimeout(() => {
-                segment.classList.remove('guide-hint-flash');
+                if (!guidanceShouldStop) {
+                    segment.classList.remove('guide-hint-flash');
+                }
 
                 // Move to next emotion after pause
                 setTimeout(() => {
+                    if (guidanceShouldStop) return;
+
                     currentIndex++;
-                    flashNextEmotion();
+
+                    // Loop back to start after completing all emotions
+                    if (currentIndex >= guidanceEmotions.length) {
+                        currentIndex = 0;
+                        // Add a longer pause before restarting the loop
+                        setTimeout(() => {
+                            if (!guidanceShouldStop) {
+                                flashNextEmotion();
+                            }
+                        }, pauseBetweenLoops);
+                    } else {
+                        flashNextEmotion();
+                    }
                 }, pauseBetween);
             }, flashDuration);
         } else {
             // If segment not found, move to next
             currentIndex++;
+            if (currentIndex >= guidanceEmotions.length) {
+                currentIndex = 0;
+            }
             flashNextEmotion();
         }
     }
@@ -823,8 +854,23 @@ function showInitialGuidance() {
     flashNextEmotion();
 }
 
+// Stop guidance animation
+function stopGuidance() {
+    guidanceShouldStop = true;
+    // Remove any lingering guide-hint-flash classes
+    const svg = document.querySelector('#svg-wrapper svg');
+    if (svg) {
+        svg.querySelectorAll('.guide-hint-flash').forEach(el => {
+            el.classList.remove('guide-hint-flash');
+        });
+    }
+}
+
 // Select and navigate to a random feeling
 function selectRandomFeeling() {
+    // Stop guidance animation
+    stopGuidance();
+
     const allEmotionIds = Object.keys(emotionsData);
     const randomId = allEmotionIds[Math.floor(Math.random() * allEmotionIds.length)];
     navigateToEmotion(randomId);
@@ -838,6 +884,9 @@ function selectRandomFeeling() {
 
 // Navigate to a specific emotion
 function navigateToEmotion(emotionId) {
+    // Stop guidance animation
+    stopGuidance();
+
     const svg = document.querySelector('#svg-wrapper svg');
     if (!svg) return;
 
