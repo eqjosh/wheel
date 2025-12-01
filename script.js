@@ -638,7 +638,7 @@ function showWelcomeMessage() {
                 ${stepsHtml}
             </ul>
             <button class="random-feeling-btn" onclick="selectRandomFeeling()">
-                🎲 Explore a Random Feeling
+                ${ui.randomFeelingButton}
             </button>
         </div>
     `;
