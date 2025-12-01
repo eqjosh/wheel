@@ -566,7 +566,7 @@ function updateInfoPanel(emotionId) {
     if (relatedEmotions && relatedEmotions.length > 0) {
         html += `
             <div class="related-emotions">
-                <div class="related-emotions-title">You might also explore:</div>
+                <div class="related-emotions-title">${localeData.ui.youMightAlsoExploreLabel}</div>
                 <div class="related-emotions-list">
         `;
 
@@ -777,23 +777,50 @@ function showInitialGuidance() {
     const svg = document.querySelector('#svg-wrapper svg');
     if (!svg) return;
 
-    // Pick a random segment to highlight
-    const allEmotionIds = Object.keys(emotionsData);
-    const randomId = allEmotionIds[Math.floor(Math.random() * allEmotionIds.length)];
+    // Select 5 emotions spaced around the wheel for variety
+    // Using specific emotions from different categories to ensure good distribution
+    const guidanceEmotions = [
+        'joy-3-joyful',           // Joy (top)
+        'anticipation-1-excited', // Anticipation (right side)
+        'sadness-3-lonely',       // Sadness (bottom left)
+        'fear-1-nervous',         // Fear (left)
+        'anger-2-mad'             // Anger (bottom)
+    ];
 
-    // Get the background element for this emotion
-    const backgroundId = getBackgroundId(randomId);
-    const background = svg.querySelector(`#${backgroundId}`);
+    // Flash through each emotion sequentially
+    let currentIndex = 0;
+    const flashDuration = 800; // How long each flash lasts (ms)
+    const pauseBetween = 200;  // Pause between flashes (ms)
 
-    if (background) {
-        // Add the guide-hint class to trigger animation
-        background.classList.add('guide-hint');
+    function flashNextEmotion() {
+        if (currentIndex >= guidanceEmotions.length) return;
 
-        // Remove the class after animation completes (6 seconds = 2s * 3 iterations)
-        setTimeout(() => {
-            background.classList.remove('guide-hint');
-        }, 6000);
+        const emotionId = guidanceEmotions[currentIndex];
+        const segment = svg.querySelector(`#${emotionId}`);
+
+        if (segment) {
+            // Add guide-hint-flash class for hover effect
+            segment.classList.add('guide-hint-flash');
+
+            // Remove after flash duration
+            setTimeout(() => {
+                segment.classList.remove('guide-hint-flash');
+
+                // Move to next emotion after pause
+                setTimeout(() => {
+                    currentIndex++;
+                    flashNextEmotion();
+                }, pauseBetween);
+            }, flashDuration);
+        } else {
+            // If segment not found, move to next
+            currentIndex++;
+            flashNextEmotion();
+        }
     }
+
+    // Start the sequence
+    flashNextEmotion();
 }
 
 // Select and navigate to a random feeling
