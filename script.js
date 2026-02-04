@@ -947,23 +947,18 @@ function handleSubscribeFormSubmit(e) {
 
     const form = e.target;
     const submitBtn = form.querySelector('.subscribe-submit-btn');
-    const originalBtnText = submitBtn.innerHTML;
 
     // Show loading state
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="loading-spinner"></span> Subscribing...';
 
-    // Create hidden iframe for form submission (no page redirect)
-    const iframe = document.createElement('iframe');
-    iframe.name = 'pardot-submit-iframe';
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
+    // Set pending flag - we'll check this when page reloads after Pardot redirect
+    sessionStorage.setItem('eww_subscribe_pending', 'true');
 
-    // Create a temporary form to submit to Pardot
+    // Create a form that posts directly to Pardot (will redirect and come back)
     const pardotForm = document.createElement('form');
     pardotForm.action = 'https://eq.6seconds.org/l/446782/2026-02-04/9f5pmx';
     pardotForm.method = 'POST';
-    pardotForm.target = 'pardot-submit-iframe';
     pardotForm.style.display = 'none';
 
     // Copy form data
@@ -978,32 +973,6 @@ function handleSubscribeFormSubmit(e) {
 
     document.body.appendChild(pardotForm);
     pardotForm.submit();
-
-    // Assume success after brief delay (Pardot returns to referring URL in iframe)
-    setTimeout(() => {
-        // Clean up
-        document.body.removeChild(iframe);
-        document.body.removeChild(pardotForm);
-
-        // Mark as subscriber
-        setSubscriber(true);
-
-        // Hide modal
-        hideSubscribeModal();
-
-        // Show success toast
-        const successText = localeData?.ui?.subscribeSuccess || 'Welcome! All content is now unlocked.';
-        showToast(successText);
-
-        // Reset button
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-
-        // If user was trying to access a gated tab, switch to it now
-        if (isGatedTab(activeTab)) {
-            switchTab(activeTab);
-        }
-    }, 2000);
 }
 
 // Initialize subscriber system
