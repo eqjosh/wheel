@@ -1,0 +1,603 @@
+{
+  "language": "Japanese",
+  "languageCode": "ja",
+  "ui": {
+    "title": "感情の知恵ホイール",
+    "welcomeMessage": "このインタラクティブホイールは、さまざまな感情を識別し理解するのに役立ちます。",
+    "howToUseTitle": "使い方：",
+    "howToUseSteps": [
+      "セグメントにカーソルを合わせるとハイライトされます",
+      "セグメントをクリックするとその感情について詳しく学べます",
+      "8つの基本感情と32の関連する感情を探索しましょう"
+    ],
+    "copyright": "©Joshua Freedman 新刊より：",
+    "copyrightLink": "Emotion Rules",
+    "version": "v3.1",
+    "modalClose": "×",
+    "relatedFeelingsLabel": "関連する感情",
+    "borderInfoLabel": "境界の洞察",
+    "quotesLabel": "インスピレーションを与える引用",
+    "adaptivePurposeLabel": "適応的な目的",
+    "overloadRiskLabel": "過負荷のリスク",
+    "overloadTipLabel": "バランスのヒント",
+    "tabEssentials": "基本",
+    "tabAlgebra": "代数",
+    "tabWisdom": "知恵",
+    "tabExamples": "例",
+    "tabEmojis": "絵文字",
+    "definitionLabel": "定義",
+    "emotionalAlgebraLabel": "感情の代数",
+    "exploreRelatedLabel": "関連する感情を探索",
+    "guidingQuestionLabel": "導きの質問",
+    "realLifeExampleLabel": "実生活の例",
+    "copyButton": "コピー",
+    "copiedToast": "コピーしました！",
+    "randomFeelingButton": "ランダムな感情を探索",
+    "noQuotes": "この感情に関する引用はありません。",
+    "comingSoon": "実生活の例は近日公開予定です。"
+  },
+  "emotions": [
+    {
+      "id": "joy-1-optimistic",
+      "name": "楽観的",
+      "category": "喜び",
+      "description": "未来に対する希望と自信の感情。楽観的なとき、良いことが起こると信じ、人生に対して前向きな見方を維持します。",
+      "question": "どんな可能性が見えますか？この状況でうまくいきそうなことは何ですか？",
+      "overloadRisk": "この感情を使いすぎると、本当のリスクを見落としたり、他の人が違うものを必要としているときに「前向きでいて」と圧力をかけてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、一つの現実的な課題と、それに備えるための具体的な一歩を挙げながら、可能性への感覚も大切にしましょう。",
+      "adaptivePurpose": "ポジティブな可能性と良い結果の可能性を見ていることを示します。",
+      "relatedFeelings": ["ポジティブ", "インスピレーションを受けた", "希望に満ちた"],
+      "borderInfo": "楽観的は期待に近い感情です。なぜなら先を見据える要素があるからです。",
+      "story": "真理亜は3ヶ月間、うまくいかない就職活動を続けていました。また別の面接に向かう地下鉄の中で、彼女は自分が微笑んでいることに気づきました。「今回はきっとうまくいく—私は努力してきた」と思いました。何がうまくいかないかを頭の中でリハーサルする代わりに、新しいオフィスでの初日を想像している自分に気づきました。理性的な部分は期待しすぎないよう警告しましたが、直感的に今回は本当に準備ができていると感じました。"
+    },
+    {
+      "id": "joy-2-confident",
+      "name": "自信のある",
+      "category": "喜び",
+      "description": "自分の能力や資質への評価から生まれる自己確信の感覚。自信は行動を起こし、課題に立ち向かう力を与えます。",
+      "question": "この状況にどんな強みを発揮できますか？あなたには何ができますか？",
+      "overloadRisk": "この感情を使いすぎると、自分の能力を過大評価したり、他者の視点やニーズを軽視してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、まだインプットやサポートが必要な部分を自問し、少なくとも一人の別の声を会話に招き入れましょう。",
+      "adaptivePurpose": "活用できるリソース、能力、または経験があることを示します。",
+      "relatedFeelings": ["誇らしい", "自信に満ちた", "力を与えられた"],
+      "story": "何ヶ月もの準備の後、健二は初めてのTEDxトークを待って舞台裏に立っていました。彼の手は安定し、呼吸は穏やかでした。このスピーチを50回練習し、すべての移行、すべての間を知っていました。名前が呼ばれたとき、彼は傲慢さではなく、静かな確信を持ってステージの中央に歩いていきました。彼は努力を重ねてきた。準備はできていた。"
+    },
+    {
+      "id": "joy-3-joyful",
+      "name": "喜びに満ちた",
+      "category": "喜び",
+      "description": "大きな喜びと幸福の感情。純粋な喜びは、あなたを喜びと満足で満たす強烈でポジティブな感情です。",
+      "question": "うまくいっていて続けたいことは何ですか？何が栄養を与え、サポートしてくれていますか？",
+      "overloadRisk": "この感情を使いすぎると、問題を見過ごしたり、他者の痛みに対して無神経に見えるかもしれません。",
+      "overloadTip": "バランスを取るために、良いことを楽しみながら、ケアや修復が必要なものがないか穏やかに確認しましょう。",
+      "adaptivePurpose": "何か重要なことがうまくいっていて、味わい続ける価値があることを示します。",
+      "relatedFeelings": ["恍惚とした", "喜んでいる", "至福の"],
+      "story": "手紙は火曜日に届きました。合格。全額奨学金。恵理奈は実感が湧くまで3回読み返しました。それから笑い、泣き、小さなアパートの中をぐるぐる回りました。母親に、親友に、推薦状を書いてくれた恩師に電話しました。純粋で、フィルターのかかっていない幸福—顔が笑いすぎで痛くなるような幸福でした。"
+    },
+    {
+      "id": "joy-4-loving",
+      "name": "愛情深い",
+      "category": "喜び",
+      "description": "誰かや何かに対する深い愛情、ケア、温かさの感情。愛はつながりと帰属感を生み出します。",
+      "question": "この人や状況について何を感謝していますか？どのようにケアとサポートを示せますか？",
+      "overloadRisk": "この感情を使いすぎると、健全な境界線を失ったり、他者のケアをしながら自分のニーズをおろそかにしてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、感謝していることを一つと、自分自身のニーズを一つ挙げ、両方を大切にする一歩を選びましょう。",
+      "adaptivePurpose": "大切な人や目的とつながり、育み、投資したいという願望を示します。",
+      "relatedFeelings": ["包容力のある", "寛大な", "愛情のこもった"],
+      "borderInfo": "愛情深いは信頼に近い感情です。なぜならケアと信頼性の基盤があるからです。",
+      "story": "大輔は娘がリビングルームを横切ってよちよち歩きで最初の一歩を踏み出すのを見守っていました。彼女が転んだとき、泣くかどうか決める前に彼の反応を待って、完全な信頼を込めて彼を見上げました。彼は彼女を抱き上げ、額にキスをし、父親になる前には想像もできなかった方法で心が広がるのを感じました。この小さな存在が彼を完全に変えたのです。"
+    },
+    {
+      "id": "trust-1-grateful",
+      "name": "感謝している",
+      "category": "信頼",
+      "description": "感謝と appreciation の温かい感情。感謝の気持ちは、人生の良いことを認識し価値を見出す助けになります。",
+      "question": "何があなたをサポートし、栄養を与えていますか？誰が、または何があなたの大切なことに貢献していますか？",
+      "overloadRisk": "この感情を使いすぎると、「感謝すべきだから」という理由で不健康な状況を受け入れたり、本当のニーズを表現することを避けてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、感謝を正直さと並べて持ちましょう：うまくいっていることを感謝しつつ、まだ表現したいニーズや境界線を一つ特定しましょう。",
+      "adaptivePurpose": "あなたにとって重要なサポート、リソース、または贈り物を受け取っていることを示します。",
+      "relatedFeelings": ["満たされた", "敬服", "感謝の"],
+      "borderInfo": "感謝は喜びに近い感情です。なぜならポジティブな経験への appreciation があるからです。",
+      "story": "手術後、回復室で横になりながら、智は圧倒されました—痛みではなく、感謝で。麻酔の前に手を握ってくれた看護師。仕事を休んでそこにいてくれた姉。安定した手で家族とより多くの年月を与えてくれた外科医。彼はこれほど他者に依存していることを意識したことも、それに対してこれほど感謝したこともありませんでした。"
+    },
+    {
+      "id": "trust-2-peaceful",
+      "name": "穏やかな",
+      "category": "信頼",
+      "description": "心配や乱れのない、静けさと落ち着きの状態。平和は精神的、感情的な均衡をもたらします。",
+      "question": "何があなたを充電し、サポートしていますか？何がうまくいっていますか？",
+      "overloadRisk": "この感情を使いすぎると、必要な対立を避けたり、重要な課題から離脱してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、穏やかさを楽しみながら、まだ勇気ある会話や小さな行動が必要な問題がないか確認しましょう。",
+      "adaptivePurpose": "あなたのシステムが再び中心に戻り、休息して回復するのに十分安全だと感じていることを示します。",
+      "relatedFeelings": ["落ち着いた", "満足した", "静穏な"],
+      "story": "日曜の朝。窓に当たる雨。目覚ましも、義務も、行くべき場所もない。紗良はコーヒーと何ヶ月も読もうと思っていた本を持って丸くなりました。アパートは隣のクッションで喉を鳴らす猫の音以外は静かでした。何週間ぶりかで、彼女の心はやることリストを駆け巡っていませんでした。彼女はただ...ここにいました。"
+    },
+    {
+      "id": "trust-3-accepted",
+      "name": "受け入れられた",
+      "category": "信頼",
+      "description": "ありのままの自分が歓迎され、価値を認められている感覚。受け入れられることは帰属感と安心感を生み出します。",
+      "question": "どこに居場所があると感じますか？誰があなたをありのままに受け入れ、価値を認めていますか？",
+      "overloadRisk": "この感情を使いすぎると、帰属感を保つために自分の一部を隠し、過度に同調してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、より本当の自分でいられるほど安全だと感じる場所に気づき、もう一つ正直な自分の一面を分かち合いましょう。",
+      "adaptivePurpose": "グループや関係の中で見られ、価値を認められ、含まれていると感じていることを示します。",
+      "relatedFeelings": ["価値を認められた", "尊重された", "歓迎された"],
+      "story": "両親にカミングアウトするのは恐ろしいことでした。美月は議論、失望、おそらく拒絶さえも覚悟していました。代わりに、母親は彼をハグに引き寄せ、「知っているわ。しばらく前から知っていたの」とささやきました。父親は単に「お前はお前だ。何も変わらない」と言いました。何年もの恐怖が、その無条件の受け入れの瞬間に溶けていきました。"
+    },
+    {
+      "id": "trust-4-hopeful",
+      "name": "希望に満ちた",
+      "category": "信頼",
+      "description": "ポジティブな結果への期待と願望の感情。希望は困難な時でも前に進み続ける動機を与えます。",
+      "question": "何を望んでいますか？どんなポジティブな結果を思い描いていますか？",
+      "overloadRisk": "この感情を使いすぎると、受動的に変化を待ったり、非現実的な期待にしがみついてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、希望の一部を今できる具体的で実行可能なステップに変換しましょう。",
+      "adaptivePurpose": "より良い未来を想像し、それに引き寄せられていることを示します。",
+      "relatedFeelings": ["憧れ", "期待に満ちた", "楽観的な"],
+      "borderInfo": "希望に満ちたは恐れに近い感情です。なぜなら未来への不確実性があるからです。",
+      "story": "癌は寛解状態でした。陳先生は慎重な言葉を使いました—「慎重に楽観的」「良い兆候」—しかし腫瘍科センターを出て歩きながら、玲子は18ヶ月間自分に許さなかったものを感じました：希望。確実性ではなく、否定でもなく、本物の希望。閉ざされていたように見えた未来に、突然扉が開いたのです。"
+    },
+    {
+      "id": "fear-1-nervous",
+      "name": "緊張した",
+      "category": "恐れ",
+      "description": "何か不確かなことについての不安や心配の状態。緊張は、挑戦的または馴染みのない状況に対する自然な反応です。",
+      "question": "何がリスクを生み出していますか？何が予測不可能または制御不能に感じますか？",
+      "overloadRisk": "この感情を使いすぎると、至る所に危険を見たり、考えすぎたり、「もしも」のシナリオに麻痺してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、心配している具体的なリスクを一つ挙げ、準備したり仮定を検証するための小さな行動を一つ選びましょう。",
+      "adaptivePurpose": "何かが不確かまたはリスクがあり、注意や準備が必要かもしれないことを示します。",
+      "relatedFeelings": ["脅かされた", "落ち着かない", "そわそわした"],
+      "borderInfo": "緊張したは信頼に近い感情です。なぜなら脆弱性と安全への必要性があるからです。",
+      "story": "新しい学校の初日。愛紗は教室のドアの外に立ち、中から笑い声と会話が聞こえていました。誰も話しかけてくれなかったら？食堂が見つからなかったら？何か馬鹿なことを言ってしまったら？お腹がきりきりしました。彼女は深呼吸し、以前も新しい状況を乗り越えてきたことを思い出し、ドアを押し開けました。"
+    },
+    {
+      "id": "fear-2-scared",
+      "name": "怖い",
+      "category": "恐れ",
+      "description": "強烈な恐怖や警戒の感情。怖いと感じることは、潜在的な危険を知らせる体の反応です。",
+      "question": "大切にしている何が、または誰が危険にさらされていますか？どんな危険や害を感じていますか？",
+      "overloadRisk": "この感情を使いすぎると、最も大切なものから引きこもったり、怖すぎるという理由で重要なステップを避けてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、最も守りたいものを明確にし、大切なことを尊重しながら安全性を高める一つの行動を選びましょう。",
+      "adaptivePurpose": "大切な何かが脅かされていて、保護や注意が必要だと感じていることを示します。",
+      "relatedFeelings": ["おびえた", "恐怖に陥った", "警戒した"],
+      "story": "午前2時に火災報知器が鳴りました。心臓がドキドキしながら、健介は携帯電話を掴んでキッチンを確認しに走りました。何もない。廊下。何もない。それから匂いがしました—廊下からアパートのドアの下に煙が漏れてきていました。これは本物でした。911に電話し、財布を掴み、非常階段に向かう間、手が震えていました。すべてが突然、恐ろしいほど緊迫していました。"
+    },
+    {
+      "id": "fear-3-anxious",
+      "name": "不安な",
+      "category": "恐れ",
+      "description": "結果が不確かな何かについての心配、緊張、または不安の感情。不安は準備や行動を促すシグナルになり得ます。",
+      "question": "どんな一般的な脅威や大きな不確実性がありますか？何に備え、何から身を守る必要がありますか？",
+      "overloadRisk": "この感情を使いすぎると、反芻したり、最悪の事態を想像したり、エネルギーを消耗する想像上の問題を作り出してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、心配事を「影響を与えられること」と「できないこと」に分け、影響を与えられることについて一つの小さなステップを選びましょう。",
+      "adaptivePurpose": "計画や保護が必要かもしれない長期的な脅威や不確実性をスキャンしていることを示します。",
+      "relatedFeelings": ["恐怖", "心配", "緊迫した"],
+      "story": "プレゼンテーションはまだ一週間先でしたが、理沙は考えることをやめられませんでした。プロジェクターが故障したら？CEOが答えられない質問をしたら？声が震えたら？彼女は午前3時に横になり、心が最悪のシナリオを巡り、それぞれの心配がさらに3つに分岐していきました。この渦巻きが役に立たないことはわかっていましたが、止められませんでした。"
+    },
+    {
+      "id": "fear-4-insecure",
+      "name": "不安定な",
+      "category": "恐れ",
+      "description": "自分自身や状況における自分の立場についての自信や確信の欠如。不安定さはしばしば自己懐疑や拒絶への恐れから生じます。",
+      "question": "何があなたを自分を疑わせますか？他の人がどう思うか、何を見るかを恐れていますか？",
+      "overloadRisk": "この感情を使いすぎると、常に承認を求めたり、人を喜ばせようとしたり、自分の貢献を控えてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、自分の強みの具体的な証拠を思い出し、想像上の批判ではなく、信頼できる人から地に足のついたフィードバックを求めましょう。",
+      "adaptivePurpose": "価値、能力、または受け入れられているという感覚が不安定で、安心、学び、または境界線が必要かもしれないことを示します。",
+      "relatedFeelings": ["拒絶された", "不十分な", "確信が持てない"],
+      "borderInfo": "不安定なは驚きに近い感情です。なぜなら自己価値への予期せぬ脅威があるからです。",
+      "story": "ディナーパーティーの全員がビジネススクールからの知り合いのようでした。彼らは教授の話や内輪のジョークを交わし、真久は微笑んでうなずきながら、ますます透明人間のように感じていました。「お仕事は何を？」と誰かがついに聞き、突然、その朝まで誇りに思っていた仕事が不十分に思えました。この人たちの中にいる自分は誰なのだろう？"
+    },
+    {
+      "id": "surprise-1-startled",
+      "name": "驚いた",
+      "category": "驚き",
+      "description": "予期しないことによって引き起こされる突然のショックや警戒の感情。驚くことは、サプライズへの即座で自動的な反応です。",
+      "question": "今すぐ注意を向ける必要がある突然の変化やシグナルは何ですか？",
+      "overloadRisk": "この感情を使いすぎると、びくびくしたり過敏になったりして、すべてを緊急事態として扱ってしまうかもしれません。",
+      "overloadTip": "バランスを取るために、立ち止まって見て、呼吸し、恐れていることではなく、実際に今何が起こっているかを確認しましょう。",
+      "adaptivePurpose": "予期しないことが起こり、注意を素早く向ける必要があることを示します。",
+      "relatedFeelings": ["ぞっとした", "ショックを受けた", "呆然とした"],
+      "borderInfo": "驚いたは恐れに近い感情です。なぜなら突然の脅威や危険の感覚があるからです。",
+      "story": "静かな公園を歩いて家に帰る途中、イヤホンをしてポッドキャストに没頭していたプリヤは、何かが横の茂みから飛び出してきました。彼女は飛び退き、心臓がドキドキし、防御的に手を上げました—ただリスが道を横切っていくのを見るだけでした。彼女は震えながら笑い、馬鹿らしく感じましたが、脈拍が正常に戻るまで数分かかりました。"
+    },
+    {
+      "id": "surprise-2-confused",
+      "name": "混乱した",
+      "category": "驚き",
+      "description": "何かについて困惑したり不明確な状態。混乱は、情報があなたの期待や理解と一致しないときに起こります。",
+      "question": "どんな情報が欠けているか不明確ですか？これを理解するのに何が役立ちますか？",
+      "overloadRisk": "この感情を使いすぎると、疑念にはまり、決断を遅らせたり、自分や他者についてすべてを疑問視してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、混乱を質問に変えましょう：理解したいことを一つ定義し、答え、実験、または会話を求めましょう。",
+      "adaptivePurpose": "現在の理解が事実に合わず、新しい情報や視点が必要かもしれないことを示します。",
+      "relatedFeelings": ["幻滅した", "困惑した", "当惑した"],
+      "story": "そのメールは意味がわかりませんでした。5年間の素晴らしい評価の後、大輔は「新しい役割に移行する」ことになりました—即時発効で。上司は電話に出ませんでした。人事部は慎重に答えをはぐらかしました。彼はデスクに座り、同じ文章を何度も読み返し、パズルのピースを合わせようとしていました。何が起こったのか？何を見落としたのか？"
+    },
+    {
+      "id": "surprise-3-amazed",
+      "name": "驚嘆した",
+      "category": "驚き",
+      "description": "大きな驚きと感嘆の感情。驚嘆は畏敬の念で満たすポジティブな形の驚きです。",
+      "question": "何があなたの期待を超えましたか？これはどんな可能性を開きますか？",
+      "overloadRisk": "この感情を使いすぎると、人や状況を理想化し、本当の限界やリスクを見逃してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、喜ばせてくれるものを挙げ、この新しい可能性を探索しながら地に足をつけておく実践的な一歩や境界線も挙げましょう。",
+      "adaptivePurpose": "何かが予想よりもはるかに良い、大きい、または美しく、可能性の感覚が広がっていることを示します。",
+      "relatedFeelings": ["びっくりした", "畏敬の念を抱いた", "感銘を受けた"],
+      "story": "初めてグランドキャニオンの縁に立ち、言葉が出ませんでした。写真はこれに備えさせてくれませんでした—不可能なスケール、色の層、風だけが破る静寂。純子は以前も美しい場所を見たことがありましたが、これは違いました。これは何か広大で古代のものとつながっていて、どういうわけか心地よい小ささを感じさせました。"
+    },
+    {
+      "id": "surprise-4-disappointed",
+      "name": "失望した",
+      "category": "驚き",
+      "description": "期待が満たされなかったときの悲しみや不満の感情。失望は、望んでいたことと現実とのギャップを示します。",
+      "question": "どんな期待が満たされませんでしたか？この結果について何が重要ですか？",
+      "overloadRisk": "この感情を使いすぎると、皮肉に陥り、将来の努力や関係をあきらめてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、期待を明確に挙げ、目標、戦略、またはタイムラインを修正するかどうかを決め、次の一つの行動を選びましょう。",
+      "adaptivePurpose": "現実が希望と一致せず、大切にしていた何かが減少したか失われたように感じることを示します。",
+      "relatedFeelings": ["裏切られた", "落胆した", "がっかりさせられた"],
+      "borderInfo": "失望したは悲しみに近い感情です。なぜなら希望の喪失と満たされない期待があるからです。",
+      "story": "「別の方向に進むことにしました。」その言葉がギャラリーの空気に浮かびました。千尋はこのコミッションに8ヶ月を費やし、すべての筆致にビジョンを注ぎ込んでいました。クライアントは打ち合わせでとても熱心に見えました。今、彼らは「もっと従来的なもの」を望んでいました。彼女はプロフェッショナルに微笑み、握手をし、車に着くまで涙を流すのを待ちました。"
+    },
+    {
+      "id": "sad-1-hurt",
+      "name": "傷ついた",
+      "category": "悲しみ",
+      "description": "何かまたは誰かによって引き起こされる感情的な痛み。傷ついた感情は、知覚された拒絶、批判、または喪失からしばしば生じます。",
+      "question": "どんな価値や関係が影響を受けましたか？どんな癒しや修復が助けになりますか？",
+      "overloadRisk": "この感情を使いすぎると、恨みを抱いたり、悪意を想定したり、修復から自分を閉ざしてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、痛みとそれが重要な理由を認め、それを伝えたいかどうか、どのように伝えるか、または癒しのサポートを求めるかを考えましょう。",
+      "adaptivePurpose": "何かまたは誰か重要なものが安全、価値、またはつながりの感覚を傷つけたことを示します。",
+      "relatedFeelings": ["落胆した", "脅かされた", "傷を負った"],
+      "borderInfo": "傷ついたは驚きに近い感情です。なぜなら予期しない感情的な傷からしばしば来るからです。",
+      "story": "「君はリーダーシップの素質がないと思う。」何年も信頼してきたメンターからのその言葉は、パンチのように響きました。亮太はいつか自分の部署を運営する夢を共有し、自分を無防備にさらしていました。今、その無防備さは間違いだったように感じました。その批判は建設的だったかもしれませんが、その dismissive なフレーズに包まれていて、裏切りのように感じられました。"
+    },
+    {
+      "id": "sad-2-depressed",
+      "name": "落ち込んだ",
+      "category": "悲しみ",
+      "description": "深い悲しみと低いエネルギーの状態。落ち込みはすべてを重く、管理しにくく感じさせます。",
+      "question": "何が枯渇したり絶望的に感じますか？どんな小さなケア、サポート、または意味のソースとつながり直せますか？",
+      "overloadRisk": "この感情を使いすぎると、どんな可能性も見えなくなり、完全に引きこもったり、基本的なセルフケアをおろそかにしてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、一つの小さな、思いやりのある行動を選びましょう—連絡する、体を動かす、または一つの簡単なタスクをする—構造やサポートを少し加えるものを。",
+      "adaptivePurpose": "エネルギー、モチベーション、または意味の感覚が低下し、休息、サポート、または方向転換が必要かもしれないことを示します。",
+      "relatedFeelings": ["喪失した", "麻痺した", "空虚な"],
+      "story": "ベッドから起き上がることが最も難しい部分になっていました。恵美はそこに横たわり、やるべきことがあること、頼りにしている人がいることを知りながら、何も感じませんでした—ただ重い空虚さで、シャワーを浴びることさえ山を登るように感じました。色はくすんでいました。食べ物は味がしませんでした。彼女は遠くから見ているように感じながら、人生の動作をこなしていました。"
+    },
+    {
+      "id": "sad-3-lonely",
+      "name": "孤独な",
+      "category": "悲しみ",
+      "description": "他者からの孤立や断絶の痛みを伴う感情。孤独は意味のあるつながりへの私たちの必要性を浮き彫りにします。",
+      "question": "今どんなつながりが必要ですか？誰があなたをより見てもらえる、サポートされていると感じさせてくれますか？",
+      "overloadRisk": "この感情を使いすぎると、根本的に一人であるか愛されないと信じ、さらに引きこもってしまうかもしれません。",
+      "overloadTip": "バランスを取るために、つながりに向かう一つの小さく安全な方法を特定しましょう—メッセージ、電話、共有スペース、または信頼できる人に自分のニーズを伝えること。",
+      "adaptivePurpose": "つながり、帰属、または見られることへのニーズが満たされていないことを示します。",
+      "relatedFeelings": ["見捨てられた", "孤立した", "断絶した"],
+      "story": "アパートは引っ越しの箱でいっぱいでした。新しい街、新しい仕事、新たなスタート—彼女が望んでいたすべて。しかし、最初の夜、裸のマットレスに座り、連絡先でいっぱいの電話を持ちながら、誰にも電話できず、優希は孤独の重さを感じました。壁越しに隣人の生活音が聞こえ、その音が自分の空間の静寂をさらに大きくしました。"
+    },
+    {
+      "id": "sad-4-ashamed",
+      "name": "恥ずかしい",
+      "category": "悲しみ",
+      "description": "何か間違ったことや恥ずかしいことをしたと信じることによって引き起こされる屈辱や苦痛の痛みを伴う感情。恥は自分自身の見方に影響します。",
+      "question": "どんな基準に自分を照らし合わせていますか？どんな自己への思いやりや修復が成長をサポートしますか？",
+      "overloadRisk": "この感情を使いすぎると、特定の間違いを自分が悪いまたは価値がないという信念に変え、本当の自分を隠してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、「私は何かをした」と「私は何かである」を分け、価値観に沿った学び、修復、または謝罪の一歩を選びましょう。",
+      "adaptivePurpose": "行動や選択が価値観と一致せず、反省、修復、成長を促していることを示します。",
+      "relatedFeelings": ["後悔している", "罪悪感のある", "恥じた"],
+      "borderInfo": "恥ずかしいは嫌悪に近い感情です。なぜなら自分自身への否定的な判断があるからです。",
+      "story": "ただの近道だったと自分に言い聞かせていました。誰も注意深く読まないレポートに数段落コピーしただけ。しかし、教授がオフィスに呼び出し、証拠がデスクに広げられたとき、正明は彼女の目を見ることができませんでした。彼女の声の失望は怒りよりも悪かったです。彼は学術的なルールだけでなく、自分が誰であるかという感覚を裏切ったのです。"
+    },
+    {
+      "id": "disgust-1-dislike",
+      "name": "嫌い",
+      "category": "嫌悪",
+      "description": "何かまたは誰かへの嫌悪や不承認の感情。嫌いは自分の価値観と合わないものを識別するのに役立ちます。",
+      "question": "あなたの価値観や好みとずれていると感じるものは何ですか？これはどんな境界線や選択を明らかにしていますか？",
+      "overloadRisk": "この感情を使いすぎると、厳しい判断、偏見、または人やアイデアを早急に拒否することに陥るかもしれません。",
+      "overloadTip": "バランスを取るために、具体的に何が嫌いか—行動、スタイル、または影響—を人や状況全体を非難せずに挙げ、実際に必要な境界線を決めましょう。",
+      "adaptivePurpose": "何かが自分の好み、ニーズ、または価値観に合わず、距離を置くか別の選択をしたいかもしれないことを示します。",
+      "relatedFeelings": ["反発した", "引いた", "嫌悪した"],
+      "borderInfo": "嫌いは悲しみに近い感情です。なぜなら感情的な withdrawal と拒絶があるからです。",
+      "story": "会議でのすべてのコメント、すべての「まあ、実際には」、すべての割り込み—グレースは顎が少しずつ締まるのを感じました。新しい同僚について明らかに不快なことは指摘できませんでしたが、彼の態度の何かが神経に触りました。会議が終わる頃には、プロフェッショナルでいたければ彼との接触を制限する方法を見つける必要があるとわかっていました。"
+    },
+    {
+      "id": "disgust-2-avoidance",
+      "name": "回避",
+      "category": "嫌悪",
+      "description": "不快または不快なものから離れようとする傾向。回避は脅威と感じるものへの防御的な反応です。",
+      "question": "何が安全でない、圧倒的、または消耗すると感じますか？より多くのサポートや明確さを持ってそれにどう向き合えますか？",
+      "overloadRisk": "この感情を使いすぎると、重要な行動を遅らせたり、行き詰まったり、問題を静かに大きくしてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、回避しているタスクや状況を一つの非常に小さなステップに分解し、どんなサポート、情報、または境界線がそれをより管理しやすくするかを考えましょう。",
+      "adaptivePurpose": "何かが現在のリソースでは脅威的、圧倒的、または不快すぎて向き合えないように見えることを示します。",
+      "relatedFeelings": ["ためらいがち", "嫌気がさした", "気が進まない"],
+      "story": "カウンターの郵便の山は小さな山になっていました。請求書、おそらく。もしかしたらIRSから何か。オマルは毎日その横を通り、数インチ離れたところでコーヒーを入れ、どういうわけかどれも開けることがありませんでした。これが事態を悪化させていることはわかっていました。今日は対処しないこともわかっていました。おそらく明日も。"
+    },
+    {
+      "id": "disgust-3-aweful",
+      "name": "ひどい",
+      "category": "嫌悪",
+      "description": "非常に不快または不愉快な何かについての強い否定的な感情。ひどいと感じることは、何かが深く間違っているか苦痛であることを示します。",
+      "question": "何が有害または受け入れられないと感じますか？どんな基準や価値観が変化の必要性を示していますか？",
+      "overloadRisk": "この感情を使いすぎると、壊滅的に考えたり、変化について絶望的に感じたり、戦略ではなく怒りだけで反応してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、正確に何が有害かを明確にし、修復に向けてわずかでも動く一つの現実的な行動—個人的、関係的、またはシステム的—を選びましょう。",
+      "adaptivePurpose": "何かが深く間違っている、有害である、または核心的な価値観と誠実でないと感じることを示します。",
+      "relatedFeelings": ["反発した", "嫌悪した", "恐ろしい"],
+      "story": "ドキュメンタリーは工場式農場の映像を見せました—見ることができない状況の動物たち。夏子は知識としては自分の食べ物がどこから来るか知っていました。しかし、知ることと見ることは違うことでした。彼女はラップトップを閉じ、胃がむかつき、以前は本当に考えることを許さなかった何かに加担していると感じました。"
+    },
+    {
+      "id": "disgust-4-disapproval",
+      "name": "不承認",
+      "category": "嫌悪",
+      "description": "誰かまたは何かについての否定的な判断または意見。不承認は自分の価値観と観察したものとの間の対立を反映します。",
+      "question": "どんな期待が満たされませんでしたか？どんな価値観がこの反応を促しており、どんな変化を望んでいますか？",
+      "overloadRisk": "この感情を使いすぎると、硬直的で、過度に批判的で、他者を遠ざけてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、不承認の下にある価値観とつながり、恥ではなく対話と改善を促す方法でそれを表現しましょう。",
+      "adaptivePurpose": "行動や結果が自分の基準や価値観を満たさず、より良くすることを気にかけていることを示します。",
+      "relatedFeelings": ["嫌悪", "批判的な", "非難がましい"],
+      "borderInfo": "不承認は怒りに近い感情です。なぜなら批判的な評価と潜在的な対立があるからです。",
+      "story": "祖母の誕生日のスピーチ中に息子が携帯電話をスクロールしているのを見て、良一の表情は硬くなりました。老婦人は亡き夫の思い出を声を詰まらせながら共有していて、拓也は5分間も顔を上げることができなかったのです。良一は息子の目を捉え、ゆっくりと首を振りました。説明する必要のないことがあるのです。"
+    },
+    {
+      "id": "anger-1-aggressive",
+      "name": "攻撃的",
+      "category": "怒り",
+      "description": "怒りの力強く対決的な表現。攻撃性はしばしば脅威を感じたりフラストレーションを感じたことへの反応です。",
+      "question": "どんな境界線を守る必要がありますか？行動せずにはいられないほど重要なことは何ですか？",
+      "overloadRisk": "この感情を使いすぎると、他者を傷つけ、対立をエスカレートさせ、自分の目標を損なう方法で lash out してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、行動する前に立ち止まり、エネルギーを使って明確で確固とした言葉や行動を選び、本当に望んでいる結果に集中しましょう。",
+      "adaptivePurpose": "深刻な脅威、不正、または違反を認識し、守りたいまたは保護したいという強い衝動を感じていることを示します。",
+      "relatedFeelings": ["敵意のある", "挑発された", "戦闘的な"],
+      "borderInfo": "攻撃的は嫌悪に近い感情です。なぜなら受け入れられないものを拒否するまたは押しのけることが含まれるからです。",
+      "story": "「もう一度言ってみろ。」ビクターの声は低く、危険でした。バーにいた男が彼の妻についてコメントをしました—聞こえるほど大きく、否定できるほど静かに。ビクターは拳を握りしめ、胸に馴染みの熱が上がってくるのを感じました。すべての本能がこの男に口を開いたことを後悔させろと叫んでいました。彼を引き止めていたのは、妻の腕に置かれた手だけでした。"
+    },
+    {
+      "id": "anger-2-mad",
+      "name": "激怒した",
+      "category": "怒り",
+      "description": "強烈な不快感や怒りの感情。激怒することは、何かが境界線や期待に違反したことを示します。",
+      "question": "どんな価値観や期待が侵害されましたか？何を表現または修復する必要がありますか？",
+      "overloadRisk": "この感情を使いすぎると、恨みを抱いたり、物語を繰り返したり、解決を求める代わりに攻撃してしまうかもしれません。",
+      "overloadTip": "バランスを取るために、具体的に何が acceptable でなかったかを挙げ、境界線を設定するか、変化を求めるか、意識的に手放すかを決めましょう。",
+      "adaptivePurpose": "何かが不公平または acceptable でないと感じ、変化または acknowledgment を求めていることを示します。",
+      "relatedFeelings": ["激昂した", "猛烈な", "怒り狂った"],
+      "story": "3時間。彼女は3時間、ケーブル会社を待っていて、「12時から4時の間」の窓がゆっくりと過ぎていくのを見ていました。4時30分にようやく電話が鳴ったとき—「予約を変更する必要があります」—大江は何かが切れるのを感じました。準備していた丁寧に言葉を選んだ苦情は消え、数ヶ月間飲み込んできたすべてのフラストレーションの洪水に置き換わりました。カスタマーサービスの担当者はそれに値しませんでしたが、彼はそれを受けました。"
+    },
+    {
+      "id": "anger-3-frustrated",
+      "name": "フラストレーションを感じた",
+      "category": "怒り",
+      "description": "何かを達成できないときの動揺や苛立ちの感情。フラストレーションはブロックされた目標や満たされないニーズから生じます。",
+      "question": "何があなたの目標の邪魔をしていますか？前進するためにどんな変化—内的または外的—が助けになりますか？",
+      "overloadRisk": "この感情を使いすぎると、あきらめたり、他者を責めたり、人を強く押しすぎてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、一歩下がって目標を明確にし、動きを解き放つ可能性のある一つの異なるアプローチ、リクエスト、または境界線を選びましょう。",
+      "adaptivePurpose": "努力がブロックされており、進歩、効率、または異なる結果を求めていることを示します。",
+      "relatedFeelings": ["苛立った", "いらいらした", "うんざりした"],
+      "story": "コードは動くはずでした。アレックスはすべての行をチェックし、ドキュメントと比較し、例を直接コピーさえしました。それでも、同じエラーメッセージが赤で彼をあざ笑っていました。彼は6時間これに取り組んでいました。コーヒーは冷めていました。解決策はおそらく何か明らかなもの、見逃したことを後で自分を蹴りたくなるようなものでしょう。しかし今、彼が望んでいたのはラップトップを窓から投げ出すことだけでした。"
+    },
+    {
+      "id": "anger-4-critical",
+      "name": "批判的な",
+      "category": "怒り",
+      "description": "欠点を見つけたり厳しく判断する傾向。批判的であることは、認識された欠陥や失敗に向けられた怒りの一形態になり得ます。",
+      "question": "どんな改善が必要だと見ていますか？何の結果を守ったり高めようとしていますか？",
+      "overloadRisk": "この感情を使いすぎると、欠点探しがデフォルトになり、他者を落胆させたり、創造性や実験をブロックしてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、懸念を挙げる前にうまくいっていることを少なくとも一つ認め、批評を共有の改善への貢献としてフレーミングしましょう。",
+      "adaptivePurpose": "リスク、エラー、または潜在的な改善に気づき、品質や誠実さを気にかけていることを示します。",
+      "relatedFeelings": ["皮肉な", "懐疑的な", "非難がましい"],
+      "borderInfo": "批判的は期待に近い感情です。なぜなら潜在的な問題に対する警戒と準備が含まれるからです。",
+      "story": "「まあ、いいんじゃない。」そふぃはルームメイトの新しい絵に対する生ぬるい反応に顔が曇るのを見ました。彼女は厳しくするつもりはありませんでしたが、すべての欠陥が見えました—濁った色、不確かな筆使い、派生的な構図。最も親切なことは励ましの言葉だったでしょう。代わりに、彼女は自分の基準に語らせてしまい、サポートする瞬間は過ぎてしまいました。"
+    },
+    {
+      "id": "anticipation-1-excited",
+      "name": "ワクワクした",
+      "category": "期待",
+      "description": "これから起こることについての熱狂的な eager さの感情。ワクワクはあなたを energize し、ポジティブな期待を生み出します。",
+      "question": "どんな機会があなたを energize していますか？このエネルギーをどのように意図的な行動に channelize できますか？",
+      "overloadRisk": "この感情を使いすぎると、過度にコミットしたり、計画なしに急いで前に進んだり、燃え尽きてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、エネルギーを現実的な計画とペースに合わせ、すべてを一度にやろうとする代わりに一つの明確な次のステップを選びましょう。",
+      "adaptivePurpose": "可能性に energize され、それに engage する準備ができていると感じていることを示します。",
+      "relatedFeelings": ["情熱的な", "エネルギッシュな", "興奮した"],
+      "borderInfo": "ワクワクしたは怒りに近い感情です。なぜなら強烈なエネルギーと行動への準備が含まれるからです。",
+      "story": "コンサートはまだ3週間先でしたが、ジャスミンはすでに衣装を計画し、再度覚えるための曲のプレイリストを作り、日数をカウントダウンし始めていました。彼女は中学生の頃からこのバンドを追いかけ、すべてのアルバム、すべてのインタビューを知っていました。実際にチケットを—良い席を—手に入れた事実がまだ完全に現実に感じられませんでした。"
+    },
+    {
+      "id": "anticipation-2-eager",
+      "name": "熱望している",
+      "category": "期待",
+      "description": "何かをしたい、または経験したいという強い願望や準備。熱望は熱意とモチベーションで前に進ませます。",
+      "question": "何に向かって進みたいですか？その方向に進む最初のステップは何ですか？",
+      "overloadRisk": "この感情を使いすぎると、警告サインを無視したり、反省をスキップしたり、あまりにも頻繁にイエスと言ってしまうかもしれません。",
+      "overloadTip": "バランスを取るために、動く前にどんな情報、境界線、または準備が必要かを立ち止まって問い、thoughtful な最初のステップを踏みましょう。",
+      "adaptivePurpose": "何かを追求する準備ができており、それに向かって素早く動きたいと感じていることを示します。",
+      "relatedFeelings": ["熱心な", "やる気のある", "熱中した"],
+      "story": "メールが届いたとき—「あなたの申請が承認されました」—ベンはすでに車のキーを掴んでいました。レスキューシェルターはあと1時間で閉まり、中のどこかにオンラインで見た犬がいました。おかしな耳と魂のこもった目をした犬。6ヶ月間の犬種のリサーチ、アパートの準備、適切な瞬間を待つこと。今日がその日でした。"
+    },
+    {
+      "id": "anticipation-3-interested",
+      "name": "興味がある",
+      "category": "期待",
+      "description": "何かについてもっと学びたい、または関わりたいという感情。興味はあなたの注意と好奇心を新しい経験に向けます。",
+      "question": "何があなたの注意を引いていますか？何がもっと深く探求または理解する価値があると感じますか？",
+      "overloadRisk": "この感情を使いすぎると、焦点を scattered にし、多くのことを始めて少ししか完了しないかもしれません。",
+      "overloadTip": "バランスを取るために、今のための一つの焦点エリアを意識的に選び、他の興味は後でリストにキャプチャして、意図を持って探求できるようにしましょう。",
+      "adaptivePurpose": "好奇心が活性化され、学びや探求に潜在的な価値を見ていることを示します。",
+      "relatedFeelings": ["せっかちな", "好奇心旺盛な", "没頭した"],
+      "story": "「それについてもっと教えて。」ウォルシュ教授は本当に興味を持って前のめりになりました。学生の論文提案はまだ洗練されていませんでしたが、そこには何かありました—めったに対話しない分野間の予期せぬつながり。彼女の心はすでに質問、潜在的な研究の方向性、協力したいかもしれない同僚で racing していました。これが彼女がアカデミアを愛する理由でした。"
+    },
+    {
+      "id": "anticipation-4-stressed",
+      "name": "ストレスを感じた",
+      "category": "期待",
+      "description": "demanding な状況からくる精神的または感情的な緊張の状態。ストレスは、エネルギーとリソースを必要とする課題に直面していることを示します。",
+      "question": "どんなプレッシャーに注意が必要ですか？どこで relief、サポート、またはより明確な境界線が必要ですか？",
+      "overloadRisk": "この感情を使いすぎると、危機モードで走り、reactive な決断をしたり、自分を疲弊させてしまうかもしれません。",
+      "overloadTip": "バランスを取るために、減らす、delegate する、または遅らせることができる一つの demand を特定し、エネルギーや clarity を回復するのに役立つ一つの短い practice を見つけましょう。",
+      "adaptivePurpose": "demands が現在のリソースより大きく感じられ、何かが変わる必要があることを示します。",
+      "relatedFeelings": ["圧倒された", "プレッシャーを感じた", "緊張した"],
+      "borderInfo": "ストレスを感じたは喜びに近い感情です。なぜならポジティブな結果を達成することに集中した高いエネルギーがあるからです。",
+      "story": "結婚式まであと10日。ケータラーがたった今キャンセルしました。義母が席順の変更を「提案」していました。ドレスのお直しはまだ終わっていませんでした。そして今、真夜中に携帯電話をスクロールしながら、はなこは天気予報が雨を示しているのを発見しました。彼女は目の奥にプレッシャーが溜まり、胸の馴染みの締め付けを感じました。何かを諦めなければならなくなるでしょう。"
+    }
+  ],
+  "quotes": {
+    "joy-1-optimistic": [
+      {"text": "The sun'll come out tomorrow.", "speaker": "Annie", "work": "Annie"},
+      {"text": "There's some good in this world, and it's worth fighting for.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings: The Two Towers"},
+      {"text": "Even miracles take a little time.", "speaker": "Fairy Godmother", "work": "Cinderella"}
+    ],
+    "joy-2-confident": [
+      {"text": "I am no bird; and no net ensnares me.", "speaker": "Jane Eyre", "work": "Jane Eyre"},
+      {"text": "I know my worth.", "speaker": "Carol Danvers", "work": "Captain Marvel"},
+      {"text": "She wasn't fragile like a flower… she was fragile like a bomb.", "speaker": "Taylor Swift", "work": "Miss Americana"}
+    ],
+    "joy-3-joyful": [
+      {"text": "I'm walking on sunshine, and don't it feel good!", "speaker": "Katrina & The Waves", "work": "Walking on Sunshine"},
+      {"text": "Here comes the sun, and I say, it's all right.", "speaker": "George Harrison", "work": "The Beatles"},
+      {"text": "To infinity and beyond!", "speaker": "Buzz Lightyear", "work": "Toy Story"}
+    ],
+    "joy-4-loving": [
+      {"text": "All you need is love.", "speaker": "John Lennon", "work": "The Beatles"},
+      {"text": "Whatever our souls are made of, his and mine are the same.", "speaker": "Emily Brontë", "work": "Wuthering Heights"},
+      {"text": "After all this time?", "speaker": "Severus Snape", "work": "Harry Potter and the Deathly Hallows"}
+    ],
+    "anticipation-1-excited": [
+      {"text": "I'm so excited, and I just can't hide it!", "speaker": "The Pointer Sisters", "work": "I'm So Excited"},
+      {"text": "Adventure is out there!", "speaker": "Ellie", "work": "Up"},
+      {"text": "This is gonna be good.", "speaker": "", "work": "The Hunger Games"}
+    ],
+    "anticipation-2-eager": [
+      {"text": "I can't wait!", "speaker": "Hermione Granger", "work": "Harry Potter"},
+      {"text": "I want to go to there.", "speaker": "Liz Lemon", "work": "30 Rock"},
+      {"text": "Show me what you got.", "speaker": "", "work": "Top Gun"}
+    ],
+    "anticipation-3-interested": [
+      {"text": "Tell me more.", "speaker": "", "work": "Grease"},
+      {"text": "Curioser and curioser!", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "So… what happens next?", "speaker": "", "work": "The Princess Bride"}
+    ],
+    "anticipation-4-stressed": [
+      {"text": "I'm under a lot of pressure.", "speaker": "Peter Parker", "work": "Spider-Man 2"},
+      {"text": "It's too much.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"},
+      {"text": "I'm hanging by a thread.", "speaker": "", "work": "Inside Out 2"}
+    ],
+    "anger-1-aggressive": [
+      {"text": "Don't make me angry. You wouldn't like me when I'm angry.", "speaker": "Bruce Banner", "work": "The Incredible Hulk"},
+      {"text": "You dare challenge me?", "speaker": "Thor", "work": "Thor"},
+      {"text": "Say hello to my little friend!", "speaker": "Tony Montana", "work": "Scarface"}
+    ],
+    "anger-2-mad": [
+      {"text": "I am very angry with you!", "speaker": "Professor McGonagall", "work": "Harry Potter"},
+      {"text": "You can't handle the truth!", "speaker": "Colonel Jessup", "work": "A Few Good Men"},
+      {"text": "This means war.", "speaker": "Bugs Bunny", "work": "Looney Tunes"}
+    ],
+    "anger-3-frustrated": [
+      {"text": "Why is everything so complicated?", "speaker": "Avril Lavigne", "work": "Complicated"},
+      {"text": "I'm trying, okay?", "speaker": "", "work": "Spider-Man: Homecoming"},
+      {"text": "This is not going the way you think.", "speaker": "Luke Skywalker", "work": "Star Wars: The Last Jedi"}
+    ],
+    "anger-4-critical": [
+      {"text": "I'm not impressed.", "speaker": "", "work": "Gladiator"},
+      {"text": "Frankly, my dear, I don't give a damn.", "speaker": "Rhett Butler", "work": "Gone With the Wind"},
+      {"text": "That's… not ideal.", "speaker": "Sherlock Holmes", "work": "Sherlock (BBC)"}
+    ],
+    "disgust-1-dislike": [
+      {"text": "I don't like this.", "speaker": "Rey", "work": "Star Wars: The Force Awakens"},
+      {"text": "Ew, David!", "speaker": "Alexis Rose", "work": "Schitt's Creek"},
+      {"text": "That's disgusting!", "speaker": "Hermione Granger", "work": "Harry Potter"}
+    ],
+    "disgust-2-avoidance": [
+      {"text": "Get it away from me!", "speaker": "Indiana Jones", "work": "Indiana Jones and the Temple of Doom"},
+      {"text": "Nope, not today.", "speaker": "", "work": "Brooklyn Nine-Nine"},
+      {"text": "I'm not touching that.", "speaker": "", "work": "Finding Nemo"}
+    ],
+    "disgust-3-aweful": [
+      {"text": "This is awful.", "speaker": "Bilbo Baggins", "work": "The Hobbit"},
+      {"text": "That's the worst thing I've ever tasted!", "speaker": "Remy", "work": "Ratatouille"},
+      {"text": "What fresh hell is this?", "speaker": "Dorothy Parker", "work": ""}
+    ],
+    "disgust-4-disapproval": [
+      {"text": "I'm disappointed in you.", "speaker": "Mufasa", "work": "The Lion King"},
+      {"text": "You should not have done that.", "speaker": "Gandalf", "work": "The Lord of the Rings: The Fellowship of the Ring"},
+      {"text": "I expected better.", "speaker": "Steve Rogers", "work": "Marvel Cinematic Universe"}
+    ],
+    "sad-1-hurt": [
+      {"text": "You hurt me.", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "The wound is the place where the light enters you.", "speaker": "Rumi", "work": ""},
+      {"text": "The heart was made to be broken.", "speaker": "Oscar Wilde", "work": ""}
+    ],
+    "sad-2-depressed": [
+      {"text": "I feel so blue.", "speaker": "Billie Holiday", "work": "Am I Blue?"},
+      {"text": "Every night I lie in bed, the brightest colors fill my head… but I can't shake this feeling.", "speaker": "", "work": "The Greatest Showman"},
+      {"text": "Hello darkness, my old friend.", "speaker": "Simon & Garfunkel", "work": "The Sound of Silence"}
+    ],
+    "sad-3-lonely": [
+      {"text": "All by myself… don't want to be all by myself anymore.", "speaker": "Celine Dion", "work": "All By Myself"},
+      {"text": "Eleanor Rigby… lives in a dream.", "speaker": "The Beatles", "work": "Eleanor Rigby"},
+      {"text": "I've never felt so alone.", "speaker": "Harry Potter", "work": "Harry Potter and the Order of the Phoenix"}
+    ],
+    "sad-4-ashamed": [
+      {"text": "I'm ashamed of what I've done.", "speaker": "Jean Valjean", "work": "Les Misérables"},
+      {"text": "Shame is an unhappy emotion invented by pietists to exploit humanity.", "speaker": "William Blake", "work": "The Marriage of Heaven and Hell"},
+      {"text": "I'm not proud of myself.", "speaker": "Bruce Wayne", "work": "Batman Begins"}
+    ],
+    "surprise-1-startled": [
+      {"text": "You startled me!", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "Great Scott!", "speaker": "Doc Brown", "work": "Back to the Future"},
+      {"text": "What was that?", "speaker": "Bilbo Baggins", "work": "The Hobbit"}
+    ],
+    "surprise-2-confused": [
+      {"text": "I don't understand.", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "Toto, I've a feeling we're not in Kansas anymore.", "speaker": "Dorothy", "work": "The Wizard of Oz"},
+      {"text": "It's all a bit of a blur.", "speaker": "Bridget Jones", "work": "Bridget Jones's Diary"}
+    ],
+    "surprise-3-amazed": [
+      {"text": "This is incredible.", "speaker": "", "work": "Jurassic Park"},
+      {"text": "It's full of stars.", "speaker": "Dave Bowman", "work": "2001: A Space Odyssey"},
+      {"text": "I can't believe my eyes!", "speaker": "", "work": "The Lion King"}
+    ],
+    "surprise-4-disappointed": [
+      {"text": "I'm disappointed in you.", "speaker": "Atticus Finch", "work": "To Kill a Mockingbird"},
+      {"text": "You were supposed to be the chosen one!", "speaker": "Obi-Wan Kenobi", "work": "Star Wars: Episode III – Revenge of the Sith"},
+      {"text": "This is not what I hoped for.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "trust-1-grateful": [
+      {"text": "Thank you, thank you very much.", "speaker": "Elvis Presley", "work": ""},
+      {"text": "I've got sunshine on a cloudy day.", "speaker": "The Temptations", "work": "My Girl"},
+      {"text": "These are a few of my favorite things.", "speaker": "", "work": "The Sound of Music"}
+    ],
+    "trust-2-peaceful": [
+      {"text": "I feel at peace.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings"},
+      {"text": "Let it be.", "speaker": "The Beatles", "work": "Let It Be"},
+      {"text": "Be still, and know…", "speaker": "", "work": "Psalm 46:10"}
+    ],
+    "trust-3-accepted": [
+      {"text": "You have been my friend. That in itself is a tremendous thing.", "speaker": "Charlotte", "work": "Charlotte's Web"},
+      {"text": "You belong with me.", "speaker": "Taylor Swift", "work": "You Belong With Me"},
+      {"text": "Come as you are.", "speaker": "Kurt Cobain", "work": "Come As You Are"}
+    ],
+    "trust-4-hopeful": [
+      {"text": "Hope is a good thing, maybe the best of things.", "speaker": "Andy Dufresne", "work": "The Shawshank Redemption"},
+      {"text": "There's a sunrise every morning that you're missing.", "speaker": "", "work": "Dear Evan Hansen"},
+      {"text": "Even the darkest night will end and the sun will rise.", "speaker": "", "work": "Les Misérables"}
+    ],
+    "fear-1-nervous": [
+      {"text": "I've got a bad feeling about this.", "speaker": "Han Solo", "work": "Star Wars"},
+      {"text": "My hands are shaking.", "speaker": "", "work": "The Hunger Games"},
+      {"text": "Courage is not the absence of fear.", "speaker": "Nelson Mandela", "work": ""}
+    ],
+    "fear-2-scared": [
+      {"text": "I'm scared.", "speaker": "Coraline", "work": "Coraline"},
+      {"text": "They're here…", "speaker": "Carol Anne", "work": "Poltergeist"},
+      {"text": "Please don't let this be real.", "speaker": "", "work": "Stranger Things"}
+    ],
+    "fear-3-anxious": [
+      {"text": "I can't calm down.", "speaker": "", "work": "Inside Out"},
+      {"text": "I'm worried about everything.", "speaker": "", "work": "Harry Potter and the Deathly Hallows"},
+      {"text": "Something is wrong… I can feel it.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "fear-4-insecure": [
+      {"text": "I don't feel good enough.", "speaker": "", "work": "The Perks of Being a Wallflower"},
+      {"text": "You think I'm not good enough.", "speaker": "", "work": "Lady Bird"},
+      {"text": "Am I strong enough?", "speaker": "", "work": "Mulan"}
+    ]
+  }
+}

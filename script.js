@@ -63,7 +63,8 @@ async function loadLocale(lang) {
                 overloadRisk: emotion.overloadRisk,
                 overloadTip: emotion.overloadTip,
                 adaptivePurpose: emotion.adaptivePurpose,
-                oppositeId: emotion.oppositeId
+                oppositeId: emotion.oppositeId,
+                story: emotion.story
             };
         });
 
@@ -96,6 +97,55 @@ function updateUIText() {
     document.getElementById('page-title').textContent = ui.title;
     document.querySelector('.copyright').innerHTML = `${ui.copyright} <a href="https://emotionrules.com" target="_blank">${ui.copyrightLink}</a>`;
     document.querySelector('.version').textContent = ui.version;
+
+    // Update toolbar tab labels
+    const tabButtons = document.querySelectorAll('.toolbar-btn');
+    tabButtons.forEach(btn => {
+        const tab = btn.dataset.tab;
+        const icon = btn.querySelector('.icon').textContent;
+        if (tab === 'essentials' && ui.tabEssentials) {
+            btn.innerHTML = `<span class="icon">${icon}</span> ${ui.tabEssentials}`;
+        } else if (tab === 'algebra' && ui.tabAlgebra) {
+            btn.innerHTML = `<span class="icon">${icon}</span> ${ui.tabAlgebra}`;
+        } else if (tab === 'wisdom' && ui.tabWisdom) {
+            btn.innerHTML = `<span class="icon">${icon}</span> ${ui.tabWisdom}`;
+        } else if (tab === 'examples' && ui.tabExamples) {
+            btn.innerHTML = `<span class="icon">${icon}</span> ${ui.tabExamples}`;
+        } else if (tab === 'emojis' && ui.tabEmojis) {
+            btn.innerHTML = `<span class="icon">${icon}</span> ${ui.tabEmojis}`;
+        }
+    });
+
+    // Update section labels
+    const definitionLabel = document.querySelector('#tab-essentials .definition-block .section-label');
+    if (definitionLabel && ui.definitionLabel) definitionLabel.textContent = ui.definitionLabel;
+
+    const purposeLabel = document.querySelector('#tab-essentials .purpose-block .section-label');
+    if (purposeLabel && ui.adaptivePurposeLabel) purposeLabel.textContent = ui.adaptivePurposeLabel;
+
+    const algebraLabels = document.querySelectorAll('#tab-algebra .section-label');
+    if (algebraLabels[0] && ui.emotionalAlgebraLabel) algebraLabels[0].textContent = ui.emotionalAlgebraLabel;
+    if (algebraLabels[1] && ui.relatedFeelingsLabel) algebraLabels[1].textContent = ui.relatedFeelingsLabel;
+    if (algebraLabels[2] && ui.exploreRelatedLabel) algebraLabels[2].textContent = ui.exploreRelatedLabel;
+
+    const wisdomLabels = document.querySelectorAll('#tab-wisdom .section-label');
+    if (wisdomLabels[0] && ui.guidingQuestionLabel) wisdomLabels[0].textContent = ui.guidingQuestionLabel;
+    if (wisdomLabels[1] && ui.overloadRiskLabel) wisdomLabels[1].textContent = ui.overloadRiskLabel;
+    if (wisdomLabels[2] && ui.overloadTipLabel) wisdomLabels[2].textContent = ui.overloadTipLabel;
+
+    const storyLabel = document.querySelector('#storyCard .story-label');
+    if (storyLabel && ui.realLifeExampleLabel) storyLabel.textContent = ui.realLifeExampleLabel;
+
+    // Update random feeling button
+    const randomBtn = document.getElementById('randomFeelingBtn');
+    if (randomBtn && ui.randomFeelingButton) randomBtn.textContent = ui.randomFeelingButton;
+
+    // Update welcome message
+    const welcomeMsg = document.querySelector('#welcome-message p:first-child');
+    if (welcomeMsg && ui.welcomeMessage) welcomeMsg.textContent = ui.welcomeMessage;
+
+    const howToUseTitle = document.querySelector('#welcome-message p:nth-child(2) strong');
+    if (howToUseTitle && ui.howToUseTitle) howToUseTitle.textContent = ui.howToUseTitle;
 }
 
 // Update SVG text elements with translated content
@@ -571,7 +621,8 @@ function populateExamplesTab(emotionId) {
             quotesContainer.appendChild(quoteCard);
         });
     } else {
-        quotesContainer.innerHTML = '<p class="no-content">No quotations available for this feeling.</p>';
+        const noQuotesText = localeData?.ui?.noQuotes || 'No quotations available for this feeling.';
+        quotesContainer.innerHTML = `<p class="no-content">${noQuotesText}</p>`;
     }
 
     // Story example from emotion data
@@ -580,7 +631,8 @@ function populateExamplesTab(emotionId) {
         storyText.textContent = emotion.story;
         storyCard.style.display = 'block';
     } else {
-        storyText.textContent = 'Real-life examples coming soon.';
+        const comingSoonText = localeData?.ui?.comingSoon || 'Real-life examples coming soon.';
+        storyText.textContent = comingSoonText;
         storyCard.style.display = 'block';
     }
 }
@@ -613,10 +665,11 @@ function populateEmojisTab(emotionId, emotion) {
 function createEmojiCard(label, emojiStr) {
     const card = document.createElement('div');
     card.className = 'emoji-card';
+    const copyText = localeData?.ui?.copyButton || 'Copy';
     card.innerHTML = `
         <div class="emoji-display">${emojiStr}</div>
         <div class="emoji-label">${label}</div>
-        <button class="copy-emoji-btn" data-emoji="${emojiStr}">Copy</button>
+        <button class="copy-emoji-btn" data-emoji="${emojiStr}">${copyText}</button>
     `;
 
     const copyBtn = card.querySelector('.copy-emoji-btn');
@@ -627,8 +680,9 @@ function createEmojiCard(label, emojiStr) {
 
 // Copy emoji to clipboard
 function copyEmoji(emoji) {
+    const copiedText = localeData?.ui?.copiedToast || 'Copied!';
     navigator.clipboard.writeText(emoji).then(() => {
-        showToast('Copied!');
+        showToast(copiedText);
     }).catch(err => {
         console.error('Failed to copy emoji:', err);
         showToast('Failed to copy');
