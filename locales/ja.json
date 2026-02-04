@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman 新刊より：",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.1",
+    "version": "v3.2",
     "modalClose": "×",
     "relatedFeelingsLabel": "関連する感情",
     "borderInfoLabel": "境界の洞察",
@@ -34,7 +34,15 @@
     "copiedToast": "コピーしました！",
     "randomFeelingButton": "ランダムな感情を探索",
     "noQuotes": "この感情に関する引用はありません。",
-    "comingSoon": "実生活の例は近日公開予定です。"
+    "comingSoon": "実生活の例は近日公開予定です。",
+    "subscribeModalTitle": "フルアクセスを解除",
+    "subscribeModalDescription": "32の感情すべてに関する知恵の洞察と実生活の例に無料でアクセスできます。",
+    "subscribeButton": "無料で購読",
+    "firstNamePlaceholder": "名前",
+    "emailPlaceholder": "メールアドレス",
+    "countryPlaceholder": "国を選択",
+    "privacyNote": "プライバシーを尊重します。いつでも解除できます。",
+    "subscribeSuccess": "ようこそ！すべてのコンテンツが解除されました。"
   },
   "emotions": [
     {

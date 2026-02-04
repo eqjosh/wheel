@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman del nuevo libro:",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.1",
+    "version": "v3.2",
     "modalClose": "×",
     "relatedFeelingsLabel": "Sentimientos Relacionados",
     "borderInfoLabel": "Perspectiva de Frontera",
@@ -34,7 +34,15 @@
     "copiedToast": "¡Copiado!",
     "randomFeelingButton": "🎲 Explorar un Sentimiento Aleatorio",
     "noQuotes": "No hay citas disponibles para este sentimiento.",
-    "comingSoon": "Ejemplos de la vida real próximamente."
+    "comingSoon": "Ejemplos de la vida real próximamente.",
+    "subscribeModalTitle": "Desbloquear Acceso Completo",
+    "subscribeModalDescription": "Obtén acceso gratuito a perspectivas de sabiduría y ejemplos de la vida real para las 32 emociones.",
+    "subscribeButton": "Suscribirse Gratis",
+    "firstNamePlaceholder": "Nombre",
+    "emailPlaceholder": "Correo electrónico",
+    "countryPlaceholder": "Selecciona tu país",
+    "privacyNote": "Respetamos tu privacidad. Cancela cuando quieras.",
+    "subscribeSuccess": "¡Bienvenido! Todo el contenido está desbloqueado."
   },
   "emotions": [
     {

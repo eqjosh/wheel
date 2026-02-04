@@ -7,6 +7,62 @@ let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let localeData = null;
 let activeTab = 'essentials';
 
+// Subscriber state
+const SUBSCRIBER_KEY = 'eww_subscriber';
+const GATED_TABS = ['wisdom', 'examples'];
+
+// Pardot country list (must match exactly)
+const PARDOT_COUNTRIES = [
+    "United States", "Canada", "Afghanistan", "Albania", "Algeria", "Andorra",
+    "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina",
+    "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas",
+    "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize",
+    "Benin", "Bermuda", "Bhutan", "Bolivia (Plurinational State of)",
+    "Bosnia and Herzegovina", "Botswana", "Brazil", "British Indian Ocean Territory",
+    "Virgin Islands (British)", "Brunei", "Bulgaria", "Burkina Faso", "Burundi",
+    "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Central African Republic",
+    "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands",
+    "Colombia", "Comoros", "Congo (Democratic Republic of)", "Cook Islands",
+    "Costa Rica", "Croatia", "Cuba", "Curaçao", "Cyprus", "Czech Republic",
+    "Côte d'Ivoire", "Denmark", "Djibouti", "Dominica", "Dominican Republic",
+    "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia",
+    "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France",
+    "French Guiana", "French Polynesia", "French Southern Territories", "Gabon",
+    "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland",
+    "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea",
+    "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India",
+    "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy",
+    "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati",
+    "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Latvia", "Lebanon",
+    "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg",
+    "Macao", "North Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives",
+    "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius",
+    "Mayotte", "Mexico", "Micronesia", "Moldova (Republic of)", "Monaco", "Mongolia",
+    "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia",
+    "Nauru", "Nepal", "Netherlands", "New Caledonia", "New Zealand", "Nicaragua",
+    "Niger", "Nigeria", "Niue", "Norfolk Island", "Korea (Republic of)",
+    "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama",
+    "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland",
+    "Portugal", "Puerto Rico", "Qatar", "Romania", "Russian Federation", "Rwanda",
+    "Réunion", "Saint Barthélemy", "Saint Helena/Ascension/Tristan da Cunha",
+    "Saint Kitts and Nevis", "Saint Lucia", "Saint Pierre and Miquelon",
+    "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
+    "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore",
+    "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan",
+    "Spain", "Sri Lanka", "Sudan", "Suriname", "Svalbard and Jan Mayen", "Swaziland",
+    "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan",
+    "Tanzania (United Republic of)", "Thailand", "Timor-Leste", "Togo", "Tokelau",
+    "Tonga", "Trinidad and Tobago", "Tunisia", "Turkiye", "Turkmenistan",
+    "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates",
+    "United Kingdom", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican",
+    "Venezuela (Bolivarian Republic of)", "Vietnam", "Wallis and Futuna",
+    "Western Sahara", "Yemen", "Zambia", "Zimbabwe", "Aland Islands",
+    "Brunei Darussalam", "Bonaire/Sint Eustatius/Saba", "Bouvet Island", "Congo",
+    "Czechia", "Falkland Islands (Malvinas)", "South Georgia and South Sandwich Islands",
+    "Heard Island and McDonald Islands", "Saint Martin (French part)", "Palestine",
+    "Sint Maarten (Dutch part)", "Eswatini", "Holy See (Vatican City State)", "Kosovo"
+];
+
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     await loadSVG();
@@ -17,6 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeToolbar();
     initializeCursorGlow();
     initializeRandomButton();
+    initializeSubscriberSystem();
 });
 
 // Load external SVG file and inject it into the DOM
@@ -205,6 +262,13 @@ function initializeToolbar() {
 
 // Switch between tabs
 function switchTab(tabName) {
+    // Check if tab is gated and user is not a subscriber
+    if (isGatedTab(tabName) && !isSubscriber()) {
+        activeTab = tabName; // Store intended tab for after subscription
+        showSubscribeModal();
+        return;
+    }
+
     activeTab = tabName;
 
     // Update button states
@@ -733,4 +797,225 @@ function selectRandomFeeling() {
 
     const randomId = emotionIds[Math.floor(Math.random() * emotionIds.length)];
     navigateToEmotion(randomId);
+}
+
+// ===== SUBSCRIBER GATING =====
+
+// Check if user is a subscriber
+function isSubscriber() {
+    return localStorage.getItem(SUBSCRIBER_KEY) === 'true';
+}
+
+// Set subscriber status
+function setSubscriber(status) {
+    localStorage.setItem(SUBSCRIBER_KEY, status ? 'true' : 'false');
+    updateGatedTabsUI();
+}
+
+// Check if a tab is gated
+function isGatedTab(tabName) {
+    return GATED_TABS.includes(tabName);
+}
+
+// Update UI for gated tabs based on subscriber status
+function updateGatedTabsUI() {
+    const subscriber = isSubscriber();
+
+    document.querySelectorAll('.toolbar-btn').forEach(btn => {
+        const tab = btn.dataset.tab;
+        if (isGatedTab(tab)) {
+            if (subscriber) {
+                btn.classList.remove('gated');
+                btn.querySelector('.lock-icon')?.remove();
+            } else {
+                btn.classList.add('gated');
+                if (!btn.querySelector('.lock-icon')) {
+                    const lockIcon = document.createElement('span');
+                    lockIcon.className = 'lock-icon';
+                    lockIcon.textContent = '🔒';
+                    btn.appendChild(lockIcon);
+                }
+            }
+        }
+    });
+}
+
+// Show subscribe modal
+function showSubscribeModal() {
+    let modal = document.getElementById('subscribeModal');
+
+    if (!modal) {
+        modal = createSubscribeModal();
+        document.body.appendChild(modal);
+    }
+
+    // Update modal text with current locale
+    updateSubscribeModalText();
+
+    modal.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+}
+
+// Hide subscribe modal
+function hideSubscribeModal() {
+    const modal = document.getElementById('subscribeModal');
+    if (modal) {
+        modal.classList.remove('visible');
+        document.body.style.overflow = '';
+    }
+}
+
+// Create the subscribe modal HTML
+function createSubscribeModal() {
+    const modal = document.createElement('div');
+    modal.id = 'subscribeModal';
+    modal.className = 'subscribe-modal';
+
+    modal.innerHTML = `
+        <div class="subscribe-modal-backdrop" onclick="hideSubscribeModal()"></div>
+        <div class="subscribe-modal-content">
+            <button class="subscribe-modal-close" onclick="hideSubscribeModal()">&times;</button>
+            <div class="subscribe-modal-header">
+                <span class="subscribe-modal-icon">✨</span>
+                <h2 id="subscribeModalTitle">Unlock Full Access</h2>
+            </div>
+            <p id="subscribeModalDescription" class="subscribe-modal-description">
+                Get free access to wisdom insights and real-life examples for all 32 emotions.
+            </p>
+            <form id="pardotSubscribeForm" class="subscribe-form">
+                <div class="form-group">
+                    <input type="text" name="First Name" id="subscribeFirstName" required placeholder="First name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="subscribeEmail" required placeholder="Email address">
+                </div>
+                <div class="form-group">
+                    <select name="Country" id="subscribeCountry" required>
+                        <option value="">Select your country</option>
+                    </select>
+                </div>
+                <button type="submit" class="subscribe-submit-btn">
+                    <span id="subscribeButtonText">Subscribe Free</span>
+                </button>
+            </form>
+            <p id="subscribePrivacyNote" class="subscribe-privacy">
+                We respect your privacy. Unsubscribe anytime.
+            </p>
+        </div>
+    `;
+
+    // Populate country dropdown
+    const countrySelect = modal.querySelector('#subscribeCountry');
+    PARDOT_COUNTRIES.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        option.textContent = country;
+        countrySelect.appendChild(option);
+    });
+
+    // Add form submit handler
+    const form = modal.querySelector('#pardotSubscribeForm');
+    form.addEventListener('submit', handleSubscribeFormSubmit);
+
+    return modal;
+}
+
+// Update subscribe modal text based on current locale
+function updateSubscribeModalText() {
+    const ui = localeData?.ui || {};
+
+    const titleEl = document.getElementById('subscribeModalTitle');
+    const descEl = document.getElementById('subscribeModalDescription');
+    const btnTextEl = document.getElementById('subscribeButtonText');
+    const privacyEl = document.getElementById('subscribePrivacyNote');
+    const firstNameInput = document.getElementById('subscribeFirstName');
+    const emailInput = document.getElementById('subscribeEmail');
+    const countrySelect = document.getElementById('subscribeCountry');
+
+    if (titleEl) titleEl.textContent = ui.subscribeModalTitle || 'Unlock Full Access';
+    if (descEl) descEl.textContent = ui.subscribeModalDescription || 'Get free access to wisdom insights and real-life examples for all 32 emotions.';
+    if (btnTextEl) btnTextEl.textContent = ui.subscribeButton || 'Subscribe Free';
+    if (privacyEl) privacyEl.textContent = ui.privacyNote || 'We respect your privacy. Unsubscribe anytime.';
+    if (firstNameInput) firstNameInput.placeholder = ui.firstNamePlaceholder || 'First name';
+    if (emailInput) emailInput.placeholder = ui.emailPlaceholder || 'Email address';
+    if (countrySelect) countrySelect.options[0].textContent = ui.countryPlaceholder || 'Select your country';
+}
+
+// Handle subscribe form submission
+function handleSubscribeFormSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitBtn = form.querySelector('.subscribe-submit-btn');
+    const originalBtnText = submitBtn.innerHTML;
+
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="loading-spinner"></span> Subscribing...';
+
+    // Create hidden iframe for form submission (no page redirect)
+    const iframe = document.createElement('iframe');
+    iframe.name = 'pardot-submit-iframe';
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    // Create a temporary form to submit to Pardot
+    const pardotForm = document.createElement('form');
+    pardotForm.action = 'https://eq.6seconds.org/l/446782/2026-02-04/9f5pmx';
+    pardotForm.method = 'POST';
+    pardotForm.target = 'pardot-submit-iframe';
+    pardotForm.style.display = 'none';
+
+    // Copy form data
+    const formData = new FormData(form);
+    for (const [name, value] of formData.entries()) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        pardotForm.appendChild(input);
+    }
+
+    document.body.appendChild(pardotForm);
+    pardotForm.submit();
+
+    // Assume success after brief delay (Pardot returns to referring URL in iframe)
+    setTimeout(() => {
+        // Clean up
+        document.body.removeChild(iframe);
+        document.body.removeChild(pardotForm);
+
+        // Mark as subscriber
+        setSubscriber(true);
+
+        // Hide modal
+        hideSubscribeModal();
+
+        // Show success toast
+        const successText = localeData?.ui?.subscribeSuccess || 'Welcome! All content is now unlocked.';
+        showToast(successText);
+
+        // Reset button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+
+        // If user was trying to access a gated tab, switch to it now
+        if (isGatedTab(activeTab)) {
+            switchTab(activeTab);
+        }
+    }, 2000);
+}
+
+// Initialize subscriber system
+function initializeSubscriberSystem() {
+    // Update gated tabs UI based on current status
+    updateGatedTabsUI();
+
+    // Check if we just returned from a subscription (via direct form POST fallback)
+    if (sessionStorage.getItem('eww_subscribe_pending')) {
+        sessionStorage.removeItem('eww_subscribe_pending');
+        setSubscriber(true);
+        const successText = localeData?.ui?.subscribeSuccess || 'Welcome! All content is now unlocked.';
+        showToast(successText);
+    }
 }

@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman from the new book:",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.1",
+    "version": "v3.2",
     "modalClose": "×",
     "relatedFeelingsLabel": "Related Feelings",
     "borderInfoLabel": "Border Insight",
@@ -34,7 +34,15 @@
     "copiedToast": "Copied!",
     "randomFeelingButton": "🎲 Explore a Random Feeling",
     "noQuotes": "No quotations available for this feeling.",
-    "comingSoon": "Real-life examples coming soon."
+    "comingSoon": "Real-life examples coming soon.",
+    "subscribeModalTitle": "Unlock Full Access",
+    "subscribeModalDescription": "Get free access to wisdom insights and real-life examples for all 32 emotions.",
+    "subscribeButton": "Subscribe Free",
+    "firstNamePlaceholder": "First name",
+    "emailPlaceholder": "Email address",
+    "countryPlaceholder": "Select your country",
+    "privacyNote": "We respect your privacy. Unsubscribe anytime.",
+    "subscribeSuccess": "Welcome! All content is now unlocked."
   },
   "emotions": [
     {
