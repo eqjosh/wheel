@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Wisdom Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wheel-section">
+            <div id="svg-wrapper">
+                <!-- SVG loaded dynamically via JavaScript -->
+            </div>
+            <!-- Selection marker shows which segment is selected -->
+            <div class="selection-marker" id="selectionMarker"></div>
+            <!-- Cursor glow effect -->
+            <div class="cursor-glow" id="cursorGlow"></div>
+        </div>
+
+        <div class="info-section">
+            <div class="panel-header">
+                <h1 id="page-title">Emotional Wisdom Wheel</h1>
+                <select id="language-selector" class="language-selector">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+
+            <!-- Emotion Header - Colored Box (hidden until selection) -->
+            <div class="emotion-header" id="emotionHeader" style="display: none;">
+                <div class="emotion-category" id="emotionCategory"></div>
+                <div class="emotion-title-row">
+                    <span class="emotion-name" id="emotionName"></span>
+                    <span class="main-emoji" id="mainEmoji"></span>
+                </div>
+            </div>
+
+            <!-- Toolbar (hidden until selection) -->
+            <div class="toolbar" id="toolbar" style="display: none;">
+                <button class="toolbar-btn active" data-tab="essentials">
+                    <span class="icon">🧮</span> Essentials
+                </button>
+                <button class="toolbar-btn" data-tab="algebra">
+                    <span class="icon">🧭</span> Algebra
+                </button>
+                <button class="toolbar-btn" data-tab="wisdom">
+                    <span class="icon">💡</span> Wisdom
+                </button>
+                <button class="toolbar-btn" data-tab="examples">
+                    <span class="icon">📖</span> Examples
+                </button>
+                <button class="toolbar-btn" data-tab="emojis">
+                    <span class="icon">🤨</span> Emojis
+                </button>
+            </div>
+
+            <div class="content-area" id="content-area">
+                <!-- Welcome message (shown by default) -->
+                <div id="welcome-message" class="welcome-message">
+                    <p>This interactive wheel helps you identify and understand different emotions.</p>
+                    <p><strong>How to use:</strong></p>
+                    <ul>
+                        <li>Hover over any segment to highlight it</li>
+                        <li>Click on a segment to learn more about that emotion</li>
+                        <li>Explore the 8 core emotions and 32 related feelings</li>
+                    </ul>
+                    <button class="random-feeling-btn" id="randomFeelingBtn">
+                        🎲 Explore a Random Feeling
+                    </button>
+                </div>
+
+                <!-- Essentials Tab (Default) -->
+                <div id="tab-essentials" class="tab-content">
+                    <div class="section-block definition-block">
+                        <div class="section-label">Definition</div>
+                        <p class="section-text" id="definitionText"></p>
+                    </div>
+                    <div class="section-block purpose-block">
+                        <div class="section-label">Adaptive Purpose</div>
+                        <p class="section-text" id="purposeText"></p>
+                    </div>
+                </div>
+
+                <!-- Algebra Tab -->
+                <div id="tab-algebra" class="tab-content">
+                    <div class="section-block">
+                        <div class="section-label">Emotional Algebra</div>
+                        <div class="algebra-note" id="algebraText"></div>
+                    </div>
+                    <div class="section-block">
+                        <div class="section-label">Related Feelings</div>
+                        <div class="related-feelings-list" id="relatedFeelingsList"></div>
+                    </div>
+                    <div class="section-block">
+                        <div class="section-label">Explore Related Feelings</div>
+                        <div class="explore-grid" id="exploreGrid"></div>
+                        <div class="opposite-card" id="oppositeCard"></div>
+                    </div>
+                </div>
+
+                <!-- Wisdom Tab -->
+                <div id="tab-wisdom" class="tab-content">
+                    <div class="section-block">
+                        <div class="section-label">Guiding Question</div>
+                        <div class="wisdom-question" id="wisdomQuestion"></div>
+                    </div>
+                    <div class="section-block">
+                        <div class="section-label">Overload Risk</div>
+                        <div class="wisdom-risk" id="wisdomRisk"></div>
+                    </div>
+                    <div class="section-block">
+                        <div class="section-label">Balance Tip</div>
+                        <div class="wisdom-tip" id="wisdomTip"></div>
+                    </div>
+                </div>
+
+                <!-- Examples Tab -->
+                <div id="tab-examples" class="tab-content">
+                    <div id="quotesContainer"></div>
+                    <div class="story-card" id="storyCard">
+                        <div class="story-label">Real-Life Example</div>
+                        <p id="storyText"></p>
+                    </div>
+                </div>
+
+                <!-- Emojis Tab -->
+                <div id="tab-emojis" class="tab-content">
+                    <div class="emoji-grid-equal" id="emojiGrid"></div>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <p class="copyright">©Joshua Freedman from the new book: <a href="https://emotionrules.com" target="_blank">Emotion Rules</a></p>
+                <p class="version">v3.0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">Copied!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

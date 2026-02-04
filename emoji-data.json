@@ -1,0 +1,292 @@
+{
+  "emotions": {
+    "joy-1-optimistic": {
+      "emoji": "🌟",
+      "relatedEmojis": {
+        "Positive": "🌟👍",
+        "Inspired": "🌟💫",
+        "Hopeful": "🌟🌈"
+      },
+      "emotionalAlgebra": "Optimistic sits at the border of Joy and Anticipation, combining happiness with forward-looking energy. It's the feeling of seeing bright possibilities ahead."
+    },
+    "joy-2-confident": {
+      "emoji": "💪",
+      "relatedEmojis": {
+        "Proud": "💪🏆",
+        "Self-assured": "💪😌",
+        "Empowered": "💪⚡"
+      },
+      "emotionalAlgebra": "Confident is pure Joy energy directed inward—a recognition of your own capabilities. It sits between Optimistic (future-focused) and Joyful (present-moment pleasure)."
+    },
+    "joy-3-joyful": {
+      "emoji": "😄",
+      "relatedEmojis": {
+        "Ecstatic": "😄🎉",
+        "Delighted": "😄✨",
+        "Blissful": "😄☀️"
+      },
+      "emotionalAlgebra": "Joyful is the heart of Joy—pure, present-moment happiness. It sits between Confident (self-directed joy) and Loving (other-directed joy)."
+    },
+    "joy-4-loving": {
+      "emoji": "❤️",
+      "relatedEmojis": {
+        "Embracing": "❤️🤗",
+        "Generous": "❤️🎁",
+        "Affectionate": "❤️💕"
+      },
+      "emotionalAlgebra": "Loving sits at the border of Joy and Trust, combining happiness with deep care. It's joy directed toward connection and nurturing others."
+    },
+    "trust-1-grateful": {
+      "emoji": "🙏",
+      "relatedEmojis": {
+        "Fulfilled": "🙏✨",
+        "Admiration": "🙏🌟",
+        "Thankful": "🙏💚"
+      },
+      "emotionalAlgebra": "Grateful sits at the border of Trust and Joy, combining security with appreciation. It's the recognition that you've received something valuable."
+    },
+    "trust-2-peaceful": {
+      "emoji": "😌",
+      "relatedEmojis": {
+        "Calm": "😌🌊",
+        "Content": "😌☁️",
+        "Serene": "😌🕊️"
+      },
+      "emotionalAlgebra": "Peaceful is the calm center of Trust—a state of equilibrium and safety. It sits between Grateful (appreciating what is) and Accepted (belonging with others)."
+    },
+    "trust-3-accepted": {
+      "emoji": "🤝",
+      "relatedEmojis": {
+        "Valued": "🤝💎",
+        "Respected": "🤝👑",
+        "Welcomed": "🤝🚪"
+      },
+      "emotionalAlgebra": "Accepted is Trust expressed through belonging—the security of being seen and included. It sits between Peaceful (inner calm) and Hopeful (trusting the future)."
+    },
+    "trust-4-hopeful": {
+      "emoji": "🌱",
+      "relatedEmojis": {
+        "Longing": "🌱💭",
+        "Expectant": "🌱🌅",
+        "Optimistic": "🌱🌟"
+      },
+      "emotionalAlgebra": "Hopeful sits at the border of Trust and Fear, combining faith with uncertainty. It's trust extended toward an unknown but desired future."
+    },
+    "fear-1-nervous": {
+      "emoji": "😰",
+      "relatedEmojis": {
+        "Threatened": "😰⚠️",
+        "Uneasy": "😰😣",
+        "Jittery": "😰💫"
+      },
+      "emotionalAlgebra": "Nervous sits at the border of Fear and Trust, combining caution with vulnerability. It's a mild alert signal that something needs attention."
+    },
+    "fear-2-scared": {
+      "emoji": "😨",
+      "relatedEmojis": {
+        "Frightened": "😨😟",
+        "Terrified": "😨☢️",
+        "Alarmed": "😨🚨"
+      },
+      "emotionalAlgebra": "Scared is the active center of Fear—an immediate response to perceived danger. It sits between Nervous (milder concern) and Anxious (broader worry)."
+    },
+    "fear-3-anxious": {
+      "emoji": "😟",
+      "relatedEmojis": {
+        "Dread": "😟⏳",
+        "Worry": "😟💭",
+        "Tense": "😟😬"
+      },
+      "emotionalAlgebra": "Anxious is Fear spread across time—worry about future threats. It sits between Scared (immediate fear) and Insecure (fear about self)."
+    },
+    "fear-4-insecure": {
+      "emoji": "😔",
+      "relatedEmojis": {
+        "Rejected": "😔🚫",
+        "Inadequate": "😔📉",
+        "Uncertain": "😔❓"
+      },
+      "emotionalAlgebra": "Insecure sits at the border of Fear and Surprise, combining self-doubt with unexpected threats to worth. It's fear turned inward toward identity."
+    },
+    "surprise-1-startled": {
+      "emoji": "😲",
+      "relatedEmojis": {
+        "Appalled": "😲😱",
+        "Shocked": "😲⚡",
+        "Stunned": "😲💥"
+      },
+      "emotionalAlgebra": "Startled sits at the border of Surprise and Fear, combining suddenness with alarm. It's the body's immediate orienting response to the unexpected."
+    },
+    "surprise-2-confused": {
+      "emoji": "😕",
+      "relatedEmojis": {
+        "Disillusioned": "😕💔",
+        "Perplexed": "😕🤔",
+        "Bewildered": "😕🌀"
+      },
+      "emotionalAlgebra": "Confused is Surprise meeting uncertainty—your mental map doesn't fit reality. It sits between Startled (physical surprise) and Amazed (positive surprise)."
+    },
+    "surprise-3-amazed": {
+      "emoji": "🤩",
+      "relatedEmojis": {
+        "Astonished": "🤩😮",
+        "Awed": "🤩🌌",
+        "Impressed": "🤩👏"
+      },
+      "emotionalAlgebra": "Amazed is the positive heart of Surprise—wonder at something exceeding expectations. It sits between Confused (neutral surprise) and Disappointed (negative surprise)."
+    },
+    "surprise-4-disappointed": {
+      "emoji": "😞",
+      "relatedEmojis": {
+        "Betrayed": "😞🗡️",
+        "Dismayed": "😞😧",
+        "Let down": "😞📉"
+      },
+      "emotionalAlgebra": "Disappointed sits at the border of Surprise and Sadness, combining unmet expectations with loss. It's surprise that something hoped for didn't materialize."
+    },
+    "sad-1-hurt": {
+      "emoji": "💔",
+      "relatedEmojis": {
+        "Dismayed": "💔😢",
+        "Threatened": "💔⚠️",
+        "Wounded": "💔🩹"
+      },
+      "emotionalAlgebra": "Hurt sits at the border of Sadness and Surprise, combining pain with the unexpected wound. It's the sting of emotional injury."
+    },
+    "sad-2-depressed": {
+      "emoji": "😢",
+      "relatedEmojis": {
+        "Bereft": "😢🕳️",
+        "Numb": "😢❄️",
+        "Empty": "😢💨"
+      },
+      "emotionalAlgebra": "Depressed is deep Sadness—energy and hope depleted. It sits between Hurt (acute pain) and Lonely (disconnection from others)."
+    },
+    "sad-3-lonely": {
+      "emoji": "🥺",
+      "relatedEmojis": {
+        "Abandoned": "🥺🚪",
+        "Isolated": "🥺🏝️",
+        "Disconnected": "🥺🔌"
+      },
+      "emotionalAlgebra": "Lonely is Sadness about connection—the pain of feeling unseen or apart. It sits between Depressed (inner emptiness) and Ashamed (self-judgment)."
+    },
+    "sad-4-ashamed": {
+      "emoji": "😳",
+      "relatedEmojis": {
+        "Remorseful": "😳😔",
+        "Guilty": "😳⚖️",
+        "Embarrassed": "😳🙈"
+      },
+      "emotionalAlgebra": "Ashamed sits at the border of Sadness and Disgust, combining loss with self-judgment. It's sadness directed at oneself for falling short."
+    },
+    "disgust-1-dislike": {
+      "emoji": "😒",
+      "relatedEmojis": {
+        "Revolted": "😒🤢",
+        "Withdrawn": "😒↩️",
+        "Repulsed": "😒🚫"
+      },
+      "emotionalAlgebra": "Dislike sits at the border of Disgust and Sadness, combining aversion with withdrawal. It's a signal that something doesn't fit your values."
+    },
+    "disgust-2-avoidance": {
+      "emoji": "🙅",
+      "relatedEmojis": {
+        "Hesitant": "🙅😬",
+        "Averse": "🙅↔️",
+        "Reluctant": "🙅🐢"
+      },
+      "emotionalAlgebra": "Avoidance is Disgust in action—the impulse to create distance. It sits between Dislike (the judgment) and Awful (intense disgust)."
+    },
+    "disgust-3-aweful": {
+      "emoji": "🤢",
+      "relatedEmojis": {
+        "Repelled": "🤢🚷",
+        "Detested": "🤢💀",
+        "Horrible": "🤢😱"
+      },
+      "emotionalAlgebra": "Awful is the intense center of Disgust—a visceral rejection of something harmful. It sits between Avoidance (behavioral response) and Disapproval (moral judgment)."
+    },
+    "disgust-4-disapproval": {
+      "emoji": "😤",
+      "relatedEmojis": {
+        "Loathing": "😤🔥",
+        "Judgmental": "😤⚖️",
+        "Critical": "😤🎯"
+      },
+      "emotionalAlgebra": "Disapproval sits at the border of Disgust and Anger, combining rejection with the energy to confront. It's disgust that wants to change something."
+    },
+    "anger-1-aggressive": {
+      "emoji": "😡",
+      "relatedEmojis": {
+        "Hostile": "😡👊",
+        "Provoked": "😡⚡",
+        "Combative": "😡🥊"
+      },
+      "emotionalAlgebra": "Aggressive sits at the border of Anger and Disgust, combining force with rejection. It's anger ready to defend or attack."
+    },
+    "anger-2-mad": {
+      "emoji": "😠",
+      "relatedEmojis": {
+        "Enraged": "😠🔥",
+        "Furious": "😠💢",
+        "Livid": "😠🌋"
+      },
+      "emotionalAlgebra": "Mad is the hot center of Anger—intense displeasure at a violation. It sits between Aggressive (action-ready) and Frustrated (blocked goals)."
+    },
+    "anger-3-frustrated": {
+      "emoji": "😩",
+      "relatedEmojis": {
+        "Annoyed": "😩😑",
+        "Irritated": "😩🙄",
+        "Exasperated": "😩🤦"
+      },
+      "emotionalAlgebra": "Frustrated is Anger meeting obstacles—the energy to change something that isn't working. It sits between Mad (intense anger) and Critical (analytical anger)."
+    },
+    "anger-4-critical": {
+      "emoji": "🧐",
+      "relatedEmojis": {
+        "Sarcastic": "🧐😏",
+        "Skeptical": "🧐🤨",
+        "Judgmental": "🧐⚖️"
+      },
+      "emotionalAlgebra": "Critical sits at the border of Anger and Anticipation, combining displeasure with vigilance. It's anger channeled into evaluation and improvement."
+    },
+    "anticipation-1-excited": {
+      "emoji": "🎉",
+      "relatedEmojis": {
+        "Passionate": "🎉❤️‍🔥",
+        "Energized": "🎉⚡",
+        "Thrilled": "🎉🎢"
+      },
+      "emotionalAlgebra": "Excited sits at the border of Anticipation and Anger, combining forward energy with intensity. It's anticipation supercharged with enthusiasm."
+    },
+    "anticipation-2-eager": {
+      "emoji": "🤗",
+      "relatedEmojis": {
+        "Enthusiastic": "🤗🌟",
+        "Motivated": "🤗🚀",
+        "Keen": "🤗🎯"
+      },
+      "emotionalAlgebra": "Eager is Anticipation in motion—ready and wanting to engage. It sits between Excited (high energy) and Interested (curious engagement)."
+    },
+    "anticipation-3-interested": {
+      "emoji": "🤔",
+      "relatedEmojis": {
+        "Impatient": "🤔⏰",
+        "Curious": "🤔🔍",
+        "Engaged": "🤔💡"
+      },
+      "emotionalAlgebra": "Interested is the thoughtful heart of Anticipation—attention drawn toward something worth exploring. It sits between Eager (ready to act) and Stressed (overwhelmed by demands)."
+    },
+    "anticipation-4-stressed": {
+      "emoji": "😫",
+      "relatedEmojis": {
+        "Overwhelmed": "😫🌊",
+        "Pressured": "😫⏱️",
+        "Tense": "😫😬"
+      },
+      "emotionalAlgebra": "Stressed sits at the border of Anticipation and Joy, paradoxically combining high demands with goal-directed energy. It's anticipation overloaded."
+    }
+  }
+}
