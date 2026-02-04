@@ -574,8 +574,15 @@ function populateExamplesTab(emotionId) {
         quotesContainer.innerHTML = '<p class="no-content">No quotations available for this feeling.</p>';
     }
 
-    // Story example (placeholder - can be populated from data if available)
-    storyText.textContent = 'Real-life examples coming soon.';
+    // Story example from emotion data
+    const emotion = emotionsData[emotionId];
+    if (emotion && emotion.story) {
+        storyText.textContent = emotion.story;
+        storyCard.style.display = 'block';
+    } else {
+        storyText.textContent = 'Real-life examples coming soon.';
+        storyCard.style.display = 'block';
+    }
 }
 
 // Populate Emojis tab
