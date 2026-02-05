@@ -42,7 +42,10 @@
     "emailPlaceholder": "メールアドレス",
     "countryPlaceholder": "国を選択",
     "privacyNote": "プライバシーを尊重します。いつでも解除できます。",
-    "subscribeSuccess": "ようこそ！すべてのコンテンツが解除されました。"
+    "subscribeSuccess": "ようこそ！すべてのコンテンツが解除されました。",
+    "welcomeBackTitle": "ご購読ありがとうございます！",
+    "welcomeBackMessage": "このメッセージを閉じると、感情の知恵ホイールへのフルアクセスが可能になります。",
+    "welcomeBackButton": "探索を始める"
   },
   "emotions": [
     {

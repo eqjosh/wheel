@@ -975,6 +975,33 @@ body {
     margin-bottom: 0;
 }
 
+.subscribe-privacy a {
+    color: #03a54c;
+    text-decoration: none;
+}
+
+.subscribe-privacy a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-gdpr {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* Welcome back modal */
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-content .subscribe-modal-description {
+    margin-bottom: 20px;
+}
+
 /* Loading spinner */
 .loading-spinner {
     display: inline-block;

@@ -42,7 +42,10 @@
     "emailPlaceholder": "Email address",
     "countryPlaceholder": "Select your country",
     "privacyNote": "We respect your privacy. Unsubscribe anytime.",
-    "subscribeSuccess": "Welcome! All content is now unlocked."
+    "subscribeSuccess": "Welcome! All content is now unlocked.",
+    "welcomeBackTitle": "Thank you for subscribing!",
+    "welcomeBackMessage": "Close this message and you have full access to the Emotional Wisdom Wheel.",
+    "welcomeBackButton": "Start Exploring"
   },
   "emotions": [
     {

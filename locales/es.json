@@ -42,7 +42,10 @@
     "emailPlaceholder": "Correo electrónico",
     "countryPlaceholder": "Selecciona tu país",
     "privacyNote": "Respetamos tu privacidad. Cancela cuando quieras.",
-    "subscribeSuccess": "¡Bienvenido! Todo el contenido está desbloqueado."
+    "subscribeSuccess": "¡Bienvenido! Todo el contenido está desbloqueado.",
+    "welcomeBackTitle": "¡Gracias por suscribirte!",
+    "welcomeBackMessage": "Cierra este mensaje y tendrás acceso completo a la Rueda de Sabiduría Emocional.",
+    "welcomeBackButton": "Comenzar a Explorar"
   },
   "emotions": [
     {

@@ -42,7 +42,10 @@
     "emailPlaceholder": "Indirizzo email",
     "countryPlaceholder": "Seleziona il tuo paese",
     "privacyNote": "Rispettiamo la tua privacy. Cancellati quando vuoi.",
-    "subscribeSuccess": "Benvenuto! Tutto il contenuto è ora sbloccato."
+    "subscribeSuccess": "Benvenuto! Tutto il contenuto è ora sbloccato.",
+    "welcomeBackTitle": "Grazie per esserti iscritto!",
+    "welcomeBackMessage": "Chiudi questo messaggio e avrai accesso completo alla Ruota della Saggezza Emozionale.",
+    "welcomeBackButton": "Inizia a Esplorare"
   },
   "emotions": [
     {

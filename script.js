@@ -899,7 +899,10 @@ function createSubscribeModal() {
                 </button>
             </form>
             <p id="subscribePrivacyNote" class="subscribe-privacy">
-                We respect your privacy. Unsubscribe anytime.
+                <a href="https://www.6seconds.org/about/policies/privacy/" target="_blank" rel="noopener">We respect your privacy.</a> Unsubscribe anytime.
+            </p>
+            <p class="subscribe-gdpr">
+                By subscribing, you consent to receiving emails from Six Seconds. We process your data under legitimate interest. You can withdraw consent at any time.
             </p>
         </div>
     `;
@@ -980,11 +983,48 @@ function initializeSubscriberSystem() {
     // Update gated tabs UI based on current status
     updateGatedTabsUI();
 
-    // Check if we just returned from a subscription (via direct form POST fallback)
+    // Check if we just returned from a subscription (via direct form POST)
     if (sessionStorage.getItem('eww_subscribe_pending')) {
         sessionStorage.removeItem('eww_subscribe_pending');
         setSubscriber(true);
-        const successText = localeData?.ui?.subscribeSuccess || 'Welcome! All content is now unlocked.';
-        showToast(successText);
+        showWelcomeBackModal();
+    }
+}
+
+// Show welcome modal after successful subscription
+function showWelcomeBackModal() {
+    const ui = localeData?.ui || {};
+
+    const modal = document.createElement('div');
+    modal.id = 'welcomeBackModal';
+    modal.className = 'subscribe-modal visible';
+
+    modal.innerHTML = `
+        <div class="subscribe-modal-backdrop" onclick="closeWelcomeBackModal()"></div>
+        <div class="subscribe-modal-content welcome-content">
+            <div class="subscribe-modal-header">
+                <span class="subscribe-modal-icon">🎉</span>
+                <h2>${ui.welcomeBackTitle || 'Thank you for subscribing!'}</h2>
+            </div>
+            <p class="subscribe-modal-description">
+                ${ui.welcomeBackMessage || 'Close this message and you have full access to the Emotional Wisdom Wheel.'}
+            </p>
+            <button class="subscribe-submit-btn" onclick="closeWelcomeBackModal()">
+                ${ui.welcomeBackButton || 'Start Exploring'}
+            </button>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+}
+
+// Close welcome back modal
+function closeWelcomeBackModal() {
+    const modal = document.getElementById('welcomeBackModal');
+    if (modal) {
+        modal.classList.remove('visible');
+        document.body.style.overflow = '';
+        setTimeout(() => modal.remove(), 300);
     }
 }
