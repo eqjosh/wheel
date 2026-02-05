@@ -802,9 +802,9 @@ body {
 /* ===== TOAST NOTIFICATION ===== */
 .toast {
     position: fixed;
-    bottom: 24px;
+    top: 20px;
     left: 50%;
-    transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%) translateY(-100px);
     background: #333;
     color: white;
     padding: 12px 24px;
@@ -812,6 +812,7 @@ body {
     font-size: 0.9rem;
     z-index: 1000;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .toast.show,
