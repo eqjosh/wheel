@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Wheel - Mockup C: Refined Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f6f8;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left side - Wheel (slightly smaller) */
+        .wheel-section {
+            flex: 0 0 52%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: white;
+            position: relative;
+        }
+
+        .wheel-placeholder {
+            width: 85%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: conic-gradient(
+                from 0deg,
+                #ffcb09 0deg 45deg,
+                #89c24f 45deg 90deg,
+                #03a54c 90deg 135deg,
+                #2782c5 135deg 180deg,
+                #34689d 180deg 225deg,
+                #8774b3 225deg 270deg,
+                #f05d5f 270deg 315deg,
+                #f2913b 315deg 360deg
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .wheel-center {
+            width: 28%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 30px rgba(0,0,0,0.08);
+        }
+
+        .wheel-center span {
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #888;
+            letter-spacing: 2px;
+        }
+
+        /* Subtle cursor glow on wheel */
+        .cursor-glow {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 0.15s;
+        }
+
+        /* Selection indicator on wheel */
+        .selection-marker {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: white;
+            border: 3px solid #333;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.8), 0 2px 8px rgba(0,0,0,0.3);
+            pointer-events: none;
+            z-index: 60;
+            transition: all 0.3s ease;
+        }
+
+        .selection-marker::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 6px;
+            height: 6px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        /* Right side - Info panel */
+        .info-section {
+            flex: 0 0 48%;
+            background: #fafafa;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Compact header */
+        .panel-header {
+            padding: 14px 20px;
+            background: white;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-header h1 {
+            font-size: 1.15rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .language-selector {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            background: white;
+        }
+
+        /* Emotion header - colored box with rounded corners */
+        /* Colors will be set dynamically based on category */
+        .emotion-header {
+            margin: 16px;
+            padding: 18px 20px;
+            border-radius: 12px;
+            color: white;
+        }
+
+        /* Category-specific header colors */
+        .emotion-header.joy {
+            background: linear-gradient(135deg, #ffcb09 0%, #f5bc00 100%);
+            box-shadow: 0 4px 12px rgba(255, 203, 9, 0.35);
+        }
+        .emotion-header.trust {
+            background: linear-gradient(135deg, #89c24f 0%, #7ab343 100%);
+            box-shadow: 0 4px 12px rgba(137, 194, 79, 0.35);
+        }
+        .emotion-header.fear {
+            background: linear-gradient(135deg, #03a54c 0%, #029a45 100%);
+            box-shadow: 0 4px 12px rgba(3, 165, 76, 0.35);
+        }
+        .emotion-header.surprise {
+            background: linear-gradient(135deg, #2782c5 0%, #2276b5 100%);
+            box-shadow: 0 4px 12px rgba(39, 130, 197, 0.35);
+        }
+        .emotion-header.sadness {
+            background: linear-gradient(135deg, #34689d 0%, #2d5a8a 100%);
+            box-shadow: 0 4px 12px rgba(52, 104, 157, 0.35);
+        }
+        .emotion-header.disgust {
+            background: linear-gradient(135deg, #8774b3 0%, #7a67a6 100%);
+            box-shadow: 0 4px 12px rgba(135, 116, 179, 0.35);
+        }
+        .emotion-header.anger {
+            background: linear-gradient(135deg, #f05d5f 0%, #e54d4f 100%);
+            box-shadow: 0 4px 12px rgba(240, 93, 95, 0.35);
+        }
+        .emotion-header.anticipation {
+            background: linear-gradient(135deg, #f2913b 0%, #e88530 100%);
+            box-shadow: 0 4px 12px rgba(242, 145, 59, 0.35);
+        }
+
+        .emotion-category {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            opacity: 0.85;
+            margin-bottom: 4px;
+        }
+
+        .emotion-title-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .emotion-name {
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+
+        .main-emoji {
+            font-size: 1.8rem;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            display: flex;
+            padding: 0 16px;
+            background: white;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .toolbar-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 12px 14px;
+            border: none;
+            background: transparent;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+        }
+
+        .toolbar-btn:hover {
+            color: #333;
+            background: #f8f8f8;
+        }
+
+        .toolbar-btn.active {
+            color: #03a54c;
+            border-bottom-color: #03a54c;
+            background: white;
+        }
+
+        .toolbar-btn .icon {
+            font-size: 1rem;
+        }
+
+        /* Content area */
+        .content-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.25s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section styling */
+        .section-block {
+            background: white;
+            border-radius: 10px;
+            padding: 16px 18px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .section-text {
+            font-size: 0.92rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Essentials Tab */
+        .definition-block {
+            border-left: 3px solid #03a54c;
+            padding-left: 14px;
+        }
+
+        .purpose-block {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 3px solid #16a34a;
+        }
+
+        .purpose-block .section-label {
+            color: #16a34a;
+        }
+
+        /* Algebra Tab */
+        .related-feelings-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .related-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 14px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.15s;
+            cursor: pointer;
+        }
+
+        .related-item:hover {
+            background: #e8f5e9;
+            transform: translateX(4px);
+        }
+
+        .related-emojis {
+            font-size: 1.15rem;
+            min-width: 55px;
+        }
+
+        .related-name {
+            flex: 1;
+            font-weight: 500;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .copy-btn {
+            padding: 5px 12px;
+            background: #e8e8e8;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.72rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            color: #555;
+        }
+
+        .copy-btn:hover {
+            background: #03a54c;
+            color: white;
+        }
+
+        .algebra-note {
+            padding: 14px;
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+            border-radius: 8px;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: #444;
+            border-left: 3px solid #667eea;
+        }
+
+        .algebra-note strong {
+            color: #667eea;
+        }
+
+        .explore-section {
+            margin-top: 16px;
+        }
+
+        .explore-label {
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .explore-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .explore-chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .explore-chip:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .explore-chip .chip-emoji {
+            font-size: 0.95rem;
+        }
+
+        .opposite-card {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 16px;
+            background: linear-gradient(135deg, #fef3f2 0%, #fee2e2 100%);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 12px;
+            border: 1px solid #fecaca;
+        }
+
+        .opposite-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+        }
+
+        .opposite-emoji {
+            font-size: 1.4rem;
+        }
+
+        .opposite-info .name {
+            font-weight: 600;
+            color: #991b1b;
+            font-size: 0.95rem;
+        }
+
+        .opposite-info .category {
+            font-size: 0.72rem;
+            color: #b91c1c;
+            opacity: 0.8;
+        }
+
+        /* Wisdom Tab */
+        .wisdom-question {
+            padding: 16px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.55;
+            color: #333;
+            border-left: 3px solid #667eea;
+        }
+
+        .wisdom-risk {
+            padding: 14px;
+            background: #fffbeb;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: #92400e;
+            border-left: 3px solid #f59e0b;
+        }
+
+        .wisdom-tip {
+            padding: 14px;
+            background: #f0fdf4;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: #166534;
+            border-left: 3px solid #22c55e;
+        }
+
+        /* Examples Tab */
+        .quote-card {
+            padding: 14px 16px;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid #667eea;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .quote-attribution {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 6px;
+        }
+
+        .story-card {
+            padding: 16px;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 10px;
+            margin-top: 14px;
+        }
+
+        .story-card .story-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+
+        .story-card p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: #78350f;
+        }
+
+        /* Emojis Tab - All 4 equal size */
+        .emoji-grid-equal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .emoji-card-equal {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 16px;
+            text-align: center;
+            transition: all 0.15s;
+            border: 2px solid #e8e8e8;
+        }
+
+        .emoji-card-equal:hover {
+            border-color: #03a54c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .emoji-card-equal .emojis {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .emoji-card-equal .name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .emoji-copy-btn {
+            padding: 8px 16px;
+            background: #03a54c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .emoji-copy-btn:hover {
+            background: #028a3d;
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        .panel-footer {
+            padding: 12px 20px;
+            background: white;
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .panel-footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #333;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wheel-section">
+            <div class="wheel-placeholder" id="wheel">
+                <div class="wheel-center">
+                    <span>FEELING</span>
+                    <span>WHEEL</span>
+                </div>
+                <!-- Selection marker shows which segment is selected -->
+                <div class="selection-marker" id="selectionMarker" style="top: 25%; left: 68%;"></div>
+            </div>
+            <div class="cursor-glow" id="cursorGlow"></div>
+        </div>
+
+        <div class="info-section">
+            <div class="panel-header">
+                <h1>Emotional Wisdom Wheel</h1>
+                <select class="language-selector">
+                    <option>English</option>
+                    <option>Espanol</option>
+                </select>
+            </div>
+
+            <!-- Emotion Header - Colored Box (class matches category) -->
+            <div class="emotion-header fear" id="emotionHeader">
+                <div class="emotion-category">Fear</div>
+                <div class="emotion-title-row">
+                    <span class="emotion-name">Scared</span>
+                    <span class="main-emoji">😨</span>
+                </div>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <button class="toolbar-btn active" onclick="showTab('essentials')">
+                    <span class="icon">🧮</span> Essentials
+                </button>
+                <button class="toolbar-btn" onclick="showTab('algebra')">
+                    <span class="icon">🧭</span> Algebra
+                </button>
+                <button class="toolbar-btn" onclick="showTab('wisdom')">
+                    <span class="icon">💡</span> Wisdom
+                </button>
+                <button class="toolbar-btn" onclick="showTab('examples')">
+                    <span class="icon">📖</span> Examples
+                </button>
+                <button class="toolbar-btn" onclick="showTab('emojis')">
+                    <span class="icon">🤨</span> Emojis
+                </button>
+            </div>
+
+            <div class="content-area">
+                <!-- Essentials Tab (Default) -->
+                <div id="tab-essentials" class="tab-content active">
+                    <div class="section-block definition-block">
+                        <div class="section-label">Definition</div>
+                        <p class="section-text">
+                            An intense feeling of fear or alarm. Being scared is your body's way of alerting you to potential danger.
+                        </p>
+                    </div>
+
+                    <div class="section-block purpose-block">
+                        <div class="section-label">Adaptive Purpose</div>
+                        <p class="section-text">
+                            Signals that something you care about feels threatened and needs protection or attention.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Algebra Tab -->
+                <div id="tab-algebra" class="tab-content">
+                    <div class="section-block">
+                        <div class="section-label">Emotional Algebra</div>
+                        <div class="algebra-note">
+                            <strong>Scared</strong> sits between <strong>Nervous</strong> and <strong>Anxious</strong> on the Fear spectrum. It signals immediate, present-moment threat rather than anticipated or generalized worry.
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <div class="section-label">Related Feelings</div>
+                        <div class="related-feelings-list">
+                            <div class="related-item" onclick="copyEmoji('😨😟')">
+                                <span class="related-emojis">😨😟</span>
+                                <span class="related-name">Frightened</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <div class="related-item" onclick="copyEmoji('😨☢️')">
+                                <span class="related-emojis">😨☢️</span>
+                                <span class="related-name">Terrified</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <div class="related-item" onclick="copyEmoji('😨🚨')">
+                                <span class="related-emojis">😨🚨</span>
+                                <span class="related-name">Alarmed</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <div class="section-label">Explore Related Feelings</div>
+                        <div class="explore-grid">
+                            <span class="explore-chip"><span class="chip-emoji">😰</span> Nervous</span>
+                            <span class="explore-chip"><span class="chip-emoji">😟</span> Anxious</span>
+                            <span class="explore-chip"><span class="chip-emoji">😔</span> Insecure</span>
+                            <span class="explore-chip"><span class="chip-emoji">🫨</span> Startled</span>
+                        </div>
+
+                        <div class="opposite-card">
+                            <span class="opposite-emoji">😤💪</span>
+                            <div class="opposite-info">
+                                <div class="name">Mad (Opposite)</div>
+                                <div class="category">Anger spectrum</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wisdom Tab -->
+                <div id="tab-wisdom" class="tab-content">
+                    <div class="section-block">
+                        <div class="section-label">Guiding Question</div>
+                        <div class="wisdom-question">
+                            "What or who do you care about that's at risk? What danger or harm are you sensing?"
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <div class="section-label">Overload Risk</div>
+                        <div class="wisdom-risk">
+                            If you over-use this feeling, you may withdraw from what matters most or avoid important steps because they feel too scary.
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <div class="section-label">Balance Tip</div>
+                        <div class="wisdom-tip">
+                            Clarify what you most want to protect and choose one action that increases safety while still honoring what you care about.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Examples Tab -->
+                <div id="tab-examples" class="tab-content">
+                    <div class="quote-card">
+                        <p class="quote-text">"I'm scared."</p>
+                        <p class="quote-attribution">— Coraline, <em>Coraline</em></p>
+                    </div>
+
+                    <div class="quote-card">
+                        <p class="quote-text">"They're here..."</p>
+                        <p class="quote-attribution">— Carol Anne, <em>Poltergeist</em></p>
+                    </div>
+
+                    <div class="quote-card">
+                        <p class="quote-text">"Please don't let this be real."</p>
+                        <p class="quote-attribution">— <em>Stranger Things</em></p>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-label">Real-Life Example</div>
+                        <p>
+                            "I was out in a busy area of town with my child, and suddenly I couldn't find them anywhere. My heart raced, my hands went cold, and everything else faded as I frantically searched every face in the crowd."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Emojis Tab - All 4 equal -->
+                <div id="tab-emojis" class="tab-content">
+                    <div class="emoji-grid-equal">
+                        <div class="emoji-card-equal">
+                            <div class="emojis">😨</div>
+                            <div class="name">Scared</div>
+                            <button class="emoji-copy-btn" onclick="copyEmoji('😨')">Copy Emoji</button>
+                        </div>
+                        <div class="emoji-card-equal">
+                            <div class="emojis">😨😟</div>
+                            <div class="name">Frightened</div>
+                            <button class="emoji-copy-btn" onclick="copyEmoji('😨😟')">Copy Emoji</button>
+                        </div>
+                        <div class="emoji-card-equal">
+                            <div class="emojis">😨☢️</div>
+                            <div class="name">Terrified</div>
+                            <button class="emoji-copy-btn" onclick="copyEmoji('😨☢️')">Copy Emoji</button>
+                        </div>
+                        <div class="emoji-card-equal">
+                            <div class="emojis">😨🚨</div>
+                            <div class="name">Alarmed</div>
+                            <button class="emoji-copy-btn" onclick="copyEmoji('😨🚨')">Copy Emoji</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                ©Joshua Freedman from: <a href="https://emotionrules.com">Emotion Rules</a> | v3.0
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Copied!</div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Remove active from all buttons
+            document.querySelectorAll('.toolbar-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Show selected tab
+            document.getElementById('tab-' + tabName).classList.add('active');
+            // Activate button
+            event.target.closest('.toolbar-btn').classList.add('active');
+        }
+
+        function copyEmoji(emoji) {
+            navigator.clipboard.writeText(emoji).then(() => {
+                showToast('Copied: ' + emoji);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 1800);
+        }
+
+        // Cursor glow effect
+        const wheel = document.getElementById('wheel');
+        const cursorGlow = document.getElementById('cursorGlow');
+
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        wheel.addEventListener('mouseenter', () => {
+            cursorGlow.style.opacity = '1';
+        });
+
+        wheel.addEventListener('mouseleave', () => {
+            cursorGlow.style.opacity = '0';
+        });
+    </script>
+</body>
+</html>

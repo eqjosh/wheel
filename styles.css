@@ -21,14 +21,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 16px;
     background: white;
     position: relative;
 }
 
 #svg-wrapper {
-    width: 85%;
-    height: 85%;
+    width: 92%;
+    height: 92%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -817,6 +817,29 @@ body {
 .toast.show,
 .toast.visible {
     transform: translateX(-50%) translateY(0);
+}
+
+/* ===== IFRAME EMBED OPTIMIZATION ===== */
+/* Detect if we're in an iframe and adjust layout */
+@media (min-width: 1201px) {
+    /* When in iframe, ensure wheel is properly centered and sized */
+    .wheel-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #svg-wrapper {
+        width: 90%;
+        height: 90%;
+        max-height: calc(100vh - 48px);
+    }
+
+    #svg-wrapper svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
