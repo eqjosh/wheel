@@ -45,7 +45,9 @@
     "subscribeSuccess": "¡Bienvenido! Todo el contenido está desbloqueado.",
     "welcomeBackTitle": "¡Gracias por suscribirte!",
     "welcomeBackMessage": "Cierra este mensaje y tendrás acceso completo a la Rueda de Sabiduría Emocional.",
-    "welcomeBackButton": "Comenzar a Explorar"
+    "welcomeBackButton": "Comenzar a Explorar",
+    "aboutLabel": "Acerca de",
+    "oppositeFeelingLabel": "Sentimiento Opuesto"
   },
   "emotions": [
     {

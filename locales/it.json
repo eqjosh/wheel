@@ -45,7 +45,9 @@
     "subscribeSuccess": "Benvenuto! Tutto il contenuto è ora sbloccato.",
     "welcomeBackTitle": "Grazie per esserti iscritto!",
     "welcomeBackMessage": "Chiudi questo messaggio e avrai accesso completo alla Ruota della Saggezza Emozionale.",
-    "welcomeBackButton": "Inizia a Esplorare"
+    "welcomeBackButton": "Inizia a Esplorare",
+    "aboutLabel": "Informazioni",
+    "oppositeFeelingLabel": "Sentimento Opposto"
   },
   "emotions": [
     {

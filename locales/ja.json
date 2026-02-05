@@ -45,7 +45,9 @@
     "subscribeSuccess": "ようこそ！すべてのコンテンツが解除されました。",
     "welcomeBackTitle": "ご購読ありがとうございます！",
     "welcomeBackMessage": "このメッセージを閉じると、感情の知恵ホイールへのフルアクセスが可能になります。",
-    "welcomeBackButton": "探索を始める"
+    "welcomeBackButton": "探索を始める",
+    "aboutLabel": "概要",
+    "oppositeFeelingLabel": "反対の感情"
   },
   "emotions": [
     {

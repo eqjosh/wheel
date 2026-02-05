@@ -45,7 +45,9 @@
     "subscribeSuccess": "Welcome! All content is now unlocked.",
     "welcomeBackTitle": "Thank you for subscribing!",
     "welcomeBackMessage": "Close this message and you have full access to the Emotional Wisdom Wheel.",
-    "welcomeBackButton": "Start Exploring"
+    "welcomeBackButton": "Start Exploring",
+    "aboutLabel": "About",
+    "oppositeFeelingLabel": "Opposite Feeling"
   },
   "emotions": [
     {

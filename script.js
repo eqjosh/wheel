@@ -194,6 +194,10 @@ function updateUIText() {
     const storyLabel = document.querySelector('#storyCard .story-label');
     if (storyLabel && ui.realLifeExampleLabel) storyLabel.textContent = ui.realLifeExampleLabel;
 
+    // Update about card label
+    const aboutTitle = document.querySelector('.about-title');
+    if (aboutTitle && ui.aboutLabel) aboutTitle.textContent = ui.aboutLabel;
+
     // Update random feeling button
     const randomBtn = document.getElementById('randomFeelingBtn');
     if (randomBtn && ui.randomFeelingButton) randomBtn.textContent = ui.randomFeelingButton;
@@ -311,17 +315,21 @@ function initializeCursorGlow() {
     });
 }
 
-// Get color for emotion category
+// Get color for emotion category (supports all languages)
 function getCategoryColor(category) {
     const colorMap = {
-        'Joy': '#ffcb09',
-        'Trust': '#89c24f',
-        'Fear': '#03a54c',
-        'Surprise': '#2782c5',
-        'Sadness': '#34689d',
-        'Disgust': '#8774b3',
-        'Anger': '#f05d5f',
-        'Anticipation': '#f2913b'
+        // English
+        'Joy': '#ffcb09', 'Trust': '#89c24f', 'Fear': '#03a54c', 'Surprise': '#2782c5',
+        'Sadness': '#34689d', 'Disgust': '#8774b3', 'Anger': '#f05d5f', 'Anticipation': '#f2913b',
+        // Spanish
+        'Alegría': '#ffcb09', 'Confianza': '#89c24f', 'Miedo': '#03a54c', 'Sorpresa': '#2782c5',
+        'Tristeza': '#34689d', 'Asco': '#8774b3', 'Ira': '#f05d5f', 'Anticipación': '#f2913b',
+        // Italian
+        'Gioia': '#ffcb09', 'Fiducia': '#89c24f', 'Paura': '#03a54c', 'Sorpresa': '#2782c5',
+        'Tristezza': '#34689d', 'Disgusto': '#8774b3', 'Rabbia': '#f05d5f', 'Attesa': '#f2913b',
+        // Japanese
+        '喜び': '#ffcb09', '信頼': '#89c24f', '恐れ': '#03a54c', '驚き': '#2782c5',
+        '悲しみ': '#34689d', '嫌悪': '#8774b3', '怒り': '#f05d5f', '期待': '#f2913b'
     };
     return colorMap[category] || '#808080';
 }
@@ -365,17 +373,21 @@ function getOppositeId(emotionId) {
     return oppositeMap[emotionId] || null;
 }
 
-// Get category class name
+// Get category class name (supports all languages)
 function getCategoryClass(category) {
     const classMap = {
-        'Joy': 'joy',
-        'Trust': 'trust',
-        'Fear': 'fear',
-        'Surprise': 'surprise',
-        'Sadness': 'sadness',
-        'Disgust': 'disgust',
-        'Anger': 'anger',
-        'Anticipation': 'anticipation'
+        // English
+        'Joy': 'joy', 'Trust': 'trust', 'Fear': 'fear', 'Surprise': 'surprise',
+        'Sadness': 'sadness', 'Disgust': 'disgust', 'Anger': 'anger', 'Anticipation': 'anticipation',
+        // Spanish
+        'Alegría': 'joy', 'Confianza': 'trust', 'Miedo': 'fear', 'Sorpresa': 'surprise',
+        'Tristeza': 'sadness', 'Asco': 'disgust', 'Ira': 'anger', 'Anticipación': 'anticipation',
+        // Italian
+        'Gioia': 'joy', 'Fiducia': 'trust', 'Paura': 'fear',
+        'Tristezza': 'sadness', 'Disgusto': 'disgust', 'Rabbia': 'anger', 'Attesa': 'anticipation',
+        // Japanese
+        '喜び': 'joy', '信頼': 'trust', '恐れ': 'fear', '驚き': 'surprise',
+        '悲しみ': 'sadness', '嫌悪': 'disgust', '怒り': 'anger', '期待': 'anticipation'
     };
     return classMap[category] || '';
 }
@@ -610,8 +622,9 @@ function populateAlgebraTab(emotion, emotionId) {
         const oppositeEmotion = emotionsData[oppositeId];
         if (oppositeEmotion) {
             const oppEmoji = emojiData[oppositeId];
+            const oppLabel = localeData?.ui?.oppositeFeelingLabel || 'Opposite Feeling';
             oppositeCard.innerHTML = `
-                <div class="opposite-label">Opposite Feeling</div>
+                <div class="opposite-label">${oppLabel}</div>
                 <div class="opposite-content">
                     <span class="opposite-emoji">${oppEmoji ? oppEmoji.emoji : ''}</span>
                     <span class="opposite-name">${oppositeEmotion.name}</span>
