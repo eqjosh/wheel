@@ -759,15 +759,50 @@ function createEmojiCard(label, emojiStr) {
     return card;
 }
 
-// Copy emoji to clipboard
+// Copy emoji to clipboard (with fallback for iframe contexts)
 function copyEmoji(emoji) {
     const copiedText = localeData?.ui?.copiedToast || 'Copied!';
-    navigator.clipboard.writeText(emoji).then(() => {
-        showToast(copiedText);
-    }).catch(err => {
-        console.error('Failed to copy emoji:', err);
-        showToast('Failed to copy');
-    });
+    const failedText = 'Failed to copy';
+
+    // Try modern clipboard API first
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(emoji).then(() => {
+            showToast(copiedText);
+        }).catch(err => {
+            // Clipboard API failed (likely iframe permission issue), try fallback
+            console.warn('Clipboard API failed, trying fallback:', err);
+            copyEmojiLegacy(emoji, copiedText, failedText);
+        });
+    } else {
+        // No clipboard API, use fallback
+        copyEmojiLegacy(emoji, copiedText, failedText);
+    }
+}
+
+// Legacy copy method using execCommand (works in iframes)
+function copyEmojiLegacy(emoji, successMsg, failMsg) {
+    const textArea = document.createElement('textarea');
+    textArea.value = emoji;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-9999px';
+    textArea.style.top = '-9999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showToast(successMsg);
+        } else {
+            showToast(failMsg);
+        }
+    } catch (err) {
+        console.error('Legacy copy failed:', err);
+        showToast(failMsg);
+    }
+
+    document.body.removeChild(textArea);
 }
 
 // Show toast notification
