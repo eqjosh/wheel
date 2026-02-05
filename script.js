@@ -568,12 +568,12 @@ function populateEssentialsTab(emotion) {
 function populateAlgebraTab(emotion, emotionId) {
     const emoji = emojiData[emotionId];
 
-    // Emotional Algebra text
+    // Emotional Algebra text - prefer locale borderInfo over emoji-data (not translated)
     const algebraText = document.getElementById('algebraText');
-    if (emoji && emoji.emotionalAlgebra) {
-        algebraText.textContent = emoji.emotionalAlgebra;
-    } else if (emotion.border) {
+    if (emotion.border) {
         algebraText.textContent = emotion.border;
+    } else if (emoji && emoji.emotionalAlgebra) {
+        algebraText.textContent = emoji.emotionalAlgebra;
     } else {
         algebraText.textContent = `${emotion.name} is a core expression of ${emotion.category}.`;
     }
