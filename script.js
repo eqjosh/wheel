@@ -941,7 +941,7 @@ function updateSubscribeModalText() {
     if (titleEl) titleEl.textContent = ui.subscribeModalTitle || 'Unlock Full Access';
     if (descEl) descEl.textContent = ui.subscribeModalDescription || 'Get free access to wisdom insights and real-life examples for all 32 emotions.';
     if (btnTextEl) btnTextEl.textContent = ui.subscribeButton || 'Subscribe Free';
-    if (privacyEl) privacyEl.textContent = ui.privacyNote || 'We respect your privacy. Unsubscribe anytime.';
+    // Don't overwrite privacyEl - it contains the link which is set in createSubscribeModal
     if (firstNameInput) firstNameInput.placeholder = ui.firstNamePlaceholder || 'First name';
     if (emailInput) emailInput.placeholder = ui.emailPlaceholder || 'Email address';
     if (countrySelect) countrySelect.options[0].textContent = ui.countryPlaceholder || 'Select your country';
