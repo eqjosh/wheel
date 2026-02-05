@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeCursorGlow();
     initializeRandomButton();
     initializeSubscriberSystem();
+    initializeAboutCard();
 });
 
 // Load external SVG file and inject it into the DOM
@@ -1030,4 +1031,33 @@ function closeWelcomeBackModal() {
         document.body.style.overflow = '';
         setTimeout(() => modal.remove(), 300);
     }
+}
+
+// ===== ABOUT CARD =====
+const ABOUT_HIDDEN_KEY = 'eww_about_hidden';
+
+function initializeAboutCard() {
+    const aboutCard = document.getElementById('aboutCard');
+    const closeBtn = document.getElementById('aboutCloseBtn');
+    const reopenBtn = document.getElementById('aboutReopenBtn');
+
+    if (!aboutCard || !closeBtn || !reopenBtn) return;
+
+    // Check if user previously closed the about card
+    if (localStorage.getItem(ABOUT_HIDDEN_KEY) === 'true') {
+        aboutCard.classList.add('hidden');
+        reopenBtn.classList.add('visible');
+    }
+
+    closeBtn.addEventListener('click', () => {
+        aboutCard.classList.add('hidden');
+        reopenBtn.classList.add('visible');
+        localStorage.setItem(ABOUT_HIDDEN_KEY, 'true');
+    });
+
+    reopenBtn.addEventListener('click', () => {
+        aboutCard.classList.remove('hidden');
+        reopenBtn.classList.remove('visible');
+        localStorage.setItem(ABOUT_HIDDEN_KEY, 'false');
+    });
 }

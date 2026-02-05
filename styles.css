@@ -369,6 +369,96 @@ body {
     color: #16a34a;
 }
 
+/* About/Book promo card */
+.about-card {
+    position: relative;
+    background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);
+    border: 1px solid #e879f9;
+    border-left: 3px solid #d946ef;
+    border-radius: 10px;
+    padding: 16px 18px;
+    padding-right: 36px;
+    margin-top: 12px;
+}
+
+.about-card.hidden {
+    display: none;
+}
+
+.about-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a21caf;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: #6b21a8;
+    margin: 0 0 10px 0;
+}
+
+.about-card p:last-of-type {
+    margin-bottom: 0;
+}
+
+.about-card a {
+    color: #a21caf;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about-card a:hover {
+    text-decoration: underline;
+}
+
+.about-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: rgba(168, 85, 247, 0.15);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: #a21caf;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+.about-close-btn:hover {
+    background: rgba(168, 85, 247, 0.3);
+}
+
+.about-reopen-btn {
+    display: none;
+    margin-top: 12px;
+    padding: 8px 14px;
+    background: #fdf4ff;
+    border: 1px solid #e879f9;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #a21caf;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.about-reopen-btn.visible {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.about-reopen-btn:hover {
+    background: #fae8ff;
+}
+
 /* ===== ALGEBRA TAB ===== */
 .algebra-note {
     padding: 14px;
