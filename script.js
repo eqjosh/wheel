@@ -523,7 +523,10 @@ function updateInfoPanel(emotionId) {
         // Remove all category classes and add the current one
         emotionHeader.className = 'emotion-header ' + getCategoryClass(emotion.category);
     }
-    if (toolbar) toolbar.style.display = 'flex';
+    if (toolbar) {
+        toolbar.style.display = 'flex';
+        updateGatedTabsUI(); // Ensure lock icons are shown when toolbar appears
+    }
     if (welcomeMessage) welcomeMessage.style.display = 'none';
 
     // Update header content
