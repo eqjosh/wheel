@@ -1,5 +1,18 @@
 # Emotional Wisdom Wheel — Claude Code Context
 
+## Related Projects
+
+This app is part of the **Emotion Rules book ecosystem** — five apps for Joshua Freedman's book. The Wheel is currently the only app **not** hosted on Firebase (it uses GitHub Pages). The other four apps share a Firebase project with unified Cloud Functions and admin panel.
+
+**For full ecosystem context, read:**
+- **Ecosystem overview:** `/Users/joshuafreedman/Documents/emotion-rules-quiz/emotion-rules-quiz-app/EMOTION-RULES-ECOSYSTEM.md`
+- **Constellation context:** `/Users/joshuafreedman/Documents/emotion-constellations/claude-constellations-context-2-24-26.md`
+- **Quiz/Forms/Admin context:** `/Users/joshuafreedman/Documents/emotion-rules-quiz/emotion-rules-quiz-app/CLAUDE-context-emotion-rules-quiz-2-25-26.md`
+
+**Note:** The Wheel's subscriber gating is independent — it posts directly to a Pardot form handler without using the Firebase `submitToPardot` Cloud Function proxy. If the Wheel is migrated into Firebase in the future, it should switch to using that proxy for consistency and security.
+
+---
+
 This file gives Claude Code the context needed to work on this project without needing lengthy explanation.
 
 ---
