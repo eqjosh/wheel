@@ -1010,14 +1010,21 @@ function handleSubscribeFormSubmit(e) {
     // Set pending flag - we'll check this when page reloads after Pardot redirect
     sessionStorage.setItem('eww_subscribe_pending', 'true');
 
+    // Save form data so we can track the subscription in Firebase after returning
+    const formData = new FormData(form);
+    sessionStorage.setItem('eww_subscribe_data', JSON.stringify({
+        firstName: formData.get('First Name') || '',
+        email: formData.get('email') || '',
+        country: formData.get('Country') || ''
+    }));
+
     // Create a form that posts directly to Pardot (will redirect and come back)
     const pardotForm = document.createElement('form');
     pardotForm.action = 'https://eq.6seconds.org/l/446782/2026-02-04/9f5pmx';
     pardotForm.method = 'POST';
     pardotForm.style.display = 'none';
 
-    // Copy form data
-    const formData = new FormData(form);
+    // Copy form data into Pardot form
     for (const [name, value] of formData.entries()) {
         const input = document.createElement('input');
         input.type = 'hidden';
@@ -1038,6 +1045,20 @@ function initializeSubscriberSystem() {
     // Check if we just returned from a subscription (via direct form POST)
     if (sessionStorage.getItem('eww_subscribe_pending')) {
         sessionStorage.removeItem('eww_subscribe_pending');
+
+        // Track subscription in Firebase (fire-and-forget — doesn't block the welcome flow)
+        try {
+            const subData = JSON.parse(sessionStorage.getItem('eww_subscribe_data') || '{}');
+            sessionStorage.removeItem('eww_subscribe_data');
+            if (subData.email) {
+                fetch('https://us-central1-emotion-rules-quiz.cloudfunctions.net/trackSubscription', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ source: 'wheel', ...subData })
+                }).catch(err => console.warn('Wheel tracking:', err.message));
+            }
+        } catch (e) { /* ignore tracking errors */ }
+
         setSubscriber(true);
         showWelcomeBackModal();
     }
