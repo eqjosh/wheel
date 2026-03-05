@@ -1,0 +1,616 @@
+{
+  "language": "简体中文",
+  "languageCode": "zh",
+  "ui": {
+    "title": "情绪智慧之轮",
+    "welcomeMessage": "这个互动轮盘帮助你识别和理解不同的情绪。",
+    "howToUseTitle": "使用方法：",
+    "howToUseSteps": [
+      "将鼠标悬停在任意扇区上以高亮显示",
+      "点击扇区了解该情绪的更多信息",
+      "探索8种核心情绪和32种相关感受"
+    ],
+    "copyright": "©Joshua Freedman 新书：",
+    "copyrightLink": "Emotion Rules",
+    "version": "v3.2",
+    "modalClose": "×",
+    "relatedFeelingsLabel": "情绪变体",
+    "borderInfoLabel": "边界洞察",
+    "quotesLabel": "启发性引言",
+    "adaptivePurposeLabel": "适应性功能",
+    "overloadRiskLabel": "过载风险",
+    "overloadTipLabel": "平衡建议",
+    "tabEssentials": "基础",
+    "tabAlgebra": "代数",
+    "tabWisdom": "智慧",
+    "tabExamples": "案例",
+    "tabEmojis": "表情",
+    "definitionLabel": "定义",
+    "emotionalAlgebraLabel": "情绪代数",
+    "exploreRelatedLabel": "探索相关情绪",
+    "guidingQuestionLabel": "引导性问题",
+    "realLifeExampleLabel": "真实案例",
+    "copyButton": "复制",
+    "copiedToast": "已复制！",
+    "randomFeelingButton": "🎲 随机探索一种情绪",
+    "noQuotes": "暂无该情绪的相关引言。",
+    "comingSoon": "真实案例即将推出。",
+    "subscribeModalTitle": "解锁完整内容",
+    "subscribeModalDescription": "免费获取32种情绪的智慧洞察和真实案例。",
+    "subscribeButton": "免费订阅",
+    "firstNamePlaceholder": "名字",
+    "emailPlaceholder": "邮箱地址",
+    "countryPlaceholder": "选择你的国家",
+    "privacyNote": "我们尊重您的隐私，随时可以取消订阅。",
+    "subscribeSuccess": "欢迎！所有内容现已解锁。",
+    "welcomeBackTitle": "感谢您的订阅！",
+    "welcomeBackMessage": "关闭此消息，即可畅享情绪智慧之轮的全部内容。",
+    "welcomeBackButton": "开始探索",
+    "aboutLabel": "关于",
+    "oppositeFeelingLabel": "对立情绪"
+  },
+  "emotions": [
+    {
+      "id": "joy-1-optimistic",
+      "name": "乐观",
+      "category": "快乐",
+      "description": "对未来充满希望和信心的感觉。当你感到乐观时，你相信好事会发生，并对生活保持积极的态度。",
+      "question": "你看到了哪些可能性？在这种情况下，什么可能顺利发展？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会忽略真实的风险，或者在别人需要其他支持时，强迫他人“保持积极”。",
+      "overloadTip": "为了保持平衡，说出一个真实的挑战和一个具体的准备步骤，同时保持你对可能性的感知。",
+      "adaptivePurpose": "表明你看到了积极的可能性和潜在的好结果。",
+      "relatedFeelings": ["积极", "受启发", "充满希望"],
+      "borderInfo": "乐观靠近期待，因为它包含了展望未来的成分。",
+      "story": "Maria找了三个月的工作，一直没有运气。在去又一次面试的路上，她发现自己在地铁上微笑。“这次我一定能行——我已经做了充分的准备，”她想。她不再排练可能出错的事情，而是想象自己在新办公室的第一天。她理性的大脑警告她不要抱太大希望，但内心深处有个声音告诉她，这次她真的准备好了。"
+    },
+    {
+      "id": "joy-2-confident",
+      "name": "自信",
+      "category": "快乐",
+      "description": "源自对自身能力或品质的肯定而产生的自我确信感。自信赋予你行动的力量，帮助你面对挑战。",
+      "question": "你能为这种情况带来什么优势？你有能力做什么？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会高估自己的能力，或忽视他人的观点和需求。",
+      "overloadTip": "为了保持平衡，问问自己在哪些方面仍需要意见或支持，并邀请至少一个其他声音加入对话。",
+      "adaptivePurpose": "表明你拥有可以依靠的资源、能力或经验。",
+      "relatedFeelings": ["自豪", "自我确信", "有力量"],
+      "story": "经过数月的准备，James站在后台等待他的第一次TEDx演讲。他的手很稳，呼吸平静。这个演讲他练习了五十遍，知道每一个过渡、每一个停顿。当他们叫到他的名字时，他走向舞台中央，带着的不是傲慢，而是安静的确定。他付出了努力，他准备好了。"
+    },
+    {
+      "id": "joy-3-joyful",
+      "name": "喜悦",
+      "category": "快乐",
+      "description": "极大的愉悦和幸福感。纯粹的喜悦是一种强烈的积极情绪，让你充满欣喜和满足。",
+      "question": "什么进展顺利，你希望继续？什么在滋养或支持着你？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会跳过问题或对他人的痛苦显得不够敏感。",
+      "overloadTip": "为了保持平衡，享受美好的事物，同时轻轻审视是否还有什么需要关注或修复。",
+      "adaptivePurpose": "表明某些重要的事情正在顺利运行，值得珍惜和延续。",
+      "relatedFeelings": ["狂喜", "欣喜", "极乐"],
+      "story": "那封信在周二到达。录取了。全额奖学金。Elena读了三遍才反应过来。然后她大笑、流泪，在小公寓里转圈。她打电话给妈妈、最好的朋友、写推荐信的老师。纯粹的、毫无保留的快乐——那种让脸笑得发疼的快乐。"
+    },
+    {
+      "id": "joy-4-loving",
+      "name": "爱意",
+      "category": "快乐",
+      "description": "对某人或某事深沉的情感、关怀和温暖。爱创造了连接和归属感。",
+      "question": "你欣赏这个人或这种情况的什么？你如何表达关心和支持？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会失去健康的边界感，或在关心他人的同时忽视自己的需求。",
+      "overloadTip": "为了保持平衡，说出一件你感激的事和一个你自己的需求，然后选择一个同时尊重两者的步骤。",
+      "adaptivePurpose": "表明你渴望与对你重要的人或事业建立连接、给予滋养和投入。",
+      "relatedFeelings": ["拥抱", "慷慨", "深情"],
+      "borderInfo": "爱意靠近信任，因为它建立在关怀和可靠的基础之上。",
+      "story": "David看着女儿在客厅里摇摇晃晃地迈出第一步。当她摔倒时，她抬头看着他，带着完全的信任，等待他的反应来决定是否要哭。他把她抱起来，亲吻她的额头，感到心以一种他在成为父亲之前无法想象的方式扩展开来。这个小小的人彻底改变了他。"
+    },
+    {
+      "id": "trust-1-grateful",
+      "name": "感恩",
+      "category": "信任",
+      "description": "一种温暖的感恩和感激之情。感恩帮助你认识和珍视生活中美好的事物。",
+      "question": "什么在支持或滋养着你？谁或什么在为你所关心的事情做贡献？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会容忍不健康的状况，或因为觉得“应该感恩”而避免表达真实的需求。",
+      "overloadTip": "为了保持平衡，让感恩与诚实并存：感激正在运作的部分，同时说出一个你仍想表达的需求或边界。",
+      "adaptivePurpose": "表明你正在接收对你重要的支持、资源或馈赠。",
+      "relatedFeelings": ["满足", "钦佩", "感激"],
+      "borderInfo": "感恩靠近快乐，因为它涉及对积极体验的感激。",
+      "story": "手术后，躺在恢复室里，Tom被一种情绪淹没——不是疼痛，而是感激。麻醉前握着他手的护士，请假来陪伴他的姐姐，那双稳定的手让他能多陪伴家人几年的外科医生。他从未如此清楚地意识到自己多么依赖他人，也从未如此感激。"
+    },
+    {
+      "id": "trust-2-peaceful",
+      "name": "平静",
+      "category": "信任",
+      "description": "一种宁静和安详的状态，没有忧虑或干扰。平静带来心理和情感的平衡。",
+      "question": "什么在为你充电或给予支持？什么进展顺利？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会回避必要的冲突或脱离重要的挑战。",
+      "overloadTip": "为了保持平衡，享受平静的同时问问自己是否还有什么问题需要一次勇敢的对话或小小的行动。",
+      "adaptivePurpose": "表明你的身心系统正在重新调整，你感到足够安全，可以休息和恢复。",
+      "relatedFeelings": ["安宁", "满意", "安详"],
+      "story": "周日早晨。窗外下着雨。没有闹钟，没有义务，哪儿都不用去。Sarah蜷缩着喝咖啡，看一本她想读了好几个月的书。公寓里只有身旁垫子上猫咪的呼噜声。几周来第一次，她的脑海不再翻涌着待办清单。她只是……在这里。"
+    },
+    {
+      "id": "trust-3-accepted",
+      "name": "被接纳",
+      "category": "信任",
+      "description": "一种被欢迎和珍视自我的感觉。被接纳创造了归属感和安全感。",
+      "question": "你在哪里感到归属？谁接受并珍视真实的你？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会过度迎合他人，隐藏自己的部分以维持归属感。",
+      "overloadTip": "为了保持平衡，注意你在哪里感到足够安全，可以更加真实地展现自己，然后多分享一份真诚。",
+      "adaptivePurpose": "表明你感到被看见、被重视和被包容在一个群体或关系中。",
+      "relatedFeelings": ["被重视", "被尊重", "受欢迎"],
+      "story": "向父母出柜是一件令人恐惧的事。Miguel为争论、失望、甚至拒绝做好了准备。但他的母亲把他拉入怀中，低声说：“我知道，mijo。我早就知道了。”他的父亲只是说：“你还是你。什么都不会改变。”多年的恐惧在那一刻无条件的接纳中消融了。"
+    },
+    {
+      "id": "trust-4-hopeful",
+      "name": "充满希望",
+      "category": "信任",
+      "description": "对积极结果怀有期待和渴望的感觉。希望激励你即使在困难时期也继续前行。",
+      "question": "你在期盼什么？你设想的积极结果是什么？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会被动地等待改变或执着于不切实际的期望。",
+      "overloadTip": "为了保持平衡，把希望的一部分转化为一个具体的、可行的步骤，现在就去做。",
+      "adaptivePurpose": "表明你能够想象一个更好的未来，并被它所吸引。",
+      "relatedFeelings": ["渴望", "期盼", "乐观"],
+      "borderInfo": "充满希望靠近恐惧，因为它涉及对未来的不确定性。",
+      "story": "癌症已经缓解了。陈医生用了谨慎的措辞——“谨慎乐观”“指标良好”——但走出肿瘤中心时，Rachel感受到了十八个月来她不敢允许自己感受的东西：希望。不是确定，不是否认，而是真正的希望。那个似乎已经关闭的未来，突然又有了一扇扇门。"
+    },
+    {
+      "id": "fear-1-nervous",
+      "name": "紧张",
+      "category": "恐惧",
+      "description": "对不确定事物的不安或忧虑状态。紧张是面对挑战性或不熟悉情境时的自然反应。",
+      "question": "什么在制造风险？什么让你感到不可预测或失控？",
+      "overloadRisk": "如果过度使用这种情绪，你可能处处看到危险、过度思考，或被各种假设情境所麻痹。",
+      "overloadTip": "为了保持平衡，说出一个你担心的具体风险和一个你可以采取的小行动来准备或验证你的假设。",
+      "adaptivePurpose": "表明某些事情感觉不确定或有风险，可能需要谨慎或准备。",
+      "relatedFeelings": ["受威胁", "不安", "忐忑"],
+      "borderInfo": "紧张靠近信任，因为它涉及脆弱性和对安全感的需要。",
+      "story": "新学校的第一天。Aisha站在教室门外，听着里面的笑声和交谈。如果没人和她说话怎么办？如果她找不到食堂怎么办？如果她说了傻话怎么办？她的胃在翻搅。她深吸一口气，提醒自己以前也经历过新环境，然后推开了门。"
+    },
+    {
+      "id": "fear-2-scared",
+      "name": "害怕",
+      "category": "恐惧",
+      "description": "一种强烈的恐惧或警觉感。害怕是身体提醒你注意潜在危险的方式。",
+      "question": "你关心的什么人或事正处于危险之中？你感知到了什么危险或伤害？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会退缩于最重要的事情，或因为感觉太可怕而回避重要的步骤。",
+      "overloadTip": "为了保持平衡，明确你最想保护的是什么，并选择一个在增加安全感的同时仍然尊重你所关心事物的行动。",
+      "adaptivePurpose": "表明你关心的某些东西感到受威胁，需要保护或关注。",
+      "relatedFeelings": ["惊恐", "恐惧", "警觉"],
+      "story": "凌晨两点烟雾报警器响了。心怦怦直跳，Kevin抓起手机跑去检查厨房。没有。走廊。也没有。然后他闻到了——烟雾从公寓门下的走廊渗进来。这是真的。他双手颤抖着拨打了911，拿起钱包，冲向消防梯。一切突然间变得如此紧迫和可怕。"
+    },
+    {
+      "id": "fear-3-anxious",
+      "name": "焦虑",
+      "category": "恐惧",
+      "description": "对结果不确定的事物感到担忧、紧张或不安。焦虑可以是一种准备或采取行动的信号。",
+      "question": "存在哪些整体威胁或重大不确定性？你需要为什么做准备或防范？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会反复纠结、把事情灾难化，或制造出消耗精力的想象问题。",
+      "overloadTip": "为了保持平衡，把你的担忧分为“我能影响的”和“我不能影响的”，然后在你能影响的事情上选择一个小步骤。",
+      "adaptivePurpose": "表明你正在扫描可能需要规划或防范的长期威胁或不确定性。",
+      "relatedFeelings": ["恐惧", "担忧", "紧绷"],
+      "story": "演示还有一周，但Lisa停不下来地想。如果投影仪坏了怎么办？如果CEO问了她回答不了的问题怎么办？如果她的声音发抖怎么办？凌晨三点她躺着睡不着，脑子里转着最坏的情景，每个担忧又分出三个新的。她知道这种螺旋毫无帮助，但似乎无法停止。"
+    },
+    {
+      "id": "fear-4-insecure",
+      "name": "不安全感",
+      "category": "恐惧",
+      "description": "对自己或自己在某种情境中的位置缺乏信心或确定性。不安全感通常源于自我怀疑或对被拒绝的恐惧。",
+      "question": "是什么让你怀疑自己？你担心别人会怎么想或看到什么？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会不断寻求认可、取悦他人，或隐藏自己的贡献。",
+      "overloadTip": "为了保持平衡，回忆你优势的具体证据，并从你信任的人那里寻求踏实的反馈，而非仅依赖想象中的批评。",
+      "adaptivePurpose": "表明你的价值感、能力感或被接纳感正在动摇，你可能需要安慰、学习或设立边界。",
+      "relatedFeelings": ["被拒绝", "不足", "不确定"],
+      "borderInfo": "不安全感靠近惊讶，因为它涉及对自我价值的意外威胁。",
+      "story": "晚宴上的每个人似乎都是商学院的同学。他们互相提到教授和内部笑话，而Marcus微笑着点头，感觉自己越来越隐形。“你做什么工作？”终于有人问他，突然间他的工作——今天早上他还为之自豪的——似乎不够格了。他算什么，配在这些人中间？"
+    },
+    {
+      "id": "surprise-1-startled",
+      "name": "受惊",
+      "category": "惊讶",
+      "description": "由意外事物引起的突然震惊或警觉。受惊是对惊喜的即时、自动反应。",
+      "question": "什么突然的变化或信号需要你立即关注？",
+      "overloadRisk": "如果过度使用这种情绪，你可能保持紧张或过度警觉，把一切都当作紧急情况。",
+      "overloadTip": "为了保持平衡，停下来看看、呼吸，检查现在实际发生了什么，而非你担心可能发生的事。",
+      "adaptivePurpose": "表明刚发生了意料之外的事情，你的注意力需要迅速定位。",
+      "relatedFeelings": ["震惊", "惊愕", "呆住"],
+      "borderInfo": "受惊靠近恐惧，因为它涉及突然的威胁感或危险感。",
+      "story": "傍晚走在安静的公园里，戴着耳机，Priya沉浸在播客中，突然有什么东西从旁边的灌木丛里冲了出来。她猛地跳开，心跳加速，双手防御性地举起——却看到一只松鼠蹦过了小路。她颤抖着笑了，觉得自己很傻，但她的脉搏花了好几分钟才恢复正常。"
+    },
+    {
+      "id": "surprise-2-confused",
+      "name": "困惑",
+      "category": "惊讶",
+      "description": "对某事感到迷惑或不清楚的状态。困惑发生在信息与你的期望或理解不匹配时。",
+      "question": "缺少或不清楚什么信息？什么能帮助你理解这个情况？",
+      "overloadRisk": "如果过度使用这种情绪，你可能陷入怀疑、拖延决定，或对自己和他人的一切产生质疑。",
+      "overloadTip": "为了保持平衡，把困惑转化为一个问题：确定一件你想弄明白的事，然后寻找答案、实验或对话。",
+      "adaptivePurpose": "表明你当前的理解不符合事实，你可能需要新的信息或视角。",
+      "relatedFeelings": ["幻灭", "迷茫", "不知所措"],
+      "story": "那封邮件毫无道理。在五年出色的考核之后，Daniel被“调到新的岗位”——立即生效。他的老板不回电话。人事部门用小心翼翼的非答案回应。他坐在桌前，反复阅读同样的句子，试图把碎片拼在一起。发生了什么？他错过了什么？"
+    },
+    {
+      "id": "surprise-3-amazed",
+      "name": "惊叹",
+      "category": "惊讶",
+      "description": "极大的惊奇和震撼感。惊叹是惊喜的积极形式，让你充满敬畏。",
+      "question": "什么超出了你的期望？这开启了什么可能性？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会理想化人或情境，忽略实际的限制或风险。",
+      "overloadTip": "为了保持平衡，说出让你欣喜的事物，同时确定一个实际的步骤或边界，让你在探索新可能性时保持脚踏实地。",
+      "adaptivePurpose": "表明某些事情远远好于、大于或更美于你的预期，你的可能性感正在扩展。",
+      "relatedFeelings": ["惊异", "敬畏", "印象深刻"],
+      "story": "第一次站在大峡谷边缘，Jennifer无言以对。照片没有让她为此做好准备——那不可思议的尺度、层层叠叠的色彩、只有风声打破的寂静。她以前也见过美丽的地方，但这是不同的。这让她感到渺小，但那种渺小却令人安慰，与某种广阔而古老的事物相连。"
+    },
+    {
+      "id": "surprise-4-disappointed",
+      "name": "失望",
+      "category": "惊讶",
+      "description": "当期望未被满足时产生的悲伤或不满。失望标志着你所期望的与现实之间的差距。",
+      "question": "什么期望没有被满足？这个结果中什么对你来说很重要？",
+      "overloadRisk": "如果过度使用这种情绪，你可能滑向愤世嫉俗，放弃未来的努力或关系。",
+      "overloadTip": "为了保持平衡，清楚地说出那个期望，然后决定是修改目标、策略还是时间线——并选择一个下一步行动。",
+      "adaptivePurpose": "表明现实没有达到你的期望，你关心的某些东西感觉被削弱或失去了。",
+      "relatedFeelings": ["被背叛", "沮丧", "落空"],
+      "borderInfo": "失望靠近悲伤，因为它涉及希望的丧失和未满足的期望。",
+      "story": "“我们决定换一个方向。”这句话悬在画廊的空气中。Chloe花了八个月在这个委托上，在每一笔中倾注了她的创作愿景。客户在会议中似乎非常热情。现在他们想要“更传统的东西”。她专业地微笑，握手，然后等到走到车里才让泪水流下。"
+    },
+    {
+      "id": "sad-1-hurt",
+      "name": "受伤",
+      "category": "悲伤",
+      "description": "由某事或某人造成的情感痛苦。受伤的感觉通常源于感知到的拒绝、批评或失去。",
+      "question": "什么价值或关系受到了影响？什么样的疗愈或修复会有帮助？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会心怀怨恨、假设他人有恶意，或封闭自己不愿修复关系。",
+      "overloadTip": "为了保持平衡，承认痛苦及其重要性，然后考虑你是否以及如何想要表达它或寻求疗愈支持。",
+      "adaptivePurpose": "表明某些重要的人或事伤害了你的安全感、价值感或连接感。",
+      "relatedFeelings": ["痛心", "受威胁", "受创"],
+      "borderInfo": "受伤靠近惊讶，因为它往往来自意料之外的情感创伤。",
+      "story": "“我只是觉得你不是当领导的料。”来自他导师的话——一个他信任多年的人——像一记重拳。Robert曾分享过他有朝一日管理自己部门的梦想，让自己变得脆弱。现在那种脆弱感觉像是一个错误。批评也许是建设性的，但被包裹在那个轻蔑的短语中，它只让人感到背叛。"
+    },
+    {
+      "id": "sad-2-depressed",
+      "name": "抑郁",
+      "category": "悲伤",
+      "description": "一种深沉的悲伤和低能量状态。抑郁可以让一切都感觉沉重且难以应对。",
+      "question": "什么感觉被耗尽或无望？你可以重新连接什么微小的关怀、支持或意义来源？",
+      "overloadRisk": "如果过度使用这种情绪，你可能看不到任何可能性、完全退缩，或忽视基本的自我照顾。",
+      "overloadTip": "为了保持平衡，选择一个微小的、有爱的行动——比如联系一个人、活动身体、或完成一件简单的事——为生活增添一点结构或支持。",
+      "adaptivePurpose": "表明你的能量、动力或意义感已经下降，你可能需要休息、支持或重新定向。",
+      "relatedFeelings": ["空虚", "麻木", "虚无"],
+      "story": "起床变成了最难的部分。Emma躺在那里，知道她有事情要做，有人在指望她，却什么都感觉不到——只是一种沉重的空虚，让连洗澡都像爬山一样。颜色变得暗淡，食物没有味道。她机械地过着生活，却感觉自己在远处旁观。"
+    },
+    {
+      "id": "sad-3-lonely",
+      "name": "孤独",
+      "category": "悲伤",
+      "description": "一种痛苦的孤立或与他人断连的感觉。孤独凸显了我们对有意义连接的需要。",
+      "question": "你现在需要什么样的连接？谁能帮助你感到更被看见或被支持？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会认为自己根本上是孤独的或不可爱的，从而更加退缩。",
+      "overloadTip": "为了保持平衡，找到一种小而安全的方式去触及连接——一条消息、一通电话、一个共享的空间，或向你信任的人说出你的需求。",
+      "adaptivePurpose": "表明你对连接、归属或被看见的需求没有得到满足。",
+      "relatedFeelings": ["被遗弃", "孤立", "断连"],
+      "story": "公寓里满是搬家的箱子。新城市、新工作、全新的开始——她想要的一切。但第一个晚上坐在光秃秃的床垫上，手机里满是联系人却没人可以打电话，Yuki感受到了独自一人的重量。她能通过墙壁听到邻居们在过他们的生活，这些声音只让她自己空间里的沉默更加响亮。"
+    },
+    {
+      "id": "sad-4-ashamed",
+      "name": "羞耻",
+      "category": "悲伤",
+      "description": "因为相信自己做了错事或丢脸的事而产生的痛苦的羞辱或苦恼感。羞耻影响你看待自己的方式。",
+      "question": "你用什么标准要求自己？什么样的自我关怀或修复可以支持成长？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会把一个具体的错误变成认为自己是坏人或不值得的信念，并隐藏真实的自我。",
+      "overloadTip": "为了保持平衡，把“我做了某事”和“我是某种人”区分开，并选择一个与你价值观一致的学习、修复或道歉的步骤。",
+      "adaptivePurpose": "表明你的行为或选择可能不符合你的价值观，邀请你反思、修复和成长。",
+      "relatedFeelings": ["悔恨", "内疚", "尴尬"],
+      "borderInfo": "羞耻靠近厌恶，因为它涉及对自身的负面评判。",
+      "story": "这只是一个捷径，他对自己说。在一篇不会被仔细阅读的论文中复制了几段话。但当教授叫他进办公室，证据摊在桌上时，Michael无法与她的目光对视。她语气中的失望比愤怒更糟糕。他不仅背叛了学术规则，还背叛了自己对自我身份的认知。"
+    },
+    {
+      "id": "disgust-1-dislike",
+      "name": "厌恶",
+      "category": "厌恶",
+      "description": "对某物或某人的反感或不赞同。厌恶帮助你识别什么不符合你的价值观。",
+      "question": "什么感觉与你的价值观或偏好不一致？这揭示了什么边界或选择？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会滑向苛刻的评判、偏见，或过快地拒绝人或想法。",
+      "overloadTip": "为了保持平衡，具体说出你不喜欢的是什么——行为、风格还是影响——不要否定整个人或情境，并决定真正需要什么边界。",
+      "adaptivePurpose": "表明某些事物不符合你的品味、需求或价值观，你可能想保持距离或做出不同选择。",
+      "relatedFeelings": ["反感", "退缩", "排斥"],
+      "borderInfo": "厌恶靠近悲伤，因为它涉及情感上的退缩和拒绝。",
+      "story": "会议中的每一条评论、每一个“其实嘛”、每一次打断——Grace感到下巴越来越紧。她无法指出新同事有什么明显冒犯之处，但他的某些举止让她牙齿发酸。会议结束时，她知道如果她想保持专业，就需要找到限制彼此互动的方法。"
+    },
+    {
+      "id": "disgust-2-avoidance",
+      "name": "回避",
+      "category": "厌恶",
+      "description": "远离不愉快或不舒服事物的倾向。回避是对感到威胁性事物的保护性反应。",
+      "question": "什么让你感到不安全、不堪重负或精力耗尽？你怎样才能带着更多支持或清晰度去面对它？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会拖延重要的行动、停滞不前，或让问题悄悄恶化。",
+      "overloadTip": "为了保持平衡，把你回避的任务或情境分解成一个非常小的步骤，并考虑什么支持、信息或边界能使它更易应对。",
+      "adaptivePurpose": "表明以你目前的资源来看，某些事情似乎太具威胁性、太不堪重负或太不愉快而无法面对。",
+      "relatedFeelings": ["犹豫", "抗拒", "不情愿"],
+      "story": "柜台上的邮件堆已经长成了一座小山。账单，可能吧。也许还有来自税务局的东西。Omar每天经过它，在离它几厘米的地方泡咖啡，却不知怎的就是没法拆开其中任何一封。他知道这让事情变得更糟。他也知道今天他不会去处理它。明天也可能不会。"
+    },
+    {
+      "id": "disgust-3-aweful",
+      "name": "糟糕透顶",
+      "category": "厌恶",
+      "description": "对非常不愉快或令人不快事物的强烈负面感受。感觉糟糕透顶表明有什么事情严重出了错或令人痛苦。",
+      "question": "什么让你感到有害或不可接受？什么标准或价值观在发出需要改变的信号？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会灾难化、对改变感到绝望，或只以愤怒而非策略来回应。",
+      "overloadTip": "为了保持平衡，弄清楚到底什么是有害的，然后选择一个现实的行动——个人的、关系的或系统性的——即使只是微小地朝修复方向前进。",
+      "adaptivePurpose": "表明某些事物让你感到深深的不对、有害或与你的核心价值观相悖。",
+      "relatedFeelings": ["排斥", "憎恶", "可怕"],
+      "story": "那部纪录片展示了工厂化农场的画面——她再也无法忘记那些动物在那种条件下的场景。从理智上说，Natalie知道她的食物来自哪里。但知道和亲眼看到是不同的。她合上笔记本电脑，胃在翻搅，感到自己牵连在一件她从未真正让自己深思的事情中。"
+    },
+    {
+      "id": "disgust-4-disapproval",
+      "name": "不赞同",
+      "category": "厌恶",
+      "description": "对某人或某事的负面评判或意见。不赞同反映了你的价值观与你所观察到的之间的冲突。",
+      "question": "什么期望没有被满足？什么价值观在驱动这个反应，你希望看到什么改变？",
+      "overloadRisk": "如果过度使用这种情绪，你可能变得僵化、过度批评或疏远他人。",
+      "overloadTip": "为了保持平衡，与你不赞同背后的价值观相连，并以一种邀请对话和改进而非羞辱的方式表达它。",
+      "adaptivePurpose": "表明某种行为或结果不符合你的标准或价值观，你关心做得更好。",
+      "relatedFeelings": ["嫌恶", "评判", "批判"],
+      "borderInfo": "不赞同靠近愤怒，因为它涉及批判性评价和潜在的对抗。",
+      "story": "看着儿子在奶奶生日致辞时刷手机，Richard的表情变得严肃。老太太正在分享关于已故丈夫的回忆，声音因情感而颤抖，而Tyler连抬头看五分钟都做不到。Richard与儿子对视，缓缓摇了摇头。有些事情不应该需要解释。"
+    },
+    {
+      "id": "anger-1-aggressive",
+      "name": "攻击性",
+      "category": "愤怒",
+      "description": "愤怒的一种激烈而对抗性的表达。攻击性通常是对感到受威胁或受挫的反应。",
+      "question": "什么边界需要被保护？什么事情重要到让你感到必须采取行动？",
+      "overloadRisk": "如果过度使用这种情绪，你可能以伤害他人的方式猛烈回击、升级冲突或破坏自己的目标。",
+      "overloadTip": "为了保持平衡，在行动前暂停，用这股能量选择清晰而坚定的语言或行动，并专注于你真正想要的结果。",
+      "adaptivePurpose": "表明你感知到严重的威胁、不公正或侵犯，并有强烈的防御或保护冲动。",
+      "relatedFeelings": ["敌意", "被激怒", "好斗"],
+      "borderInfo": "攻击性靠近厌恶，因为它涉及拒绝或推开不可接受的事物。",
+      "story": "“再说一遍。”Victor的声音低沉而危险。酒吧里的那个男人对他妻子说了一句话——声音大到能被听见，又小到可以否认。Victor感到双手握成了拳头，感到胸口那熟悉的热浪升起。每一个本能都在叫嚣着要让这家伙后悔开口。他妻子放在他手臂上的手是唯一在拉住他的东西。"
+    },
+    {
+      "id": "anger-2-mad",
+      "name": "愤怒",
+      "category": "愤怒",
+      "description": "一种强烈的不满或狂怒感。愤怒表明某些事情侵犯了你的边界或期望。",
+      "question": "什么价值观或期望被侵犯了？你需要表达或修复什么？",
+      "overloadRisk": "如果过度使用这种情绪，你可能心怀怨恨、反复回放事件经过，或攻击而非寻求解决。",
+      "overloadTip": "为了保持平衡，具体说出什么是不对的，然后决定你是想设立边界、要求改变，还是有意识地放下。",
+      "adaptivePurpose": "表明某些事情感觉不公平或不对，你想要改变或得到认可。",
+      "relatedFeelings": ["暴怒", "狂怒", "怒不可遏"],
+      "story": "三个小时。她等了三个小时等那个线缆公司，看着“12点到4点”的窗口慢慢过去。当她的手机终于在4点半响了——“我们需要重新安排”——Diane感到什么东西断裂了。她精心准备的投诉措辞消失了，取而代之的是她几个月来忍下的所有挫败感的洪流。客服代表不该承受这些，但他承受了。"
+    },
+    {
+      "id": "anger-3-frustrated",
+      "name": "沮丧",
+      "category": "愤怒",
+      "description": "无法达成某事时的烦恼或不快感。沮丧源于目标受阻或需求未满足。",
+      "question": "什么阻碍了你的目标？什么内在或外在的转变能帮助你继续前进？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会放弃、责怪他人或过度施压。",
+      "overloadTip": "为了保持平衡，退后一步明确你的目标，然后选择一种不同的方法、请求或边界来推动进展。",
+      "adaptivePurpose": "表明你的努力被阻碍，你渴望进步、效率或不同的结果。",
+      "relatedFeelings": ["烦恼", "恼怒", "不耐烦"],
+      "story": "代码应该能运行。Alex检查了每一行，与文档进行了对比，甚至直接复制了示例。但仍然是同样的错误消息，用红色嘲弄着他。他已经在这上面花了六个小时。咖啡已经凉了。解决方案可能很明显，是那种他会因为自己没发现而懊恼的东西。但此刻，他只想把笔记本电脑扔出窗外。"
+    },
+    {
+      "id": "anger-4-critical",
+      "name": "苛刻",
+      "category": "愤怒",
+      "description": "一种挑剔或严厉评判的倾向。苛刻可以是针对被认为的缺陷或失败的愤怒表现形式。",
+      "question": "你看到需要什么改进？你试图保护或提升什么结果？",
+      "overloadRisk": "如果过度使用这种情绪，你可能默认为挑错、打击他人或阻碍创造力和探索。",
+      "overloadTip": "为了保持平衡，在说出关切之前先承认至少一件做得好的事，并将你的批评定位为对共同改进的贡献。",
+      "adaptivePurpose": "表明你注意到了风险、错误或可能的改进，关心质量或完整性。",
+      "relatedFeelings": ["讽刺", "怀疑", "评判"],
+      "borderInfo": "苛刻靠近期待，因为它涉及对潜在问题的警惕和防备。",
+      "story": "“还行吧，我觉得。”Sophie看到室友对她新画收到的冷淡回应后脸上的失落。她不是有意要严厉，但她能看到每一个缺陷——泥泞的色彩、犹豫的笔触、缺乏原创性的构图。最善意的做法是说几句鼓励的话。然而，她让自己的标准替她说话了，而现在给予支持的时机已经过去了。"
+    },
+    {
+      "id": "anticipation-1-excited",
+      "name": "兴奋",
+      "category": "期待",
+      "description": "对即将发生的事情充满热情和渴望。兴奋为你注入能量，创造积极的期待。",
+      "question": "什么机会正在激发你的能量？你如何将这种能量引导为有意识的行动？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会过度承诺、仓促行动而不做计划，或精力耗尽。",
+      "overloadTip": "为了保持平衡，将你的能量与现实的计划和节奏相匹配，选择一个明确的下一步而不是试图同时做所有事。",
+      "adaptivePurpose": "表明你被一种可能性所激发，并准备好投入其中。",
+      "relatedFeelings": ["热情", "充满活力", "激动"],
+      "borderInfo": "兴奋靠近愤怒，因为它涉及强烈的能量和行动准备。",
+      "story": "演唱会还有三周才到，但Jasmine已经计划好了穿什么、制作了一个歌曲播放列表来重温，并开始倒计时。她从初中就开始关注这支乐队，知道每张专辑、每次采访。她竟然买到了票——还是好位置的票——这件事仍然感觉不太真实。"
+    },
+    {
+      "id": "anticipation-2-eager",
+      "name": "热切",
+      "category": "期待",
+      "description": "对做某事或体验某事的强烈渴望或准备。热切以热情和动力推动你前进。",
+      "question": "你想要走向什么？什么第一步能让你朝那个方向前进？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会忽略警告信号、跳过反思或太频繁地说“好”。",
+      "overloadTip": "为了保持平衡，暂停一下问问自己在行动前需要什么信息、边界或准备，然后迈出深思熟虑的第一步。",
+      "adaptivePurpose": "表明你感觉准备好了追求某事，想要快速朝它前进。",
+      "relatedFeelings": ["热忱", "有动力", "跃跃欲试"],
+      "story": "当邮件来了——“你的申请已批准”——Ben已经抓起了车钥匙。收容所一小时后就关门了，里面的某个地方有他在网上看到的那只狗，就是那只长着滑稽耳朵和忧郁眼神的狗。六个月的品种研究、公寓准备、等待合适的时机。今天就是那一天。"
+    },
+    {
+      "id": "anticipation-3-interested",
+      "name": "感兴趣",
+      "category": "期待",
+      "description": "想要了解更多或参与某事的感觉。兴趣将你的注意力和好奇心引向新的体验。",
+      "question": "什么在吸引你的注意力？什么值得更深入地探索或理解？",
+      "overloadRisk": "如果过度使用这种情绪，你可能会分散注意力、开始很多事却完成很少。",
+      "overloadTip": "为了保持平衡，有意识地选择当下的一个聚焦领域，把其他兴趣记在清单上留待以后，这样你可以有目的地探索。",
+      "adaptivePurpose": "表明你的好奇心被激活，你看到了学习或探索的潜在价值。",
+      "relatedFeelings": ["急切", "好奇", "投入"],
+      "story": "“多跟我说说。”Walsh教授身体前倾，真心好奇。这个学生的论文提案还不够完善，但其中有些东西——两个几乎不交集的领域之间的意外联系。她的脑海已经在飞速运转，想着问题、潜在的研究方向、可能想要合作的同事。这就是她热爱学术的原因。"
+    },
+    {
+      "id": "anticipation-4-stressed",
+      "name": "压力",
+      "category": "期待",
+      "description": "由苛刻环境导致的精神或情感紧张状态。压力表明你正面临需要精力和资源的挑战。",
+      "question": "什么压力需要关注？你在哪里需要缓解、支持或更清晰的边界？",
+      "overloadRisk": "如果过度使用这种情绪，你可能处于危机模式运转、做出反应性决定或耗尽自己。",
+      "overloadTip": "为了保持平衡，找出一个你可以减少、委派或推迟的需求，以及一个帮助恢复精力或清晰度的简短练习。",
+      "adaptivePurpose": "表明需求感觉大于你目前的资源，需要做出改变。",
+      "relatedFeelings": ["不堪重负", "承受压力", "紧绷"],
+      "borderInfo": "压力靠近快乐，因为它涉及高能量聚焦于实现积极结果。",
+      "story": "婚礼还有十天。餐饮供应商刚刚取消了。婆婆在“建议”更改座位安排。礼服的修改还没完成。现在，午夜时分刷着手机，Hannah发现天气预报说要下雨。她能感到压力在眼后聚集，胸口那熟悉的紧绷感。必须有所取舍了。"
+    }
+  ],
+  "quotes": {
+    "joy-1-optimistic": [
+      {"text": "The sun'll come out tomorrow.", "speaker": "Annie", "work": "Annie"},
+      {"text": "There's some good in this world, and it's worth fighting for.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings: The Two Towers"},
+      {"text": "Even miracles take a little time.", "speaker": "Fairy Godmother", "work": "Cinderella"}
+    ],
+    "joy-2-confident": [
+      {"text": "I am no bird; and no net ensnares me.", "speaker": "Jane Eyre", "work": "Jane Eyre"},
+      {"text": "I know my worth.", "speaker": "Carol Danvers", "work": "Captain Marvel"},
+      {"text": "She wasn't fragile like a flower… she was fragile like a bomb.", "speaker": "Taylor Swift", "work": "Miss Americana"}
+    ],
+    "joy-3-joyful": [
+      {"text": "I'm walking on sunshine, and don't it feel good!", "speaker": "Katrina & The Waves", "work": "Walking on Sunshine"},
+      {"text": "Here comes the sun, and I say, it's all right.", "speaker": "George Harrison", "work": "The Beatles"},
+      {"text": "To infinity and beyond!", "speaker": "Buzz Lightyear", "work": "Toy Story"}
+    ],
+    "joy-4-loving": [
+      {"text": "All you need is love.", "speaker": "John Lennon", "work": "The Beatles"},
+      {"text": "Whatever our souls are made of, his and mine are the same.", "speaker": "Emily Brontë", "work": "Wuthering Heights"},
+      {"text": "After all this time?", "speaker": "Severus Snape", "work": "Harry Potter and the Deathly Hallows"}
+    ],
+    "anticipation-1-excited": [
+      {"text": "I'm so excited, and I just can't hide it!", "speaker": "The Pointer Sisters", "work": "I'm So Excited"},
+      {"text": "Adventure is out there!", "speaker": "Ellie", "work": "Up"},
+      {"text": "This is gonna be good.", "speaker": "", "work": "The Hunger Games"}
+    ],
+    "anticipation-2-eager": [
+      {"text": "I can't wait!", "speaker": "Hermione Granger", "work": "Harry Potter"},
+      {"text": "I want to go to there.", "speaker": "Liz Lemon", "work": "30 Rock"},
+      {"text": "Show me what you got.", "speaker": "", "work": "Top Gun"}
+    ],
+    "anticipation-3-interested": [
+      {"text": "Tell me more.", "speaker": "", "work": "Grease"},
+      {"text": "Curioser and curioser!", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "So… what happens next?", "speaker": "", "work": "The Princess Bride"}
+    ],
+    "anticipation-4-stressed": [
+      {"text": "I'm under a lot of pressure.", "speaker": "Peter Parker", "work": "Spider-Man 2"},
+      {"text": "It's too much.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"},
+      {"text": "I'm hanging by a thread.", "speaker": "", "work": "Inside Out 2"}
+    ],
+    "anger-1-aggressive": [
+      {"text": "Don't make me angry. You wouldn't like me when I'm angry.", "speaker": "Bruce Banner", "work": "The Incredible Hulk"},
+      {"text": "You dare challenge me?", "speaker": "Thor", "work": "Thor"},
+      {"text": "Say hello to my little friend!", "speaker": "Tony Montana", "work": "Scarface"}
+    ],
+    "anger-2-mad": [
+      {"text": "I am very angry with you!", "speaker": "Professor McGonagall", "work": "Harry Potter"},
+      {"text": "You can't handle the truth!", "speaker": "Colonel Jessup", "work": "A Few Good Men"},
+      {"text": "This means war.", "speaker": "Bugs Bunny", "work": "Looney Tunes"}
+    ],
+    "anger-3-frustrated": [
+      {"text": "Why is everything so complicated?", "speaker": "Avril Lavigne", "work": "Complicated"},
+      {"text": "I'm trying, okay?", "speaker": "", "work": "Spider-Man: Homecoming"},
+      {"text": "This is not going the way you think.", "speaker": "Luke Skywalker", "work": "Star Wars: The Last Jedi"}
+    ],
+    "anger-4-critical": [
+      {"text": "I'm not impressed.", "speaker": "", "work": "Gladiator"},
+      {"text": "Frankly, my dear, I don't give a damn.", "speaker": "Rhett Butler", "work": "Gone With the Wind"},
+      {"text": "That's… not ideal.", "speaker": "Sherlock Holmes", "work": "Sherlock (BBC)"}
+    ],
+    "disgust-1-dislike": [
+      {"text": "I don't like this.", "speaker": "Rey", "work": "Star Wars: The Force Awakens"},
+      {"text": "Ew, David!", "speaker": "Alexis Rose", "work": "Schitt's Creek"},
+      {"text": "That's disgusting!", "speaker": "Hermione Granger", "work": "Harry Potter"}
+    ],
+    "disgust-2-avoidance": [
+      {"text": "Get it away from me!", "speaker": "Indiana Jones", "work": "Indiana Jones and the Temple of Doom"},
+      {"text": "Nope, not today.", "speaker": "", "work": "Brooklyn Nine-Nine"},
+      {"text": "I'm not touching that.", "speaker": "", "work": "Finding Nemo"}
+    ],
+    "disgust-3-aweful": [
+      {"text": "This is awful.", "speaker": "Bilbo Baggins", "work": "The Hobbit"},
+      {"text": "That's the worst thing I've ever tasted!", "speaker": "Remy", "work": "Ratatouille"},
+      {"text": "What fresh hell is this?", "speaker": "Dorothy Parker", "work": ""}
+    ],
+    "disgust-4-disapproval": [
+      {"text": "I'm disappointed in you.", "speaker": "Mufasa", "work": "The Lion King"},
+      {"text": "You should not have done that.", "speaker": "Gandalf", "work": "The Lord of the Rings: The Fellowship of the Ring"},
+      {"text": "I expected better.", "speaker": "Steve Rogers", "work": "Marvel Cinematic Universe"}
+    ],
+    "sad-1-hurt": [
+      {"text": "You hurt me.", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "The wound is the place where the light enters you.", "speaker": "Rumi", "work": ""},
+      {"text": "The heart was made to be broken.", "speaker": "Oscar Wilde", "work": ""}
+    ],
+    "sad-2-depressed": [
+      {"text": "I feel so blue.", "speaker": "Billie Holiday", "work": "Am I Blue?"},
+      {"text": "Every night I lie in bed, the brightest colors fill my head… but I can't shake this feeling.", "speaker": "", "work": "The Greatest Showman"},
+      {"text": "Hello darkness, my old friend.", "speaker": "Simon & Garfunkel", "work": "The Sound of Silence"}
+    ],
+    "sad-3-lonely": [
+      {"text": "All by myself… don't want to be all by myself anymore.", "speaker": "Celine Dion", "work": "All By Myself"},
+      {"text": "Eleanor Rigby… lives in a dream.", "speaker": "The Beatles", "work": "Eleanor Rigby"},
+      {"text": "I've never felt so alone.", "speaker": "Harry Potter", "work": "Harry Potter and the Order of the Phoenix"}
+    ],
+    "sad-4-ashamed": [
+      {"text": "I'm ashamed of what I've done.", "speaker": "Jean Valjean", "work": "Les Misérables"},
+      {"text": "Shame is an unhappy emotion invented by pietists to exploit humanity.", "speaker": "William Blake", "work": "The Marriage of Heaven and Hell"},
+      {"text": "I'm not proud of myself.", "speaker": "Bruce Wayne", "work": "Batman Begins"}
+    ],
+    "surprise-1-startled": [
+      {"text": "You startled me!", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "Great Scott!", "speaker": "Doc Brown", "work": "Back to the Future"},
+      {"text": "What was that?", "speaker": "Bilbo Baggins", "work": "The Hobbit"}
+    ],
+    "surprise-2-confused": [
+      {"text": "I don't understand.", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "Toto, I've a feeling we're not in Kansas anymore.", "speaker": "Dorothy", "work": "The Wizard of Oz"},
+      {"text": "It's all a bit of a blur.", "speaker": "Bridget Jones", "work": "Bridget Jones's Diary"}
+    ],
+    "surprise-3-amazed": [
+      {"text": "This is incredible.", "speaker": "", "work": "Jurassic Park"},
+      {"text": "It's full of stars.", "speaker": "Dave Bowman", "work": "2001: A Space Odyssey"},
+      {"text": "I can't believe my eyes!", "speaker": "", "work": "The Lion King"}
+    ],
+    "surprise-4-disappointed": [
+      {"text": "I'm disappointed in you.", "speaker": "Atticus Finch", "work": "To Kill a Mockingbird"},
+      {"text": "You were supposed to be the chosen one!", "speaker": "Obi-Wan Kenobi", "work": "Star Wars: Episode III – Revenge of the Sith"},
+      {"text": "This is not what I hoped for.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "trust-1-grateful": [
+      {"text": "Thank you, thank you very much.", "speaker": "Elvis Presley", "work": ""},
+      {"text": "I've got sunshine on a cloudy day.", "speaker": "The Temptations", "work": "My Girl"},
+      {"text": "These are a few of my favorite things.", "speaker": "", "work": "The Sound of Music"}
+    ],
+    "trust-2-peaceful": [
+      {"text": "I feel at peace.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings"},
+      {"text": "Let it be.", "speaker": "The Beatles", "work": "Let It Be"},
+      {"text": "Be still, and know…", "speaker": "", "work": "Psalm 46:10"}
+    ],
+    "trust-3-accepted": [
+      {"text": "You have been my friend. That in itself is a tremendous thing.", "speaker": "Charlotte", "work": "Charlotte's Web"},
+      {"text": "You belong with me.", "speaker": "Taylor Swift", "work": "You Belong With Me"},
+      {"text": "Come as you are.", "speaker": "Kurt Cobain", "work": "Come As You Are"}
+    ],
+    "trust-4-hopeful": [
+      {"text": "Hope is a good thing, maybe the best of things.", "speaker": "Andy Dufresne", "work": "The Shawshank Redemption"},
+      {"text": "There's a sunrise every morning that you're missing.", "speaker": "", "work": "Dear Evan Hansen"},
+      {"text": "Even the darkest night will end and the sun will rise.", "speaker": "", "work": "Les Misérables"}
+    ],
+    "fear-1-nervous": [
+      {"text": "I've got a bad feeling about this.", "speaker": "Han Solo", "work": "Star Wars"},
+      {"text": "My hands are shaking.", "speaker": "", "work": "The Hunger Games"},
+      {"text": "Courage is not the absence of fear.", "speaker": "Nelson Mandela", "work": ""}
+    ],
+    "fear-2-scared": [
+      {"text": "I'm scared.", "speaker": "Coraline", "work": "Coraline"},
+      {"text": "They're here…", "speaker": "Carol Anne", "work": "Poltergeist"},
+      {"text": "Please don't let this be real.", "speaker": "", "work": "Stranger Things"}
+    ],
+    "fear-3-anxious": [
+      {"text": "I can't calm down.", "speaker": "", "work": "Inside Out"},
+      {"text": "I'm worried about everything.", "speaker": "", "work": "Harry Potter and the Deathly Hallows"},
+      {"text": "Something is wrong… I can feel it.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "fear-4-insecure": [
+      {"text": "I don't feel good enough.", "speaker": "", "work": "The Perks of Being a Wallflower"},
+      {"text": "You think I'm not good enough.", "speaker": "", "work": "Lady Bird"},
+      {"text": "Am I strong enough?", "speaker": "", "work": "Mulan"}
+    ]
+  }
+}
