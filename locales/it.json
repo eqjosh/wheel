@@ -83,6 +83,7 @@
         "Sicuro di sé",
         "Potenziato"
       ],
+      "borderInfo": "Fiducioso è energia pura di Gioia rivolta verso l'interno—un riconoscimento delle proprie capacità. Si colloca tra Ottimista (orientato al futuro) e Gioioso (piacere del momento presente).",
       "story": "Dopo mesi di preparazione, James era dietro le quinte in attesa di tenere il suo primo discorso TEDx. Le sue mani erano ferme, il respiro calmo. Aveva praticato questo discorso cinquanta volte, conosceva ogni transizione, ogni pausa. Quando chiamarono il suo nome, camminò verso il centro del palco non con arroganza, ma con tranquilla certezza. Aveva fatto il lavoro. Era pronto."
     },
     {
@@ -99,6 +100,7 @@
         "Deliziato",
         "Beato"
       ],
+      "borderInfo": "Gioioso è il cuore della Gioia—felicità pura del momento presente. Si colloca tra Fiducioso (gioia rivolta verso se stessi) e Amorevole (gioia rivolta verso gli altri).",
       "story": "La lettera arrivò di martedì. Accettata. Borsa di studio completa. Elena la lesse tre volte prima che affondasse. Poi stava ridendo, piangendo, girando per il suo piccolo appartamento. Chiamò sua madre, la sua migliore amica, la sua vecchia insegnante che aveva scritto la sua raccomandazione. Pura felicità non filtrata—il tipo che ti fa male la faccia dal tanto sorridere."
     },
     {
@@ -149,6 +151,7 @@
         "Contento",
         "Sereno"
       ],
+      "borderInfo": "Pacifico è il centro calmo della Fiducia—uno stato di equilibrio e sicurezza. Si colloca tra Grato (apprezzare ciò che è) e Accettato (appartenere con gli altri).",
       "story": "Domenica mattina. Pioggia contro le finestre. Niente sveglie, niente obblighi, nessun posto dove andare. Sarah si rannicchiò con il suo caffè e un libro che voleva leggere da mesi. L'appartamento era silenzioso tranne per il suo gatto che faceva le fusa sul cuscino accanto a lei. Per la prima volta in settimane, la sua mente non stava correndo attraverso liste di cose da fare. Era semplicemente... qui."
     },
     {
@@ -165,6 +168,7 @@
         "Rispettato",
         "Benvenuto"
       ],
+      "borderInfo": "Accettato è la Fiducia espressa attraverso l'appartenenza—la sicurezza di essere visti e inclusi. Si colloca tra Pacifico (calma interiore) e Speranzoso (fidarsi del futuro).",
       "story": "Fare coming out con i suoi genitori era stato terrificante. Miguel si era preparato per discussioni, delusione, forse anche rifiuto. Invece, sua madre lo aveva abbracciato e sussurrato, \"Lo so, mijo. Lo sapevo da un po'.\" Suo padre aveva semplicemente detto, \"Sei sempre tu. Niente cambia questo.\" Anni di paura si dissolsero in quel momento di accettazione incondizionata."
     },
     {
@@ -215,6 +219,7 @@
         "Terrorizzato",
         "Allarmato"
       ],
+      "borderInfo": "Spaventato è il centro attivo della Paura—una risposta immediata al pericolo percepito. Si colloca tra Nervoso (preoccupazione più lieve) e Ansioso (inquietudine più ampia).",
       "story": "L'allarme antincendio scattò alle 2 di notte. Con il cuore che batteva forte, Kevin afferrò il telefono e corse a controllare la cucina. Niente. Il corridoio. Niente. Poi lo sentì—fumo che filtrava sotto la porta del suo appartamento dal corridoio. Era reale. Le sue mani tremavano mentre chiamava il 112, afferrava il portafoglio e si dirigeva verso la scala antincendio. Tutto sembrava improvvisamente, terribilmente immediato."
     },
     {
@@ -231,6 +236,7 @@
         "Preoccupato",
         "Teso"
       ],
+      "borderInfo": "Ansioso è la Paura estesa nel tempo—preoccupazione per minacce future. Si colloca tra Spaventato (paura immediata) e Insicuro (paura riguardo a se stessi).",
       "story": "La presentazione non era per un'altra settimana, ma Lisa non riusciva a smettere di pensarci. E se il proiettore si fosse rotto? E se il CEO avesse fatto una domanda a cui non poteva rispondere? E se la sua voce avesse tremato? Restava sveglia alle 3 di notte, la mente che girava attraverso scenari peggiori, ogni preoccupazione che si ramificava in altre tre. Sapeva che questa spirale non era utile, ma non riusciva a fermarla."
     },
     {
@@ -281,6 +287,7 @@
         "Perplesso",
         "Sconcertato"
       ],
+      "borderInfo": "Confuso è la Sorpresa di fronte all'incertezza—la tua mappa mentale non corrisponde alla realtà. Si colloca tra Sobbalzato (sorpresa fisica) e Stupito (sorpresa positiva).",
       "story": "L'email non aveva senso. Dopo cinque anni di recensioni eccellenti, Daniel veniva \"trasferito a un nuovo ruolo\"—con effetto immediato. Il suo capo non rispondeva alle chiamate. Le Risorse Umane parlavano con attente non-risposte. Seduto alla sua scrivania, rileggeva le stesse frasi più e più volte, cercando di mettere insieme i pezzi. Cosa era successo? Cosa si era perso?"
     },
     {
@@ -297,6 +304,7 @@
         "Meravigliato",
         "Impressionato"
       ],
+      "borderInfo": "Stupito è il cuore positivo della Sorpresa—meraviglia per qualcosa che supera le aspettative. Si colloca tra Confuso (sorpresa neutrale) e Deluso (sorpresa negativa).",
       "story": "In piedi sul bordo del Grand Canyon per la prima volta, le parole le mancarono. Le fotografie non avevano preparato Jennifer per questo—la scala impossibile, gli strati di colore, il silenzio rotto solo dal vento. Aveva visto posti belli prima, ma questo era diverso. Questo la faceva sentire piccola in un modo che era in qualche modo confortante, connessa a qualcosa di vasto e antico."
     },
     {
@@ -347,6 +355,7 @@
         "Intorpidito",
         "Vuoto"
       ],
+      "borderInfo": "Depresso è Tristezza profonda—energia e speranza esaurite. Si colloca tra Ferito (dolore acuto) e Solitario (disconnessione dagli altri).",
       "story": "Alzarsi dal letto era diventata la parte più difficile. Emma restava sdraiata lì, sapendo che aveva cose da fare, persone che contavano su di lei, e non sentiva niente—solo un vuoto pesante che faceva sembrare anche la doccia come scalare una montagna. I colori sembravano sbiaditi. Il cibo non aveva sapore. Andava avanti con la sua vita mentre si sentiva come se la stesse guardando da lontano."
     },
     {
@@ -363,6 +372,7 @@
         "Isolato",
         "Disconnesso"
       ],
+      "borderInfo": "Solitario è la Tristezza per la connessione—il dolore di sentirsi invisibili o separati. Si colloca tra Depresso (vuoto interiore) e Vergognoso (giudizio verso se stessi).",
       "story": "L'appartamento era pieno di scatole del trasloco. Nuova città, nuovo lavoro, nuovo inizio—tutto quello che aveva voluto. Ma seduta sul suo materasso nudo quella prima notte, telefono pieno di contatti eppure nessuno da chiamare, Yuki sentì il peso della sua solitudine. Poteva sentire i suoi vicini attraverso le pareti, vivere le loro vite, e i suoni rendevano solo più forte il silenzio nel suo spazio."
     },
     {
@@ -413,6 +423,7 @@
         "Avverso",
         "Riluttante"
       ],
+      "borderInfo": "Evitamento è il Disgusto in azione—l'impulso di creare distanza. Si colloca tra Antipatia (il giudizio) e Terribile (disgusto intenso).",
       "story": "La pila di posta sul bancone era cresciuta fino a diventare una piccola montagna. Bollette, probabilmente. Forse qualcosa dall'Agenzia delle Entrate. Omar ci passava davanti ogni giorno, faceva il caffè a pochi centimetri da essa, e in qualche modo non riusciva mai ad aprirne nessuna. Sapeva che questo stava peggiorando le cose. Sapeva anche che non se ne sarebbe occupato oggi. Probabilmente neanche domani."
     },
     {
@@ -429,6 +440,7 @@
         "Detestato",
         "Orribile"
       ],
+      "borderInfo": "Terribile è il centro intenso del Disgusto—un rifiuto viscerale di qualcosa di dannoso. Si colloca tra Evitamento (risposta comportamentale) e Disapprovazione (giudizio morale).",
       "story": "Il documentario mostrava filmati dagli allevamenti intensivi—animali in condizioni che non riusciva a non vedere. Natalie sapeva, intellettualmente, da dove veniva il suo cibo. Ma sapere e vedere erano cose diverse. Chiuse il laptop, stomaco che si contorceva, sentendosi implicata in qualcosa a cui non si era mai davvero permessa di pensare prima."
     },
     {
@@ -479,6 +491,7 @@
         "Furioso",
         "Livido"
       ],
+      "borderInfo": "Arrabbiato è il centro ardente della Rabbia—intenso dispiacere per una violazione. Si colloca tra Aggressivo (pronto all'azione) e Frustrato (obiettivi bloccati).",
       "story": "Tre ore. Tre ore che stava aspettando la compagnia del cavo, guardando la finestra tra \"12 e 16\" scorrere lentamente. Quando il telefono finalmente squillò alle 16:30—\"Dobbiamo riprogrammare\"—Diane sentì qualcosa spezzarsi. Il reclamo formulato con cura che aveva preparato svanì, sostituito da un fiume di ogni frustrazione che aveva ingoiato per mesi. Il rappresentante del servizio clienti non se lo meritava, ma lo ricevette comunque."
     },
     {
@@ -495,6 +508,7 @@
         "Irritato",
         "Esasperato"
       ],
+      "borderInfo": "Frustrato è la Rabbia di fronte agli ostacoli—l'energia per cambiare qualcosa che non funziona. Si colloca tra Arrabbiato (rabbia intensa) e Critico (rabbia analitica).",
       "story": "Il codice dovrebbe funzionare. Alex aveva controllato ogni riga, confrontato con la documentazione, persino copiato esempi direttamente. Ancora, lo stesso messaggio di errore, che lo derideva in rosso. Era a questo da sei ore. Il suo caffè era freddo. La soluzione era probabilmente qualcosa di ovvio, qualcosa per cui si sarebbe preso a calci per non averlo visto. Ma in questo momento, tutto quello che voleva era buttare il suo laptop dalla finestra."
     },
     {
@@ -545,6 +559,7 @@
         "Motivato",
         "Desideroso"
       ],
+      "borderInfo": "Impaziente è l'Anticipazione in movimento—pronto e desideroso di partecipare. Si colloca tra Eccitato (alta energia) e Interessato (curiosità coinvolta).",
       "story": "Quando arrivò l'email—\"La tua domanda è stata approvata\"—Ben stava già afferrando le chiavi della macchina. Il rifugio chiudeva tra un'ora, e da qualche parte dentro c'era il cane che aveva visto online, quello con le orecchie buffe e gli occhi espressivi. Sei mesi di ricerche sulle razze, preparazione dell'appartamento, aspettando il momento giusto. Oggi era il giorno."
     },
     {
@@ -561,6 +576,7 @@
         "Curioso",
         "Coinvolto"
       ],
+      "borderInfo": "Interessato è il cuore riflessivo dell'Anticipazione—attenzione attratta verso qualcosa che vale la pena esplorare. Si colloca tra Impaziente (pronto ad agire) e Stressato (sopraffatto dalle richieste).",
       "story": "\"Dimmi di più.\" La Professoressa Walsh si sporse in avanti, genuinamente curiosa. La proposta di tesi dello studente non era ancora rifinita, ma c'era qualcosa—una connessione inaspettata tra campi che raramente si parlavano. La sua mente stava già correndo con domande, potenziali direzioni di ricerca, colleghi che potrebbero voler collaborare. Questo era il motivo per cui amava l'accademia."
     },
     {
