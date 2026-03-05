@@ -1,0 +1,618 @@
+{
+  "language": "한국어",
+  "languageCode": "ko",
+  "ui": {
+    "title": "감정 지혜의 수레바퀴",
+    "welcomeMessage": "이 인터랙티브 수레바퀴는 다양한 감정을 식별하고 이해하는 데 도움을 줍니다.",
+    "howToUseTitle": "사용 방법:",
+    "howToUseSteps": [
+      "아무 구역 위에 마우스를 올려 강조 표시하세요",
+      "구역을 클릭하면 해당 감정에 대해 더 알아볼 수 있습니다",
+      "8가지 핵심 감정과 32가지 관련 느낌을 탐색하세요"
+    ],
+    "copyright": "\u00a9Joshua Freedman의 새 책:",
+    "copyrightLink": "Emotion Rules",
+    "version": "v3.3",
+    "modalClose": "\u00d7",
+    "relatedFeelingsLabel": "변형",
+    "borderInfoLabel": "경계 통찰",
+    "quotesLabel": "영감을 주는 인용문",
+    "adaptivePurposeLabel": "적응적 목적",
+    "overloadRiskLabel": "과부하 위험",
+    "overloadTipLabel": "균형 팁",
+    "tabEssentials": "핵심",
+    "tabAlgebra": "대수",
+    "tabWisdom": "지혜",
+    "tabExamples": "사례",
+    "tabEmojis": "이모지",
+    "definitionLabel": "정의",
+    "emotionalAlgebraLabel": "감정 대수",
+    "exploreRelatedLabel": "관련 느낌 탐색",
+    "guidingQuestionLabel": "안내 질문",
+    "realLifeExampleLabel": "실생활 사례",
+    "copyButton": "복사",
+    "copiedToast": "복사되었습니다!",
+    "randomFeelingButton": "\ud83c\udfb2 무작위 느낌 탐색",
+    "noQuotes": "이 느낌에 대한 인용문이 없습니다.",
+    "comingSoon": "실생활 사례가 곧 추가됩니다.",
+    "subscribeModalTitle": "전체 접근 잠금 해제",
+    "subscribeModalDescription": "32가지 감정에 대한 지혜의 통찰과 실생활 사례를 무료로 이용하세요.",
+    "subscribeButton": "무료 구독",
+    "firstNamePlaceholder": "이름",
+    "emailPlaceholder": "이메일 주소",
+    "countryPlaceholder": "국가를 선택하세요",
+    "privacyNote": "귀하의 개인정보를 존중합니다. 언제든지 구독을 취소할 수 있습니다.",
+    "subscribeSuccess": "환영합니다! 모든 콘텐츠가 잠금 해제되었습니다.",
+    "welcomeBackTitle": "구독해 주셔서 감사합니다!",
+    "welcomeBackMessage": "이 메시지를 닫으면 감정 지혜의 수레바퀴에 대한 전체 접근 권한이 부여됩니다.",
+    "welcomeBackButton": "탐색 시작하기",
+    "aboutLabel": "소개",
+    "aboutCardText1": "감정은 혼란스러울 수 있지만, 나름의 논리를 가지고 있습니다\u2026 감정에는 \u201c규칙\u201d이 있습니다. 이것이 바로 <a href=\"https://www.6seconds.org/emotionrules\" target=\"_blank\"><em>Emotion Rules, The Science and Practice of Emotional Wisdom.</em></a> 이 책에서 얻을 수 있는 것입니다.",
+    "aboutCardText2": "이 감정 지혜의 수레바퀴는 이 책의 개념과 사람들이 감성 지능을 성장시키고 실천할 수 있도록 돕는 Six Seconds의 방법론에 기반하고 있습니다.",
+    "oppositeFeelingLabel": "수레바퀴 반대편 느낌"
+  },
+  "emotions": [
+    {
+      "id": "joy-1-optimistic",
+      "name": "낙관적인",
+      "category": "기쁨",
+      "description": "미래에 대한 희망과 자신감의 느낌입니다. 낙관적일 때 좋은 일이 일어날 것이라고 믿고 삶에 대해 긍정적인 전망을 유지합니다.",
+      "question": "어떤 가능성이 보이나요? 이 상황에서 무엇이 잘될 수 있을까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 실제 위험을 간과하거나 다른 것이 필요한 사람들에게 '긍정적으로 생각하라'고 압박할 수 있습니다.",
+      "overloadTip": "균형을 위해, 가능성에 대한 감각을 존중하면서도 하나의 실질적인 도전과 그에 대비할 수 있는 구체적인 한 가지 단계를 이야기해 보세요.",
+      "adaptivePurpose": "긍정적인 가능성과 좋은 결과의 잠재력을 보고 있다는 신호입니다.",
+      "relatedFeelings": ["긍정적인", "영감받은", "희망찬"],
+      "borderInfo": "낙관적인 느낌은 앞을 내다보는 요소가 있어 기대 영역에 가깝습니다.",
+      "story": "마리아는 석 달째 취업 활동을 하며 아무 성과가 없었습니다. 또 다른 면접을 향해 가는 길에 지하철에서 자신이 미소 짓고 있다는 것을 알아챘습니다. '이번에는 성공할 거야. 나는 노력했으니까'라고 생각했습니다. 무엇이 잘못될 수 있는지를 되뇌는 대신, 새 사무실에서의 첫날을 상상하고 있는 자신을 발견했습니다. 이성적인 부분은 기대를 품지 말라고 경고했지만, 직감적으로 이번에는 정말로 준비가 되었다고 느꼈습니다."
+    },
+    {
+      "id": "joy-2-confident",
+      "name": "자신감 있는",
+      "category": "기쁨",
+      "description": "자신의 능력이나 자질에 대한 감사에서 비롯되는 자기 확신의 느낌입니다. 자신감은 행동하고 도전에 맞설 수 있는 힘을 줍니다.",
+      "question": "이 상황에 어떤 강점을 가져올 수 있나요? 무엇을 할 수 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 자신의 능력을 과대평가하거나 다른 사람들의 관점과 필요를 무시할 수 있습니다.",
+      "overloadTip": "균형을 위해, 아직 도움이나 지원이 필요한 부분이 어디인지 스스로에게 물어보고, 대화에 적어도 한 사람의 다른 목소리를 초대하세요.",
+      "adaptivePurpose": "활용할 수 있는 자원, 능력 또는 경험이 있다는 신호입니다.",
+      "relatedFeelings": ["자랑스러운", "자기확신적인", "힘이 넘치는"],
+      "story": "몇 달간의 준비 끝에 제임스는 무대 뒤에서 첫 번째 TEDx 강연을 기다리며 서 있었습니다. 그의 손은 안정적이었고 호흡은 차분했습니다. 이 연설을 쉰 번이나 연습했고, 모든 전환과 쉬는 타이밍을 알고 있었습니다. 이름이 불리자 오만함이 아닌 조용한 확신을 가지고 무대 중앙으로 걸어갔습니다. 그는 노력을 기울였고, 준비가 되어 있었습니다."
+    },
+    {
+      "id": "joy-3-joyful",
+      "name": "기쁜",
+      "category": "기쁨",
+      "description": "큰 즐거움과 행복의 느낌입니다. 순수한 기쁨은 당신을 기쁨과 만족으로 가득 채우는 강렬하고 긍정적인 감정입니다.",
+      "question": "무엇이 잘 되고 있어서 계속하고 싶은가요? 무엇이 자양분이 되거나 도움이 되고 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 문제를 건너뛰거나 다른 사람의 고통에 둔감하게 보일 수 있습니다.",
+      "overloadTip": "균형을 위해, 좋은 것을 즐기면서 돌봄이나 수리가 필요한 다른 것은 없는지 부드럽게 살펴보세요.",
+      "adaptivePurpose": "중요한 무언가가 잘 작동하고 있으며 음미하고 계속할 가치가 있다는 신호입니다.",
+      "relatedFeelings": ["황홀한", "기쁨에 넘치는", "더없이 행복한"],
+      "story": "편지가 화요일에 도착했습니다. 합격. 전액 장학금. 엘레나는 세 번이나 읽고 나서야 실감이 났습니다. 그러고는 웃고, 울고, 작은 아파트에서 빙글빙글 돌았습니다. 어머니에게, 가장 친한 친구에게, 추천서를 써준 옛 선생님에게 전화를 걸었습니다. 순수하고 걸러지지 않은 행복 -- 얼굴이 아플 정도로 미소 짓게 하는 그런 행복이었습니다."
+    },
+    {
+      "id": "joy-4-loving",
+      "name": "사랑하는",
+      "category": "기쁨",
+      "description": "누군가 또는 무언가에 대한 깊은 애정, 배려, 따뜻함의 느낌입니다. 사랑은 연결과 소속감을 만들어 줍니다.",
+      "question": "이 사람이나 상황에서 무엇을 감사하게 여기나요? 어떻게 배려와 지원을 보여줄 수 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 건강한 경계를 잃거나 다른 사람을 돌보면서 자신의 필요를 소홀히 할 수 있습니다.",
+      "overloadTip": "균형을 위해, 감사하는 한 가지와 자신의 필요 한 가지를 말하고, 둘 다를 존중하는 단계를 선택하세요.",
+      "adaptivePurpose": "당신에게 중요한 사람이나 대의에 연결하고, 양육하고, 투자하고 싶은 욕구를 나타내는 신호입니다.",
+      "relatedFeelings": ["포용하는", "너그러운", "다정한"],
+      "borderInfo": "사랑하는 느낌은 배려와 신뢰의 기반을 포함하므로 신뢰 영역에 가깝습니다.",
+      "story": "데이비드는 딸이 거실을 가로질러 첫 비틀거리는 걸음을 떼는 것을 지켜보았습니다. 넘어졌을 때 딸은 울어야 할지 결정하기 전에 완전한 신뢰를 담아 그를 올려다보았습니다. 그는 딸을 안아 들어 이마에 입을 맞추고, 아버지가 되기 전에는 상상할 수 없었던 방식으로 마음이 넓어지는 것을 느꼈습니다. 이 작은 존재가 그를 완전히 변화시켰습니다."
+    },
+    {
+      "id": "trust-1-grateful",
+      "name": "감사하는",
+      "category": "신뢰",
+      "description": "고마움과 감사의 따뜻한 느낌입니다. 감사는 삶에서 좋은 것들을 인식하고 가치 있게 여기는 데 도움을 줍니다.",
+      "question": "무엇이 당신을 지탱하거나 자양분을 주고 있나요? 누가 또는 무엇이 당신이 소중히 여기는 것에 기여하고 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 '감사해야 하니까'라는 이유로 건강하지 못한 상황을 용인하거나 진정한 필요를 표현하는 것을 피할 수 있습니다.",
+      "overloadTip": "균형을 위해, 감사가 정직함과 함께하도록 하세요: 잘 작동하는 것을 감사히 여기면서 아직 표현하고 싶은 필요나 경계 하나를 찾아보세요.",
+      "adaptivePurpose": "당신에게 중요한 지원, 자원 또는 선물을 받고 있다는 신호입니다.",
+      "relatedFeelings": ["성취감 있는", "경탄하는", "고마운"],
+      "borderInfo": "감사하는 느낌은 긍정적 경험에 대한 감사를 포함하므로 기쁨 영역에 가깝습니다.",
+      "story": "수술 후 회복실에 누워 있을 때 톰은 압도당했습니다 -- 고통이 아니라 감사로. 마취 전에 손을 잡아준 간호사. 일을 쉬고 함께해 준 여동생. 가족과 더 많은 시간을 함께할 수 있게 해준 외과 의사의 안정된 손. 그는 자신이 다른 사람들에게 얼마나 의존하고 있는지, 또 그것에 대해 얼마나 감사한지 이렇게까지 인식한 적이 없었습니다."
+    },
+    {
+      "id": "trust-2-peaceful",
+      "name": "평화로운",
+      "category": "신뢰",
+      "description": "걱정이나 방해 없이 평온하고 차분한 상태입니다. 평화는 정신적, 감정적 균형을 가져다줍니다.",
+      "question": "무엇이 당신에게 활력을 주거나 당신을 지탱하고 있나요? 무엇이 잘 되고 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 필요한 갈등을 피하거나 중요한 도전에서 물러날 수 있습니다.",
+      "overloadTip": "균형을 위해, 차분함을 즐기면서 아직 용기 있는 대화나 작은 행동이 필요한 문제가 있는지 물어보세요.",
+      "adaptivePurpose": "당신의 시스템이 중심을 재정립하고 있으며, 쉬고 회복할 수 있을 만큼 안전하다고 느끼고 있다는 신호입니다.",
+      "relatedFeelings": ["차분한", "만족스러운", "고요한"],
+      "story": "일요일 아침. 창문에 부딪히는 빗소리. 알람도, 의무도, 갈 곳도 없습니다. 사라는 커피 한 잔과 몇 달째 읽으려고 했던 책을 들고 웅크렸습니다. 아파트는 옆 쿠션 위에서 그르릉거리는 고양이 소리만 빼고는 조용했습니다. 몇 주 만에 처음으로 그녀의 마음은 할 일 목록을 뒤적이지 않았습니다. 그저 단순히 이 순간에 있었습니다."
+    },
+    {
+      "id": "trust-3-accepted",
+      "name": "수용받는",
+      "category": "신뢰",
+      "description": "있는 그대로의 자신이 환영받고 가치 있게 여겨지는 느낌입니다. 수용은 소속감과 안정감을 만들어 줍니다.",
+      "question": "어디에서 소속감을 느끼나요? 누가 있는 그대로의 당신을 받아들이고 가치 있게 여기나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 소속감을 유지하기 위해 지나치게 순응하며 자신의 일부를 숨길 수 있습니다.",
+      "overloadTip": "균형을 위해, 더 진정한 자신이 될 수 있을 만큼 안전하다고 느끼는 곳을 찾고, 자신에 대해 한 가지 더 솔직한 부분을 나눠 보세요.",
+      "adaptivePurpose": "자신이 보이고, 가치 있게 여겨지고, 집단이나 관계에 포함되어 있다고 느끼는 신호입니다.",
+      "relatedFeelings": ["가치 있는", "존중받는", "환영받는"],
+      "story": "부모님께 커밍아웃하는 것은 무서운 일이었습니다. 미구엘은 논쟁, 실망, 어쩌면 거부까지 대비했었습니다. 대신 어머니가 그를 끌어안고 속삭였습니다. '알고 있어, 아들아. 한동안 알고 있었어.' 아버지는 간단히 말했습니다. '넌 여전히 너야. 아무것도 변하지 않아.' 수년간의 두려움이 그 무조건적인 수용의 순간에 녹아내렸습니다."
+    },
+    {
+      "id": "trust-4-hopeful",
+      "name": "희망찬",
+      "category": "신뢰",
+      "description": "긍정적인 결과에 대한 기대와 바람의 느낌입니다. 희망은 어려운 시기에도 계속 앞으로 나아가도록 동기를 부여합니다.",
+      "question": "무엇을 희망하고 있나요? 어떤 긍정적인 결과를 그려보고 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 변화를 수동적으로 기다리거나 비현실적인 기대에 매달릴 수 있습니다.",
+      "overloadTip": "균형을 위해, 희망의 일부를 지금 실행할 수 있는 구체적이고 실현 가능한 단계로 전환하세요.",
+      "adaptivePurpose": "더 나은 미래를 상상할 수 있으며 그것에 이끌리고 있다는 신호입니다.",
+      "relatedFeelings": ["그리워하는", "기대하는", "낙관적인"],
+      "borderInfo": "희망찬 느낌은 미래에 대한 불확실성을 포함하므로 두려움 영역에 가깝습니다.",
+      "story": "암이 관해에 들어갔습니다. 첸 박사는 조심스러운 표현을 사용했습니다 -- '조심스럽게 낙관적,' '좋은 지표들.' 하지만 종양센터를 나서면서 레이첼은 18개월 동안 허락하지 않았던 감정을 느꼈습니다: 희망. 확신도 아니고 부정도 아닌, 진정한 희망이었습니다. 닫혀 있는 것 같았던 미래에 갑자기 문이 다시 생겼습니다."
+    },
+    {
+      "id": "fear-1-nervous",
+      "name": "긴장된",
+      "category": "두려움",
+      "description": "불확실한 무언가에 대한 불안이나 우려의 상태입니다. 긴장은 도전적이거나 낯선 상황에 대한 자연스러운 반응입니다.",
+      "question": "무엇이 위험을 만들고 있나요? 무엇이 예측 불가능하거나 통제할 수 없다고 느껴지나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 어디서나 위험을 보고, 과도하게 생각하거나, '만약에' 시나리오에 의해 마비될 수 있습니다.",
+      "overloadTip": "균형을 위해, 걱정되는 구체적인 위험 하나와 가정을 준비하거나 확인하기 위해 취할 수 있는 작은 행동 하나를 이야기하세요.",
+      "adaptivePurpose": "무언가가 불확실하거나 위험하게 느껴지며 주의나 준비가 필요할 수 있다는 신호입니다.",
+      "relatedFeelings": ["위협받는", "불안한", "초조한"],
+      "borderInfo": "긴장된 느낌은 취약성과 안전에 대한 필요를 포함하므로 신뢰 영역에 가깝습니다.",
+      "story": "새 학교에서의 첫날. 아이샤는 교실 문 밖에 서서 안에서 들려오는 웃음소리와 대화를 듣고 있었습니다. 아무도 말을 걸어주지 않으면? 식당을 못 찾으면? 바보 같은 말을 하면? 속이 뒤틀렸습니다. 한 번 깊이 숨을 쉬고, 전에도 새로운 상황에서 살아남았다는 것을 스스로에게 상기시키며 문을 밀고 들어갔습니다."
+    },
+    {
+      "id": "fear-2-scared",
+      "name": "무서운",
+      "category": "두려움",
+      "description": "강렬한 공포나 경계의 느낌입니다. 무서움을 느끼는 것은 잠재적 위험에 대해 몸이 경고하는 방식입니다.",
+      "question": "당신이 소중히 여기는 무엇 또는 누가 위험에 처해 있나요? 어떤 위험이나 해로움을 감지하고 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 가장 중요한 것에서 물러나거나 너무 무섭다는 이유로 중요한 단계를 피할 수 있습니다.",
+      "overloadTip": "균형을 위해, 가장 보호하고 싶은 것을 명확히 하고, 소중히 여기는 것을 존중하면서 안전을 높이는 행동 하나를 선택하세요.",
+      "adaptivePurpose": "당신이 소중히 여기는 무언가가 위협받고 있으며 보호나 주의가 필요하다는 신호입니다.",
+      "relatedFeelings": ["겁먹은", "공포에 질린", "놀란"],
+      "story": "새벽 2시에 화재 경보가 울렸습니다. 심장이 뛰며 케빈은 휴대폰을 집어 들고 주방을 확인하러 달려갔습니다. 아무것도 없었습니다. 복도. 아무것도 없었습니다. 그때 냄새를 맡았습니다 -- 복도에서 아파트 문 아래로 스며드는 연기. 이것은 진짜였습니다. 손이 떨리며 911에 전화하고 지갑을 챙겨 비상구로 향했습니다. 모든 것이 갑자기, 무섭도록 즉각적으로 느껴졌습니다."
+    },
+    {
+      "id": "fear-3-anxious",
+      "name": "불안한",
+      "category": "두려움",
+      "description": "결과가 불확실한 무언가에 대한 걱정, 긴장 또는 불안의 느낌입니다. 불안은 준비하거나 행동해야 한다는 신호일 수 있습니다.",
+      "question": "어떤 전반적인 위협이나 큰 불확실성이 있나요? 무엇에 대비하거나 무엇으로부터 보호해야 하나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 반추하거나, 재앙적으로 생각하거나, 에너지를 소모하는 상상 속 문제를 만들 수 있습니다.",
+      "overloadTip": "균형을 위해, 걱정을 '영향을 미칠 수 있는 것'과 '미칠 수 없는 것'으로 분류한 다음, 영향을 미칠 수 있는 것에 대해 작은 한 걸음을 선택하세요.",
+      "adaptivePurpose": "계획이나 보호가 필요할 수 있는 장기적인 위협이나 불확실성을 살피고 있다는 신호입니다.",
+      "relatedFeelings": ["공포감", "걱정하는", "팽팽한"],
+      "story": "발표는 아직 일주일이나 남았지만 리사는 그것에 대한 생각을 멈출 수 없었습니다. 프로젝터가 고장 나면? CEO가 대답할 수 없는 질문을 하면? 목소리가 떨리면? 새벽 3시에 누워서 최악의 시나리오를 머릿속으로 돌리며, 각 걱정이 세 가지 더로 갈라졌습니다. 이 악순환이 도움이 안 된다는 것을 알았지만 멈출 수 없는 것 같았습니다."
+    },
+    {
+      "id": "fear-4-insecure",
+      "name": "불안정한",
+      "category": "두려움",
+      "description": "자신이나 상황에서의 위치에 대한 자신감이나 확신이 부족한 상태입니다. 불안정감은 종종 자기 의심이나 거부에 대한 두려움에서 비롯됩니다.",
+      "question": "무엇이 자신을 의심하게 만드나요? 다른 사람들이 무엇을 생각하거나 볼까 봐 두려운가요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 끊임없이 인정을 구하거나, 다른 사람의 비위를 맞추거나, 기여를 보류할 수 있습니다.",
+      "overloadTip": "균형을 위해, 자신의 강점에 대한 구체적인 증거를 떠올리고, 상상 속 비판이 아니라 신뢰할 수 있는 사람으로부터 건설적인 피드백을 구하세요.",
+      "adaptivePurpose": "자기 가치, 능력 또는 수용에 대한 감각이 흔들리고 있으며 안심, 학습 또는 경계가 필요할 수 있다는 신호입니다.",
+      "relatedFeelings": ["거부당한", "부족한", "불확실한"],
+      "borderInfo": "불안정한 느낌은 자기 가치에 대한 예상치 못한 위협을 포함하므로 놀라움 영역에 가깝습니다.",
+      "story": "저녁 파티에서 모두가 경영대학원 시절부터 서로를 아는 것 같았습니다. 그들은 교수들에 대한 이야기와 내부 농담을 주고받았고 마커스는 미소 짓고 고개를 끄덕이며 점점 투명인간이 된 기분이 들었습니다. '뭐 하시는 분이세요?'라고 누군가 마침내 물었고, 갑자기 그 아침까지만 해도 자랑스러웠던 자신의 직업이 부족하게 느껴졌습니다. 이 사람들 사이에 있을 자격이 있을까?"
+    },
+    {
+      "id": "surprise-1-startled",
+      "name": "깜짝 놀란",
+      "category": "놀라움",
+      "description": "예상치 못한 무언가에 의해 야기되는 갑작스러운 충격이나 경계의 느낌입니다. 깜짝 놀람은 놀라움에 대한 즉각적이고 자동적인 반응입니다.",
+      "question": "어떤 갑작스러운 변화나 신호가 지금 당신의 주의를 필요로 하나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 초조하거나 과도하게 경계하며, 모든 것을 비상사태로 취급할 수 있습니다.",
+      "overloadTip": "균형을 위해, 잠시 멈추어 보고, 숨을 쉬고, 두려워했던 것과 실제로 지금 일어나고 있는 것을 구분하세요.",
+      "adaptivePurpose": "예상치 못한 일이 방금 발생했으며 주의를 빠르게 전환해야 한다는 신호입니다.",
+      "relatedFeelings": ["경악한", "충격받은", "멍한"],
+      "borderInfo": "깜짝 놀란 느낌은 갑작스러운 위협이나 위험의 감각을 포함하므로 두려움 영역에 가깝습니다.",
+      "story": "조용한 공원을 지나 집으로 걸어가며 이어폰을 꽂고 팟캐스트에 빠져 있던 프리야 옆 덤불에서 무언가가 튀어나왔습니다. 심장이 뛰며 뒤로 물러서고, 방어적으로 손을 들어올렸는데 -- 다람쥐가 길을 가로질러 달려가는 것이었습니다. 그녀는 바보 같은 기분으로 떨리는 웃음을 터뜨렸지만, 맥박이 정상으로 돌아오기까지 몇 분이 걸렸습니다."
+    },
+    {
+      "id": "surprise-2-confused",
+      "name": "혼란스러운",
+      "category": "놀라움",
+      "description": "무언가에 대해 당혹하거나 명확하지 않은 상태입니다. 혼란은 정보가 기대나 이해와 맞지 않을 때 발생합니다.",
+      "question": "어떤 정보가 빠져 있거나 불명확한가요? 이것을 이해하는 데 무엇이 도움이 될까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 의심에 갇히거나 결정을 미루거나 자신과 다른 사람에 대해 모든 것을 의문시할 수 있습니다.",
+      "overloadTip": "균형을 위해, 혼란을 질문으로 바꾸세요: 이해하고 싶은 한 가지를 정의하고 답변, 실험 또는 대화를 찾으세요.",
+      "adaptivePurpose": "현재의 이해가 사실과 맞지 않으며 새로운 정보나 관점이 필요할 수 있다는 신호입니다.",
+      "relatedFeelings": ["환멸감을 느끼는", "당혹한", "어리둥절한"],
+      "story": "이메일은 이해가 되지 않았습니다. 5년간의 뛰어난 평가 후에 대니엘은 즉시 '새로운 역할로 전환'되었습니다. 상사는 전화를 받지 않았습니다. 인사부는 조심스러운 비답변만 했습니다. 그는 책상에 앉아 같은 문장을 계속 읽으며 조각을 맞추려 했습니다. 무슨 일이 일어났을까? 무엇을 놓쳤을까?"
+    },
+    {
+      "id": "surprise-3-amazed",
+      "name": "경탄하는",
+      "category": "놀라움",
+      "description": "큰 경이와 놀라움의 느낌입니다. 경탄은 경외감으로 가득 채우는 긍정적인 형태의 놀라움입니다.",
+      "question": "무엇이 기대를 초과했나요? 이것이 어떤 가능성을 열어주나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 사람이나 상황을 이상화하고 실질적인 한계나 위험을 놓칠 수 있습니다.",
+      "overloadTip": "균형을 위해, 무엇이 기쁨을 주는지를 말하고, 이 새로운 가능성을 탐색하면서 현실에 발을 딛게 해줄 실용적인 단계나 경계 하나도 말해 보세요.",
+      "adaptivePurpose": "무언가가 예상보다 훨씬 좋거나, 크거나, 아름다워서 가능성의 감각이 확장되고 있다는 신호입니다.",
+      "relatedFeelings": ["놀라운", "경외감을 느끼는", "감명받은"],
+      "story": "처음으로 그랜드 캐니언 가장자리에 서서 제니퍼는 말을 잃었습니다. 사진으로는 이것에 대비할 수 없었습니다 -- 불가능한 규모, 색상의 층, 바람에 의해서만 깨지는 침묵. 아름다운 곳을 전에도 봤지만, 이것은 달랐습니다. 이것은 그녀를 어딘가 편안한 방식으로 작게 느끼게 했고, 광대하고 오래된 무언가와 연결된 느낌이 들었습니다."
+    },
+    {
+      "id": "surprise-4-disappointed",
+      "name": "실망한",
+      "category": "놀라움",
+      "description": "기대가 충족되지 않았을 때의 슬픔이나 불쾌함의 느낌입니다. 실망은 희망했던 것과 현실 사이의 간극을 나타냅니다.",
+      "question": "어떤 기대가 충족되지 않았나요? 이 결과에서 무엇이 당신에게 중요한가요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 냉소주의에 빠져 미래의 노력이나 관계를 포기할 수 있습니다.",
+      "overloadTip": "균형을 위해, 기대를 명확하게 말한 다음, 목표를 수정할지, 전략을 바꿀지, 일정을 조정할지 결정하고 다음 행동 하나를 선택하세요.",
+      "adaptivePurpose": "현실이 희망과 일치하지 않았고 소중히 여기던 무언가가 줄어들거나 상실된 것 같다는 신호입니다.",
+      "relatedFeelings": ["배신감을 느끼는", "낙담한", "기대에 어긋난"],
+      "borderInfo": "실망한 느낌은 희망의 상실과 충족되지 않은 기대를 포함하므로 슬픔 영역에 가깝습니다.",
+      "story": "'저희는 다른 방향으로 가기로 했습니다.' 그 말이 갤러리의 공기 속에 맴돌았습니다. 클로이는 8개월 동안 이 의뢰에 자신의 비전을 모든 붓질에 쏟아부었습니다. 고객은 미팅에서 매우 열정적이었습니다. 이제 그들은 '좀 더 전통적인 것'을 원했습니다. 그녀는 전문적으로 미소 짓고 악수를 한 뒤, 차에 도착할 때까지 눈물이 흐르는 것을 참았습니다."
+    },
+    {
+      "id": "sad-1-hurt",
+      "name": "상처받은",
+      "category": "슬픔",
+      "description": "무언가 또는 누군가에 의한 감정적 고통입니다. 상처받은 감정은 종종 거부, 비판 또는 상실에서 비롯됩니다.",
+      "question": "어떤 가치나 관계가 영향을 받았나요? 어떤 치유나 회복이 도움이 될까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 원한을 품거나, 나쁜 의도를 가정하거나, 회복의 기회를 차단할 수 있습니다.",
+      "overloadTip": "균형을 위해, 고통과 그것이 중요한 이유를 인정한 다음, 그것을 전달하거나 치유의 지원을 받고 싶은지 고려하세요.",
+      "adaptivePurpose": "중요한 무언가 또는 누군가가 안전감, 자기 가치 또는 연결의 감각을 다치게 했다는 신호입니다.",
+      "relatedFeelings": ["낙담한", "위협받는", "상처 입은"],
+      "borderInfo": "상처받은 느낌은 종종 예상치 못한 감정적 상처에서 오기 때문에 놀라움 영역에 가깝습니다.",
+      "story": "'당신은 리더 자질이 없다고 봅니다.' 수년간 신뢰했던 멘토의 말은 주먹처럼 다가왔습니다. 로버트는 언젠가 자기 부서를 이끄는 꿈을 나누며 자신을 취약하게 내보였습니다. 이제 그 취약함이 실수처럼 느껴졌습니다. 비판은 건설적이었을 수도 있지만, 그 무시하는 듯한 표현에 싸여서 배신처럼 느껴질 뿐이었습니다."
+    },
+    {
+      "id": "sad-2-depressed",
+      "name": "우울한",
+      "category": "슬픔",
+      "description": "깊은 슬픔과 낮은 에너지의 상태입니다. 우울은 모든 것을 무겁고 감당하기 어렵게 느끼게 할 수 있습니다.",
+      "question": "무엇이 고갈되거나 절망적으로 느껴지나요? 다시 연결할 수 있는 작은 배려, 지원 또는 의미의 원천은 무엇인가요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 어떤 가능성도 보지 못하고, 완전히 물러나거나, 기본적인 자기 관리를 소홀히 할 수 있습니다.",
+      "overloadTip": "균형을 위해, 한 가지 작고 자비로운 행동을 선택하세요 -- 누군가에게 연락하거나, 몸을 움직이거나, 간단한 일 하나를 하는 것 -- 약간의 구조나 지원을 더해주는 것입니다.",
+      "adaptivePurpose": "에너지, 동기 또는 의미감이 떨어졌으며 휴식, 지원 또는 재정립이 필요할 수 있다는 신호입니다.",
+      "relatedFeelings": ["빈곤한", "무감각한", "공허한"],
+      "story": "침대에서 일어나는 것이 가장 힘든 부분이 되었습니다. 엠마는 해야 할 일이 있고, 자신에게 의지하는 사람들이 있다는 것을 알면서도 누워서 아무것도 느끼지 못했습니다 -- 샤워조차 산을 오르는 것처럼 느껴지게 하는 무거운 공허함뿐이었습니다. 색상은 흐릿해졌습니다. 음식에는 맛이 없었습니다. 그녀는 멀리서 자기 삶을 바라보는 것 같은 느낌으로 일상을 보냈습니다."
+    },
+    {
+      "id": "sad-3-lonely",
+      "name": "외로운",
+      "category": "슬픔",
+      "description": "다른 사람과의 고립이나 단절에 대한 고통스러운 느낌입니다. 외로움은 의미 있는 연결에 대한 우리의 필요를 부각시킵니다.",
+      "question": "지금 어떤 연결이 필요한가요? 누가 당신을 더 보이게 하거나 지지해 줄 수 있을까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 근본적으로 혼자이거나 사랑받을 수 없다고 믿고 더 물러날 수 있습니다.",
+      "overloadTip": "균형을 위해, 연결을 향한 작고 안전한 방법 하나를 찾으세요 -- 메시지, 전화, 함께하는 공간, 또는 신뢰하는 사람에게 당신의 필요를 말하는 것입니다.",
+      "adaptivePurpose": "연결, 소속감 또는 보여지는 것에 대한 필요가 충족되지 않고 있다는 신호입니다.",
+      "relatedFeelings": ["버려진", "고립된", "단절된"],
+      "story": "아파트는 이사 상자로 가득 차 있었습니다. 새 도시, 새 직장, 새로운 출발 -- 원했던 모든 것이었습니다. 하지만 첫날 밤 맨 매트리스에 앉아 연락처는 가득하지만 전화할 사람은 아무도 없는 상태에서, 유키는 자신의 외로움의 무게를 느꼈습니다. 벽 너머로 이웃들이 그들의 삶을 사는 소리가 들렸고, 그 소리는 자기 공간의 침묵을 더 크게 만들 뿐이었습니다."
+    },
+    {
+      "id": "sad-4-ashamed",
+      "name": "부끄러운",
+      "category": "슬픔",
+      "description": "잘못하거나 창피한 일을 했다는 믿음에 의한 굴욕이나 고통의 고통스러운 느낌입니다. 수치심은 자신을 바라보는 방식에 영향을 미칩니다.",
+      "question": "어떤 기준으로 자신을 평가하고 있나요? 성장을 위해 어떤 자기 연민이나 회복이 도움이 될까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 특정한 실수를 자신이 나쁘거나 가치 없다는 믿음으로 바꾸고 진짜 자신을 숨길 수 있습니다.",
+      "overloadTip": "균형을 위해, '내가 무언가를 했다'와 '나는 무언가이다'를 분리하고, 가치관에 맞는 배움, 회복 또는 사과의 한 걸음을 선택하세요.",
+      "adaptivePurpose": "행동이나 선택이 가치관과 맞지 않을 수 있으며 성찰, 회복 및 성장을 위한 초대라는 신호입니다.",
+      "relatedFeelings": ["후회하는", "죄책감을 느끼는", "당혹한"],
+      "borderInfo": "부끄러운 느낌은 자기 자신에 대한 부정적 판단을 포함하므로 혐오 영역에 가깝습니다.",
+      "story": "그저 지름길이라고 스스로에게 말했습니다. 어차피 아무도 꼼꼼히 읽지 않을 리포트에 몇 단락을 복사한 것뿐이었습니다. 하지만 교수가 사무실로 부르고 증거를 책상 위에 펼쳐 놓았을 때 마이클은 눈을 마주칠 수 없었습니다. 그녀의 목소리에 담긴 실망은 분노보다 더 나빴습니다. 그는 학문적 규칙만이 아니라 자기 자신이 누구인지에 대한 감각을 배반한 것이었습니다."
+    },
+    {
+      "id": "disgust-1-dislike",
+      "name": "싫어하는",
+      "category": "혐오",
+      "description": "무언가 또는 누군가에 대한 혐오나 불쾌함의 느낌입니다. 싫어함은 자신의 가치관과 맞지 않는 것을 식별하는 데 도움을 줍니다.",
+      "question": "무엇이 가치관이나 선호와 맞지 않는다고 느껴지나요? 이것이 어떤 경계나 선택을 드러내나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 가혹한 판단, 편견, 사람이나 아이디어를 너무 빨리 거부하는 것으로 이어질 수 있습니다.",
+      "overloadTip": "균형을 위해, 구체적으로 무엇이 싫은지 -- 행동, 스타일 또는 영향 -- 를 전체 사람이나 상황을 비난하지 않고 말하고, 실제로 어떤 경계가 필요한지 결정하세요.",
+      "adaptivePurpose": "무언가가 취향, 필요 또는 가치관에 맞지 않으며 거리를 두거나 다른 선택을 원할 수 있다는 신호입니다.",
+      "relatedFeelings": ["역겨운", "움츠러든", "거부감을 느끼는"],
+      "borderInfo": "싫어하는 느낌은 감정적 철수와 거부를 포함하므로 슬픔 영역에 가깝습니다.",
+      "story": "회의에서의 모든 댓글, 모든 '사실은 말이죠,' 모든 끼어들기마다 그레이스는 턱이 점점 더 단단해지는 것을 느꼈습니다. 새 동료에 대해 명백하게 불쾌한 것은 짚어낼 수 없었지만, 그의 태도에 무언가가 신경을 건드렸습니다. 회의가 끝날 무렵 그녀는 전문적인 모습을 유지하려면 그와의 상호작용을 제한할 방법을 찾아야 한다는 것을 알았습니다."
+    },
+    {
+      "id": "disgust-2-avoidance",
+      "name": "회피",
+      "category": "혐오",
+      "description": "불쾌하거나 불편한 것으로부터 멀리 떨어지려는 경향입니다. 회피는 위협적으로 느껴지는 것에 대한 보호적 반응입니다.",
+      "question": "무엇이 안전하지 않거나 압도적이거나 지치게 느껴지나요? 더 많은 지원이나 명확성을 가지고 어떻게 접근할 수 있을까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 중요한 행동을 지연시키거나 제자리에 머물거나 문제를 조용히 키울 수 있습니다.",
+      "overloadTip": "균형을 위해, 피하고 있는 과제나 상황을 아주 작은 한 걸음으로 나누고, 그것을 더 관리하기 쉽게 만들 지원, 정보 또는 경계를 고려하세요.",
+      "adaptivePurpose": "현재의 자원으로는 너무 위협적이거나 압도적이거나 불쾌해서 직면하기 어렵다는 신호입니다.",
+      "relatedFeelings": ["망설이는", "싫어하는", "꺼리는"],
+      "story": "카운터 위의 우편물 더미는 작은 산이 되어 있었습니다. 아마 청구서일 것입니다. 어쩌면 국세청에서 온 것도. 오마르는 매일 그 옆을 지나가고, 불과 몇 센티미터 옆에서 커피를 만들면서도 어쩐지 하나도 열어보지 못했습니다. 이것이 상황을 악화시키고 있다는 것을 알았습니다. 하지만 오늘은 처리하지 않을 것이라는 것도 알았습니다. 아마 내일도 아닐 것입니다."
+    },
+    {
+      "id": "disgust-3-aweful",
+      "name": "끔찍한",
+      "category": "혐오",
+      "description": "매우 불쾌하거나 불쾌한 것에 대한 강한 부정적 느낌입니다. 끔찍하다고 느끼는 것은 무언가가 근본적으로 잘못되었거나 고통스럽다는 신호입니다.",
+      "question": "무엇이 해롭거나 받아들일 수 없다고 느껴지나요? 어떤 기준이나 가치가 변화의 필요성을 신호하고 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 재앙적으로 생각하거나, 변화에 대해 절망하거나, 전략 대신 분노만으로 반응할 수 있습니다.",
+      "overloadTip": "균형을 위해, 정확히 무엇이 해로운지를 명확히 한 다음, 약간이라도 회복을 향해 움직이는 현실적인 행동 하나를 선택하세요 -- 개인적, 관계적 또는 체계적으로.",
+      "adaptivePurpose": "무언가가 근본적으로 잘못되었거나, 해롭거나, 핵심 가치관과 어긋난다고 느끼는 신호입니다.",
+      "relatedFeelings": ["밀어내고 싶은", "혐오하는", "끔찍한"],
+      "story": "다큐멘터리는 공장식 농장의 영상을 보여주었습니다 -- 잊을 수 없는 환경의 동물들. 나탈리는 지적으로는 음식이 어디서 오는지 알고 있었습니다. 하지만 아는 것과 보는 것은 다른 것이었습니다. 노트북을 닫고, 속이 뒤틀리며, 한 번도 제대로 생각해보지 않았던 무언가에 연루되어 있다고 느꼈습니다."
+    },
+    {
+      "id": "disgust-4-disapproval",
+      "name": "불찬성",
+      "category": "혐오",
+      "description": "누군가 또는 무언가에 대한 부정적인 판단이나 의견입니다. 불찬성은 자신의 가치관과 관찰하는 것 사이의 갈등을 반영합니다.",
+      "question": "어떤 기대가 충족되지 않았나요? 어떤 가치가 이 반응을 촉발하고 있으며, 어떤 변화를 희망하나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 경직되거나, 지나치게 비판적이 되거나, 다른 사람들을 멀리할 수 있습니다.",
+      "overloadTip": "균형을 위해, 불찬성 아래에 있는 가치관과 연결하고, 수치심이 아니라 대화와 개선을 초대하는 방식으로 표현하세요.",
+      "adaptivePurpose": "행동이나 결과가 기준이나 가치관에 부합하지 않으며, 더 잘하는 것에 대해 관심이 있다는 신호입니다.",
+      "relatedFeelings": ["혐오하는", "판단적인", "비판적인"],
+      "borderInfo": "불찬성 느낌은 비판적 평가와 잠재적 대면을 포함하므로 분노 영역에 가깝습니다.",
+      "story": "할머니의 생일 축사 중에 아들이 휴대폰을 스크롤하는 것을 보며 리처드는 표정이 굳어지는 것을 느꼈습니다. 할머니는 돌아가신 남편의 추억을 나누며 목소리가 갈라지고 있었는데, 타일러는 5분도 고개를 들 수 없었습니다. 리처드는 아들의 눈을 잡고 천천히 고개를 저었습니다. 어떤 것들은 설명할 필요가 없어야 합니다."
+    },
+    {
+      "id": "anger-1-aggressive",
+      "name": "공격적인",
+      "category": "분노",
+      "description": "분노의 강력하고 대립적인 표현입니다. 공격성은 종종 위협받거나 좌절감을 느끼는 것에 대한 반응입니다.",
+      "question": "어떤 경계가 보호되어야 하나요? 행동하지 않을 수 없을 정도로 중요한 것은 무엇인가요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 다른 사람을 해치거나, 갈등을 고조시키거나, 자신의 목표를 훼손하는 방식으로 분출할 수 있습니다.",
+      "overloadTip": "균형을 위해, 행동하기 전에 멈추고, 그 에너지를 명확하고 단호한 말이나 행동을 선택하는 데 사용하며, 진정으로 원하는 결과에 집중하세요.",
+      "adaptivePurpose": "심각한 위협, 부당함 또는 위반을 인식하고 방어하거나 보호하려는 강한 충동을 느끼고 있다는 신호입니다.",
+      "relatedFeelings": ["적대적인", "자극받은", "전투적인"],
+      "borderInfo": "공격적인 느낌은 받아들일 수 없는 것을 거부하거나 밀어내는 것을 포함하므로 혐오 영역에 가깝습니다.",
+      "story": "'다시 한 번 말해 봐.' 빅터의 목소리는 낮고 위험했습니다. 바에서 한 남자가 그의 아내에 대해 댓글을 달았습니다 -- 들릴 만큼 크게, 부인할 수 있을 만큼 조용하게. 빅터는 주먹이 쥐어지고 가슴에서 익숙한 열기가 올라오는 것을 느꼈습니다. 모든 본능이 이 남자가 입을 연 것을 후회하게 만들라고 소리쳤습니다. 아내가 팔을 잡는 것만이 그를 붙잡고 있었습니다."
+    },
+    {
+      "id": "anger-2-mad",
+      "name": "화난",
+      "category": "분노",
+      "description": "강렬한 불쾌함이나 격분의 느낌입니다. 화가 나는 것은 무언가가 당신의 경계나 기대를 위반했다는 신호입니다.",
+      "question": "어떤 가치나 기대가 위반되었나요? 무엇을 표현하거나 회복해야 하나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 원한을 품거나, 이야기를 반복하거나, 해결을 찾기보다 공격할 수 있습니다.",
+      "overloadTip": "균형을 위해, 구체적으로 무엇이 괜찮지 않았는지 말하고, 경계를 설정할지, 변화를 요청할지, 의식적으로 내려놓을지 결정하세요.",
+      "adaptivePurpose": "무언가가 불공정하거나 괜찮지 않다고 느끼며 변화나 인정을 원한다는 신호입니다.",
+      "relatedFeelings": ["격분한", "격노한", "극도로 화난"],
+      "story": "세 시간. 그녀는 케이블 회사를 위해 세 시간을 기다렸고, '12시에서 4시 사이'의 시간이 천천히 흘러가는 것을 지켜보았습니다. 마침내 4시 30분에 전화가 울렸을 때 -- '일정을 재조정해야 합니다' -- 다이앤은 무언가가 끊어지는 것을 느꼈습니다. 신중하게 준비했던 불만 사항은 사라지고, 몇 달간 삼켰던 모든 좌절감이 쏟아져 나왔습니다. 고객 서비스 직원은 그럴 자격이 없었지만 그가 받았습니다."
+    },
+    {
+      "id": "anger-3-frustrated",
+      "name": "좌절한",
+      "category": "분노",
+      "description": "무언가를 달성할 수 없을 때의 불쾌함이나 짜증의 느낌입니다. 좌절은 차단된 목표나 충족되지 않은 필요에서 비롯됩니다.",
+      "question": "무엇이 목표를 방해하고 있나요? 어떤 변화 -- 내부적이든 외부적이든 -- 가 전진하는 데 도움이 될까요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 포기하거나, 남을 탓하거나, 사람들을 너무 몰아붙일 수 있습니다.",
+      "overloadTip": "균형을 위해, 한 걸음 물러서서 목표를 명확히 한 다음, 움직임을 이끌어낼 수 있는 다른 접근 방식, 요청 또는 경계 하나를 선택하세요.",
+      "adaptivePurpose": "노력이 막혀 있으며 진전, 효율성 또는 다른 결과를 원하고 있다는 신호입니다.",
+      "relatedFeelings": ["짜증난", "화가 난", "지친"],
+      "story": "코드는 작동해야 했습니다. 알렉스는 모든 줄을 확인하고, 문서와 비교하고, 예시를 직접 복사까지 했습니다. 그래도 같은 오류 메시지가 빨간색으로 그를 비웃었습니다. 여섯 시간째였습니다. 커피는 차가워졌습니다. 해답은 아마 뻔한 것일 테고, 나중에 놓친 것을 알면 자신을 탓할 것입니다. 하지만 지금은 노트북을 창 밖으로 던지고 싶을 뿐이었습니다."
+    },
+    {
+      "id": "anger-4-critical",
+      "name": "비판적인",
+      "category": "분노",
+      "description": "결함을 찾거나 가혹하게 판단하는 경향입니다. 비판적이 되는 것은 인식된 결함이나 실패에 대한 분노의 한 형태일 수 있습니다.",
+      "question": "어떤 개선이 필요하다고 보나요? 어떤 결과를 보호하거나 향상시키려고 하나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 결함 찾기가 기본이 되거나, 다른 사람들의 의욕을 꺾거나, 창의성과 실험을 차단할 수 있습니다.",
+      "overloadTip": "균형을 위해, 우려 사항을 말하기 전에 잘 작동하는 것 하나를 인정하고, 비판을 공유된 개선에 대한 기여로 표현하세요.",
+      "adaptivePurpose": "위험, 오류 또는 잠재적 개선 사항을 발견하고 품질이나 진정성에 관심이 있다는 신호입니다.",
+      "relatedFeelings": ["비꼬는", "회의적인", "판단적인"],
+      "borderInfo": "비판적인 느낌은 경계와 잠재적 문제에 대한 대비를 포함하므로 기대 영역에 가깝습니다.",
+      "story": "'괜찮은 것 같아.' 소피는 새 그림에 대한 미지근한 반응에 룸메이트의 얼굴이 처지는 것을 지켜보았습니다. 거칠게 말하려던 것은 아니었지만, 탁한 색상, 불확실한 붓 터치, 파생적인 구성 등 모든 결점이 보였습니다. 가장 친절한 것은 격려의 말이었을 것입니다. 대신 그녀의 기준이 대신 말하게 되었고, 이제 격려할 수 있는 순간은 지나가 버렸습니다."
+    },
+    {
+      "id": "anticipation-1-excited",
+      "name": "신나는",
+      "category": "기대",
+      "description": "앞으로 일어날 일에 대한 열정적인 기대의 느낌입니다. 흥분은 에너지를 주고 긍정적인 기대를 만듭니다.",
+      "question": "어떤 기회가 에너지를 주고 있나요? 이 에너지를 의도적인 행동으로 어떻게 전환할 수 있나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 너무 많은 것을 약속하거나, 계획 없이 서두르거나, 번아웃될 수 있습니다.",
+      "overloadTip": "균형을 위해, 에너지를 현실적인 계획과 페이스에 맞추고, 모든 것을 한꺼번에 하려 하기보다 명확한 다음 단계 하나를 선택하세요.",
+      "adaptivePurpose": "가능성에 의해 활력을 얻고 그것에 참여할 준비가 되어 있다는 신호입니다.",
+      "relatedFeelings": ["열정적인", "에너지 넘치는", "전율하는"],
+      "borderInfo": "신나는 느낌은 강렬한 에너지와 행동에 대한 준비를 포함하므로 분노 영역에 가깝습니다.",
+      "story": "콘서트는 아직 삼 주나 남았지만 재스민은 이미 옷을 골라놓고, 다시 배울 노래 플레이리스트를 만들고, 카운트다운을 시작했습니다. 그녀는 중학교 때부터 이 밴드를 따라왔고, 모든 앨범과 인터뷰를 알고 있었습니다. 실제로 티켓을 -- 좋은 좌석으로 -- 구했다는 사실이 아직 완전히 실감나지 않았습니다."
+    },
+    {
+      "id": "anticipation-2-eager",
+      "name": "열망하는",
+      "category": "기대",
+      "description": "무언가를 하거나 경험하려는 강렬한 욕구나 준비 상태입니다. 열망은 열정과 동기로 앞으로 나아가게 합니다.",
+      "question": "무엇을 향해 움직이고 싶은가요? 그 방향으로 나아갈 첫 번째 단계는 무엇인가요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 경고 신호를 무시하거나, 성찰을 건너뛰거나, 너무 자주 동의할 수 있습니다.",
+      "overloadTip": "균형을 위해, 움직이기 전에 어떤 정보, 경계 또는 준비가 필요한지 물어보고, 그 다음 신중한 첫 걸음을 내딛으세요.",
+      "adaptivePurpose": "무언가를 추구할 준비가 되어 있고 빠르게 그것을 향해 나아가고 싶다는 신호입니다.",
+      "relatedFeelings": ["열정적인", "동기부여된", "간절한"],
+      "story": "이메일이 도착했습니다 -- '신청이 승인되었습니다.' 벤은 이미 차 열쇠를 잡고 있었습니다. 구조 센터는 한 시간 후에 문을 닫고, 그 안 어딘가에 온라인에서 본 그 개가 있었습니다 -- 우스꽝스러운 귀와 애잔한 눈을 가진. 품종을 조사하고, 아파트를 준비하고, 적절한 시기를 기다린 6개월. 오늘이 그 날이었습니다."
+    },
+    {
+      "id": "anticipation-3-interested",
+      "name": "관심 있는",
+      "category": "기대",
+      "description": "무언가에 대해 더 배우거나 참여하고 싶은 느낌입니다. 관심은 새로운 경험을 향해 주의와 호기심을 끌어당깁니다.",
+      "question": "무엇이 주의를 끌고 있나요? 무엇을 더 깊이 탐구하거나 이해할 가치가 있다고 느껴지나요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 초점이 분산되어 많은 것을 시작하고 거의 완료하지 못할 수 있습니다.",
+      "overloadTip": "균형을 위해, 지금은 한 가지 초점 영역을 의식적으로 선택하고 다른 관심사는 나중을 위해 목록에 적어두어 의도를 가지고 탐구할 수 있게 하세요.",
+      "adaptivePurpose": "호기심이 활성화되어 배우거나 탐구하는 것에 잠재적 가치를 보고 있다는 신호입니다.",
+      "relatedFeelings": ["참을성 없는", "호기심 많은", "몰입한"],
+      "story": "'그것에 대해 더 말씀해 주세요.' 월시 교수는 진정으로 호기심 어린 눈으로 몸을 앞으로 기울였습니다. 학생의 논문 제안서는 아직 다듬어지지 않았지만, 거기에는 무언가가 있었습니다 -- 좀처럼 대화하지 않는 분야들 사이의 예상치 못한 연결. 그녀의 마음은 이미 질문들, 잠재적 연구 방향들, 협업하고 싶어할 동료들로 빠르게 돌아가고 있었습니다. 이것이 학문을 사랑하는 이유였습니다."
+    },
+    {
+      "id": "anticipation-4-stressed",
+      "name": "스트레스 받는",
+      "category": "기대",
+      "description": "요구하는 상황으로 인한 정신적 또는 감정적 긴장의 상태입니다. 스트레스는 에너지와 자원이 필요한 도전에 직면하고 있다는 신호입니다.",
+      "question": "어떤 압박이 주의를 필요로 하나요? 어디에서 완화, 지원 또는 더 명확한 경계가 필요한가요?",
+      "overloadRisk": "이 느낌을 과도하게 사용하면 위기 모드로 달리거나, 반사적인 결정을 내리거나, 자신을 소진시킬 수 있습니다.",
+      "overloadTip": "균형을 위해, 줄이거나, 위임하거나, 미룰 수 있는 요구 하나와 에너지나 명확성을 회복하는 데 도움이 되는 짧은 실천 하나를 찾으세요.",
+      "adaptivePurpose": "요구가 현재 자원보다 크게 느껴지며 무언가가 바뀌어야 한다는 신호입니다.",
+      "relatedFeelings": ["압도된", "압박받는", "긴장된"],
+      "borderInfo": "스트레스 받는 느낌은 긍정적인 결과를 달성하는 데 집중된 높은 에너지를 포함하므로 기쁨 영역에 가깝습니다.",
+      "story": "결혼식이 열흘 앞으로 다가왔습니다. 케이터링 업체가 방금 취소했습니다. 시어머니가 좌석 배치 변경을 '제안'하고 있었습니다. 드레스 수선이 끝나지 않았습니다. 그리고 자정에 휴대폰을 스크롤하다가 한나는 일기 예보에 비가 올 것이라는 것을 발견했습니다. 눈 뒤에 압력이 쌓이고 가슴에 익숙한 긴장감이 느껴졌습니다. 무언가가 양보해야 할 것이었습니다."
+    }
+  ],
+  "quotes": {
+    "joy-1-optimistic": [
+      {"text": "The sun'll come out tomorrow.", "speaker": "Annie", "work": "Annie"},
+      {"text": "There's some good in this world, and it's worth fighting for.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings: The Two Towers"},
+      {"text": "Even miracles take a little time.", "speaker": "Fairy Godmother", "work": "Cinderella"}
+    ],
+    "joy-2-confident": [
+      {"text": "I am no bird; and no net ensnares me.", "speaker": "Jane Eyre", "work": "Jane Eyre"},
+      {"text": "I know my worth.", "speaker": "Carol Danvers", "work": "Captain Marvel"},
+      {"text": "She wasn't fragile like a flower\u2026 she was fragile like a bomb.", "speaker": "Taylor Swift", "work": "Miss Americana"}
+    ],
+    "joy-3-joyful": [
+      {"text": "I'm walking on sunshine, and don't it feel good!", "speaker": "Katrina & The Waves", "work": "Walking on Sunshine"},
+      {"text": "Here comes the sun, and I say, it's all right.", "speaker": "George Harrison", "work": "The Beatles"},
+      {"text": "To infinity and beyond!", "speaker": "Buzz Lightyear", "work": "Toy Story"}
+    ],
+    "joy-4-loving": [
+      {"text": "All you need is love.", "speaker": "John Lennon", "work": "The Beatles"},
+      {"text": "Whatever our souls are made of, his and mine are the same.", "speaker": "Emily Bront\u00eb", "work": "Wuthering Heights"},
+      {"text": "After all this time?", "speaker": "Severus Snape", "work": "Harry Potter and the Deathly Hallows"}
+    ],
+    "anticipation-1-excited": [
+      {"text": "I'm so excited, and I just can't hide it!", "speaker": "The Pointer Sisters", "work": "I'm So Excited"},
+      {"text": "Adventure is out there!", "speaker": "Ellie", "work": "Up"},
+      {"text": "This is gonna be good.", "speaker": "", "work": "The Hunger Games"}
+    ],
+    "anticipation-2-eager": [
+      {"text": "I can't wait!", "speaker": "Hermione Granger", "work": "Harry Potter"},
+      {"text": "I want to go to there.", "speaker": "Liz Lemon", "work": "30 Rock"},
+      {"text": "Show me what you got.", "speaker": "", "work": "Top Gun"}
+    ],
+    "anticipation-3-interested": [
+      {"text": "Tell me more.", "speaker": "", "work": "Grease"},
+      {"text": "Curioser and curioser!", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "So\u2026 what happens next?", "speaker": "", "work": "The Princess Bride"}
+    ],
+    "anticipation-4-stressed": [
+      {"text": "I'm under a lot of pressure.", "speaker": "Peter Parker", "work": "Spider-Man 2"},
+      {"text": "It's too much.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"},
+      {"text": "I'm hanging by a thread.", "speaker": "", "work": "Inside Out 2"}
+    ],
+    "anger-1-aggressive": [
+      {"text": "Don't make me angry. You wouldn't like me when I'm angry.", "speaker": "Bruce Banner", "work": "The Incredible Hulk"},
+      {"text": "You dare challenge me?", "speaker": "Thor", "work": "Thor"},
+      {"text": "Say hello to my little friend!", "speaker": "Tony Montana", "work": "Scarface"}
+    ],
+    "anger-2-mad": [
+      {"text": "I am very angry with you!", "speaker": "Professor McGonagall", "work": "Harry Potter"},
+      {"text": "You can't handle the truth!", "speaker": "Colonel Jessup", "work": "A Few Good Men"},
+      {"text": "This means war.", "speaker": "Bugs Bunny", "work": "Looney Tunes"}
+    ],
+    "anger-3-frustrated": [
+      {"text": "Why is everything so complicated?", "speaker": "Avril Lavigne", "work": "Complicated"},
+      {"text": "I'm trying, okay?", "speaker": "", "work": "Spider-Man: Homecoming"},
+      {"text": "This is not going the way you think.", "speaker": "Luke Skywalker", "work": "Star Wars: The Last Jedi"}
+    ],
+    "anger-4-critical": [
+      {"text": "I'm not impressed.", "speaker": "", "work": "Gladiator"},
+      {"text": "Frankly, my dear, I don't give a damn.", "speaker": "Rhett Butler", "work": "Gone With the Wind"},
+      {"text": "That's\u2026 not ideal.", "speaker": "Sherlock Holmes", "work": "Sherlock (BBC)"}
+    ],
+    "disgust-1-dislike": [
+      {"text": "I don't like this.", "speaker": "Rey", "work": "Star Wars: The Force Awakens"},
+      {"text": "Ew, David!", "speaker": "Alexis Rose", "work": "Schitt's Creek"},
+      {"text": "That's disgusting!", "speaker": "Hermione Granger", "work": "Harry Potter"}
+    ],
+    "disgust-2-avoidance": [
+      {"text": "Get it away from me!", "speaker": "Indiana Jones", "work": "Indiana Jones and the Temple of Doom"},
+      {"text": "Nope, not today.", "speaker": "", "work": "Brooklyn Nine-Nine"},
+      {"text": "I'm not touching that.", "speaker": "", "work": "Finding Nemo"}
+    ],
+    "disgust-3-aweful": [
+      {"text": "This is awful.", "speaker": "Bilbo Baggins", "work": "The Hobbit"},
+      {"text": "That's the worst thing I've ever tasted!", "speaker": "Remy", "work": "Ratatouille"},
+      {"text": "What fresh hell is this?", "speaker": "Dorothy Parker", "work": ""}
+    ],
+    "disgust-4-disapproval": [
+      {"text": "I'm disappointed in you.", "speaker": "Mufasa", "work": "The Lion King"},
+      {"text": "You should not have done that.", "speaker": "Gandalf", "work": "The Lord of the Rings: The Fellowship of the Ring"},
+      {"text": "I expected better.", "speaker": "Steve Rogers", "work": "Marvel Cinematic Universe"}
+    ],
+    "sad-1-hurt": [
+      {"text": "You hurt me.", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "The wound is the place where the light enters you.", "speaker": "Rumi", "work": ""},
+      {"text": "The heart was made to be broken.", "speaker": "Oscar Wilde", "work": ""}
+    ],
+    "sad-2-depressed": [
+      {"text": "I feel so blue.", "speaker": "Billie Holiday", "work": "Am I Blue?"},
+      {"text": "Every night I lie in bed, the brightest colors fill my head\u2026 but I can't shake this feeling.", "speaker": "", "work": "The Greatest Showman"},
+      {"text": "Hello darkness, my old friend.", "speaker": "Simon & Garfunkel", "work": "The Sound of Silence"}
+    ],
+    "sad-3-lonely": [
+      {"text": "All by myself\u2026 don't want to be all by myself anymore.", "speaker": "Celine Dion", "work": "All By Myself"},
+      {"text": "Eleanor Rigby\u2026 lives in a dream.", "speaker": "The Beatles", "work": "Eleanor Rigby"},
+      {"text": "I've never felt so alone.", "speaker": "Harry Potter", "work": "Harry Potter and the Order of the Phoenix"}
+    ],
+    "sad-4-ashamed": [
+      {"text": "I'm ashamed of what I've done.", "speaker": "Jean Valjean", "work": "Les Mis\u00e9rables"},
+      {"text": "Shame is an unhappy emotion invented by pietists to exploit humanity.", "speaker": "William Blake", "work": "The Marriage of Heaven and Hell"},
+      {"text": "I'm not proud of myself.", "speaker": "Bruce Wayne", "work": "Batman Begins"}
+    ],
+    "surprise-1-startled": [
+      {"text": "You startled me!", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "Great Scott!", "speaker": "Doc Brown", "work": "Back to the Future"},
+      {"text": "What was that?", "speaker": "Bilbo Baggins", "work": "The Hobbit"}
+    ],
+    "surprise-2-confused": [
+      {"text": "I don't understand.", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "Toto, I've a feeling we're not in Kansas anymore.", "speaker": "Dorothy", "work": "The Wizard of Oz"},
+      {"text": "It's all a bit of a blur.", "speaker": "Bridget Jones", "work": "Bridget Jones's Diary"}
+    ],
+    "surprise-3-amazed": [
+      {"text": "This is incredible.", "speaker": "", "work": "Jurassic Park"},
+      {"text": "It's full of stars.", "speaker": "Dave Bowman", "work": "2001: A Space Odyssey"},
+      {"text": "I can't believe my eyes!", "speaker": "", "work": "The Lion King"}
+    ],
+    "surprise-4-disappointed": [
+      {"text": "I'm disappointed in you.", "speaker": "Atticus Finch", "work": "To Kill a Mockingbird"},
+      {"text": "You were supposed to be the chosen one!", "speaker": "Obi-Wan Kenobi", "work": "Star Wars: Episode III \u2013 Revenge of the Sith"},
+      {"text": "This is not what I hoped for.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "trust-1-grateful": [
+      {"text": "Thank you, thank you very much.", "speaker": "Elvis Presley", "work": ""},
+      {"text": "I've got sunshine on a cloudy day.", "speaker": "The Temptations", "work": "My Girl"},
+      {"text": "These are a few of my favorite things.", "speaker": "", "work": "The Sound of Music"}
+    ],
+    "trust-2-peaceful": [
+      {"text": "I feel at peace.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings"},
+      {"text": "Let it be.", "speaker": "The Beatles", "work": "Let It Be"},
+      {"text": "Be still, and know\u2026", "speaker": "", "work": "Psalm 46:10"}
+    ],
+    "trust-3-accepted": [
+      {"text": "You have been my friend. That in itself is a tremendous thing.", "speaker": "Charlotte", "work": "Charlotte's Web"},
+      {"text": "You belong with me.", "speaker": "Taylor Swift", "work": "You Belong With Me"},
+      {"text": "Come as you are.", "speaker": "Kurt Cobain", "work": "Come As You Are"}
+    ],
+    "trust-4-hopeful": [
+      {"text": "Hope is a good thing, maybe the best of things.", "speaker": "Andy Dufresne", "work": "The Shawshank Redemption"},
+      {"text": "There's a sunrise every morning that you're missing.", "speaker": "", "work": "Dear Evan Hansen"},
+      {"text": "Even the darkest night will end and the sun will rise.", "speaker": "", "work": "Les Mis\u00e9rables"}
+    ],
+    "fear-1-nervous": [
+      {"text": "I've got a bad feeling about this.", "speaker": "Han Solo", "work": "Star Wars"},
+      {"text": "My hands are shaking.", "speaker": "", "work": "The Hunger Games"},
+      {"text": "Courage is not the absence of fear.", "speaker": "Nelson Mandela", "work": ""}
+    ],
+    "fear-2-scared": [
+      {"text": "I'm scared.", "speaker": "Coraline", "work": "Coraline"},
+      {"text": "They're here\u2026", "speaker": "Carol Anne", "work": "Poltergeist"},
+      {"text": "Please don't let this be real.", "speaker": "", "work": "Stranger Things"}
+    ],
+    "fear-3-anxious": [
+      {"text": "I can't calm down.", "speaker": "", "work": "Inside Out"},
+      {"text": "I'm worried about everything.", "speaker": "", "work": "Harry Potter and the Deathly Hallows"},
+      {"text": "Something is wrong\u2026 I can feel it.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "fear-4-insecure": [
+      {"text": "I don't feel good enough.", "speaker": "", "work": "The Perks of Being a Wallflower"},
+      {"text": "You think I'm not good enough.", "speaker": "", "work": "Lady Bird"},
+      {"text": "Am I strong enough?", "speaker": "", "work": "Mulan"}
+    ]
+  }
+}
