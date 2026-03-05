@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman del nuevo libro:",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.2",
+    "version": "v3.3",
     "modalClose": "×",
     "relatedFeelingsLabel": "Variaciones",
     "borderInfoLabel": "Perspectiva de Frontera",
@@ -47,7 +47,9 @@
     "welcomeBackMessage": "Cierra este mensaje y tendrás acceso completo a la Rueda de Sabiduría Emocional.",
     "welcomeBackButton": "Comenzar a Explorar",
     "aboutLabel": "Acerca de",
-    "oppositeFeelingLabel": "Sentimiento Opuesto"
+    "aboutCardText1": "Las emociones pueden ser confusas, pero tienen su propia lógica... siguen \"reglas.\" Eso es lo que descubrirás en el libro <a href=\"https://www.6seconds.org/emotionrules\" target=\"_blank\"><em>Emotion Rules, The Science and Practice of Emotional Wisdom.</em></a>",
+    "aboutCardText2": "Esta Rueda de Sabiduría Emocional está basada en los conceptos del libro y en la metodología de Six Seconds para ayudar a las personas a crecer y practicar la inteligencia emocional.",
+    "oppositeFeelingLabel": "Sentimiento al Otro Lado de la Rueda"
   },
   "emotions": [
     {

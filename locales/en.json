@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman from the new book:",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.2",
+    "version": "v3.3",
     "modalClose": "×",
     "relatedFeelingsLabel": "Variations",
     "borderInfoLabel": "Border Insight",
@@ -47,7 +47,9 @@
     "welcomeBackMessage": "Close this message and you have full access to the Emotional Wisdom Wheel.",
     "welcomeBackButton": "Start Exploring",
     "aboutLabel": "About",
-    "oppositeFeelingLabel": "Opposite Feeling"
+    "aboutCardText1": "Emotions can be confusing, but they have their own logic... they follow \"rules.\" That's what you'll get from the book <a href=\"https://www.6seconds.org/emotionrules\" target=\"_blank\"><em>Emotion Rules, The Science and Practice of Emotional Wisdom.</em></a>",
+    "aboutCardText2": "This Emotional Wisdom Wheel is based on the concepts in the book, and Six Seconds' methodology for helping people grow and practice emotional intelligence.",
+    "oppositeFeelingLabel": "Feeling Across the Wheel"
   },
   "emotions": [
     {

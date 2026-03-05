@@ -208,6 +208,26 @@ function updateUIText() {
 
     const howToUseTitle = document.querySelector('#welcome-message p:nth-child(2) strong');
     if (howToUseTitle && ui.howToUseTitle) howToUseTitle.textContent = ui.howToUseTitle;
+
+    // Update how-to-use steps
+    if (ui.howToUseSteps && ui.howToUseSteps.length) {
+        const listItems = document.querySelectorAll('#welcome-message ul li');
+        ui.howToUseSteps.forEach((step, i) => {
+            if (listItems[i]) listItems[i].textContent = step;
+        });
+    }
+
+    // Update about card text
+    const aboutCard = document.getElementById('aboutCard');
+    if (aboutCard && ui.aboutCardText1) {
+        const paragraphs = aboutCard.querySelectorAll('p');
+        if (paragraphs[0]) paragraphs[0].innerHTML = ui.aboutCardText1;
+        if (paragraphs[1] && ui.aboutCardText2) paragraphs[1].textContent = ui.aboutCardText2;
+    }
+
+    // Update about reopen button
+    const reopenBtn = document.getElementById('aboutReopenBtn');
+    if (reopenBtn && ui.aboutLabel) reopenBtn.innerHTML = `ℹ️ ${ui.aboutLabel}`;
 }
 
 // Update SVG text elements with translated content
