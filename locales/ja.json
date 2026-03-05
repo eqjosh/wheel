@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman 新刊より：",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.2",
+    "version": "v3.3",
     "modalClose": "×",
     "relatedFeelingsLabel": "バリエーション",
     "borderInfoLabel": "境界の洞察",
@@ -47,7 +47,9 @@
     "welcomeBackMessage": "このメッセージを閉じると、感情の知恵ホイールへのフルアクセスが可能になります。",
     "welcomeBackButton": "探索を始める",
     "aboutLabel": "概要",
-    "oppositeFeelingLabel": "反対の感情"
+    "aboutCardText1": "感情は混乱しがちですが、独自の論理があります…「ルール」に従っているのです。それが本書 <a href=\"https://www.6seconds.org/emotionrules\" target=\"_blank\"><em>Emotion Rules, The Science and Practice of Emotional Wisdom</em></a> で学べることです。",
+    "aboutCardText2": "この感情の知恵ホイールは、本書のコンセプトと、人々の成長と感情的知性の実践を支援するSix Secondsの方法論に基づいています。",
+    "oppositeFeelingLabel": "ホイールの反対側の感情"
   },
   "emotions": [
     {

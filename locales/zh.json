@@ -12,7 +12,7 @@
     ],
     "copyright": "©Joshua Freedman 新书：",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.2",
+    "version": "v3.3",
     "modalClose": "×",
     "relatedFeelingsLabel": "情绪变体",
     "borderInfoLabel": "边界洞察",
@@ -47,7 +47,9 @@
     "welcomeBackMessage": "关闭此消息，即可畅享情绪智慧之轮的全部内容。",
     "welcomeBackButton": "开始探索",
     "aboutLabel": "关于",
-    "oppositeFeelingLabel": "对立情绪"
+    "aboutCardText1": "情绪可能令人困惑，但它们有自己的逻辑……它们遵循\u201c规则\u201d。这正是您将从本书 <a href=\"https://www.6seconds.org/emotionrules\" target=\"_blank\"><em>Emotion Rules, The Science and Practice of Emotional Wisdom</em></a> 中获得的内容。",
+    "aboutCardText2": "这个情绪智慧之轮基于书中的概念，以及Six Seconds帮助人们成长和实践情商的方法论。",
+    "oppositeFeelingLabel": "轮盘对面的情绪"
   },
   "emotions": [
     {
