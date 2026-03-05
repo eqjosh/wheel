@@ -352,7 +352,10 @@ function getCategoryColor(category) {
         '悲しみ': '#34689d', '嫌悪': '#8774b3', '怒り': '#f05d5f', '期待': '#f2913b',
         // Chinese (Simplified)
         '快乐': '#ffcb09', '信任': '#89c24f', '恐惧': '#03a54c', '惊讶': '#2782c5',
-        '悲伤': '#34689d', '厌恶': '#8774b3', '愤怒': '#f05d5f', '期待': '#f2913b'
+        '悲伤': '#34689d', '厌恶': '#8774b3', '愤怒': '#f05d5f', '期待': '#f2913b',
+        // Korean
+        '기쁨': '#ffcb09', '신뢰': '#89c24f', '두려움': '#03a54c', '놀라움': '#2782c5',
+        '슬픔': '#34689d', '혐오': '#8774b3', '분노': '#f05d5f', '기대': '#f2913b'
     };
     return colorMap[category] || '#808080';
 }
@@ -413,7 +416,10 @@ function getCategoryClass(category) {
         '悲しみ': 'sadness', '嫌悪': 'disgust', '怒り': 'anger', '期待': 'anticipation',
         // Chinese (Simplified)
         '快乐': 'joy', '信任': 'trust', '恐惧': 'fear', '惊讶': 'surprise',
-        '悲伤': 'sadness', '厌恶': 'disgust', '愤怒': 'anger', '期待': 'anticipation'
+        '悲伤': 'sadness', '厌恶': 'disgust', '愤怒': 'anger', '期待': 'anticipation',
+        // Korean
+        '기쁨': 'joy', '신뢰': 'trust', '두려움': 'fear', '놀라움': 'surprise',
+        '슬픔': 'sadness', '혐오': 'disgust', '분노': 'anger', '기대': 'anticipation'
     };
     return classMap[category] || '';
 }
