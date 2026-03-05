@@ -12,9 +12,9 @@
     ],
     "copyright": "©Joshua Freedman dal nuovo libro:",
     "copyrightLink": "Emotion Rules",
-    "version": "v3.1",
+    "version": "v3.2",
     "modalClose": "×",
-    "relatedFeelingsLabel": "Sentimenti Correlati",
+    "relatedFeelingsLabel": "Variazioni",
     "borderInfoLabel": "Intuizione di Confine",
     "quotesLabel": "Citazioni Ispiratrici",
     "adaptivePurposeLabel": "Scopo Adattivo",
@@ -34,7 +34,20 @@
     "copiedToast": "Copiato!",
     "randomFeelingButton": "🎲 Esplora un Sentimento Casuale",
     "noQuotes": "Nessuna citazione disponibile per questo sentimento.",
-    "comingSoon": "Esempi di vita reale in arrivo."
+    "comingSoon": "Esempi di vita reale in arrivo.",
+    "subscribeModalTitle": "Sblocca Accesso Completo",
+    "subscribeModalDescription": "Ottieni accesso gratuito a intuizioni di saggezza ed esempi di vita reale per tutte le 32 emozioni.",
+    "subscribeButton": "Iscriviti Gratis",
+    "firstNamePlaceholder": "Nome",
+    "emailPlaceholder": "Indirizzo email",
+    "countryPlaceholder": "Seleziona il tuo paese",
+    "privacyNote": "Rispettiamo la tua privacy. Cancellati quando vuoi.",
+    "subscribeSuccess": "Benvenuto! Tutto il contenuto è ora sbloccato.",
+    "welcomeBackTitle": "Grazie per esserti iscritto!",
+    "welcomeBackMessage": "Chiudi questo messaggio e avrai accesso completo alla Ruota della Saggezza Emozionale.",
+    "welcomeBackButton": "Inizia a Esplorare",
+    "aboutLabel": "Informazioni",
+    "oppositeFeelingLabel": "Sentimento Opposto"
   },
   "emotions": [
     {

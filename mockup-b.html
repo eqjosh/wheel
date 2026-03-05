@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Wheel - Mockup B: Inline Expandable Sections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left side - Wheel */
+        .wheel-section {
+            flex: 0 0 52%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: white;
+        }
+
+        .wheel-placeholder {
+            width: 88%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: conic-gradient(
+                from 0deg,
+                #ffcb09 0deg 45deg,
+                #89c24f 45deg 90deg,
+                #03a54c 90deg 135deg,
+                #2782c5 135deg 180deg,
+                #34689d 180deg 225deg,
+                #8774b3 225deg 270deg,
+                #f05d5f 270deg 315deg,
+                #f2913b 315deg 360deg
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .wheel-center {
+            width: 30%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .wheel-center span {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #666;
+            letter-spacing: 2px;
+        }
+
+        /* Cursor light effect */
+        .cursor-light {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .wheel-placeholder:hover ~ .cursor-light,
+        .wheel-section:hover .cursor-light {
+            opacity: 1;
+        }
+
+        /* Right side - Info panel */
+        .info-section {
+            flex: 0 0 48%;
+            background: #fafafa;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Compact header */
+        .panel-header {
+            padding: 16px 20px;
+            background: white;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-header h1 {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .language-selector {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            background: white;
+        }
+
+        /* Scrollable content */
+        .content-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        /* Emotion card - always visible */
+        .emotion-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .emotion-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .emotion-main {
+            flex: 1;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            background: #03a54c;
+            color: white;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .emotion-title-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .emotion-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .main-emoji {
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: transform 0.15s;
+        }
+
+        .main-emoji:hover {
+            transform: scale(1.2);
+        }
+
+        .copy-indicator {
+            font-size: 0.65rem;
+            color: #888;
+            margin-left: 4px;
+        }
+
+        .emotion-definition {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            line-height: 1.55;
+            color: #555;
+        }
+
+        .purpose-line {
+            margin-top: 12px;
+            padding: 10px 12px;
+            background: #f0fdf4;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #166534;
+        }
+
+        .purpose-line strong {
+            color: #03a54c;
+        }
+
+        /* Expandable sections */
+        .expand-section {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+
+        .expand-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .expand-header:hover {
+            background: #f8f8f8;
+        }
+
+        .expand-header h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .expand-header h3 .icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .expand-arrow {
+            font-size: 0.8rem;
+            color: #888;
+            transition: transform 0.2s;
+        }
+
+        .expand-section.open .expand-arrow {
+            transform: rotate(180deg);
+        }
+
+        .expand-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .expand-section.open .expand-content {
+            max-height: 600px;
+        }
+
+        .expand-inner {
+            padding: 0 16px 16px 16px;
+        }
+
+        /* Algebra content */
+        .related-feelings-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .related-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.15s;
+            cursor: pointer;
+        }
+
+        .related-item:hover {
+            background: #e8f5e9;
+            transform: translateX(4px);
+        }
+
+        .related-emojis {
+            font-size: 1.1rem;
+            min-width: 50px;
+        }
+
+        .related-name {
+            flex: 1;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .copy-btn {
+            padding: 4px 10px;
+            background: #e0e0e0;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .copy-btn:hover {
+            background: #03a54c;
+            color: white;
+        }
+
+        .algebra-note {
+            padding: 12px;
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #444;
+            border-left: 3px solid #667eea;
+        }
+
+        /* Wisdom content */
+        .wisdom-item {
+            margin-bottom: 14px;
+        }
+
+        .wisdom-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .wisdom-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #888;
+            margin-bottom: 6px;
+        }
+
+        .wisdom-question-box {
+            padding: 14px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .wisdom-risk-box {
+            padding: 12px;
+            background: #fff8e6;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #92400e;
+        }
+
+        .wisdom-tip-box {
+            padding: 12px;
+            background: #f0fdf4;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #166534;
+        }
+
+        /* Explorer content */
+        .opposite-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px;
+            background: linear-gradient(135deg, #f8f4ff 0%, #f0e8ff 100%);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 14px;
+        }
+
+        .opposite-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .opposite-emoji {
+            font-size: 1.5rem;
+        }
+
+        .opposite-info .name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .opposite-info .category {
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .explore-label {
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .explore-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .explore-chip {
+            padding: 6px 12px;
+            background: #f0f0f0;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .explore-chip:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Examples content */
+        .quote-item {
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .quote-item p {
+            font-style: italic;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .quote-item .attribution {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 6px;
+            font-style: normal;
+        }
+
+        .story-box {
+            padding: 14px;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 8px;
+            margin-top: 4px;
+        }
+
+        .story-box .label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+
+        .story-box p {
+            font-size: 0.85rem;
+            line-height: 1.55;
+            color: #78350f;
+        }
+
+        /* Footer */
+        .panel-footer {
+            padding: 12px 20px;
+            background: white;
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .panel-footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        /* Smooth scroll */
+        .content-scroll {
+            scroll-behavior: smooth;
+        }
+
+        /* Toast notification for copy */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #333;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wheel-section">
+            <div class="wheel-placeholder" id="wheel">
+                <div class="wheel-center">
+                    <span>FEELING</span>
+                    <span>WHEEL</span>
+                </div>
+            </div>
+            <div class="cursor-light" id="cursorLight"></div>
+        </div>
+
+        <div class="info-section">
+            <div class="panel-header">
+                <h1>Emotional Wisdom Wheel</h1>
+                <select class="language-selector">
+                    <option>English</option>
+                    <option>Espanol</option>
+                </select>
+            </div>
+
+            <div class="content-scroll">
+                <!-- Always visible emotion card -->
+                <div class="emotion-card">
+                    <div class="emotion-top">
+                        <div class="emotion-main">
+                            <span class="category-badge">Fear</span>
+                            <div class="emotion-title-row">
+                                <span class="emotion-name">Scared</span>
+                                <span class="main-emoji" onclick="copyEmoji('😨')" title="Click to copy">
+                                    😨
+                                    <span class="copy-indicator">copy</span>
+                                </span>
+                            </div>
+                            <p class="emotion-definition">
+                                An intense feeling of fear or alarm. Being scared is your body's way of alerting you to potential danger.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="purpose-line">
+                        <strong>Purpose:</strong> Signals that something you care about feels threatened and needs protection or attention.
+                    </div>
+                </div>
+
+                <!-- Algebra Section -->
+                <div class="expand-section open">
+                    <div class="expand-header" onclick="toggleSection(this)">
+                        <h3><span class="icon">🧮</span> Algebra</h3>
+                        <span class="expand-arrow">▼</span>
+                    </div>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <div class="related-feelings-list">
+                                <div class="related-item" onclick="copyEmoji('😨😟')">
+                                    <span class="related-emojis">😨😟</span>
+                                    <span class="related-name">Frightened</span>
+                                    <button class="copy-btn">Copy</button>
+                                </div>
+                                <div class="related-item" onclick="copyEmoji('😨☢️')">
+                                    <span class="related-emojis">😨☢️</span>
+                                    <span class="related-name">Terrified</span>
+                                    <button class="copy-btn">Copy</button>
+                                </div>
+                                <div class="related-item" onclick="copyEmoji('😨🚨')">
+                                    <span class="related-emojis">😨🚨</span>
+                                    <span class="related-name">Alarmed</span>
+                                    <button class="copy-btn">Copy</button>
+                                </div>
+                            </div>
+                            <div class="algebra-note">
+                                <strong>Emotional Algebra:</strong> Scared sits between Nervous and Anxious on the Fear spectrum.
+                                It signals immediate threat rather than anticipated worry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wisdom Section -->
+                <div class="expand-section">
+                    <div class="expand-header" onclick="toggleSection(this)">
+                        <h3><span class="icon">💡</span> Wisdom</h3>
+                        <span class="expand-arrow">▼</span>
+                    </div>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <div class="wisdom-item">
+                                <div class="wisdom-label">Guiding Question</div>
+                                <div class="wisdom-question-box">
+                                    "What or who do you care about that's at risk? What danger or harm are you sensing?"
+                                </div>
+                            </div>
+                            <div class="wisdom-item">
+                                <div class="wisdom-label">Overload Risk</div>
+                                <div class="wisdom-risk-box">
+                                    If you over-use this feeling, you may withdraw from what matters most or avoid important steps because they feel too scary.
+                                </div>
+                            </div>
+                            <div class="wisdom-item">
+                                <div class="wisdom-label">Balance Tip</div>
+                                <div class="wisdom-tip-box">
+                                    Clarify what you most want to protect and choose one action that increases safety while still honoring what you care about.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explorer Section -->
+                <div class="expand-section">
+                    <div class="expand-header" onclick="toggleSection(this)">
+                        <h3><span class="icon">🧭</span> Explorer</h3>
+                        <span class="expand-arrow">▼</span>
+                    </div>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <div class="opposite-card">
+                                <span class="opposite-emoji">😤💪</span>
+                                <div class="opposite-info">
+                                    <div class="name">Mad</div>
+                                    <div class="category">Opposite feeling (Anger)</div>
+                                </div>
+                            </div>
+                            <div class="explore-label">You might also explore:</div>
+                            <div class="explore-chips">
+                                <span class="explore-chip">😰 Nervous</span>
+                                <span class="explore-chip">😟 Anxious</span>
+                                <span class="explore-chip">😔 Insecure</span>
+                                <span class="explore-chip">🫨 Startled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Examples Section -->
+                <div class="expand-section">
+                    <div class="expand-header" onclick="toggleSection(this)">
+                        <h3><span class="icon">📖</span> Examples</h3>
+                        <span class="expand-arrow">▼</span>
+                    </div>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <div class="quote-item">
+                                <p>"I'm scared."</p>
+                                <div class="attribution">- Coraline, <em>Coraline</em></div>
+                            </div>
+                            <div class="quote-item">
+                                <p>"They're here..."</p>
+                                <div class="attribution">- Carol Anne, <em>Poltergeist</em></div>
+                            </div>
+                            <div class="quote-item">
+                                <p>"Please don't let this be real."</p>
+                                <div class="attribution">- <em>Stranger Things</em></div>
+                            </div>
+                            <div class="story-box">
+                                <div class="label">Real-life Example</div>
+                                <p>
+                                    "I was out in a busy area of town with my child, and suddenly I couldn't find them anywhere.
+                                    My heart raced, my hands went cold, and everything else faded as I frantically searched every face in the crowd."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                ©Joshua Freedman from: <a href="https://emotionrules.com">Emotion Rules</a> | v3.0
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Copied to clipboard!</div>
+
+    <script>
+        function toggleSection(header) {
+            const section = header.parentElement;
+            section.classList.toggle('open');
+        }
+
+        function copyEmoji(emoji) {
+            navigator.clipboard.writeText(emoji).then(() => {
+                showToast('Copied: ' + emoji);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        // Cursor light effect
+        const wheel = document.getElementById('wheel');
+        const cursorLight = document.getElementById('cursorLight');
+
+        document.addEventListener('mousemove', (e) => {
+            cursorLight.style.left = e.clientX + 'px';
+            cursorLight.style.top = e.clientY + 'px';
+        });
+
+        wheel.addEventListener('mouseenter', () => {
+            cursorLight.style.opacity = '1';
+        });
+
+        wheel.addEventListener('mouseleave', () => {
+            cursorLight.style.opacity = '0';
+        });
+    </script>
+</body>
+</html>

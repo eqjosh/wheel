@@ -7,6 +7,62 @@ let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let localeData = null;
 let activeTab = 'essentials';
 
+// Subscriber state
+const SUBSCRIBER_KEY = 'eww_subscriber';
+const GATED_TABS = ['wisdom', 'examples'];
+
+// Pardot country list (must match exactly)
+const PARDOT_COUNTRIES = [
+    "United States", "Canada", "Afghanistan", "Albania", "Algeria", "Andorra",
+    "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina",
+    "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas",
+    "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize",
+    "Benin", "Bermuda", "Bhutan", "Bolivia (Plurinational State of)",
+    "Bosnia and Herzegovina", "Botswana", "Brazil", "British Indian Ocean Territory",
+    "Virgin Islands (British)", "Brunei", "Bulgaria", "Burkina Faso", "Burundi",
+    "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Central African Republic",
+    "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands",
+    "Colombia", "Comoros", "Congo (Democratic Republic of)", "Cook Islands",
+    "Costa Rica", "Croatia", "Cuba", "Curaçao", "Cyprus", "Czech Republic",
+    "Côte d'Ivoire", "Denmark", "Djibouti", "Dominica", "Dominican Republic",
+    "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia",
+    "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France",
+    "French Guiana", "French Polynesia", "French Southern Territories", "Gabon",
+    "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland",
+    "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea",
+    "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India",
+    "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy",
+    "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati",
+    "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Latvia", "Lebanon",
+    "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg",
+    "Macao", "North Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives",
+    "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius",
+    "Mayotte", "Mexico", "Micronesia", "Moldova (Republic of)", "Monaco", "Mongolia",
+    "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia",
+    "Nauru", "Nepal", "Netherlands", "New Caledonia", "New Zealand", "Nicaragua",
+    "Niger", "Nigeria", "Niue", "Norfolk Island", "Korea (Republic of)",
+    "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama",
+    "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland",
+    "Portugal", "Puerto Rico", "Qatar", "Romania", "Russian Federation", "Rwanda",
+    "Réunion", "Saint Barthélemy", "Saint Helena/Ascension/Tristan da Cunha",
+    "Saint Kitts and Nevis", "Saint Lucia", "Saint Pierre and Miquelon",
+    "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
+    "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore",
+    "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan",
+    "Spain", "Sri Lanka", "Sudan", "Suriname", "Svalbard and Jan Mayen", "Swaziland",
+    "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan",
+    "Tanzania (United Republic of)", "Thailand", "Timor-Leste", "Togo", "Tokelau",
+    "Tonga", "Trinidad and Tobago", "Tunisia", "Turkiye", "Turkmenistan",
+    "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates",
+    "United Kingdom", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican",
+    "Venezuela (Bolivarian Republic of)", "Vietnam", "Wallis and Futuna",
+    "Western Sahara", "Yemen", "Zambia", "Zimbabwe", "Aland Islands",
+    "Brunei Darussalam", "Bonaire/Sint Eustatius/Saba", "Bouvet Island", "Congo",
+    "Czechia", "Falkland Islands (Malvinas)", "South Georgia and South Sandwich Islands",
+    "Heard Island and McDonald Islands", "Saint Martin (French part)", "Palestine",
+    "Sint Maarten (Dutch part)", "Eswatini", "Holy See (Vatican City State)", "Kosovo"
+];
+
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     await loadSVG();
@@ -17,6 +73,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeToolbar();
     initializeCursorGlow();
     initializeRandomButton();
+    initializeSubscriberSystem();
+    initializeAboutCard();
 });
 
 // Load external SVG file and inject it into the DOM
@@ -136,6 +194,10 @@ function updateUIText() {
     const storyLabel = document.querySelector('#storyCard .story-label');
     if (storyLabel && ui.realLifeExampleLabel) storyLabel.textContent = ui.realLifeExampleLabel;
 
+    // Update about card label
+    const aboutTitle = document.querySelector('.about-title');
+    if (aboutTitle && ui.aboutLabel) aboutTitle.textContent = ui.aboutLabel;
+
     // Update random feeling button
     const randomBtn = document.getElementById('randomFeelingBtn');
     if (randomBtn && ui.randomFeelingButton) randomBtn.textContent = ui.randomFeelingButton;
@@ -205,6 +267,13 @@ function initializeToolbar() {
 
 // Switch between tabs
 function switchTab(tabName) {
+    // Check if tab is gated and user is not a subscriber
+    if (isGatedTab(tabName) && !isSubscriber()) {
+        activeTab = tabName; // Store intended tab for after subscription
+        showSubscribeModal();
+        return;
+    }
+
     activeTab = tabName;
 
     // Update button states
@@ -246,17 +315,24 @@ function initializeCursorGlow() {
     });
 }
 
-// Get color for emotion category
+// Get color for emotion category (supports all languages)
 function getCategoryColor(category) {
     const colorMap = {
-        'Joy': '#ffcb09',
-        'Trust': '#89c24f',
-        'Fear': '#03a54c',
-        'Surprise': '#2782c5',
-        'Sadness': '#34689d',
-        'Disgust': '#8774b3',
-        'Anger': '#f05d5f',
-        'Anticipation': '#f2913b'
+        // English
+        'Joy': '#ffcb09', 'Trust': '#89c24f', 'Fear': '#03a54c', 'Surprise': '#2782c5',
+        'Sadness': '#34689d', 'Disgust': '#8774b3', 'Anger': '#f05d5f', 'Anticipation': '#f2913b',
+        // Spanish
+        'Alegría': '#ffcb09', 'Confianza': '#89c24f', 'Miedo': '#03a54c', 'Sorpresa': '#2782c5',
+        'Tristeza': '#34689d', 'Asco': '#8774b3', 'Ira': '#f05d5f', 'Anticipación': '#f2913b',
+        // Italian
+        'Gioia': '#ffcb09', 'Fiducia': '#89c24f', 'Paura': '#03a54c', 'Sorpresa': '#2782c5',
+        'Tristezza': '#34689d', 'Disgusto': '#8774b3', 'Rabbia': '#f05d5f', 'Attesa': '#f2913b',
+        // Japanese
+        '喜び': '#ffcb09', '信頼': '#89c24f', '恐れ': '#03a54c', '驚き': '#2782c5',
+        '悲しみ': '#34689d', '嫌悪': '#8774b3', '怒り': '#f05d5f', '期待': '#f2913b',
+        // Chinese (Simplified)
+        '快乐': '#ffcb09', '信任': '#89c24f', '恐惧': '#03a54c', '惊讶': '#2782c5',
+        '悲伤': '#34689d', '厌恶': '#8774b3', '愤怒': '#f05d5f', '期待': '#f2913b'
     };
     return colorMap[category] || '#808080';
 }
@@ -300,17 +376,24 @@ function getOppositeId(emotionId) {
     return oppositeMap[emotionId] || null;
 }
 
-// Get category class name
+// Get category class name (supports all languages)
 function getCategoryClass(category) {
     const classMap = {
-        'Joy': 'joy',
-        'Trust': 'trust',
-        'Fear': 'fear',
-        'Surprise': 'surprise',
-        'Sadness': 'sadness',
-        'Disgust': 'disgust',
-        'Anger': 'anger',
-        'Anticipation': 'anticipation'
+        // English
+        'Joy': 'joy', 'Trust': 'trust', 'Fear': 'fear', 'Surprise': 'surprise',
+        'Sadness': 'sadness', 'Disgust': 'disgust', 'Anger': 'anger', 'Anticipation': 'anticipation',
+        // Spanish
+        'Alegría': 'joy', 'Confianza': 'trust', 'Miedo': 'fear', 'Sorpresa': 'surprise',
+        'Tristeza': 'sadness', 'Asco': 'disgust', 'Ira': 'anger', 'Anticipación': 'anticipation',
+        // Italian
+        'Gioia': 'joy', 'Fiducia': 'trust', 'Paura': 'fear',
+        'Tristezza': 'sadness', 'Disgusto': 'disgust', 'Rabbia': 'anger', 'Attesa': 'anticipation',
+        // Japanese
+        '喜び': 'joy', '信頼': 'trust', '恐れ': 'fear', '驚き': 'surprise',
+        '悲しみ': 'sadness', '嫌悪': 'disgust', '怒り': 'anger', '期待': 'anticipation',
+        // Chinese (Simplified)
+        '快乐': 'joy', '信任': 'trust', '恐惧': 'fear', '惊讶': 'surprise',
+        '悲伤': 'sadness', '厌恶': 'disgust', '愤怒': 'anger', '期待': 'anticipation'
     };
     return classMap[category] || '';
 }
@@ -459,7 +542,10 @@ function updateInfoPanel(emotionId) {
         // Remove all category classes and add the current one
         emotionHeader.className = 'emotion-header ' + getCategoryClass(emotion.category);
     }
-    if (toolbar) toolbar.style.display = 'flex';
+    if (toolbar) {
+        toolbar.style.display = 'flex';
+        updateGatedTabsUI(); // Ensure lock icons are shown when toolbar appears
+    }
     if (welcomeMessage) welcomeMessage.style.display = 'none';
 
     // Update header content
@@ -488,12 +574,12 @@ function populateEssentialsTab(emotion) {
 function populateAlgebraTab(emotion, emotionId) {
     const emoji = emojiData[emotionId];
 
-    // Emotional Algebra text
+    // Emotional Algebra text - prefer locale borderInfo over emoji-data (not translated)
     const algebraText = document.getElementById('algebraText');
-    if (emoji && emoji.emotionalAlgebra) {
-        algebraText.textContent = emoji.emotionalAlgebra;
-    } else if (emotion.border) {
+    if (emotion.border) {
         algebraText.textContent = emotion.border;
+    } else if (emoji && emoji.emotionalAlgebra) {
+        algebraText.textContent = emoji.emotionalAlgebra;
     } else {
         algebraText.textContent = `${emotion.name} is a core expression of ${emotion.category}.`;
     }
@@ -542,8 +628,9 @@ function populateAlgebraTab(emotion, emotionId) {
         const oppositeEmotion = emotionsData[oppositeId];
         if (oppositeEmotion) {
             const oppEmoji = emojiData[oppositeId];
+            const oppLabel = localeData?.ui?.oppositeFeelingLabel || 'Opposite Feeling';
             oppositeCard.innerHTML = `
-                <div class="opposite-label">Opposite Feeling</div>
+                <div class="opposite-label">${oppLabel}</div>
                 <div class="opposite-content">
                     <span class="opposite-emoji">${oppEmoji ? oppEmoji.emoji : ''}</span>
                     <span class="opposite-name">${oppositeEmotion.name}</span>
@@ -678,15 +765,50 @@ function createEmojiCard(label, emojiStr) {
     return card;
 }
 
-// Copy emoji to clipboard
+// Copy emoji to clipboard (with fallback for iframe contexts)
 function copyEmoji(emoji) {
     const copiedText = localeData?.ui?.copiedToast || 'Copied!';
-    navigator.clipboard.writeText(emoji).then(() => {
-        showToast(copiedText);
-    }).catch(err => {
-        console.error('Failed to copy emoji:', err);
-        showToast('Failed to copy');
-    });
+    const failedText = 'Failed to copy';
+
+    // Try modern clipboard API first
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(emoji).then(() => {
+            showToast(copiedText);
+        }).catch(err => {
+            // Clipboard API failed (likely iframe permission issue), try fallback
+            console.warn('Clipboard API failed, trying fallback:', err);
+            copyEmojiLegacy(emoji, copiedText, failedText);
+        });
+    } else {
+        // No clipboard API, use fallback
+        copyEmojiLegacy(emoji, copiedText, failedText);
+    }
+}
+
+// Legacy copy method using execCommand (works in iframes)
+function copyEmojiLegacy(emoji, successMsg, failMsg) {
+    const textArea = document.createElement('textarea');
+    textArea.value = emoji;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-9999px';
+    textArea.style.top = '-9999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showToast(successMsg);
+        } else {
+            showToast(failMsg);
+        }
+    } catch (err) {
+        console.error('Legacy copy failed:', err);
+        showToast(failMsg);
+    }
+
+    document.body.removeChild(textArea);
 }
 
 // Show toast notification
@@ -733,4 +855,284 @@ function selectRandomFeeling() {
 
     const randomId = emotionIds[Math.floor(Math.random() * emotionIds.length)];
     navigateToEmotion(randomId);
+}
+
+// ===== SUBSCRIBER GATING =====
+
+// Check if user is a subscriber
+function isSubscriber() {
+    return localStorage.getItem(SUBSCRIBER_KEY) === 'true';
+}
+
+// Set subscriber status
+function setSubscriber(status) {
+    localStorage.setItem(SUBSCRIBER_KEY, status ? 'true' : 'false');
+    updateGatedTabsUI();
+}
+
+// Check if a tab is gated
+function isGatedTab(tabName) {
+    return GATED_TABS.includes(tabName);
+}
+
+// Update UI for gated tabs based on subscriber status
+function updateGatedTabsUI() {
+    const subscriber = isSubscriber();
+
+    document.querySelectorAll('.toolbar-btn').forEach(btn => {
+        const tab = btn.dataset.tab;
+        if (isGatedTab(tab)) {
+            if (subscriber) {
+                btn.classList.remove('gated');
+                btn.querySelector('.lock-icon')?.remove();
+            } else {
+                btn.classList.add('gated');
+                if (!btn.querySelector('.lock-icon')) {
+                    const lockIcon = document.createElement('span');
+                    lockIcon.className = 'lock-icon';
+                    lockIcon.textContent = '🔒';
+                    btn.appendChild(lockIcon);
+                }
+            }
+        }
+    });
+}
+
+// Show subscribe modal
+function showSubscribeModal() {
+    let modal = document.getElementById('subscribeModal');
+
+    if (!modal) {
+        modal = createSubscribeModal();
+        document.body.appendChild(modal);
+    }
+
+    // Update modal text with current locale
+    updateSubscribeModalText();
+
+    modal.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+}
+
+// Hide subscribe modal
+function hideSubscribeModal() {
+    const modal = document.getElementById('subscribeModal');
+    if (modal) {
+        modal.classList.remove('visible');
+        document.body.style.overflow = '';
+    }
+}
+
+// Create the subscribe modal HTML
+function createSubscribeModal() {
+    const modal = document.createElement('div');
+    modal.id = 'subscribeModal';
+    modal.className = 'subscribe-modal';
+
+    modal.innerHTML = `
+        <div class="subscribe-modal-backdrop" onclick="hideSubscribeModal()"></div>
+        <div class="subscribe-modal-content">
+            <button class="subscribe-modal-close" onclick="hideSubscribeModal()">&times;</button>
+            <div class="subscribe-modal-header">
+                <span class="subscribe-modal-icon">✨</span>
+                <h2 id="subscribeModalTitle">Unlock Full Access</h2>
+            </div>
+            <p id="subscribeModalDescription" class="subscribe-modal-description">
+                Get free access to wisdom insights and real-life examples for all 32 emotions.
+            </p>
+            <form id="pardotSubscribeForm" class="subscribe-form">
+                <div class="form-group">
+                    <input type="text" name="First Name" id="subscribeFirstName" required placeholder="First name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="subscribeEmail" required placeholder="Email address">
+                </div>
+                <div class="form-group">
+                    <select name="Country" id="subscribeCountry" required>
+                        <option value="">Select your country</option>
+                    </select>
+                </div>
+                <button type="submit" class="subscribe-submit-btn">
+                    <span id="subscribeButtonText">Subscribe Free</span>
+                </button>
+            </form>
+            <p id="subscribePrivacyNote" class="subscribe-privacy">
+                <a href="https://www.6seconds.org/about/policies/privacy/" target="_blank" rel="noopener">We respect your privacy.</a> Unsubscribe anytime.
+            </p>
+            <p class="subscribe-gdpr">
+                By subscribing, you consent to receiving emails from Six Seconds. We process your data under legitimate interest. You can withdraw consent at any time.
+            </p>
+        </div>
+    `;
+
+    // Populate country dropdown
+    const countrySelect = modal.querySelector('#subscribeCountry');
+    PARDOT_COUNTRIES.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        option.textContent = country;
+        countrySelect.appendChild(option);
+    });
+
+    // Add form submit handler
+    const form = modal.querySelector('#pardotSubscribeForm');
+    form.addEventListener('submit', handleSubscribeFormSubmit);
+
+    return modal;
+}
+
+// Update subscribe modal text based on current locale
+function updateSubscribeModalText() {
+    const ui = localeData?.ui || {};
+
+    const titleEl = document.getElementById('subscribeModalTitle');
+    const descEl = document.getElementById('subscribeModalDescription');
+    const btnTextEl = document.getElementById('subscribeButtonText');
+    const privacyEl = document.getElementById('subscribePrivacyNote');
+    const firstNameInput = document.getElementById('subscribeFirstName');
+    const emailInput = document.getElementById('subscribeEmail');
+    const countrySelect = document.getElementById('subscribeCountry');
+
+    if (titleEl) titleEl.textContent = ui.subscribeModalTitle || 'Unlock Full Access';
+    if (descEl) descEl.textContent = ui.subscribeModalDescription || 'Get free access to wisdom insights and real-life examples for all 32 emotions.';
+    if (btnTextEl) btnTextEl.textContent = ui.subscribeButton || 'Subscribe Free';
+    // Don't overwrite privacyEl - it contains the link which is set in createSubscribeModal
+    if (firstNameInput) firstNameInput.placeholder = ui.firstNamePlaceholder || 'First name';
+    if (emailInput) emailInput.placeholder = ui.emailPlaceholder || 'Email address';
+    if (countrySelect) countrySelect.options[0].textContent = ui.countryPlaceholder || 'Select your country';
+}
+
+// Handle subscribe form submission
+function handleSubscribeFormSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitBtn = form.querySelector('.subscribe-submit-btn');
+
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="loading-spinner"></span> Subscribing...';
+
+    // Set pending flag - we'll check this when page reloads after Pardot redirect
+    sessionStorage.setItem('eww_subscribe_pending', 'true');
+
+    // Save form data so we can track the subscription in Firebase after returning
+    const formData = new FormData(form);
+    sessionStorage.setItem('eww_subscribe_data', JSON.stringify({
+        firstName: formData.get('First Name') || '',
+        email: formData.get('email') || '',
+        country: formData.get('Country') || ''
+    }));
+
+    // Create a form that posts directly to Pardot (will redirect and come back)
+    const pardotForm = document.createElement('form');
+    pardotForm.action = 'https://eq.6seconds.org/l/446782/2026-02-04/9f5pmx';
+    pardotForm.method = 'POST';
+    pardotForm.style.display = 'none';
+
+    // Copy form data into Pardot form
+    for (const [name, value] of formData.entries()) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        pardotForm.appendChild(input);
+    }
+
+    document.body.appendChild(pardotForm);
+    pardotForm.submit();
+}
+
+// Initialize subscriber system
+function initializeSubscriberSystem() {
+    // Update gated tabs UI based on current status
+    updateGatedTabsUI();
+
+    // Check if we just returned from a subscription (via direct form POST)
+    if (sessionStorage.getItem('eww_subscribe_pending')) {
+        sessionStorage.removeItem('eww_subscribe_pending');
+
+        // Track subscription in Firebase (fire-and-forget — doesn't block the welcome flow)
+        try {
+            const subData = JSON.parse(sessionStorage.getItem('eww_subscribe_data') || '{}');
+            sessionStorage.removeItem('eww_subscribe_data');
+            if (subData.email) {
+                fetch('https://us-central1-emotion-rules-quiz.cloudfunctions.net/trackSubscription', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ source: 'wheel', ...subData })
+                }).catch(err => console.warn('Wheel tracking:', err.message));
+            }
+        } catch (e) { /* ignore tracking errors */ }
+
+        setSubscriber(true);
+        showWelcomeBackModal();
+    }
+}
+
+// Show welcome modal after successful subscription
+function showWelcomeBackModal() {
+    const ui = localeData?.ui || {};
+
+    const modal = document.createElement('div');
+    modal.id = 'welcomeBackModal';
+    modal.className = 'subscribe-modal visible';
+
+    modal.innerHTML = `
+        <div class="subscribe-modal-backdrop" onclick="closeWelcomeBackModal()"></div>
+        <div class="subscribe-modal-content welcome-content">
+            <div class="subscribe-modal-header">
+                <span class="subscribe-modal-icon">🎉</span>
+                <h2>${ui.welcomeBackTitle || 'Thank you for subscribing!'}</h2>
+            </div>
+            <p class="subscribe-modal-description">
+                ${ui.welcomeBackMessage || 'Close this message and you have full access to the Emotional Wisdom Wheel.'}
+            </p>
+            <button class="subscribe-submit-btn" onclick="closeWelcomeBackModal()">
+                ${ui.welcomeBackButton || 'Start Exploring'}
+            </button>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+}
+
+// Close welcome back modal
+function closeWelcomeBackModal() {
+    const modal = document.getElementById('welcomeBackModal');
+    if (modal) {
+        modal.classList.remove('visible');
+        document.body.style.overflow = '';
+        setTimeout(() => modal.remove(), 300);
+    }
+}
+
+// ===== ABOUT CARD =====
+const ABOUT_HIDDEN_KEY = 'eww_about_hidden';
+
+function initializeAboutCard() {
+    const aboutCard = document.getElementById('aboutCard');
+    const closeBtn = document.getElementById('aboutCloseBtn');
+    const reopenBtn = document.getElementById('aboutReopenBtn');
+
+    if (!aboutCard || !closeBtn || !reopenBtn) return;
+
+    // Check if user previously closed the about card
+    if (localStorage.getItem(ABOUT_HIDDEN_KEY) === 'true') {
+        aboutCard.classList.add('hidden');
+        reopenBtn.classList.add('visible');
+    }
+
+    closeBtn.addEventListener('click', () => {
+        aboutCard.classList.add('hidden');
+        reopenBtn.classList.add('visible');
+        localStorage.setItem(ABOUT_HIDDEN_KEY, 'true');
+    });
+
+    reopenBtn.addEventListener('click', () => {
+        aboutCard.classList.remove('hidden');
+        reopenBtn.classList.remove('visible');
+        localStorage.setItem(ABOUT_HIDDEN_KEY, 'false');
+    });
 }
