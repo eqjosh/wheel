@@ -33,8 +33,8 @@ Based on Joshua Freedman's book **Emotion Rules** and Six Seconds' emotional int
 | GitHub Pages | https://eqjosh.github.io/wheel/ | Hosting source / dev testing |
 | GitHub repo | https://github.com/eqjosh/wheel | Source control |
 
-**Active branch:** `feature/pardot-subscriber-gating`
-**How to deploy:** `git push` to the active branch → GitHub Pages auto-deploys in ~1-2 minutes.
+**Active branch:** `main`
+**How to deploy:** `git push` to main → GitHub Pages auto-deploys in ~1-2 minutes.
 
 The Divi page on 6seconds.org embeds the GitHub Pages URL in an iframe:
 ```html
@@ -64,7 +64,10 @@ wheel/
 │   ├── es.json                         # Spanish
 │   ├── it.json                         # Italian
 │   ├── ja.json                         # Japanese
-│   └── zh.json                         # Simplified Chinese
+│   ├── zh.json                         # Simplified Chinese
+│   └── ko.json                         # Korean
+├── translation-review-zh.csv           # Chinese translation review CSV for human translators
+├── translation-review-ko.csv           # Korean translation review CSV for human translators
 ├── emotional-wisdom-wheel-content-en.md  # Plain-text export of all English content (for AI use)
 ├── PARDOT-INTEGRATION-SPEC.md          # Spec doc for the subscriber gating implementation
 └── CLAUDE.md                           # This file
@@ -88,7 +91,7 @@ wheel/
 
 ### Key Global Variables
 - `currentEmotionId` — the currently selected emotion
-- `currentLanguage` — active locale code (`en`, `es`, `it`, `ja`, `zh`)
+- `currentLanguage` — active locale code (`en`, `es`, `it`, `ja`, `zh`, `ko`)
 - `localeData` — the full loaded locale JSON
 - `emotionsData` — locale emotions keyed by id (built from `localeData.emotions`)
 - `quotationsData` — quotes keyed by emotion id (from `localeData.quotes`)
@@ -104,7 +107,7 @@ The info panel has 5 tabs: **Essentials, Algebra, Wisdom, Examples, Emojis**
 
 ## Multilingual Support
 
-5 languages: English (`en`), Spanish (`es`), Italian (`it`), Japanese (`ja`), Simplified Chinese (`zh`)
+6 languages: English (`en`), Spanish (`es`), Italian (`it`), Japanese (`ja`), Simplified Chinese (`zh`), Korean (`ko`)
 
 Each locale file (`locales/{lang}.json`) contains:
 - `ui` — all UI label strings (~51 keys)
@@ -135,36 +138,54 @@ Each locale file (`locales/{lang}.json`) contains:
 
 | Location | What | Notes |
 |---|---|---|
-| `locales/{lang}.json` → `ui` | 51 UI strings (labels, buttons, modals, messages) | **Source of truth** — dynamically applied by `updateUIText()` |
+| `locales/{lang}.json` → `ui` | ~51 UI strings (labels, buttons, modals, messages) | **Source of truth** — dynamically applied by `updateUIText()` |
+| `locales/{lang}.json` → `ui.howToUseSteps` | Array of 3 strings for welcome message bullet points | Wired to DOM `<li>` elements by `updateUIText()` |
+| `locales/{lang}.json` → `ui.aboutCardText1` | About card first paragraph (HTML with link) | Wired to DOM by `updateUIText()` |
+| `locales/{lang}.json` → `ui.aboutCardText2` | About card second paragraph (plain text) | Wired to DOM by `updateUIText()` |
+| `locales/{lang}.json` → `ui.aboutLabel` | "About" reopen button text | Wired to DOM by `updateUIText()` |
 | `locales/{lang}.json` → `emotions[]` | 32 emotions × ~10 fields each (name, category, description, question, overloadRisk, overloadTip, adaptivePurpose, relatedFeelings[], borderInfo, story) | **Source of truth** for all emotion content |
+| `locales/{lang}.json` → `emotions[].borderInfo` | Emotional algebra text for ALL 32 emotions | **Critical:** must exist for all 32, not just border emotions — see Lessons Learned below |
 | `locales/{lang}.json` → `quotes` | Quotes per emotion (currently English-only across all locales) | Translate if desired; left in English by design decision |
 | `script.js` → `getCategoryColor()` | 8 category names per language → hex colors | **Must add** for each new language |
 | `script.js` → `getCategoryClass()` | 8 category names per language → CSS class names | **Must add** for each new language |
 | `index.html` → language selector | `<option>` element for the language | **Must add** for each new language |
-| `index.html` → welcome message list items | 3 "How to use" bullet points | Hardcoded in HTML; `updateUIText()` updates the title/paragraph but NOT the `<li>` items. `howToUseSteps` exists in locale JSON but is not currently wired to the DOM |
-| `index.html` → about card text | Book promo paragraph | Hardcoded in HTML; only the "About" title is dynamic via `aboutLabel` |
 | `emoji-data.json` → `emotionalAlgebra` | English algebra descriptions | Not translated — locale `borderInfo` takes priority in display |
 | `script.js` → `PARDOT_COUNTRIES` | Country names for subscribe modal | English-only; these must match Pardot field values exactly |
 
 ### Category names per language
 
-| English | Spanish | Italian | Japanese | Chinese (Simplified) |
-|---|---|---|---|---|
-| Joy | Alegría | Gioia | 喜び | 快乐 |
-| Trust | Confianza | Fiducia | 信頼 | 信任 |
-| Fear | Miedo | Paura | 恐れ | 恐惧 |
-| Surprise | Sorpresa | Sorpresa | 驚き | 惊讶 |
-| Sadness | Tristeza | Tristezza | 悲しみ | 悲伤 |
-| Disgust | Asco | Disgusto | 嫌悪 | 厌恶 |
-| Anger | Ira | Rabbia | 怒り | 愤怒 |
-| Anticipation | Anticipación | Attesa | 期待 | 期待 |
+| English | Spanish | Italian | Japanese | Chinese (Simplified) | Korean |
+|---|---|---|---|---|---|
+| Joy | Alegría | Gioia | 喜び | 快乐 | 기쁨 |
+| Trust | Confianza | Fiducia | 信頼 | 信任 | 신뢰 |
+| Fear | Miedo | Paura | 恐れ | 恐惧 | 두려움 |
+| Surprise | Sorpresa | Sorpresa | 驚き | 惊讶 | 놀라움 |
+| Sadness | Tristeza | Tristezza | 悲しみ | 悲伤 | 슬픔 |
+| Disgust | Asco | Disgusto | 嫌悪 | 厌恶 | 혐오 |
+| Anger | Ira | Rabbia | 怒り | 愤怒 | 분노 |
+| Anticipation | Anticipación | Attesa | 期待 | 期待 | 기대 |
 
 ### Known limitations / not yet localized
-- Welcome message `<li>` items in `index.html` (the `howToUseSteps` key exists in locale JSON but is not wired to DOM)
-- About card paragraph text in `index.html` (only the title "About" is dynamic)
 - Country dropdown in subscribe modal (must stay in English to match Pardot)
 - Privacy notice and consent text in subscribe modal (hardcoded English in `script.js`)
 - `<title>` tag in `index.html` (not dynamically updated, though `#page-title` is)
+
+### Lessons Learned from Translation Work
+
+**1. `borderInfo` must exist for ALL 32 emotions, not just border emotions.**
+The Algebra tab shows `emotion.borderInfo` (from locale JSON) with a fallback to `emoji.emotionalAlgebra` (from `emoji-data.json`, English-only). Originally, only 16 "border" emotions (positions 1 and 4 in each category) had `borderInfo` in locale files. The other 16 "inner" emotions (positions 2 and 3) silently fell through to the English-only fallback, causing English text to appear on the Algebra tab in non-English languages. **Fix:** every locale file must have `borderInfo` for all 32 emotions.
+
+**2. Chinese quotation marks must use Unicode escapes in JSON.**
+Chinese curly quotes (`""`) break JSON parsing because they look like unescaped characters. Use `\u201c` and `\u201d` instead of literal `""` in JSON string values for Chinese locale files.
+
+**3. `updateUIText()` is the wiring point for all dynamic UI text.**
+All UI strings from locale JSON are applied to the DOM in this single function. When adding new translatable strings, the pattern is: (a) add the key to all locale files under `ui`, (b) add a DOM update in `updateUIText()`. Currently wired: page title, welcome message paragraph, howToUseSteps `<li>` items, aboutCardText1/2 paragraphs, aboutLabel reopen button, all tab labels, all section labels, all modal text, random feeling button, copyright, version.
+
+**4. Translation review CSVs (`translation-review-{lang}.csv`) are for human reviewers.**
+Format: `key,english,{language},claude_note` — one row per translatable string. These are generated alongside AI translations so a native speaker can audit. Keep them updated when adding new keys.
+
+**5. Quotes are intentionally English-only across all locales.**
+The `quotes` section in each locale file contains English text. This was a deliberate decision, not an oversight.
 
 ---
 
@@ -221,7 +242,7 @@ A dismissable promotional card on the **Essentials** tab promoting the *Emotion 
 - Dismiss state saved to `localStorage` key: `eww_about_dismissed`
 - Close button hides the card and shows a small "ℹ️ About" reopen button
 - Styled to match the Definition block (white background, green left border)
-- Needs translation: `aboutLabel` key in each locale file
+- Translated via 3 locale keys: `aboutLabel` (reopen button), `aboutCardText1` (first paragraph, HTML with link), `aboutCardText2` (second paragraph, plain text)
 
 ---
 
