@@ -65,9 +65,11 @@ wheel/
 │   ├── it.json                         # Italian
 │   ├── ja.json                         # Japanese
 │   ├── zh.json                         # Simplified Chinese
-│   └── ko.json                         # Korean
+│   ├── ko.json                         # Korean
+│   └── vi.json                         # Vietnamese
 ├── translation-review-zh.csv           # Chinese translation review CSV for human translators
 ├── translation-review-ko.csv           # Korean translation review CSV for human translators
+├── translation-review-vi.csv           # Vietnamese translation review CSV for human translators
 ├── emotional-wisdom-wheel-content-en.md  # Plain-text export of all English content (for AI use)
 ├── PARDOT-INTEGRATION-SPEC.md          # Spec doc for the subscriber gating implementation
 └── CLAUDE.md                           # This file
@@ -107,7 +109,7 @@ The info panel has 5 tabs: **Essentials, Algebra, Wisdom, Examples, Emojis**
 
 ## Multilingual Support
 
-6 languages: English (`en`), Spanish (`es`), Italian (`it`), Japanese (`ja`), Simplified Chinese (`zh`), Korean (`ko`)
+7 languages: English (`en`), Spanish (`es`), Italian (`it`), Japanese (`ja`), Simplified Chinese (`zh`), Korean (`ko`), Vietnamese (`vi`)
 
 Each locale file (`locales/{lang}.json`) contains:
 - `ui` — all UI label strings (~51 keys)
@@ -154,16 +156,16 @@ Each locale file (`locales/{lang}.json`) contains:
 
 ### Category names per language
 
-| English | Spanish | Italian | Japanese | Chinese (Simplified) | Korean |
-|---|---|---|---|---|---|
-| Joy | Alegría | Gioia | 喜び | 快乐 | 기쁨 |
-| Trust | Confianza | Fiducia | 信頼 | 信任 | 신뢰 |
-| Fear | Miedo | Paura | 恐れ | 恐惧 | 두려움 |
-| Surprise | Sorpresa | Sorpresa | 驚き | 惊讶 | 놀라움 |
-| Sadness | Tristeza | Tristezza | 悲しみ | 悲伤 | 슬픔 |
-| Disgust | Asco | Disgusto | 嫌悪 | 厌恶 | 혐오 |
-| Anger | Ira | Rabbia | 怒り | 愤怒 | 분노 |
-| Anticipation | Anticipación | Attesa | 期待 | 期待 | 기대 |
+| English | Spanish | Italian | Japanese | Chinese (Simplified) | Korean | Vietnamese |
+|---|---|---|---|---|---|---|
+| Joy | Alegría | Gioia | 喜び | 快乐 | 기쁨 | Niềm Vui |
+| Trust | Confianza | Fiducia | 信頼 | 信任 | 신뢰 | Tin Tưởng |
+| Fear | Miedo | Paura | 恐れ | 恐惧 | 두려움 | Sợ Hãi |
+| Surprise | Sorpresa | Sorpresa | 驚き | 惊讶 | 놀라움 | Ngạc Nhiên |
+| Sadness | Tristeza | Tristezza | 悲しみ | 悲伤 | 슬픔 | Buồn Bã |
+| Disgust | Asco | Disgusto | 嫌悪 | 厌恶 | 혐오 | Ghê Tởm |
+| Anger | Ira | Rabbia | 怒り | 愤怒 | 분노 | Tức Giận |
+| Anticipation | Anticipación | Attesa | 期待 | 期待 | 기대 | Mong Đợi |
 
 ### Known limitations / not yet localized
 - Country dropdown in subscribe modal (must stay in English to match Pardot)

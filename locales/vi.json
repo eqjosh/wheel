@@ -1,0 +1,634 @@
+{
+  "language": "Tiếng Việt",
+  "languageCode": "vi",
+  "ui": {
+    "title": "Bánh Xe Trí Tuệ Cảm Xúc",
+    "welcomeMessage": "Bánh xe tương tác này giúp bạn nhận biết và hiểu các cảm xúc khác nhau.",
+    "howToUseTitle": "Cách sử dụng:",
+    "howToUseSteps": [
+      "Di chuột qua bất kỳ phần nào để làm nổi bật",
+      "Nhấp vào một phần để tìm hiểu thêm về cảm xúc đó",
+      "Khám phá 8 cảm xúc cốt lõi và 32 cảm giác liên quan"
+    ],
+    "copyright": "©Joshua Freedman từ cuốn sách mới:",
+    "copyrightLink": "Emotion Rules",
+    "version": "v3.2",
+    "modalClose": "×",
+    "relatedFeelingsLabel": "Biến Thể",
+    "borderInfoLabel": "Góc Nhìn Biên Giới",
+    "quotesLabel": "Trích Dẫn Truyền Cảm Hứng",
+    "adaptivePurposeLabel": "Mục Đích Thích Nghi",
+    "overloadRiskLabel": "Nguy Cơ Quá Tải",
+    "overloadTipLabel": "Mẹo Cân Bằng",
+    "tabEssentials": "Cơ Bản",
+    "tabAlgebra": "Đại Số",
+    "tabWisdom": "Trí Tuệ",
+    "tabExamples": "Ví Dụ",
+    "tabEmojis": "Biểu Tượng",
+    "definitionLabel": "Định Nghĩa",
+    "emotionalAlgebraLabel": "Đại Số Cảm Xúc",
+    "exploreRelatedLabel": "Khám Phá Cảm Giác Liên Quan",
+    "guidingQuestionLabel": "Câu Hỏi Dẫn Dắt",
+    "realLifeExampleLabel": "Ví Dụ Thực Tế",
+    "copyButton": "Sao Chép",
+    "copiedToast": "Đã Sao Chép!",
+    "randomFeelingButton": "🎲 Khám Phá Một Cảm Giác Ngẫu Nhiên",
+    "noQuotes": "Không có trích dẫn nào cho cảm giác này.",
+    "comingSoon": "Ví dụ thực tế sẽ sớm có.",
+    "subscribeModalTitle": "Mở Khóa Toàn Bộ Quyền Truy Cập",
+    "subscribeModalDescription": "Nhận quyền truy cập miễn phí vào những hiểu biết về trí tuệ và ví dụ thực tế cho tất cả 32 cảm xúc.",
+    "subscribeButton": "Đăng Ký Miễn Phí",
+    "firstNamePlaceholder": "Tên",
+    "emailPlaceholder": "Địa chỉ email",
+    "countryPlaceholder": "Chọn quốc gia của bạn",
+    "privacyNote": "Chúng tôi tôn trọng quyền riêng tư của bạn. Hủy đăng ký bất cứ lúc nào.",
+    "subscribeSuccess": "Chào mừng! Tất cả nội dung đã được mở khóa.",
+    "welcomeBackTitle": "Cảm ơn bạn đã đăng ký!",
+    "welcomeBackMessage": "Đóng thông báo này để có toàn quyền truy cập vào Bánh Xe Trí Tuệ Cảm Xúc.",
+    "welcomeBackButton": "Bắt Đầu Khám Phá",
+    "aboutLabel": "Giới Thiệu",
+    "aboutCardText1": "Cảm xúc có thể gây nhầm lẫn, nhưng chúng có logic riêng của mình... chúng tuân theo \"những quy tắc.\" Đó là những gì bạn sẽ nhận được từ cuốn sách <a href=\"https://www.6seconds.org/emotionrules\" target=\"_blank\"><em>Emotion Rules, The Science and Practice of Emotional Wisdom.</em></a>",
+    "aboutCardText2": "Bánh Xe Trí Tuệ Cảm Xúc này được xây dựng dựa trên các khái niệm trong cuốn sách và phương pháp luận của Six Seconds trong việc giúp mọi người phát triển và thực hành trí tuệ cảm xúc.",
+    "oppositeFeelingLabel": "Cảm Giác Đối Diện Trên Bánh Xe"
+  },
+  "emotions": [
+    {
+      "id": "joy-1-optimistic",
+      "name": "Lạc Quan",
+      "category": "Niềm Vui",
+      "description": "Cảm giác hy vọng và tự tin về tương lai. Khi bạn lạc quan, bạn tin rằng những điều tốt đẹp sẽ xảy ra và duy trì cái nhìn tích cực về cuộc sống.",
+      "question": "Bạn thấy những khả năng nào? Điều gì có thể diễn ra tốt đẹp trong tình huống này?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể bỏ qua những rủi ro thực sự hoặc gây áp lực cho người khác phải 'giữ thái độ tích cực' khi họ cần điều khác.",
+      "overloadTip": "Để cân bằng, hãy nhận diện một thách thức thực tế và một bước cụ thể để chuẩn bị, trong khi vẫn trân trọng cảm giác về khả năng của bạn.",
+      "adaptivePurpose": "Báo hiệu rằng bạn thấy những khả năng tích cực và kết quả tốt đẹp tiềm năng.",
+      "relatedFeelings": ["Tích Cực", "Được Truyền Cảm Hứng", "Đầy Hy Vọng"],
+      "borderInfo": "Lạc Quan gần với Mong Đợi vì nó có yếu tố nhìn về phía trước.",
+      "story": "Maria đã tìm việc làm trong ba tháng mà không thành công. Trên đường đến buổi phỏng vấn tiếp theo, cô bỗng nhận ra mình đang mỉm cười trên tàu điện ngầm. \"Lần này mình sẽ thành công — mình đã nỗ lực hết mình rồi,\" cô nghĩ. Thay vì lo lắng những điều có thể xảy ra sai, cô lại tưởng tượng ngày đầu tiên ở văn phòng mới. Phần lý trí trong não cô cảnh báo đừng đặt quá nhiều hy vọng, nhưng điều gì đó trong lòng cô nói rằng lần này cô đã thực sự sẵn sàng."
+    },
+    {
+      "id": "joy-2-confident",
+      "name": "Tự Tin",
+      "category": "Niềm Vui",
+      "description": "Sự tự tin xuất phát từ việc trân trọng khả năng và phẩm chất của bản thân. Sự tự tin trao quyền cho bạn để hành động và đối mặt với thử thách.",
+      "question": "Bạn có thể mang những điểm mạnh nào vào tình huống này? Bạn có khả năng làm gì?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể đánh giá quá cao năng lực của mình hoặc bỏ qua quan điểm và nhu cầu của người khác.",
+      "overloadTip": "Để cân bằng, hãy tự hỏi mình cần thêm thông tin hoặc hỗ trợ ở đâu, và mời ít nhất một tiếng nói khác vào cuộc trò chuyện.",
+      "adaptivePurpose": "Báo hiệu rằng bạn có nguồn lực, khả năng hoặc kinh nghiệm để dựa vào.",
+      "relatedFeelings": ["Tự Hào", "Tự Đảm Bảo", "Được Trao Quyền"],
+      "story": "Sau nhiều tháng chuẩn bị, James đứng hậu trường chờ thực hiện bài nói TEDx đầu tiên. Tay anh vững vàng, hơi thở bình thản. Anh đã luyện tập bài phát biểu này năm mươi lần, biết từng giai đoạn chuyển tiếp, từng khoảng dừng. Khi họ gọi tên anh, anh bước ra sân khấu không phải với sự kiêu ngạo, mà với sự chắc chắn trầm lặng. Anh đã nỗ lực. Anh đã sẵn sàng.",
+      "borderInfo": "Tự Tin là năng lượng Niềm Vui thuần túy hướng vào bên trong—sự nhận ra năng lực của chính bạn. Nó nằm giữa Lạc Quan (hướng tương lai) và Vui Mừng (niềm vui hiện tại)."
+    },
+    {
+      "id": "joy-3-joyful",
+      "name": "Vui Mừng",
+      "category": "Niềm Vui",
+      "description": "Cảm giác vui vẻ và hạnh phúc lớn lao. Niềm vui thuần túy là cảm xúc tích cực mãnh liệt lấp đầy bạn bằng niềm hân hoan và sự hài lòng.",
+      "question": "Điều gì đang diễn ra tốt đẹp mà bạn muốn tiếp tục? Điều gì đang nuôi dưỡng hoặc hỗ trợ bạn?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể bỏ qua các vấn đề hoặc có vẻ như không nhạy cảm với nỗi đau của người khác.",
+      "overloadTip": "Để cân bằng, hãy thưởng thức những gì tốt đẹp và nhẹ nhàng quét tìm xem có điều gì còn cần được chăm sóc hoặc sửa chữa không.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó quan trọng đang hoạt động và đáng trân trọng và tiếp tục.",
+      "relatedFeelings": ["Phấn Khích", "Vui Thích", "Hạnh Phúc Tuyệt Đỉnh"],
+      "story": "Bức thư đến vào một ngày thứ Ba. Được nhận. Học bổng toàn phần. Elena đọc đi đọc lại ba lần trước khi hiểu ra. Rồi cô cười, khóc, xoay tròn quanh căn hộ nhỏ của mình. Cô gọi cho mẹ, người bạn thân nhất, người thầy cũ đã viết thư giới thiệu. Hạnh phúc thuần túy, không pha tạp—loại hạnh phúc khiến mặt bạn đau vì cười quá nhiều.",
+      "borderInfo": "Vui Mừng là trái tim của Niềm Vui—hạnh phúc thuần túy ở khoảnh khắc hiện tại. Nó nằm giữa Tự Tin (niềm vui hướng vào mình) và Yêu Thương (niềm vui hướng ra ngoài)."
+    },
+    {
+      "id": "joy-4-loving",
+      "name": "Yêu Thương",
+      "category": "Niềm Vui",
+      "description": "Cảm giác sâu sắc về tình cảm, sự quan tâm và ấm áp đối với ai đó hoặc điều gì đó. Tình yêu tạo ra sự kết nối và cảm giác thuộc về.",
+      "question": "Bạn trân trọng điều gì về người này hay tình huống này? Làm thế nào bạn có thể thể hiện sự quan tâm và hỗ trợ?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể mất đi ranh giới lành mạnh hoặc bỏ bê nhu cầu của bản thân khi chăm sóc người khác.",
+      "overloadTip": "Để cân bằng, hãy nhận diện một điều bạn trân trọng và một nhu cầu của bản thân, rồi chọn một bước tôn vinh cả hai.",
+      "adaptivePurpose": "Báo hiệu mong muốn kết nối, nuôi dưỡng và đầu tư vào những người hoặc những điều quan trọng với bạn.",
+      "relatedFeelings": ["Ôm Ấp", "Rộng Lượng", "Trìu Mến"],
+      "borderInfo": "Yêu Thương gần với Tin Tưởng vì nó liên quan đến nền tảng của sự quan tâm và đáng tin cậy.",
+      "story": "David nhìn con gái bé nhỏ của mình bước những bước chập chững đầu tiên qua phòng khách. Khi cô bé ngã, cô bé nhìn lên anh với sự tin tưởng hoàn toàn, chờ đợi phản ứng của anh trước khi quyết định có khóc hay không. Anh bế cô bé lên, hôn lên trán, và cảm thấy tim mình nở rộng theo cách anh không thể tưởng tượng trước khi trở thành người cha. Sinh linh bé nhỏ này đã hoàn toàn biến đổi anh."
+    },
+    {
+      "id": "trust-1-grateful",
+      "name": "Biết Ơn",
+      "category": "Tin Tưởng",
+      "description": "Cảm giác ấm áp của sự biết ơn và trân trọng. Lòng biết ơn giúp bạn nhận ra và coi trọng những điều tốt đẹp trong cuộc sống.",
+      "question": "Điều gì đang hỗ trợ hoặc nuôi dưỡng bạn? Ai hoặc điều gì đang góp phần vào những gì bạn quan tâm?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể chịu đựng những tình huống không lành mạnh hoặc tránh bày tỏ nhu cầu thực sự vì 'bạn nên biết ơn.'",
+      "overloadTip": "Để cân bằng, hãy để lòng biết ơn đứng bên cạnh sự thành thật: trân trọng những gì đang hoạt động và xác định một nhu cầu hoặc ranh giới bạn vẫn muốn bày tỏ.",
+      "adaptivePurpose": "Báo hiệu rằng bạn đang nhận được sự hỗ trợ, nguồn lực hoặc những món quà quan trọng với bạn.",
+      "relatedFeelings": ["Thỏa Mãn", "Ngưỡng Mộ", "Tri Ân"],
+      "borderInfo": "Biết Ơn gần với Niềm Vui vì nó liên quan đến sự trân trọng những trải nghiệm tích cực.",
+      "story": "Sau ca phẫu thuật, nằm trong phòng hồi sức, Tom thấy mình bị áp đảo—không phải bởi đau đớn, mà bởi sự trân trọng. Cô y tá đã nắm tay anh trước khi gây mê. Chị gái anh đã nghỉ việc để ở bên. Bác sĩ phẫu thuật với đôi bàn tay vững chắc đã cho anh thêm nhiều năm bên gia đình. Anh chưa bao giờ cảm thấy rõ ràng như vậy về việc mình phụ thuộc vào người khác, hay biết ơn vì điều đó đến nhường nào."
+    },
+    {
+      "id": "trust-2-peaceful",
+      "name": "Bình Yên",
+      "category": "Tin Tưởng",
+      "description": "Trạng thái thanh thản và bình lặng, thoát khỏi lo lắng hay xáo trộn. Sự bình yên mang lại sự cân bằng về tinh thần và cảm xúc.",
+      "question": "Điều gì đang nạp lại năng lượng hoặc hỗ trợ bạn? Điều gì đang diễn ra đúng?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể tránh xung đột cần thiết hoặc tách biệt khỏi những thách thức quan trọng.",
+      "overloadTip": "Để cân bằng, hãy tận hưởng sự bình lặng và tự hỏi xem có vấn đề nào vẫn cần một cuộc trò chuyện can đảm hay hành động nhỏ nào không.",
+      "adaptivePurpose": "Báo hiệu rằng hệ thống của bạn đang tái cân bằng và bạn cảm thấy đủ an toàn để nghỉ ngơi và phục hồi.",
+      "relatedFeelings": ["Bình Tĩnh", "Hài Lòng", "Thanh Thản"],
+      "story": "Sáng Chủ Nhật. Mưa gõ lên cửa sổ. Không có đồng hồ báo thức, không có nghĩa vụ, không cần đi đâu. Sarah cuộn mình lại với ly cà phê và cuốn sách mà cô định đọc từ nhiều tháng nay. Căn hộ im lặng chỉ có tiếng mèo nằm purring trên đệm bên cạnh. Lần đầu tiên trong nhiều tuần, tâm trí cô không chạy qua danh sách công việc. Cô chỉ đơn giản là... ở đây.",
+      "borderInfo": "Bình Yên là trung tâm bình lặng của Tin Tưởng—trạng thái cân bằng và an toàn. Nó nằm giữa Biết Ơn (trân trọng những gì hiện có) và Được Chấp Nhận (thuộc về người khác)."
+    },
+    {
+      "id": "trust-3-accepted",
+      "name": "Được Chấp Nhận",
+      "category": "Tin Tưởng",
+      "description": "Cảm giác được chào đón và coi trọng vì con người thật của bạn. Sự chấp nhận tạo ra cảm giác thuộc về và an toàn.",
+      "question": "Bạn cảm thấy mình thuộc về đâu? Ai chấp nhận và coi trọng bạn như bạn vốn có?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể quá tuân thủ, ẩn giấu những phần của bản thân để tiếp tục thuộc về.",
+      "overloadTip": "Để cân bằng, hãy chú ý đến nơi bạn cảm thấy đủ an toàn để trở nên xác thực hơn, và chia sẻ một phần thành thật hơn về bản thân.",
+      "adaptivePurpose": "Báo hiệu rằng bạn cảm thấy được nhìn nhận, coi trọng và hòa nhập vào một nhóm hoặc mối quan hệ.",
+      "relatedFeelings": ["Được Coi Trọng", "Được Tôn Trọng", "Được Chào Đón"],
+      "story": "Việc công khai với bố mẹ thật đáng sợ. Miguel đã chuẩn bị tinh thần cho những tranh luận, sự thất vọng, thậm chí có thể bị từ chối. Thay vào đó, mẹ anh kéo anh vào ôm và thì thầm, \"Mẹ biết rồi, con trai. Mẹ đã biết từ lâu.\" Cha anh chỉ nói, \"Con vẫn là con. Không có gì thay đổi điều đó.\" Những năm sợ hãi tan biến trong khoảnh khắc chấp nhận vô điều kiện đó.",
+      "borderInfo": "Được Chấp Nhận là Tin Tưởng biểu hiện qua sự thuộc về—sự an toàn của việc được nhìn nhận và hòa nhập. Nó nằm giữa Bình Yên (sự bình lặng nội tâm) và Đầy Hy Vọng (tin tưởng vào tương lai)."
+    },
+    {
+      "id": "trust-4-hopeful",
+      "name": "Đầy Hy Vọng",
+      "category": "Tin Tưởng",
+      "description": "Cảm giác kỳ vọng và mong muốn kết quả tích cực. Hy vọng thúc đẩy bạn tiếp tục tiến về phía trước ngay cả trong những thời điểm khó khăn.",
+      "question": "Bạn đang hy vọng điều gì? Bạn hình dung ra kết quả tích cực nào?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể chờ đợi thụ động sự thay đổi hoặc bám víu vào những kỳ vọng không thực tế.",
+      "overloadTip": "Để cân bằng, hãy chuyển một phần hy vọng của bạn thành một bước cụ thể, có thể thực hiện ngay bây giờ.",
+      "adaptivePurpose": "Báo hiệu rằng bạn có thể hình dung một tương lai tốt đẹp hơn và cảm thấy bị thu hút về phía nó.",
+      "relatedFeelings": ["Khao Khát", "Chờ Mong", "Lạc Quan"],
+      "borderInfo": "Đầy Hy Vọng gần với Sợ Hãi vì nó liên quan đến sự không chắc chắn về tương lai.",
+      "story": "Ung thư đã thuyên giảm. Bác sĩ Chen dùng ngôn ngữ cẩn thận—\"thận trọng lạc quan,\" \"dấu hiệu tốt\"—nhưng khi bước ra khỏi trung tâm ung thư học, Rachel cảm thấy điều gì đó mà cô đã không cho phép mình cảm nhận trong mười tám tháng: hy vọng. Không phải sự chắc chắn, không phải sự phủ nhận, mà là hy vọng thực sự. Tương lai, vốn dường như đã đóng lại, đột nhiên lại có những cánh cửa mở ra."
+    },
+    {
+      "id": "fear-1-nervous",
+      "name": "Hồi Hộp",
+      "category": "Sợ Hãi",
+      "description": "Trạng thái bất an hoặc lo lắng về điều gì đó không chắc chắn. Sự hồi hộp là phản ứng tự nhiên đối với những tình huống cảm thấy thách thức hoặc xa lạ.",
+      "question": "Điều gì đang tạo ra rủi ro? Điều gì cảm thấy không thể đoán trước hoặc ngoài tầm kiểm soát?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể thấy nguy hiểm ở khắp nơi, suy nghĩ quá nhiều, hoặc bị tê liệt bởi những tình huống giả định.",
+      "overloadTip": "Để cân bằng, hãy nhận diện một rủi ro cụ thể bạn lo ngại và một hành động nhỏ bạn có thể thực hiện để chuẩn bị hoặc kiểm tra các giả định của mình.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó cảm thấy không chắc chắn hoặc rủi ro và có thể cần thận trọng hoặc chuẩn bị.",
+      "relatedFeelings": ["Bị Đe Dọa", "Bất An", "Bồn Chồn"],
+      "borderInfo": "Hồi Hộp gần với Tin Tưởng vì nó liên quan đến sự dễ bị tổn thương và nhu cầu an toàn.",
+      "story": "Ngày đầu tiên ở trường mới. Aisha đứng trước cửa lớp học, nghe thấy tiếng cười và trò chuyện bên trong. Nếu không ai nói chuyện với cô thì sao? Nếu cô không tìm được căng-tin thì sao? Nếu cô nói điều gì đó ngớ ngẩn thì sao? Bụng cô quặn thắt. Cô hít một hơi, tự nhắc mình đã vượt qua những tình huống mới trước đây, và đẩy cửa bước vào."
+    },
+    {
+      "id": "fear-2-scared",
+      "name": "Hoảng Sợ",
+      "category": "Sợ Hãi",
+      "description": "Cảm giác sợ hãi hoặc báo động mãnh liệt. Sự hoảng sợ là cách cơ thể cảnh báo bạn về nguy hiểm tiềm ẩn.",
+      "question": "Ai hoặc điều gì bạn quan tâm đang bị đe dọa? Bạn đang cảm nhận nguy hiểm hay mối hại nào?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể rút lui khỏi những điều quan trọng nhất hoặc tránh né những bước quan trọng vì chúng quá đáng sợ.",
+      "overloadTip": "Để cân bằng, hãy làm rõ điều bạn muốn bảo vệ nhất và chọn một hành động tăng cường sự an toàn trong khi vẫn tôn vinh những gì bạn quan tâm.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó bạn quan tâm cảm thấy bị đe dọa và cần được bảo vệ hoặc chú ý.",
+      "relatedFeelings": ["Kinh Hoàng", "Khiếp Sợ", "Giật Mình"],
+      "story": "Báo động khói kêu vào lúc 2 giờ sáng. Tim đập loạn, Kevin cầm điện thoại và chạy vào bếp kiểm tra. Không có gì. Hành lang. Không có gì. Rồi anh ngửi thấy—khói lùa dưới cửa căn hộ từ hành lang. Đây là thật. Tay anh run khi gọi 911, cầm ví tiền và đi về phía cầu thang thoát hiểm. Mọi thứ đột nhiên cảm thấy ngay lập tức, thực sự đáng sợ.",
+      "borderInfo": "Hoảng Sợ là trung tâm năng động của Sợ Hãi—phản ứng ngay lập tức với nguy hiểm được cảm nhận. Nó nằm giữa Hồi Hộp (lo lắng nhẹ hơn) và Lo Âu (nỗi lo rộng hơn)."
+    },
+    {
+      "id": "fear-3-anxious",
+      "name": "Lo Âu",
+      "category": "Sợ Hãi",
+      "description": "Cảm giác lo lắng, bồn chồn hoặc bất an về điều gì đó có kết quả không chắc chắn. Lo âu có thể là tín hiệu để chuẩn bị hoặc hành động.",
+      "question": "Những mối đe dọa chung hoặc sự không chắc chắn lớn nào đang hiện diện? Bạn cần chuẩn bị hoặc bảo vệ trước điều gì?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể nghiền ngẫm, thổi phồng mọi chuyện, hoặc tạo ra những vấn đề tưởng tượng làm cạn kiệt năng lượng của bạn.",
+      "overloadTip": "Để cân bằng, hãy phân loại những lo lắng thành 'những điều tôi có thể ảnh hưởng' và 'những điều tôi không thể,' sau đó chọn một bước nhỏ cho điều bạn có thể ảnh hưởng.",
+      "adaptivePurpose": "Báo hiệu rằng bạn đang quét tìm những mối đe dọa hoặc sự không chắc chắn dài hạn có thể cần được lên kế hoạch hoặc bảo vệ.",
+      "relatedFeelings": ["Kinh Hoàng", "Lo Lắng", "Căng Thẳng"],
+      "story": "Bài thuyết trình còn một tuần nữa, nhưng Lisa không thể ngừng nghĩ về nó. Nếu máy chiếu hỏng thì sao? Nếu CEO đặt câu hỏi mà cô không trả lời được thì sao? Nếu giọng cô run thì sao? Cô nằm thức đến 3 giờ sáng, tâm trí xoay quanh những tình huống xấu nhất, mỗi nỗi lo lại rẽ ra thêm ba nỗi lo khác. Cô biết vòng xoáy này không hữu ích, nhưng dường như không thể dừng lại được.",
+      "borderInfo": "Lo Âu là Sợ Hãi trải dài theo thời gian—nỗi lo về những mối đe dọa trong tương lai. Nó nằm giữa Hoảng Sợ (sợ hãi ngay lập tức) và Thiếu Tự Tin (sợ hãi về bản thân)."
+    },
+    {
+      "id": "fear-4-insecure",
+      "name": "Thiếu Tự Tin",
+      "category": "Sợ Hãi",
+      "description": "Sự thiếu tự tin hoặc chắc chắn về bản thân hay vị trí của bạn trong một tình huống. Thiếu tự tin thường xuất phát từ sự nghi ngờ bản thân hoặc sợ bị từ chối.",
+      "question": "Điều gì khiến bạn nghi ngờ bản thân? Bạn sợ người khác có thể nghĩ hoặc thấy điều gì?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể liên tục tìm kiếm sự xác nhận, làm hài lòng người khác, hoặc giữ lại những đóng góp của mình.",
+      "overloadTip": "Để cân bằng, hãy nhớ lại bằng chứng cụ thể về điểm mạnh của bạn và tìm kiếm phản hồi thực tế từ người bạn tin tưởng, không phải từ những chỉ trích tưởng tượng.",
+      "adaptivePurpose": "Báo hiệu rằng cảm giác về giá trị, năng lực hoặc sự chấp nhận của bạn đang lung lay và bạn có thể cần sự đảm bảo, học hỏi hoặc ranh giới.",
+      "relatedFeelings": ["Bị Từ Chối", "Không Đủ Năng Lực", "Không Chắc Chắn"],
+      "borderInfo": "Thiếu Tự Tin gần với Ngạc Nhiên vì nó liên quan đến những mối đe dọa bất ngờ đối với lòng tự trọng.",
+      "story": "Tất cả mọi người tại bữa tiệc tối dường như quen biết nhau từ trường kinh doanh. Họ trao đổi những tham chiếu đến giáo sư và những câu chuyện nội bộ trong khi Marcus mỉm cười và gật đầu, cảm thấy ngày càng vô hình. \"Bạn làm gì?\" ai đó cuối cùng hỏi anh, và đột nhiên công việc của anh—thứ mà sáng nay anh vẫn tự hào—dường như không đủ. Anh là ai mà có mặt ở đây giữa những người này?"
+    },
+    {
+      "id": "surprise-1-startled",
+      "name": "Giật Mình",
+      "category": "Ngạc Nhiên",
+      "description": "Cảm giác sốc hoặc báo động đột ngột do điều gì đó bất ngờ gây ra. Giật mình là phản ứng ngay lập tức và tự động trước sự ngạc nhiên.",
+      "question": "Sự thay đổi đột ngột hay tín hiệu nào cần sự chú ý của bạn ngay bây giờ?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể tiếp tục ở trạng thái căng thẳng hoặc cảnh giác cao, xem mọi thứ như một trường hợp khẩn cấp.",
+      "overloadTip": "Để cân bằng, hãy dừng lại để nhìn, thở và kiểm tra những gì đang thực sự xảy ra bây giờ so với những gì bạn sợ có thể xảy ra.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó bất ngờ vừa xảy ra và sự chú ý của bạn cần định hướng nhanh chóng.",
+      "relatedFeelings": ["Kinh Ngạc", "Sốc", "Choáng Ngợp"],
+      "borderInfo": "Giật Mình gần với Sợ Hãi vì nó liên quan đến cảm giác đột ngột về mối đe dọa hoặc nguy hiểm.",
+      "story": "Đang đi bộ về nhà qua công viên yên tĩnh, tai nghe nhạc, Priya đang chìm đắm trong một podcast khi có thứ gì đó vụt ra từ bụi cây bên cô. Cô nhảy lùi, tim đập nhanh, tay giơ lên phòng thủ—chỉ để nhìn thấy một con sóc chạy ngang đường. Cô cười run run, cảm thấy ngớ ngẩn, nhưng nhịp tim phải mất vài phút mới trở lại bình thường."
+    },
+    {
+      "id": "surprise-2-confused",
+      "name": "Bối Rối",
+      "category": "Ngạc Nhiên",
+      "description": "Trạng thái bị bối rối hoặc không rõ ràng về điều gì đó. Sự bối rối xảy ra khi thông tin không khớp với kỳ vọng hoặc hiểu biết của bạn.",
+      "question": "Thông tin nào đang bị thiếu hoặc không rõ ràng? Điều gì sẽ giúp bạn hiểu được điều này?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể bị mắc kẹt trong sự nghi ngờ, trì hoãn các quyết định, hoặc đặt câu hỏi về tất cả mọi thứ.",
+      "overloadTip": "Để cân bằng, hãy biến sự bối rối thành một câu hỏi: xác định một điều bạn muốn hiểu và tìm kiếm câu trả lời, thử nghiệm hoặc cuộc trò chuyện.",
+      "adaptivePurpose": "Báo hiệu rằng sự hiểu biết hiện tại của bạn không phù hợp với thực tế và bạn có thể cần thông tin hoặc góc nhìn mới.",
+      "relatedFeelings": ["Vỡ Mộng", "Bế Tắc", "Mơ Hồ"],
+      "story": "Email không có ý nghĩa gì cả. Sau năm năm với những đánh giá xuất sắc, Daniel đang bị \"chuyển sang một vai trò mới\"—có hiệu lực ngay lập tức. Sếp anh không trả lời điện thoại. HR nói bằng những câu trả lời cẩn thận không nói gì. Anh ngồi ở bàn làm việc, đọc đi đọc lại những câu giống nhau, cố gắng ghép các mảnh lại với nhau. Điều gì đã xảy ra? Anh đã bỏ lỡ điều gì?",
+      "borderInfo": "Bối Rối là Ngạc Nhiên gặp sự không chắc chắn—bản đồ tâm trí của bạn không phù hợp với thực tế. Nó nằm giữa Giật Mình (ngạc nhiên thể chất) và Kinh Ngạc (ngạc nhiên tích cực)."
+    },
+    {
+      "id": "surprise-3-amazed",
+      "name": "Kinh Ngạc",
+      "category": "Ngạc Nhiên",
+      "description": "Cảm giác kinh ngạc và sửng sốt lớn lao. Sự kinh ngạc là hình thức ngạc nhiên tích cực lấp đầy bạn bằng sự kính sợ.",
+      "question": "Điều gì đã vượt quá kỳ vọng của bạn? Điều này mở ra khả năng nào?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể lý tưởng hóa con người hoặc tình huống và bỏ lỡ những giới hạn hoặc rủi ro thực tế.",
+      "overloadTip": "Để cân bằng, hãy nhận diện những gì làm bạn vui thích và cũng một bước thực tế hoặc ranh giới giữ bạn vững chắc trong khi khám phá khả năng mới này.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó tốt hơn, lớn hơn hoặc đẹp hơn nhiều so với bạn mong đợi và cảm giác về khả năng của bạn đang mở rộng.",
+      "relatedFeelings": ["Sững Sờ", "Kính Sợ", "Ấn Tượng"],
+      "story": "Đứng trên miệng Grand Canyon lần đầu tiên, ngôn ngữ không diễn đạt được cảm xúc của cô. Những bức ảnh không chuẩn bị cho Jennifer điều này—quy mô không thể tin được, những lớp màu sắc, sự im lặng chỉ bị phá vỡ bởi gió. Cô đã thấy những nơi đẹp trước đây, nhưng điều này khác. Điều này khiến cô cảm thấy nhỏ bé theo cách nào đó lại an ủi, kết nối với điều gì đó bao la và cổ xưa.",
+      "borderInfo": "Kinh Ngạc là trái tim tích cực của Ngạc Nhiên—sự kỳ diệu trước điều vượt xa kỳ vọng. Nó nằm giữa Bối Rối (ngạc nhiên trung tính) và Thất Vọng (ngạc nhiên tiêu cực)."
+    },
+    {
+      "id": "surprise-4-disappointed",
+      "name": "Thất Vọng",
+      "category": "Ngạc Nhiên",
+      "description": "Cảm giác buồn bã hoặc không hài lòng khi kỳ vọng không được đáp ứng. Sự thất vọng báo hiệu khoảng cách giữa những gì bạn hy vọng và thực tế.",
+      "question": "Kỳ vọng nào không được đáp ứng? Điều gì quan trọng với bạn về kết quả này?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể trượt vào sự hoài nghi, từ bỏ những nỗ lực hoặc mối quan hệ trong tương lai.",
+      "overloadTip": "Để cân bằng, hãy nhận diện kỳ vọng một cách rõ ràng, sau đó quyết định xem có nên sửa đổi mục tiêu, chiến lược hoặc dòng thời gian của bạn không—và chọn một hành động tiếp theo.",
+      "adaptivePurpose": "Báo hiệu rằng thực tế không khớp với hy vọng của bạn và điều gì đó bạn quan tâm cảm thấy bị giảm giá trị hoặc mất đi.",
+      "relatedFeelings": ["Bị Phản Bội", "Chán Nản", "Bị Bỏ Rơi"],
+      "borderInfo": "Thất Vọng gần với Buồn Bã vì nó liên quan đến sự mất mát của hy vọng và những kỳ vọng không được đáp ứng.",
+      "story": "\"Chúng tôi đã quyết định đi theo hướng khác.\" Những từ ngữ lơ lửng trong không khí của phòng trưng bày. Chloe đã dành tám tháng cho hợp đồng này, đổ tầm nhìn của mình vào từng nét cọ. Khách hàng dường như rất nhiệt tình trong các cuộc họp của họ. Giờ họ muốn \"thứ gì đó thông thường hơn.\" Cô mỉm cười chuyên nghiệp, bắt tay, và chờ đợi cho đến khi cô đến được xe của mình mới để nước mắt rơi."
+    },
+    {
+      "id": "sad-1-hurt",
+      "name": "Bị Tổn Thương",
+      "category": "Buồn Bã",
+      "description": "Nỗi đau cảm xúc do điều gì đó hoặc ai đó gây ra. Những cảm xúc bị tổn thương thường phát sinh từ sự từ chối, chỉ trích hoặc mất mát được cảm nhận.",
+      "question": "Giá trị hay mối quan hệ nào bị ảnh hưởng? Sự chữa lành hay sửa chữa nào sẽ giúp ích?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể giữ mãi oán giận, suy diễn những ý định xấu, hoặc đóng cửa với sự sửa chữa.",
+      "overloadTip": "Để cân bằng, hãy thừa nhận nỗi đau và lý do tại sao nó quan trọng, sau đó xem xét có muốn và làm thế nào để truyền đạt hoặc tìm kiếm sự hỗ trợ chữa lành.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó hoặc ai đó quan trọng đã làm tổn thương cảm giác an toàn, giá trị hoặc sự kết nối của bạn.",
+      "relatedFeelings": ["Chán Nản", "Bị Đe Dọa", "Bị Thương"],
+      "borderInfo": "Bị Tổn Thương gần với Ngạc Nhiên vì nó thường đến từ những vết thương cảm xúc bất ngờ.",
+      "story": "\"Tôi chỉ không nghĩ bạn có chất lãnh đạo.\" Những từ ngữ từ người cố vấn của anh—người mà anh đã tin tưởng trong nhiều năm—đổ xuống như một cú đấm. Robert đã chia sẻ những giấc mơ về việc điều hành bộ phận của riêng mình một ngày nào đó, đã tự để mình dễ bị tổn thương. Giờ sự dễ bị tổn thương đó cảm thấy như một sai lầm. Lời chỉ trích có thể mang tính xây dựng, nhưng được bọc trong cụm từ khinh thường đó, nó chỉ cảm thấy như sự phản bội."
+    },
+    {
+      "id": "sad-2-depressed",
+      "name": "Trầm Uất",
+      "category": "Buồn Bã",
+      "description": "Trạng thái buồn bã sâu sắc và năng lượng thấp. Sự trầm uất có thể khiến mọi thứ cảm thấy nặng nề và khó quản lý.",
+      "question": "Điều gì cảm thấy kiệt sức hoặc vô vọng? Nguồn chăm sóc, hỗ trợ hoặc ý nghĩa nhỏ nào bạn có thể kết nối lại?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể ngừng nhìn thấy bất kỳ khả năng nào, rút lui hoàn toàn, hoặc bỏ bê việc chăm sóc bản thân cơ bản.",
+      "overloadTip": "Để cân bằng, hãy chọn một hành động nhỏ, đầy lòng trắc ẩn—chẳng hạn như tiếp cận, vận động cơ thể, hoặc làm một nhiệm vụ đơn giản—thêm một chút cấu trúc hoặc hỗ trợ.",
+      "adaptivePurpose": "Báo hiệu rằng năng lượng, động lực hoặc cảm giác về ý nghĩa của bạn đã giảm xuống và bạn có thể cần nghỉ ngơi, hỗ trợ hoặc tái định hướng.",
+      "relatedFeelings": ["Mất Mát", "Tê Liệt", "Trống Rỗng"],
+      "story": "Việc ra khỏi giường đã trở thành phần khó khăn nhất. Emma sẽ nằm đó, biết mình có việc phải làm, có người đang trông cậy vào cô, và không cảm thấy gì—chỉ là một sự trống rỗng nặng nề khiến ngay cả việc tắm cũng cảm thấy như leo núi. Màu sắc có vẻ mờ nhạt hơn. Thức ăn không có vị gì. Cô thực hiện những động tác của cuộc sống trong khi cảm thấy như đang xem nó từ xa.",
+      "borderInfo": "Trầm Uất là Buồn Bã sâu sắc—năng lượng và hy vọng cạn kiệt. Nó nằm giữa Bị Tổn Thương (nỗi đau cấp tính) và Cô Đơn (sự xa cách với người khác)."
+    },
+    {
+      "id": "sad-3-lonely",
+      "name": "Cô Đơn",
+      "category": "Buồn Bã",
+      "description": "Cảm giác đau đớn về sự cô lập hoặc xa cách với người khác. Sự cô đơn làm nổi bật nhu cầu kết nối có ý nghĩa của chúng ta.",
+      "question": "Bạn cần sự kết nối nào ngay bây giờ? Ai có thể giúp bạn cảm thấy được nhìn nhận hoặc được hỗ trợ hơn?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể tin rằng bạn về cơ bản là một mình hoặc không thể được yêu và rút lui thêm nữa.",
+      "overloadTip": "Để cân bằng, hãy xác định một cách nhỏ, an toàn để tiếp cận sự kết nối—một tin nhắn, một cuộc gọi, một không gian chung, hoặc đặt tên nhu cầu của bạn với người bạn tin tưởng.",
+      "adaptivePurpose": "Báo hiệu rằng nhu cầu kết nối, thuộc về hoặc được nhìn nhận của bạn không được đáp ứng.",
+      "relatedFeelings": ["Bị Bỏ Rơi", "Bị Cô Lập", "Mất Kết Nối"],
+      "story": "Căn hộ đầy những thùng từ lần chuyển nhà. Thành phố mới, công việc mới, khởi đầu mới—mọi thứ cô muốn. Nhưng ngồi trên chiếc nệm trần của mình đêm đầu tiên, điện thoại đầy danh bạ nhưng không có ai để gọi, Yuki cảm thấy sức nặng của sự cô đơn. Cô có thể nghe thấy hàng xóm qua các bức tường, đang sống cuộc sống của họ, và những âm thanh đó chỉ khiến sự im lặng trong không gian của cô trở nên to hơn.",
+      "borderInfo": "Cô Đơn là Buồn Bã về sự kết nối—nỗi đau của việc không được nhìn nhận hoặc bị cách biệt. Nó nằm giữa Trầm Uất (trống rỗng nội tâm) và Xấu Hổ (tự phán xét bản thân)."
+    },
+    {
+      "id": "sad-4-ashamed",
+      "name": "Xấu Hổ",
+      "category": "Buồn Bã",
+      "description": "Cảm giác đau đớn về sự nhục nhã hoặc đau khổ do tin rằng bạn đã làm điều gì đó sai hoặc đáng xấu hổ. Xấu hổ ảnh hưởng đến cách bạn nhìn nhận bản thân.",
+      "question": "Bạn đang giữ bản thân theo tiêu chuẩn nào? Sự tự thông cảm hoặc sửa chữa nào sẽ hỗ trợ sự tăng trưởng?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể biến một sai lầm cụ thể thành niềm tin rằng bạn tệ hoặc không xứng đáng và ẩn giấu bản thân thật.",
+      "overloadTip": "Để cân bằng, hãy phân biệt 'tôi đã làm điều gì đó' với 'tôi là điều gì đó,' và chọn một bước học hỏi, sửa chữa hoặc xin lỗi phù hợp với giá trị của bạn.",
+      "adaptivePurpose": "Báo hiệu rằng hành vi hoặc lựa chọn của bạn có thể không phù hợp với giá trị của bạn và mời suy ngẫm, sửa chữa và tăng trưởng.",
+      "relatedFeelings": ["Hối Hận", "Tội Lỗi", "Ngượng Ngùng"],
+      "borderInfo": "Xấu Hổ gần với Ghê Tởm vì nó liên quan đến sự phán xét tiêu cực về bản thân.",
+      "story": "Chỉ là một lối tắt, anh đã tự nhủ. Một vài đoạn văn được sao chép trong một bài báo mà không ai đọc kỹ. Nhưng khi giáo sư gọi anh vào văn phòng, bằng chứng trải rộng trên bàn làm việc của cô, Michael không thể nhìn vào mắt cô. Sự thất vọng trong giọng nói của cô tệ hơn sự tức giận. Anh đã phản bội không chỉ các quy tắc học thuật, mà còn cả cảm giác của anh về chính mình."
+    },
+    {
+      "id": "disgust-1-dislike",
+      "name": "Không Thích",
+      "category": "Ghê Tởm",
+      "description": "Cảm giác ghét bỏ hoặc không chấp nhận đối với điều gì đó hoặc ai đó. Sự không thích giúp bạn xác định những gì không phù hợp với giá trị của bạn.",
+      "question": "Điều gì cảm thấy không phù hợp với giá trị hoặc sở thích của bạn? Ranh giới hay lựa chọn nào điều này tiết lộ?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể trượt vào sự phán xét khắc nghiệt, định kiến, hoặc từ chối con người hay ý tưởng quá nhanh.",
+      "overloadTip": "Để cân bằng, hãy đặt tên cụ thể những gì bạn không thích—hành vi, phong cách hoặc tác động—mà không lên án toàn bộ con người hay tình huống, và quyết định ranh giới nào thực sự cần thiết.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó không phù hợp với sở thích, nhu cầu hoặc giá trị của bạn và bạn có thể muốn giữ khoảng cách hoặc lựa chọn khác.",
+      "relatedFeelings": ["Kinh Tởm", "Xa Lánh", "Ghét Bỏ"],
+      "borderInfo": "Không Thích gần với Buồn Bã vì nó liên quan đến sự rút lui cảm xúc và từ chối.",
+      "story": "Mỗi bình luận trong cuộc họp, mỗi câu 'thực ra thì,' mỗi lần ngắt lời—Grace cảm thấy hàm cô siết chặt hơn một chút. Cô không thể chỉ ra điều gì đặc biệt xúc phạm trong người đồng nghiệp mới, nhưng có điều gì đó trong cách cư xử của anh ta khiến cô khó chịu. Đến cuối cuộc họp, cô biết mình sẽ cần tìm cách hạn chế các tương tác của họ nếu cô muốn duy trì sự chuyên nghiệp."
+    },
+    {
+      "id": "disgust-2-avoidance",
+      "name": "Né Tránh",
+      "category": "Ghê Tởm",
+      "description": "Xu hướng tránh xa điều gì đó khó chịu hoặc không thoải mái. Sự né tránh là phản ứng bảo vệ đối với những điều cảm thấy đe dọa.",
+      "question": "Điều gì cảm thấy không an toàn, quá sức chịu đựng hoặc làm cạn kiệt năng lượng? Làm thế nào bạn có thể tiếp cận với nhiều hỗ trợ hoặc sự rõ ràng hơn?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể trì hoãn những hành động quan trọng, bị mắc kẹt, hoặc để các vấn đề âm thầm lớn dần.",
+      "overloadTip": "Để cân bằng, hãy chia nhỏ nhiệm vụ hoặc tình huống bị né tránh thành một bước rất nhỏ và xem xét sự hỗ trợ, thông tin hoặc ranh giới nào sẽ giúp nó dễ quản lý hơn.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó có vẻ quá đe dọa, quá sức chịu đựng hoặc khó chịu để đối mặt với nguồn lực hiện tại của bạn.",
+      "relatedFeelings": ["Do Dự", "Ngại Ngùng", "Miễn Cưỡng"],
+      "story": "Đống thư trên quầy bếp đã chất thành một núi nhỏ. Hóa đơn, có lẽ vậy. Có thể có gì đó từ cơ quan thuế. Omar đi ngang qua nó mỗi ngày, pha cà phê cách nó vài phân, và bằng cách nào đó không bao giờ thực sự mở bất kỳ cái nào. Anh biết điều này đang làm mọi thứ tệ hơn. Anh cũng biết mình sẽ không xử lý nó hôm nay. Có lẽ ngày mai cũng không.",
+      "borderInfo": "Né Tránh là Ghê Tởm trong hành động—sự thôi thúc tạo ra khoảng cách. Nó nằm giữa Không Thích (sự phán xét) và Kinh Khủng (ghê tởm mãnh liệt)."
+    },
+    {
+      "id": "disgust-3-aweful",
+      "name": "Kinh Khủng",
+      "category": "Ghê Tởm",
+      "description": "Cảm giác tiêu cực mạnh mẽ về điều gì đó rất khó chịu hoặc không vừa lòng. Cảm giác kinh khủng báo hiệu rằng có điều gì đó sai sâu sắc hoặc gây đau khổ.",
+      "question": "Điều gì cảm thấy gây hại hoặc không thể chấp nhận được? Tiêu chuẩn hay giá trị nào đang báo hiệu cần thay đổi?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể thổi phồng mọi chuyện, cảm thấy vô vọng về sự thay đổi, hoặc chỉ phản ứng bằng sự phẫn nộ thay vì chiến lược.",
+      "overloadTip": "Để cân bằng, hãy làm rõ chính xác điều gì gây hại, sau đó chọn một hành động thực tế—cá nhân, quan hệ, hoặc hệ thống—dù chỉ di chuyển một chút về phía sự sửa chữa.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó cảm thấy sai sâu sắc, gây hại, hoặc không nguyên vẹn với các giá trị cốt lõi của bạn.",
+      "relatedFeelings": ["Ghê Tởm", "Kinh Tởm", "Khủng Khiếp"],
+      "story": "Bộ phim tài liệu cho thấy cảnh từ các trang trại chăn nuôi công nghiệp—những con vật trong điều kiện mà cô không thể xóa khỏi mắt mình. Natalie đã biết, về mặt trí tuệ, thức ăn của mình đến từ đâu. Nhưng biết và thấy là hai điều khác nhau. Cô đóng máy tính xách tay, bụng quặn thắt, cảm thấy mình bị liên can vào điều gì đó mà cô chưa bao giờ thực sự để bản thân nghĩ đến trước đây.",
+      "borderInfo": "Kinh Khủng là trung tâm mãnh liệt của Ghê Tởm—sự từ chối nội tâm mạnh mẽ với điều gây hại. Nó nằm giữa Né Tránh (phản ứng hành vi) và Không Tán Thành (phán xét đạo đức)."
+    },
+    {
+      "id": "disgust-4-disapproval",
+      "name": "Không Tán Thành",
+      "category": "Ghê Tởm",
+      "description": "Sự phán xét tiêu cực hoặc ý kiến về ai đó hoặc điều gì đó. Sự không tán thành phản ánh xung đột giữa giá trị của bạn và những gì bạn quan sát.",
+      "question": "Kỳ vọng nào không được đáp ứng? Giá trị nào đang thúc đẩy phản ứng này, và bạn hy vọng thay đổi gì?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể trở nên cứng nhắc, quá chỉ trích, hoặc xa lánh người khác.",
+      "overloadTip": "Để cân bằng, hãy kết nối với giá trị ẩn dưới sự không tán thành của bạn và bày tỏ nó theo cách mời đối thoại và cải thiện, không phải xấu hổ.",
+      "adaptivePurpose": "Báo hiệu rằng một hành vi hoặc kết quả không đáp ứng tiêu chuẩn hoặc giá trị của bạn và bạn quan tâm đến việc làm tốt hơn.",
+      "relatedFeelings": ["Căm Ghét", "Phán Xét", "Chỉ Trích"],
+      "borderInfo": "Không Tán Thành gần với Tức Giận vì nó liên quan đến sự đánh giá phê phán và khả năng đối đầu.",
+      "story": "Nhìn con trai lướt điện thoại trong khi bài phát biểu sinh nhật của bà nội diễn ra, Richard cảm thấy nét mặt mình cứng lại. Người phụ nữ già đang chia sẻ những ký ức về người chồng đã khuất, giọng nói nứt ra vì xúc động, và Tyler không buồn nhìn lên trong năm phút. Richard bắt gặp mắt con trai và lắc đầu chậm rãi. Có những điều không cần phải giải thích."
+    },
+    {
+      "id": "anger-1-aggressive",
+      "name": "Hung Hăng",
+      "category": "Tức Giận",
+      "description": "Cách bày tỏ tức giận mạnh mẽ và đối đầu. Sự hung hăng thường là phản ứng khi cảm thấy bị đe dọa hoặc thất vọng.",
+      "question": "Ranh giới nào cần được bảo vệ? Điều gì quan trọng đến mức bạn cảm thấy bắt buộc phải hành động?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể bùng phát theo cách làm hại người khác, leo thang xung đột, hoặc phá hoại mục tiêu của chính bạn.",
+      "overloadTip": "Để cân bằng, hãy dừng lại trước khi hành động, dùng năng lượng này để chọn những từ ngữ hay hành động rõ ràng và kiên quyết, và tập trung vào kết quả bạn thực sự muốn.",
+      "adaptivePurpose": "Báo hiệu rằng bạn nhận ra một mối đe dọa, bất công hoặc vi phạm nghiêm trọng và cảm thấy một sức mạnh mạnh mẽ để bảo vệ.",
+      "relatedFeelings": ["Thù Địch", "Bị Khiêu Khích", "Hiếu Chiến"],
+      "borderInfo": "Hung Hăng gần với Ghê Tởm vì nó liên quan đến việc từ chối hoặc đẩy đi những gì không thể chấp nhận.",
+      "story": "\"Nói lại đi.\" Giọng Victor trầm xuống, nguy hiểm. Người đàn ông ở quán bar đã nói điều gì đó về vợ anh—đủ to để nghe thấy, đủ nhỏ để phủ nhận. Victor cảm thấy tay mình siết chặt thành nắm đấm, cảm thấy sức nóng quen thuộc dâng lên trong ngực. Mọi bản năng thét vào anh phải làm cho tên này hối hận vì đã mở miệng. Bàn tay vợ anh trên cánh tay anh là điều duy nhất ghìm anh lại."
+    },
+    {
+      "id": "anger-2-mad",
+      "name": "Phẫn Nộ",
+      "category": "Tức Giận",
+      "description": "Cảm giác không hài lòng hoặc giận dữ mãnh liệt. Sự phẫn nộ báo hiệu rằng điều gì đó đã vi phạm ranh giới hoặc kỳ vọng của bạn.",
+      "question": "Giá trị hay kỳ vọng nào bị vi phạm? Bạn cần bày tỏ hay sửa chữa điều gì?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể giữ oán giận, lặp lại câu chuyện, hoặc tấn công thay vì tìm kiếm giải pháp.",
+      "overloadTip": "Để cân bằng, hãy đặt tên cụ thể điều gì không ổn và quyết định xem bạn muốn thiết lập ranh giới, yêu cầu thay đổi, hoặc có ý thức buông bỏ.",
+      "adaptivePurpose": "Báo hiệu rằng điều gì đó cảm thấy không công bằng hoặc không ổn và bạn muốn thay đổi hoặc sự thừa nhận.",
+      "relatedFeelings": ["Điên Cuồng", "Tức Giận Dữ Dội", "Căm Phẫn"],
+      "story": "Ba tiếng đồng hồ. Cô đã chờ đợi công ty cáp trong ba tiếng, nhìn khoảng thời gian từ '12 đến 4' trôi qua từ từ. Khi điện thoại cuối cùng reo vào lúc 4:30—'Chúng tôi cần sắp xếp lại lịch'—Diane cảm thấy như có gì đó đứt. Lời phàn nàn được cẩn thận soạn sẵn biến mất, thay thế bằng dòng chảy của mọi sự thất vọng cô đã nuốt vào trong nhiều tháng. Nhân viên chăm sóc khách hàng không đáng nhận điều đó, nhưng anh ta vẫn nhận.",
+      "borderInfo": "Phẫn Nộ là trung tâm nóng bỏng của Tức Giận—sự không hài lòng mãnh liệt trước một vi phạm. Nó nằm giữa Hung Hăng (sẵn sàng hành động) và Bực Bội (mục tiêu bị chặn)."
+    },
+    {
+      "id": "anger-3-frustrated",
+      "name": "Bực Bội",
+      "category": "Tức Giận",
+      "description": "Cảm giác tức giận hay khó chịu khi không thể đạt được điều gì đó. Sự bực bội phát sinh từ những mục tiêu bị chặn hoặc nhu cầu không được đáp ứng.",
+      "question": "Điều gì đang cản trở mục tiêu của bạn? Sự thay đổi nào—nội tâm hay bên ngoài—sẽ giúp bạn tiến về phía trước?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể bỏ cuộc, đổ lỗi cho người khác, hoặc gây áp lực quá mức lên người khác.",
+      "overloadTip": "Để cân bằng, hãy lùi lại để làm rõ mục tiêu của bạn, sau đó chọn một cách tiếp cận, yêu cầu hoặc ranh giới khác có thể mở ra sự tiến triển.",
+      "adaptivePurpose": "Báo hiệu rằng nỗ lực của bạn bị chặn và bạn muốn tiến triển, hiệu quả hoặc kết quả khác.",
+      "relatedFeelings": ["Khó Chịu", "Bực Dọc", "Kiệt Sức"],
+      "story": "Code phải hoạt động. Alex đã kiểm tra từng dòng, so sánh với tài liệu, thậm chí sao chép trực tiếp các ví dụ. Vẫn còn cùng thông báo lỗi đó, chế giễu anh bằng màu đỏ. Anh đã làm điều này trong sáu tiếng. Cà phê nguội lạnh rồi. Giải pháp có lẽ là điều gì đó rõ ràng, điều mà anh sẽ tự chê cười vì đã bỏ lỡ. Nhưng lúc này, tất cả những gì anh muốn là ném máy tính xách tay qua cửa sổ.",
+      "borderInfo": "Bực Bội là Tức Giận gặp chướng ngại vật—năng lượng để thay đổi điều không hiệu quả. Nó nằm giữa Phẫn Nộ (tức giận mãnh liệt) và Chỉ Trích (tức giận phân tích)."
+    },
+    {
+      "id": "anger-4-critical",
+      "name": "Chỉ Trích",
+      "category": "Tức Giận",
+      "description": "Xu hướng tìm lỗi hay phán xét khắc nghiệt. Sự chỉ trích có thể là một hình thức tức giận hướng đến những khuyết điểm hay thất bại được nhận ra.",
+      "question": "Bạn thấy cần cải thiện điều gì? Kết quả nào bạn đang cố bảo vệ hay nâng cao?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể mặc định vào việc tìm lỗi, làm nản lòng người khác, hoặc chặn sự sáng tạo và thử nghiệm.",
+      "overloadTip": "Để cân bằng, hãy thừa nhận ít nhất một điều đang hoạt động trước khi nêu ra những mối quan tâm, và đóng khung lời phê bình của bạn như một đóng góp cho sự cải thiện chung.",
+      "adaptivePurpose": "Báo hiệu rằng bạn nhận ra rủi ro, lỗi hoặc cải tiến tiềm năng và quan tâm đến chất lượng hoặc sự chính trực.",
+      "relatedFeelings": ["Mỉa Mai", "Hoài Nghi", "Phán Xét"],
+      "borderInfo": "Chỉ Trích gần với Mong Đợi vì nó liên quan đến sự cảnh giác và chuẩn bị trước những vấn đề tiềm ẩn.",
+      "story": "\"Tạm ổn, tôi đoán vậy.\" Sophie nhìn mặt người bạn cùng phòng sa sầm trước phản ứng nguội lạnh về bức tranh mới của cô ấy. Cô không có ý định gay gắt, nhưng cô có thể thấy mọi khiếm khuyết—màu sắc xỉn, nét cọ không chắc, bố cục kém sáng tạo. Điều tử tế nhất đáng lẽ là những lời động viên. Thay vào đó, cô đã để tiêu chuẩn của mình nói thay, và giờ khoảnh khắc để hỗ trợ đã qua."
+    },
+    {
+      "id": "anticipation-1-excited",
+      "name": "Hào Hứng",
+      "category": "Mong Đợi",
+      "description": "Cảm giác háo hức nhiệt tình về điều gì đó sắp xảy ra. Sự hào hứng tiếp thêm năng lượng cho bạn và tạo ra sự chờ đợi tích cực.",
+      "question": "Cơ hội nào đang tiếp thêm năng lượng cho bạn? Làm thế nào bạn có thể hướng năng lượng này vào hành động có chủ tâm?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể cam kết quá nhiều, lao về phía trước mà không có kế hoạch, hoặc kiệt sức.",
+      "overloadTip": "Để cân bằng, hãy kết hợp năng lượng của bạn với một kế hoạch và nhịp độ thực tế, và chọn một bước tiếp theo rõ ràng thay vì cố gắng làm mọi thứ cùng một lúc.",
+      "adaptivePurpose": "Báo hiệu rằng bạn cảm thấy tràn đầy năng lượng bởi một khả năng và sẵn sàng tham gia vào nó.",
+      "relatedFeelings": ["Đam Mê", "Tràn Đầy Năng Lượng", "Phấn Khích"],
+      "borderInfo": "Hào Hứng gần với Tức Giận vì nó liên quan đến năng lượng mãnh liệt và sự sẵn sàng hành động.",
+      "story": "Buổi hòa nhạc còn ba tuần nữa, nhưng Jasmine đã lên kế hoạch trang phục, tạo danh sách phát những bài hát cần học lại, và bắt đầu đếm ngược từng ngày. Cô đã theo dõi ban nhạc này từ hồi trung học, biết từng album, từng cuộc phỏng vấn. Thực tế là cô đã thực sự lấy được vé—vé tốt—vẫn còn chưa cảm thấy hoàn toàn thực."
+    },
+    {
+      "id": "anticipation-2-eager",
+      "name": "Háo Hức",
+      "category": "Mong Đợi",
+      "description": "Mong muốn sắc bén hoặc sẵn sàng làm hay trải nghiệm điều gì đó. Sự háo hức thúc đẩy bạn tiến về phía trước với nhiệt tình và động lực.",
+      "question": "Bạn muốn tiến về phía nào? Bước đầu tiên nào sẽ đưa bạn đi theo hướng đó?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể bỏ qua những dấu hiệu cảnh báo, bỏ qua sự suy ngẫm, hoặc nói có quá nhiều lần.",
+      "overloadTip": "Để cân bằng, hãy dừng lại để hỏi xem bạn cần thông tin, ranh giới hoặc chuẩn bị nào trước khi tiến, sau đó thực hiện một bước đầu tiên có suy nghĩ.",
+      "adaptivePurpose": "Báo hiệu rằng bạn cảm thấy sẵn sàng theo đuổi điều gì đó và muốn tiến về phía nó nhanh chóng.",
+      "relatedFeelings": ["Nhiệt Tình", "Có Động Lực", "Sắc Bén"],
+      "story": "Khi email đến—'Đơn đăng ký của bạn đã được chấp nhận'—Ben đã cầm chìa khóa xe rồi. Trại cứu trợ đóng cửa sau một tiếng, và ở đâu đó bên trong là con chó anh đã thấy trực tuyến, con chó có đôi tai ngộ nghĩnh và đôi mắt đầy tâm hồn. Sáu tháng nghiên cứu các giống chó, chuẩn bị căn hộ, chờ đợi thời điểm thích hợp. Hôm nay là ngày đó rồi.",
+      "borderInfo": "Háo Hức là Mong Đợi trong hành động—sẵn sàng và muốn tham gia. Nó nằm giữa Hào Hứng (năng lượng cao) và Quan Tâm (tham gia tò mò)."
+    },
+    {
+      "id": "anticipation-3-interested",
+      "name": "Quan Tâm",
+      "category": "Mong Đợi",
+      "description": "Cảm giác muốn tìm hiểu thêm hoặc tham gia vào điều gì đó. Sự quan tâm hướng sự chú ý và tò mò của bạn về những trải nghiệm mới.",
+      "question": "Điều gì đang thu hút sự chú ý của bạn? Điều gì cảm thấy đáng khám phá hoặc hiểu sâu hơn?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể phân tán trọng tâm, bắt đầu nhiều thứ và hoàn thành ít.",
+      "overloadTip": "Để cân bằng, hãy có ý thức chọn một lĩnh vực tập trung hiện tại và ghi lại những mối quan tâm khác để sau này, để bạn có thể khám phá với chủ tâm.",
+      "adaptivePurpose": "Báo hiệu rằng sự tò mò của bạn được kích hoạt và bạn thấy giá trị tiềm năng trong việc học hỏi hoặc khám phá.",
+      "relatedFeelings": ["Nóng Lòng", "Tò Mò", "Hòa Nhập"],
+      "story": "\"Hãy cho tôi biết thêm.\" Giáo sư Walsh ngả người về phía trước, thực sự tò mò. Đề xuất luận văn của sinh viên chưa được đánh bóng, nhưng có điều gì đó ở đó—một kết nối bất ngờ giữa các lĩnh vực hiếm khi nói chuyện với nhau. Tâm trí cô đã đua thêm các câu hỏi, những hướng nghiên cứu tiềm năng, các đồng nghiệp có thể muốn cộng tác. Đây là lý do tại sao cô yêu học thuật.",
+      "borderInfo": "Quan Tâm là trái tim suy nghĩ của Mong Đợi—sự chú ý hướng đến điều đáng khám phá. Nó nằm giữa Háo Hức (sẵn sàng hành động) và Căng Thẳng (bị áp đảo bởi đòi hỏi)."
+    },
+    {
+      "id": "anticipation-4-stressed",
+      "name": "Căng Thẳng",
+      "category": "Mong Đợi",
+      "description": "Trạng thái căng thẳng về tinh thần hoặc cảm xúc từ những hoàn cảnh đòi hỏi. Sự căng thẳng báo hiệu rằng bạn đang đối mặt với những thách thức đòi hỏi năng lượng và nguồn lực.",
+      "question": "Những áp lực nào cần được chú ý? Bạn cần được giảm nhẹ, hỗ trợ hoặc ranh giới rõ ràng hơn ở đâu?",
+      "overloadRisk": "Nếu bạn sử dụng cảm giác này quá mức, bạn có thể chạy ở chế độ khủng hoảng, đưa ra những quyết định phản ứng, hoặc kiệt sức.",
+      "overloadTip": "Để cân bằng, hãy xác định một yêu cầu bạn có thể giảm, ủy thác hoặc trì hoãn và một thực hành ngắn giúp phục hồi năng lượng hay sự rõ ràng của bạn.",
+      "adaptivePurpose": "Báo hiệu rằng những yêu cầu cảm thấy lớn hơn nguồn lực hiện tại của bạn và có điều gì đó cần thay đổi.",
+      "relatedFeelings": ["Quá Tải", "Bị Áp Lực", "Căng Thẳng Thần Kinh"],
+      "borderInfo": "Căng Thẳng gần với Niềm Vui vì nó liên quan đến năng lượng cao tập trung vào việc đạt được kết quả tích cực.",
+      "story": "Đám cưới còn mười ngày nữa. Công ty cung cấp thức ăn vừa hủy. Mẹ chồng đang 'gợi ý' những thay đổi sơ đồ chỗ ngồi. Những chỉnh sửa trên chiếc váy của cô chưa xong. Và giờ, lướt điện thoại lúc nửa đêm, Hannah phát hiện dự báo thời tiết có mưa. Cô có thể cảm thấy áp lực dâng lên sau đôi mắt, sự căng thẳng quen thuộc trong lồng ngực. Có điều gì đó sẽ phải nhường thôi."
+    }
+  ],
+  "quotes": {
+    "joy-1-optimistic": [
+      {"text": "The sun'll come out tomorrow.", "speaker": "Annie", "work": "Annie"},
+      {"text": "There's some good in this world, and it's worth fighting for.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings: The Two Towers"},
+      {"text": "Even miracles take a little time.", "speaker": "Fairy Godmother", "work": "Cinderella"}
+    ],
+    "joy-2-confident": [
+      {"text": "I am no bird; and no net ensnares me.", "speaker": "Jane Eyre", "work": "Jane Eyre"},
+      {"text": "I know my worth.", "speaker": "Carol Danvers", "work": "Captain Marvel"},
+      {"text": "She wasn't fragile like a flower… she was fragile like a bomb.", "speaker": "Taylor Swift", "work": "Miss Americana"}
+    ],
+    "joy-3-joyful": [
+      {"text": "I'm walking on sunshine, and don't it feel good!", "speaker": "Katrina & The Waves", "work": "Walking on Sunshine"},
+      {"text": "Here comes the sun, and I say, it's all right.", "speaker": "George Harrison", "work": "The Beatles"},
+      {"text": "To infinity and beyond!", "speaker": "Buzz Lightyear", "work": "Toy Story"}
+    ],
+    "joy-4-loving": [
+      {"text": "All you need is love.", "speaker": "John Lennon", "work": "The Beatles"},
+      {"text": "Whatever our souls are made of, his and mine are the same.", "speaker": "Emily Brontë", "work": "Wuthering Heights"},
+      {"text": "After all this time?", "speaker": "Severus Snape", "work": "Harry Potter and the Deathly Hallows"}
+    ],
+    "anticipation-1-excited": [
+      {"text": "I'm so excited, and I just can't hide it!", "speaker": "The Pointer Sisters", "work": "I'm So Excited"},
+      {"text": "Adventure is out there!", "speaker": "Ellie", "work": "Up"},
+      {"text": "This is gonna be good.", "speaker": "", "work": "The Hunger Games"}
+    ],
+    "anticipation-2-eager": [
+      {"text": "I can't wait!", "speaker": "Hermione Granger", "work": "Harry Potter"},
+      {"text": "I want to go to there.", "speaker": "Liz Lemon", "work": "30 Rock"},
+      {"text": "Show me what you got.", "speaker": "", "work": "Top Gun"}
+    ],
+    "anticipation-3-interested": [
+      {"text": "Tell me more.", "speaker": "", "work": "Grease"},
+      {"text": "Curioser and curioser!", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "So… what happens next?", "speaker": "", "work": "The Princess Bride"}
+    ],
+    "anticipation-4-stressed": [
+      {"text": "I'm under a lot of pressure.", "speaker": "Peter Parker", "work": "Spider-Man 2"},
+      {"text": "It's too much.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"},
+      {"text": "I'm hanging by a thread.", "speaker": "", "work": "Inside Out 2"}
+    ],
+    "anger-1-aggressive": [
+      {"text": "Don't make me angry. You wouldn't like me when I'm angry.", "speaker": "Bruce Banner", "work": "The Incredible Hulk"},
+      {"text": "You dare challenge me?", "speaker": "Thor", "work": "Thor"},
+      {"text": "Say hello to my little friend!", "speaker": "Tony Montana", "work": "Scarface"}
+    ],
+    "anger-2-mad": [
+      {"text": "I am very angry with you!", "speaker": "Professor McGonagall", "work": "Harry Potter"},
+      {"text": "You can't handle the truth!", "speaker": "Colonel Jessup", "work": "A Few Good Men"},
+      {"text": "This means war.", "speaker": "Bugs Bunny", "work": "Looney Tunes"}
+    ],
+    "anger-3-frustrated": [
+      {"text": "Why is everything so complicated?", "speaker": "Avril Lavigne", "work": "Complicated"},
+      {"text": "I'm trying, okay?", "speaker": "", "work": "Spider-Man: Homecoming"},
+      {"text": "This is not going the way you think.", "speaker": "Luke Skywalker", "work": "Star Wars: The Last Jedi"}
+    ],
+    "anger-4-critical": [
+      {"text": "I'm not impressed.", "speaker": "", "work": "Gladiator"},
+      {"text": "Frankly, my dear, I don't give a damn.", "speaker": "Rhett Butler", "work": "Gone With the Wind"},
+      {"text": "That's… not ideal.", "speaker": "Sherlock Holmes", "work": "Sherlock (BBC)"}
+    ],
+    "disgust-1-dislike": [
+      {"text": "I don't like this.", "speaker": "Rey", "work": "Star Wars: The Force Awakens"},
+      {"text": "Ew, David!", "speaker": "Alexis Rose", "work": "Schitt's Creek"},
+      {"text": "That's disgusting!", "speaker": "Hermione Granger", "work": "Harry Potter"}
+    ],
+    "disgust-2-avoidance": [
+      {"text": "Get it away from me!", "speaker": "Indiana Jones", "work": "Indiana Jones and the Temple of Doom"},
+      {"text": "Nope, not today.", "speaker": "", "work": "Brooklyn Nine-Nine"},
+      {"text": "I'm not touching that.", "speaker": "", "work": "Finding Nemo"}
+    ],
+    "disgust-3-aweful": [
+      {"text": "This is awful.", "speaker": "Bilbo Baggins", "work": "The Hobbit"},
+      {"text": "That's the worst thing I've ever tasted!", "speaker": "Remy", "work": "Ratatouille"},
+      {"text": "What fresh hell is this?", "speaker": "Dorothy Parker", "work": ""}
+    ],
+    "disgust-4-disapproval": [
+      {"text": "I'm disappointed in you.", "speaker": "Mufasa", "work": "The Lion King"},
+      {"text": "You should not have done that.", "speaker": "Gandalf", "work": "The Lord of the Rings: The Fellowship of the Ring"},
+      {"text": "I expected better.", "speaker": "Steve Rogers", "work": "Marvel Cinematic Universe"}
+    ],
+    "sad-1-hurt": [
+      {"text": "You hurt me.", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "The wound is the place where the light enters you.", "speaker": "Rumi", "work": ""},
+      {"text": "The heart was made to be broken.", "speaker": "Oscar Wilde", "work": ""}
+    ],
+    "sad-2-depressed": [
+      {"text": "I feel so blue.", "speaker": "Billie Holiday", "work": "Am I Blue?"},
+      {"text": "Every night I lie in bed, the brightest colors fill my head… but I can't shake this feeling.", "speaker": "", "work": "The Greatest Showman"},
+      {"text": "Hello darkness, my old friend.", "speaker": "Simon & Garfunkel", "work": "The Sound of Silence"}
+    ],
+    "sad-3-lonely": [
+      {"text": "All by myself… don't want to be all by myself anymore.", "speaker": "Celine Dion", "work": "All By Myself"},
+      {"text": "Eleanor Rigby… lives in a dream.", "speaker": "The Beatles", "work": "Eleanor Rigby"},
+      {"text": "I've never felt so alone.", "speaker": "Harry Potter", "work": "Harry Potter and the Order of the Phoenix"}
+    ],
+    "sad-4-ashamed": [
+      {"text": "I'm ashamed of what I've done.", "speaker": "Jean Valjean", "work": "Les Misérables"},
+      {"text": "Shame is an unhappy emotion invented by pietists to exploit humanity.", "speaker": "William Blake", "work": "The Marriage of Heaven and Hell"},
+      {"text": "I'm not proud of myself.", "speaker": "Bruce Wayne", "work": "Batman Begins"}
+    ],
+    "surprise-1-startled": [
+      {"text": "You startled me!", "speaker": "Elizabeth Bennet", "work": "Pride and Prejudice"},
+      {"text": "Great Scott!", "speaker": "Doc Brown", "work": "Back to the Future"},
+      {"text": "What was that?", "speaker": "Bilbo Baggins", "work": "The Hobbit"}
+    ],
+    "surprise-2-confused": [
+      {"text": "I don't understand.", "speaker": "Alice", "work": "Alice's Adventures in Wonderland"},
+      {"text": "Toto, I've a feeling we're not in Kansas anymore.", "speaker": "Dorothy", "work": "The Wizard of Oz"},
+      {"text": "It's all a bit of a blur.", "speaker": "Bridget Jones", "work": "Bridget Jones's Diary"}
+    ],
+    "surprise-3-amazed": [
+      {"text": "This is incredible.", "speaker": "", "work": "Jurassic Park"},
+      {"text": "It's full of stars.", "speaker": "Dave Bowman", "work": "2001: A Space Odyssey"},
+      {"text": "I can't believe my eyes!", "speaker": "", "work": "The Lion King"}
+    ],
+    "surprise-4-disappointed": [
+      {"text": "I'm disappointed in you.", "speaker": "Atticus Finch", "work": "To Kill a Mockingbird"},
+      {"text": "You were supposed to be the chosen one!", "speaker": "Obi-Wan Kenobi", "work": "Star Wars: Episode III – Revenge of the Sith"},
+      {"text": "This is not what I hoped for.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "trust-1-grateful": [
+      {"text": "Thank you, thank you very much.", "speaker": "Elvis Presley", "work": ""},
+      {"text": "I've got sunshine on a cloudy day.", "speaker": "The Temptations", "work": "My Girl"},
+      {"text": "These are a few of my favorite things.", "speaker": "", "work": "The Sound of Music"}
+    ],
+    "trust-2-peaceful": [
+      {"text": "I feel at peace.", "speaker": "Samwise Gamgee", "work": "The Lord of the Rings"},
+      {"text": "Let it be.", "speaker": "The Beatles", "work": "Let It Be"},
+      {"text": "Be still, and know…", "speaker": "", "work": "Psalm 46:10"}
+    ],
+    "trust-3-accepted": [
+      {"text": "You have been my friend. That in itself is a tremendous thing.", "speaker": "Charlotte", "work": "Charlotte's Web"},
+      {"text": "You belong with me.", "speaker": "Taylor Swift", "work": "You Belong With Me"},
+      {"text": "Come as you are.", "speaker": "Kurt Cobain", "work": "Come As You Are"}
+    ],
+    "trust-4-hopeful": [
+      {"text": "Hope is a good thing, maybe the best of things.", "speaker": "Andy Dufresne", "work": "The Shawshank Redemption"},
+      {"text": "There's a sunrise every morning that you're missing.", "speaker": "", "work": "Dear Evan Hansen"},
+      {"text": "Even the darkest night will end and the sun will rise.", "speaker": "", "work": "Les Misérables"}
+    ],
+    "fear-1-nervous": [
+      {"text": "I've got a bad feeling about this.", "speaker": "Han Solo", "work": "Star Wars"},
+      {"text": "My hands are shaking.", "speaker": "", "work": "The Hunger Games"},
+      {"text": "Courage is not the absence of fear.", "speaker": "Nelson Mandela", "work": ""}
+    ],
+    "fear-2-scared": [
+      {"text": "I'm scared.", "speaker": "Coraline", "work": "Coraline"},
+      {"text": "They're here…", "speaker": "Carol Anne", "work": "Poltergeist"},
+      {"text": "Please don't let this be real.", "speaker": "", "work": "Stranger Things"}
+    ],
+    "fear-3-anxious": [
+      {"text": "I can't calm down.", "speaker": "", "work": "Inside Out"},
+      {"text": "I'm worried about everything.", "speaker": "", "work": "Harry Potter and the Deathly Hallows"},
+      {"text": "Something is wrong… I can feel it.", "speaker": "Frodo Baggins", "work": "The Lord of the Rings"}
+    ],
+    "fear-4-insecure": [
+      {"text": "I don't feel good enough.", "speaker": "", "work": "The Perks of Being a Wallflower"},
+      {"text": "You think I'm not good enough.", "speaker": "", "work": "Lady Bird"},
+      {"text": "Am I strong enough?", "speaker": "", "work": "Mulan"}
+    ]
+  }
+}
