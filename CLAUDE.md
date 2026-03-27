@@ -135,6 +135,7 @@ Each locale file (`locales/{lang}.json`) contains:
 3. **Update `getCategoryClass()`** in `script.js` (~line 378) — add the 8 translated category names → CSS class mappings
 4. **Update `index.html`** — add `<option value="{code}">Language Name</option>` to the language selector dropdown (~line 28)
 5. **Update this CLAUDE.md** — add the language to the Multilingual Support section and file structure
+6. **If adding a language-specific SVG:** add it to `SVG_FILES` in `script.js` (e.g. `{ zh: '01-Feeling-Wheel-segmented-3-zh.svg' }`) — and see the SVG viewBox note below
 
 ### Where all translatable strings live
 
@@ -188,6 +189,15 @@ Format: `key,english,{language},claude_note` — one row per translatable string
 
 **5. Quotes are intentionally English-only across all locales.**
 The `quotes` section in each locale file contains English text. This was a deliberate decision, not an oversight.
+
+**6. Language-specific SVGs exported from Illustrator must have their `viewBox` cropped to match the deployed English SVG.**
+When a translator exports a new SVG from Illustrator, the artboard is typically the full document size, leaving large empty margins around the wheel. The deployed English SVG (`01-Feeling-Wheel-segmented-3.svg`) uses a tightly-cropped `viewBox="0 0 3491.02 3491.02"` where the outer ring fills ~99% of the canvas. A freshly-exported SVG will have a much larger viewBox (e.g. `0 0 6438.37 6360.82`), making the wheel appear ~half the size in the app.
+
+**Fix:** After export, update the SVG's `viewBox` attribute to crop to the wheel. The outer ring in all SVGs is at `cx=3177.16 cy=3168.55 r=1735.11` (in the full-canvas coordinate space). The correct cropped viewBox is:
+```
+viewBox="1431.65 1423.04 3491.02 3491.02"
+```
+This centers the crop on the outer ring with minimal margin. Edit line 2 of the exported SVG file directly — no other changes needed.
 
 ---
 
