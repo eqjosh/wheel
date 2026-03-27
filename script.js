@@ -6,6 +6,9 @@ let currentEmotionId = null;
 let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 let localeData = null;
 let activeTab = 'essentials';
+let currentSVGLang = null;
+const SVG_FILES = { zh: '01-Feeling-Wheel-segmented-3-zh.svg' };
+const DEFAULT_SVG = '01-Feeling-Wheel-segmented-3.svg';
 
 // Subscriber state
 const SUBSCRIBER_KEY = 'eww_subscriber';
@@ -65,7 +68,7 @@ const PARDOT_COUNTRIES = [
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadSVG();
+    await loadSVG(currentLanguage);
     await loadLocale(currentLanguage);
     await loadEmojiData();
     initializeInteractivity();
@@ -78,12 +81,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // Load external SVG file and inject it into the DOM
-async function loadSVG() {
+async function loadSVG(lang) {
+    const filename = SVG_FILES[lang] || DEFAULT_SVG;
     try {
-        const response = await fetch('01-Feeling-Wheel-segmented-3.svg');
+        const response = await fetch(filename);
         const svgText = await response.text();
         const wrapper = document.getElementById('svg-wrapper');
         wrapper.innerHTML = svgText;
+        currentSVGLang = SVG_FILES[lang] ? lang : 'en';
     } catch (error) {
         console.error('Error loading SVG:', error);
     }
@@ -134,6 +139,13 @@ async function loadLocale(lang) {
 
         // Update SVG text elements
         updateSVGText();
+
+        // Reload language-specific SVG if needed, then re-init interactivity
+        const neededSVGLang = SVG_FILES[lang] ? lang : 'en';
+        if (neededSVGLang !== currentSVGLang) {
+            await loadSVG(lang);
+            initializeInteractivity();
+        }
 
         // Refresh the info panel if an emotion is selected
         if (currentEmotionId) {
