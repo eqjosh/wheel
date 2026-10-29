@@ -1,0 +1,6 @@
+# Local-only: notes, specs, drafts, source assets (not published)
+_private/
+CLAUDE.md
+**/.claude/settings.local.json
+.DS_Store
+.claude/
